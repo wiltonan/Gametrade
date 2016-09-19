@@ -1,0 +1,25 @@
+#somos{
+	background-color: yellow;
+	color: black; 
+	width: 1000px; 
+	height: 550px;
+	background:url(../Imagen/descarga.jpg);  
+	margin-left: 180px;
+}
+
+h1{
+	text-align: center;
+}
+
+#omos{
+	background-color: yellow;
+	color: black; 
+	width: 1200px; 
+	height: 700px;
+	background:url(../Imagen/dar.jpg);  
+	margin-left: 70px;
+}
+
+h1{
+	text-align: center;
+}

@@ -1,0 +1,66 @@
+#e64ContUsu{
+	width: 80%;
+	height: 700px;
+	background: rgba(255, 255, 255, 0.8);
+	margin-left: 130px;
+}
+#e64cPunt{
+	display: inline-block;
+	width: 47%;
+	height: 600px;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+#e64Tendenc{
+	display: inline-block;
+	width: 48%;
+	height: 600px;
+	background: #fff;
+	margin-left: 30px;
+	background: url(../Imagen/mes.jpg);
+}
+
+#e64TexT{
+	font-size: 50px;
+	font-weight: bolder;
+	width: 75px;
+	height: 50px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#e64TexP{
+	font-size: 50px;
+	font-weight: bolder;
+	width: 160px;
+	height: 50px;
+	margin-left: 100px;
+}
+
+#e64TexVlr{
+	font-size: 80px;
+	font-weight: bolder;
+	width: 150px;
+	height: 75px;
+	color: #f00;
+	margin-left: 290px;
+	overflow: hidden;
+	z-index: 1;
+	margin-top:-80px;
+}
+
+#e64fPutn{
+	width: 100%;
+	height: 256px;
+	background: url(../Imagen/fondPunt.png);
+	overflow: hidden;
+	vertical-align: top;
+}
+
+h2{
+	font-size: 60px;
+	margin-top: 60px;
+	text-align: center;
+}

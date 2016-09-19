@@ -1,0 +1,248 @@
+body{
+	margin: 0;
+	background: color #000;
+}
+header{
+	background: #000000;
+	width: 100%;
+	height: 150px;
+}
+
+#dv_main{
+	width: 100% !important;
+}
+
+
+#dvLogo{
+	background: url(../Imagen/logo.png) no-repeat;
+	width: 55%;
+	height: 84px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+
+}
+#dvMenu{
+	width: 60%;
+	height: 75px;	
+	overflow: hidden;
+	vertical-align: top;
+	margin-top: -50px;
+	list-style: none;
+	margin-left: 105px;
+	position: absolute;
+	z-index: 3;
+
+}
+
+#dvMenu li{
+	display: inline-block;
+	width: 25%;
+	height: 90px;
+	float: left;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+
+
+#dvContel{
+	display: inline-block;
+	width: 45%;
+	float: right;
+	margin-left: -200px;
+}
+
+#code{
+	margin-left: -5px !important;
+	overflow: hidden;
+	background: url(../Imagen/inici.png) no-repeat;
+	width: 25%;
+	height: 80px;
+	overflow: hidden;
+}
+
+#liwor{
+	background: url(../Imagen/quienes_som.png) no-repeat;
+	width: 25%;
+	height: 80px;
+	margin-left: -75px !important;
+
+}
+#licontact{
+	background: url(../Imagen/contacteno.png) no-repeat;
+	width: 25%;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: 60px  ;
+	margin-left: 15px !important;
+}
+#liUsa{
+	background: url(../Imagen/como.jpg) no-repeat;
+	width: 25%;
+	height: 80px;
+	margin-left: -25px !important;
+}
+
+#invitLogin{
+	width: 62%;
+	height: 56px;
+	background: url(../Imagen/tira.png) no-repeat;
+	float: right;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 22px;
+	margin-right: 1px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#dvLogin{
+	width: 60%;
+	height: 35px;
+	float: right;
+	margin-right: 10px;
+}
+#Login{
+	width: 77%;
+	height: 30px;
+	list-style: none;
+	vertical-align: top;
+	overflow: hidden;
+	margin-top: 1px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#Login li{
+	display: inline-block;
+	overflow: hidden;
+	width: 45%;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+
+#dvButonL{
+	display: inline-block;
+	width: 8%;
+	height:30px;
+	border:groove 1px;
+	border-radius: 5px;
+	height: 30px;
+	background: url(../Imagen/btnIng.png) no-repeat;
+}
+
+
+#btnOpen{
+	border:none;
+	width: 100%;
+	height:30px;
+	list-style: none;	
+	background: none;
+	cursor: pointer;
+}
+
+
+
+
+#ulRecord{
+	list-style: none;
+	float: right;
+	margin-right: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+	font-weight: bolder;
+}
+
+#ulRecord li{
+	color: #00BFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 10px;
+
+}
+
+#ulMenu{
+	width: 100%;
+	background: url(../imagen/img_menu.png) no-repeat;
+	width: 1366px;
+	height: 44px;
+	margin-top: 1px;
+	overflow: hidden;
+
+}
+
+#ulMenu li{
+	display: inline-block;
+	color: #fff;
+	font-size: 19px;
+	padding-left: 50px;
+	padding-top: 15px;
+	cursor: pointer;
+}
+
+#Login li input{
+	width: 90%;
+	height: 20px;
+	border: groove 1px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+input{
+	border: groove 1px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+#e64NueContra{
+	display: none;
+}
+
+
+#e64Contras{
+	width: 45%;
+	height: auto;
+	border:groove 1px;
+	border-radius: 5px;
+	background: #fff;
+	margin-top:20%;
+	margin-left: 24%;
+	overflow: hidden;
+}
+
+
+#e64ConteContra{
+	width: 100%;
+	height: 110%;
+	overflow: hidden;
+	vertical-align: top;
+	margin-top: -300px;
+	background:rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 1;
+	display: none;
+}
+
+
+#e64ClosPrinciC{
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	height: 30px;
+	width: 1%;
+}
+	
+
+footer{
+	color: #fff;
+}

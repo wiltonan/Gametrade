@@ -17,18 +17,18 @@
 	}
 
 	body{
-	background:url(Imagen/ne.jpg) #2b2b2a;
+	background:url(Imagen/nes.jpg) #2b2b2a;
 	background-position: center;
 	}
 	form{
 		
-		width: 360px;
+		width: 375px;
 		
 		border-radius: 3px;
 		-moz-border-radius:3px;
 		-webkit-border-radius:3px;
 		box-shadow: inset 0 0 10px #000;
-		margin-left: 35%;
+		margin-left: 72%;
 		margin-top: 0%;
 
 
@@ -36,7 +36,7 @@
 
 	form h1{
 		text-align: center;
-		color:#fff;
+		color:#FFF;
 		font-weight: normal;
 		font-size: 40pt;
 		margin: 30px 0px;
@@ -70,7 +70,7 @@
 		height: 40px;
 		background: #3c3c3c:/* Old browsers */;
 		background: -moz-linear-gradient(top, #3c3c3c 0%, #2a2828 100%); /* FFF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c3c3c),color-stop(100%,#666666));
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04B486),color-stop(100%,#04B486));
 		background: webkit-gradient-gradient(top, #3c3c3c 0%, #2a2828 100%);/*chrome10+,Safari5.1+*/
 		background: -o-linear-gradient(top, #3c3c3c 0%, #2a2828 100%);/*Opera 11.10+*/
 		background: -ms-linear-gradient(top, #3c3c3c 0%, #2a2828 100%);/*IE10+*/
@@ -98,7 +98,7 @@
 <form>
 
 	<h1>
-		Contactenos
+		CONTACTENOS
 	</h1>
 	<input type="text" maxlength="20" placeholder="Nombre"></input>
 	<input type="text" maxlength="20" placeholder="Correo Electronico"></input>

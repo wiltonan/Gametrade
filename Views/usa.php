@@ -2,6 +2,32 @@
 <html>
 <head>
 	<title>COMO SE USA</title>
+
+	<style type="text/css">
+     *{
+  margin:0;
+  padding:0;
+  }
+
+  body{
+  background:url(Imagen/wer.jpg) ;
+  
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+
+  }
+
+ol{
+  color: white;
+  text-align: center;
+}
+
+
+    </style>
+    
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
 	<script type="text/javascript" src="js/gweb.js"></script>
@@ -12,7 +38,7 @@
 		<?php require_once("header.php"); ?>
 	</div>
 	<div class="usa">
-		<h1>Como se usa</h1>
+		<h1>COMO SE USA</h1>
 		<ol>
 			<li>En la Gametrade se encuentran los juegos más recientes que están disponibles para intercambiar, indicando la plataforma en la que está disponible,
 				los créditos por los que se vende y si hay más de un usuario que lo tiene disponible en su catálogo.</li>

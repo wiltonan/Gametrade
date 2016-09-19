@@ -1,3 +1,5 @@
+<!--de esta forma logia para el administrador-->
+
 <?php
 session_start();
 include_once("../Model/conexion.php");

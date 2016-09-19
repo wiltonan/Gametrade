@@ -6,6 +6,40 @@
     <script type="text/javascript" src="js/gweb.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
     <title>quienes somos</title>
+    <style type="text/css">
+     *{
+  margin:0;
+  padding:0;
+  }
+
+  body{
+  background:url(Imagen/wer.jpg) ;
+  
+  }
+
+  .AboutUs{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+
+  }
+
+p{
+  color: white;
+  text-align: center;
+  
+
+
+}
+
+
+    </style>
     
 
 
@@ -13,20 +47,24 @@
   </head>
   <body>
     <div id="dv_main">
+    
     	<?php require_once("header.php"); ?>
     </div>
+
     <div class="AboutUs">
-      <h1>Quienes somos.</h1>
+    
+      <h1 >QUIENES SOMOS.</h1>
       <p>
         Esta página está orientada al intercambio de videojuegos físicos por medio de puntos, los cuales se consiguen de distintas maneras
         (comprando paquetes de puntos y haciendo intercambios de videojuegos, entre otros) que esta dedicado para todas las edades y todos los gustos.
+        <br>
         Esta pagina cuenta con toda la información referente a las categorías, consolas y videojuegos que trabajamos, como por ejemplo los últimos
         videojuegos la forma de hacer los intercambion y los beneficios,  y por supuesto se encuentra publicada nuestra dirección y teléfonos.
+        <br>
         Ademas en el la pagina  se abre un link donde podemos informarnos de lo ultimo en juegos de video y recibir ayuda por parte de los usuarios que
         a ella ingresen, este servicio es totalmente gratuito.
       </p>
-      <img src="imagen/fotosUser/wilton.JPG" alt="" />
-      <br>
+
       <h2>Mision.</h2>
       <p>
         Ser una empresa que, pese a la fuerte competencia en el mercado sobresalga entre las demas y se convierta en lider en intercambios de videojuegos
@@ -43,6 +81,9 @@
         Desarrollar un software que permita el intercambio de videojuegos físicos entre usuarios que dispongan de ellos, generando la rotación
         de estos artículos a través de acuerdos y utilizando la página web como intermediario.
       </p>
+      
+      </div>
+
       </div>
 
   </body>

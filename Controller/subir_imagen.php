@@ -1,3 +1,6 @@
+
+<!--es para colocar las imagenes desde la bd al slider primero-->
+
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/noticiaIndex.class.php");

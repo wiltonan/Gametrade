@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle_admi.css"/>
 	</head>
 	<body>
-		
+
 		<header>
 			<div id="dvLogo"></div>
 			<div id="logn" onclick="destroy()"><li><a style="color: #fff" href="index.php">Cerrar seccion</a></li></div>

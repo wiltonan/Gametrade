@@ -1,6 +1,4 @@
 
-
-
 /*estilo del administrador*/
 *{
 	margin: 0;
@@ -8,7 +6,6 @@
 }
 /*este es la parte negra de menu*/
 header{
-
 	background: #000;
 	height: 110px;
 	width: 100%;
@@ -38,6 +35,7 @@ header{
 
 
 #ulMain li{
+	font-family: arial;
 	display: inline-block;
 	color: #fff;
 	font-size: 20px;
@@ -55,14 +53,6 @@ header{
 	background: #000;
 	color: #fff;
 	margin-top: 20px;
-}
-
-
-
-
-
-
-
 }
 
 [id^="stA_"] {
@@ -84,7 +74,7 @@ h2{
 	display: inline-block;
 	width: 17%;
 	height: 590px;
-	
+
 }
 
 #artCenterjuego{
@@ -133,8 +123,7 @@ h2{
 
 #txtSeach{
 	display: inline-block;
-	vertical-align: top;.
-	
+	vertical-align: top;
 }
 
 #logSeach{

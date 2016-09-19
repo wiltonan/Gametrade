@@ -1,6 +1,6 @@
 <?php
  require_once("../model/conexion.php");
- require_once("../model/consola.class.php");
+ require_once("../model/pais.class.php");
 
   $pais =Gestion_Pais::cargarpais();
  ?>

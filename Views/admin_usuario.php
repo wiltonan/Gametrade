@@ -49,7 +49,7 @@
             <div class="class=" col s12>
 
               <div class="input-field col s5">
-<label for="">Registro</label>
+                <label for="">Registro</label>
                   <select class="select" name="tipo_cod" required >
 
                     <option value="" disabled selected>Tipo de documento</option>

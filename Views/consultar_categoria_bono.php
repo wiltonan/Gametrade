@@ -17,7 +17,7 @@ $cat_bono= categoria_bono::mostrar_categoria_bono();
     <!--estes es el proceso para que aparesca y se pueda mostrar-->
     <div class="tablacategoriabono">
       <section>
-        <table border="1px">
+        <table border="1px" class="highlight">
           <thead>
             <th colspan="5">informacion de categoria bono</th>
             <tr>

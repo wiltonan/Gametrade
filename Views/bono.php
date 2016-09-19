@@ -62,7 +62,6 @@ $pto_cod=bono::mostrarpunto();
            </div>
           <!--este es el boton-->
           <button name="action" value="guardarbono" class="waves-effect waves-light btn">Guardar</button>
-
         </form>
       </section>
     </div>

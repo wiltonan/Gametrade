@@ -10,12 +10,12 @@
   }
 
   body{
-  background:url(Imagen/wer.jpg) ;
+  background:url(Imagen/were.jpg) ;
   
   }
 
   h1{
-    color: white;
+    color: #FFFF00;
     text-align: center;
 
   }
@@ -24,6 +24,14 @@ ol{
   color: white;
   text-align: center;
 }
+
+.usa{
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
+
 
 
     </style>

@@ -25,8 +25,9 @@
   }
 
   h1{
-    color: white;
+    color: #FFFF00;
     text-align: center;
+    
 
   }
 
@@ -36,6 +37,11 @@ p{
   
 
 
+}
+
+
+h2{
+  color: #04B45F;
 }
 
 

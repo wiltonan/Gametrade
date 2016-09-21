@@ -8,8 +8,9 @@
 	<body>
 
 		<header>
-			<div id="dvLogo"></div>
-			<div id="logn" onclick="destroy()"><li><a style="color: #fff" href="index.php">Cerrar sesion</a></li></div>
+		<div id="dvLogo"></div>
+			
+			<div id="logn" onclick="destroy()"><li><a style="color: #fff; text-decoration: none;" href="index.php">Cerrar sesion</a></li></div>
 		</header>
 
 		<ul id="ulMain">

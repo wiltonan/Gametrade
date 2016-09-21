@@ -9,6 +9,7 @@ header{
 	background: #000;
 	height: 110px;
 	width: 100%;
+	overflow: hidden;
 }
 
 /*este es el logo y nombre de gametrade*/
@@ -16,14 +17,19 @@ header{
 	background: url(../imagen/logo.png)no-repeat;
 	width: 20%;
 	height: 100%;
+
+	margin-top: 20px;
+
+
 }
 
 #logn{
 	display: inline-block;
 	float: right;
-	margin-top: -65px;
+	margin-top: -95px;
 	margin-right: 20px;
 	cursor: pointer;
+
 }
 
 #ulMain{

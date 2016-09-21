@@ -1,7 +1,12 @@
 <?php
   require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
-?>
+
+
+ $ciu = usuario::consultarciudad();
+  $documento = usuario::consultardocumento();
+  date_default_timezone_set('America/Bogota');
+ ?>
 
 
 <!DOCTYPE html>
@@ -53,6 +58,9 @@
   h2{
     text-align: center;
     color: white;
+  }
+  input{
+    color: #fff;
   }
 
       </style>

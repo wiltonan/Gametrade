@@ -7,13 +7,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
+    <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
     <body>
       <div class="Categoria">
         <section>
-          <h4>Registar categoria de juego.</h4>
+          <center><h4>Registar categoria de juego.</h4></center>
           <form class="categoria_frm" action="../Controller/categoria.controller.php" method="post">
             <div class="row">
   						<div class="class=" col s12>
@@ -39,7 +42,7 @@
 
       <div class="consultar_categoria_juego">
         <section>
-            <a href="consultar_categoria_juego.php" class="waves-effect waves-light btn">Consultar juego.</a>
+          <?php include("consultar_categoria_juego.php") ?>
         </section>
       </div>
 

@@ -12,15 +12,28 @@ $pto_cod=bono::mostrarpunto();
   <head>
     <meta charset="utf-8">
     <title></title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+    $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      }
+    );
+    </script>
   </head>
   <body>
     <!--contenedor del formulario-->
     <div class="formulariobono">
       <section>
 
-        <h1>Registrar bono</h1>
+        <center><h4>Registrar bono</h4></center>
       <!--aqui esta el formato y de esta de esta forma se hace -->
         <form action="../Controller/bono.controller.php" method="post">
           <div class="row">
@@ -68,7 +81,7 @@ $pto_cod=bono::mostrarpunto();
 
     <div class="consultar_bono">
       <section>
-        <a href="consultar_bono.php" class="waves-effect waves-light btn">consultar bono.</a>
+        <?php include("consultar_bono.php") ?>
       </section>
     </div>
 

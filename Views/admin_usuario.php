@@ -22,7 +22,7 @@
            $('.select').material_select();
            Materialize.updateTextFields();
        });
-  </script>
+    </script>
 
   <!--este es para comparar contraseña-->
     <script>
@@ -51,9 +51,7 @@
             <div class="class=" col s12>
 
               <div class="input-field col s5">
-                <label for="">Registro</label>
                   <select class="select" name="tipo_cod" required >
-
                     <option value="" disabled selected>Tipo de documento</option>
                      <?php foreach ($documento as $docu): ?>
                      <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>

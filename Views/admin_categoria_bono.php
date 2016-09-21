@@ -13,7 +13,7 @@ date_default_timezone_set('America/Bogota');
      <meta charset="utf-8">
      <title></title>
      <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
-     <link rel="stylesheet" href="stylesSheet/sweetalert.css">
+     <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
      <script src="js/sweetalert.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -23,9 +23,9 @@ date_default_timezone_set('America/Bogota');
            Materialize.updateTextFields();
          });
 
-         function alerta(){
-           swal({   title: "Se ha guardado.",   timer: 1000,   showConfirmButton: false });
-         }
+        //  function alerta(){
+        //    swal({   title: "Se ha guardado.",   timer: 1000,   showConfirmButton: false });
+        //  }
 
      </script>
    </head>
@@ -33,17 +33,16 @@ date_default_timezone_set('America/Bogota');
 
      <div class="formilario_cat_bono">
        <section>
-         <h4>Registrar categoria de bono</h4>
+         <center><h4>Registrar categoria de bono</h4></center>
          <form action="../Controller/categoria_bono.controller.php" method="post">
+
            <div class="row">
  			         <div class="class=" col s12>
 
-                  <div class="input-field col s12">
+                  <div class="input-field col s8">
                     <input type="text" name="cat_bono_nom" required>
                     <label class="active" for="first_name2">Nombre.</label>
                   </div>
-
-                  <input type="hidden" name="alerta">
 
               </div>
           </div>
@@ -61,7 +60,6 @@ date_default_timezone_set('America/Bogota');
           <?php include ("consultar_categoria_bono.php") ?>
         </section>
      </div>
-
 
    </body>
  </html>

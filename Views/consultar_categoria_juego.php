@@ -9,15 +9,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
+    <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="tabla_categoria_juego">
       <section>
-        <table border="1px">
+        <table border="1px" class="highlight">
           <thead>
-            <th colspan="6">Categorias de juegos.</th>
+            <th colspan="6"><center><h5>Categorias de juegos.</h5></center></th>
             <tr>
               <td>Codigo</td>
               <td>Nombre</td>

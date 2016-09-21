@@ -193,3 +193,71 @@ h2{
 	float: right;
 	margin-right: 100px;
 }
+
+/*revisar todo lo de arriba para ver cual es la funcion de eso*/
+
+/*aqui comienza el estilo de los formularios del menu de administrador*/
+
+/*aqui comienza categoria juego*/
+.Categoria form {
+	margin-left: 10%;
+}
+
+.Categoria form button{
+	margin-left: 35%;
+}
+
+.tabla_categoria_juego{
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+/*aqui termina categoria juego*/
+
+
+/*aqui comienza juego*/
+.formulariojuego form {
+	margin-left: 10%;
+}
+
+.formulariojuego form .boton{
+	margin-left: 40%
+}
+
+.tablajuego{
+	margin-top: 5%;
+}
+/*aqui termina juego*/
+
+/*aqui comienza bono*/
+.formulariobono form{
+	margin-left: 15%;
+}
+
+.formulariobono form button{
+	margin-left: 35%;
+}
+
+.tablabono{
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+/*aqui termina bono*/
+
+
+/*aqui comienza categoria bono*/
+.tablacategoriabono{
+	margin-left: 7%;
+	margin-top: 5%;
+}
+
+.formilario_cat_bono form{
+	margin-left: 28%;
+}
+
+.formilario_cat_bono form button{
+	margin-left: 24%;
+}
+
+/*aqui termina categoria bono*/

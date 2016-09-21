@@ -3,13 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
+		<link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
+		<script src="js/sweetalert.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				Materialize.updateTextFields();
+			});
+		</script>
 	</head>
 	<body>
 		<div class="formulariopunto">
 			<section>
-				<h1>Registrar punto.</h1>
+				<center><h4>Registrar punto.</h4></center>
 				<form action="../Controller/puntos.controller.php" method="post">
 					<div class="row">
 						<div class="class=" col s12>
@@ -44,10 +52,5 @@
 			</section>
 		</div>
 
-		<script>
-			$(document).ready(function() {
-				Materialize.updateTextFields();
-			});
-		</script>
 	</body>
 </html>

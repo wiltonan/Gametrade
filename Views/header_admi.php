@@ -9,7 +9,7 @@
 
 		<header>
 			<div id="dvLogo"></div>
-			<div id="logn" onclick="destroy()"><li><a style="color: #fff" href="index.php">Cerrar seccion</a></li></div>
+			<div id="logn" onclick="destroy()"><li><a style="color: #fff" href="index.php">Cerrar sesion</a></li></div>
 		</header>
 
 		<ul id="ulMain">

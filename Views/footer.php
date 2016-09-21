@@ -7,7 +7,7 @@
 /* Botones de Redes Sociales - Ciudad Blogger */
 .social_bookmarks_container {
 width:100%;
-height:45px;
+height:35px;
 padding:0;
 position:absolute;
 }

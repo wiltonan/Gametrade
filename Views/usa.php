@@ -38,12 +38,17 @@ ol{
     
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/gweb.js"></script>
+	<script type="text/javascript" src="js/connection.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
+
 </head>
 <body>
 	<div id="dv_main">
 		<?php require_once("header.php"); ?>
+
 	</div>
 	<div class="usa">
 		<h1>COMO SE USA</h1>

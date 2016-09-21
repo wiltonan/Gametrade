@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/connection.js"></script>
     <script type="text/javascript" src="js/gweb.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
     <title>quienes somos</title>

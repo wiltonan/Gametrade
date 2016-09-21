@@ -17,7 +17,7 @@
 #e64ContePublic{
 	display: inline-block;
 	overflow: hidden;
-	width: 29%;
+	width: 29.9%;
 	height: 400px;
 	margin-left: -5px;
 }
@@ -57,7 +57,7 @@
 
 #ulNoticJue{
 	list-style: none;
-	width: 97%;
+	width: 98%;
 	height: 312px;
 	background: #000;
 }

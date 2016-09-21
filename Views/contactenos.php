@@ -4,6 +4,10 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
  <link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
 
+
+ <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/connection.js"></script>
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/gweb.js"></script>
@@ -27,16 +31,16 @@
 		border-radius: 3px;
 		-moz-border-radius:3px;
 		-webkit-border-radius:3px;
-		box-shadow: inset 0 0 10px #000;
-		margin-left: 72%;
-		margin-top: 0%;
+		box-shadow: inset 0 0 250px #000;
+		margin-left: 72.3%;
+		margin-top: -2%;
 
 
 	}
 
 	form h1{
 		text-align: center;
-		color:#FFF;
+		color:#CEF6EC;
 		font-weight: normal;
 		font-size: 40pt;
 		margin: 30px 0px;
@@ -53,7 +57,7 @@
 
 	form textarea{
 		width: 280px;
-		height: 65px;
+		height: 95px;
 		padding: 0px 10px;
 		margin: 10px 30px;
 		color: #6d6d6d;
@@ -92,8 +96,8 @@
 	
 </head>
 <body>
-<div id=dv_main>
-<?php require_once("header.php"); ?>
+<div id="dv_main">
+	<?php require_once("header.php"); ?>
 
 <form>
 
@@ -105,7 +109,9 @@
 	<input type="text" maxlength="20" placeholder="Numero de telefono"></input>
 	<textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
 	<a class="waves-effect waves-light btn">Enviar</a>
+
 </form>
+</div>
 </div>
 </body>
 </html>

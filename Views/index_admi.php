@@ -34,7 +34,6 @@ require_once("../Model/conexion.php");
 
 <section id="stA_nacionalidad">
 	<div id="dvPais"></div>
-	<div id="dvDepartament"></div>
 	<div id="dvCiudad"></div>
 </section>
 
@@ -58,9 +57,6 @@ require_once("../Model/conexion.php");
 
 </section>
 
-<section id="stA_categoriabono">
-
-</section>
 
 </body>
 </html>

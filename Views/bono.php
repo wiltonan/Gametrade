@@ -4,9 +4,9 @@ require_once("../Model/conexion.php");
 require_once("../Model/bono.class.php");
 
 //este es para mostrar bono
-$cat_bono_cod=bono::mostrarCategoriabono();
 $pto_cod=bono::mostrarpunto();
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +15,7 @@ $pto_cod=bono::mostrarpunto();
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script>
+    <!-- <script>
     $('.dropdown-button').dropdown({
       inDuration: 300,
       outDuration: 225,
@@ -26,7 +26,7 @@ $pto_cod=bono::mostrarpunto();
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
       }
     );
-    </script>
+    </script> -->
   </head>
   <body>
     <!--contenedor del formulario-->
@@ -38,15 +38,6 @@ $pto_cod=bono::mostrarpunto();
         <form action="../Controller/bono.controller.php" method="post">
           <div class="row">
 						<div class="class=" col s12>
-
-							<div class="input-field col s5">
-                <select id="cat_bono_cod" name="cat_bono_cod" required>
-                  <option value="" disabled selected>Categoria de bono</option>
-                  <?php foreach ($cat_bono_cod as $categoria) {
-                        echo "<option value=".$categoria["cat_bono_cod"].">".$categoria["cat_bono_nom"]."</option>";
-                    }?>
-                 </select>
-              </div>
 
               <div class="row">
                 <div class="input-field col s5">
@@ -62,13 +53,6 @@ $pto_cod=bono::mostrarpunto();
                <div class="input-field col s5">
                  <input type="text" name="bono_desc" required/>
                  <label class="active" for="first_name2">Descripcion.</label>
-               </div>
-
-               <div class="row">
-                 <div class="input-field col s5">
-                   <input type="text" name="bono_cant" required/>
-                   <label class="active" for="first_name2">cantidad de bonos.</label>
-                 </div>
                </div>
 
              </div>

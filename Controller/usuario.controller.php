@@ -8,6 +8,7 @@ $accion=$_REQUEST["action"];
 
  	case 'guardarusuario':
 
+     $rol_cod=$_POST["rol_cod"];
  		 $tipo_cod=$_POST["tipo_cod"];
      $usu_num_docum=$_POST["usu_num_docum"];
  		 $usu_nom=$_POST["usu_nom"];
@@ -21,11 +22,12 @@ $accion=$_REQUEST["action"];
  		 $usu_cel=$_POST["usu_cel"];
  		 $ciu_cod=$_POST["ciu_cod"];
  		 $usu_dir=$_POST["usu_dir"];
+     $usu_esp_vive=$_POST["usu_esp_vive"];
      $usu_fech=$_POST["usu_fech"];
      $usu_estado="activo";
  		 try {
- 		 	usuario::guardar($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
-      $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado);
+ 		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
+      $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
       mkdir("Controller");
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
@@ -34,6 +36,8 @@ $accion=$_REQUEST["action"];
  		break;
 
     case 'modificarusuario':
+
+       $rol_cod=$_POST["rol_cod"];
        $tipo_cod=$_POST["tipo_cod"];
        $usu_num_docum=$_POST["usu_num_docum"];
   		 $usu_nom=$_POST["usu_nom"];
@@ -47,10 +51,11 @@ $accion=$_REQUEST["action"];
   		 $usu_cel=$_POST["usu_cel"];
   		 $ciu_cod=$_POST["ciu_cod"];
        $usu_dir=$_POST["usu_dir"];
+       $usu_esp_vive=$_POST["usu_esp_vive"];
        $usu_estado=$_POST["usu_estado"];
        $usu_cod=$_POST["usu_cod"];
        try {
-         usuario::modificarusuario($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod);
+         usuario::modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_estado,$usu_cod);
          echo "se a modificado";
        }
        catch (Exception $e){

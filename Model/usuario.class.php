@@ -1,15 +1,17 @@
 <?php
   class usuario{
-    public static function guardar($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado){
+    public static function guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
+    $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado){
 
     $pdo = ConexionBD::AbrirBD();
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_usuario(tipo_cod,usu_num_docum,usu_nom,usu_apell,usu_nick,usu_mail,usu_pass,usu_naci,photo,usu_tel,usu_cel,ciu_cod,usu_dir,usu_fech,usu_estado) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $sql="INSERT INTO tbl_usuario(rol_cod,tipo_cod,usu_num_docum,usu_nom,usu_apell,usu_nick,usu_mail,usu_pass,usu_naci,photo,usu_tel,usu_cel,ciu_cod,usu_dir,usu_esp_vive,usu_fech,usu_estado) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     $query= $pdo->prepare($sql);
-    $query->execute(array($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado));
+    $query->execute(array($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
+    $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado));
 
     ConexionBD::DesconectarBD();
   }
@@ -19,6 +21,22 @@
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql= "select * from tbl_ciudad";
+
+    $query= $pdo->prepare($sql);
+    $query->execute();
+
+    $result=$query->fetchALL(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+  public static function consultar_rol(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql= "select * from tbl_rol";
 
     $query= $pdo->prepare($sql);
     $query->execute();
@@ -67,13 +85,15 @@
     return $result;
   }
 
-  public static function modificarusuario($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod){
+  public static function modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
+  $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="UPDATE tbl_usuario SET tipo_cod=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,photo=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_estado=? WHERE usu_cod= ?";
+    $sql="UPDATE tbl_usuario SET rol_cod=?, tipo_cod=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,photo=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_esp_vive=? ,usu_estado=? WHERE usu_cod= ?";
     $query= $pdo->prepare($sql);
-    $query->execute(array($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod));
+    $query->execute(array($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
+    $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado));
 
     ConexionBD::DesconectarBD();
   }

@@ -24,10 +24,6 @@ function cargarforumario(){
  	});
 
  	$("#dvMnacionalidad").click(function(){
- 	$("#dvDepartament").load("departamento.php");
- 	});
-
- 	$("#dvMnacionalidad").click(function(){
  	$("#dvCiudad").load("ciudad.php");
  	});
 
@@ -51,9 +47,6 @@ function cargarforumario(){
  	$("#stA_Bono").load("bono.php");
  	});
 
-  $("#dvMbonos").click(function(){
- 	$("#stA_categoriabono").load("admin_categoria_bono.php");
- 	});
 }
 
 function sbDisabled(v_var){
@@ -187,7 +180,6 @@ function sbMenu(v_var){
 		$("#stA_juego").fadeIn(1000);
 		break;
 
-
 		case "bono":
     $("#stMain").fadeOut();
     $("#stA_usuario").fadeOut();
@@ -199,20 +191,6 @@ function sbMenu(v_var){
     $("#stA_categoriabono").fadeOut();
 		$("#stA_Bono").fadeIn(1000);
 		break;
-
-
-
-    case "categoriabono":
-    $("#stMain").fadeOut();
-    $("#stA_usuario").fadeOut();
-    $("#stA_nacionalidad").fadeOut();
-    $("#stA_Consola").fadeOut();
-    $("#stA_Puntos").fadeOut();
-    $("#stA_juego").fadeOut();
-    $("#stA_Categoria").fadeOut();
-    $("#stA_Bono").fadeOut();
-    $("#stA_categoriabono").fadeIn(1000);
-      break;
 	}
 }
 

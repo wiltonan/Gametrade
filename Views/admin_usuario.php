@@ -5,6 +5,7 @@
   $ciu = usuario::consultarciudad();
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
+  $rol = usuario::consultar_rol();
  ?>
 
 
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    
+
     <script type="text/javascript" >
        $(document).ready(function () {
            $('.select').material_select();
@@ -51,12 +52,20 @@
             <div class="class=" col s12>
 
               <div class="input-field col s5">
+                  <select class="select" name="rol_cod" required >
+                    <option value="" disabled selected>Rol</option>
+                     <?php foreach ($rol as $rol): ?>
+                     <option value="<?php echo $rol['rol_cod'] ?>"><?php echo $rol['nombre']; ?></option>
+                   <?php endforeach ?>
+                  </select>
+              </div>
+
+              <div class="input-field col s5">
                   <select class="select" name="tipo_cod" required >
                     <option value="" disabled selected>Tipo de documento</option>
                      <?php foreach ($documento as $docu): ?>
                      <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>
                    <?php endforeach ?>
-
                   </select>
               </div>
 
@@ -154,6 +163,13 @@
                   <div class="input-field col s5">
                     <input type="text" name="usu_dir" required/>
                     <label class="active" for="first_name2">Dirreccion.</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="text" name="usu_esp_vive" required/>
+                    <label class="active" for="first_name2">Especifique su direccion si es necesarrio.</label>
                   </div>
                 </div>
               </div>

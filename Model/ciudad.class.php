@@ -1,22 +1,22 @@
 <?php
 	class Gestion_Ciudad{
-		public static function guardar($ciu_nom,$depar_cod){
+		public static function guardar($ciu_nom,$pais_cod){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "INSERT INTO tbl_ciudad (ciu_nom,depar_cod) values (?,?)";
+		$sql= "INSERT INTO tbl_ciudad (ciu_nom,pais_cod) values (?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($ciu_nom,$depar_cod));
+		$query->execute(array($ciu_nom,$pais_cod));
 
 		ConexionBD::DesconectarBD();
 	}
 
-	public static function mostrardepartamento(){
+	public static function mostrarpais(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select * from tbl_departamento";
+		$sql= "select * from tbl_pais";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();

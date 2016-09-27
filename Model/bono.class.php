@@ -1,15 +1,15 @@
 <!--aqui recojemos los datos y los llevamos a la base de datos-->
 <?php
 class bono{
-  public static function guardar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant){
+  public static function guardar($pto_cod,$bono_desc){
     $pdo = ConexionBD::AbrirBD();
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tb_bono(cat_bono_cod,pto_cod,bono_desc,bono_cant) values(?,?,?,?)";
+    $sql="INSERT INTO tb_bono(pto_cod,bono_desc) values(?,?)";
 
     $query= $pdo->prepare($sql);
-    $query->execute(array($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant));
+    $query->execute(array($pto_cod,$bono_desc));
 
     ConexionBD::DesconectarBD();
 
@@ -58,22 +58,6 @@ class bono{
 
     ConexionBD::DesconectarBD();
   }
-
-  public static function mostrarCategoriabono(){
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-		$sql= "select * from tbl_categoria_bono";
-
-		$query= $pdo->prepare($sql);
-		$query->execute();
-
-		$result=$query->fetchALL(PDO::FETCH_BOTH);
-
-		ConexionBD::DesconectarBD();
-
-		return $result;
-	}
 
   public static function mostrarpunto(){
 

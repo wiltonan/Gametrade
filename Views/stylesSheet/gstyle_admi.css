@@ -17,10 +17,7 @@ header{
 	background: url(../imagen/logo.png)no-repeat;
 	width: 20%;
 	height: 100%;
-
 	margin-top: 20px;
-
-
 }
 
 #logn{
@@ -217,9 +214,7 @@ h2{
 	margin-left: 2%;
 	margin-top: 5%;
 }
-
 /*aqui termina categoria juego*/
-
 
 /*aqui comienza juego*/
 .formulariojuego form {

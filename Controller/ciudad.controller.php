@@ -8,9 +8,9 @@ $accion=$_REQUEST["action"];
 
  	case 'guardarciudad':
  		 $ciu_nom=$_POST["ciu_nom"];
- 		 $depar_cod=$_POST["depar_cod"];
+ 		 $pais_cod=$_POST["pais_cod"];
  		 try {
- 		 	Gestion_Ciudad::guardar($ciu_nom,$depar_cod);
+ 		 	Gestion_Ciudad::guardar($ciu_nom,$pais_cod);
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;

@@ -9,7 +9,7 @@
 
 		<header>
 		<div id="dvLogo"></div>
-			
+
 			<div id="logn" onclick="destroy()"><li><a style="color: #fff; text-decoration: none;" href="index.php">Cerrar sesion</a></li></div>
 		</header>
 
@@ -22,7 +22,6 @@
 			<li onclick="sbMenu('categoriajuego')" id="dvMcategor">Categoria juego</li>
 			<li onclick="sbMenu('juego')" id="dvMjuego">Juego</li>
 			<li onclick="sbMenu('bono')" id="dvMbono">Bono</li>
-			<li onclick="sbMenu('categoriabono')" id="dvMbonos">Categoria bono</li>
 		</ul>
 
 	</body>

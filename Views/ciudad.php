@@ -1,6 +1,6 @@
 <?php
-	require_once("../Model/conexion.php");
-	require_once("../Model/ciudad.class.php");
+	require_once('../Model/conexion.php');
+	require_once('../Model/ciudad.class.php');
 
 	$pais=Gestion_Ciudad::mostrarpais();
 	?>
@@ -9,8 +9,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	</head>
 	<body>
 
@@ -27,8 +25,8 @@
 							</div>
 
 							<div class="input-field col s5">
-						    <select id="pais_cod" name="pais_cod" required>
-									<option value="" disabled selected>Departamento.</option>
+						    <select id="pais_cod" name="pais_cod">
+									<option value="" disabled selected>Pais.</option>
 						      <?php foreach ($pais as $pais) {
 						            echo "<option value=".$pais["pais_cod"].">".$pais["pais_nom"]."</option>";
 						        }?>
@@ -43,18 +41,10 @@
 		</div>
 
 		<div class="consultarciudad">
-			<a href="consultar_ciudad.php" class="waves-effect waves-light btn">Consultar ciudad</a>
+			<section>
+				<?php include ('consultar_ciudad.php') ?>
+			</section>
 		</div>
-
-		<script>
-       $(document).ready(function () {
-           $('select').material_select();
-       });
-
-       $(document).ready(function() {
-         Materialize.updateTextFields();
-       });
-  </script>
 
 	</body>
 </html>

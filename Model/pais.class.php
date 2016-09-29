@@ -1,13 +1,13 @@
 <?php
 class Gestion_Pais{
-	public static function guardar($pais_nom,$estado){
+	public static function guardar($pais_nom){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "INSERT INTO tbl_pais (pais_nom,estado) values (?,?)";
+		$sql= "INSERT INTO tbl_pais (pais_nom) values (?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($pais_nom,$estado));
+		$query->execute(array($pais_nom));
 
 		ConexionBD::DesconectarBD();
 
@@ -29,13 +29,13 @@ class Gestion_Pais{
 		return $result;
 	}
 
-	public static function modificar($pais_cod,$pais_nom,$estado){
+	public static function modificar($pais_cod,$pais_nom){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-		$sql="UPDATE tbl_pais SET pais_nom= ?, estado= ? WHERE pais_cod= ?";
+		$sql="UPDATE tbl_pais SET pais_nom= ? WHERE pais_cod= ?";
 		$query= $pdo->prepare($sql);
-		$query->execute(array($pais_nom,$estado,$pais_cod));
+		$query->execute(array($pais_nom,$pais_cod));
 
 		ConexionBD::DesconectarBD();
 	}

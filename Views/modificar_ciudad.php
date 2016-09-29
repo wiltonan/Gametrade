@@ -2,15 +2,14 @@
 	require_once("../Model/conexion.php");
 	require_once("../Model/ciudad.class.php");
 
-  $ciudadmo= Gestion_Ciudad::consultarporCodigo(base64_decode($_GET["codigo_ciudad"]));
+  $ciudadmo= Gestion_Ciudad::consultarporCodigo(base64_decode($_GET['codigo_ciudad']));
+	$pais=Gestion_Ciudad::mostrarpais();
 	?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	</head>
 	<body>
 		<div class="formulariociudad">
@@ -29,10 +28,15 @@
 
                  <input type="hidden" name="cat_bono_fech" readonly value="<?php echo date('d/m/Y')?>"/>
 
-                 <div class="input-field col s6">
-                   <input type="text" name="depar_cod" required value="<?php echo $ciudadmo["depar_cod"]; ?>" />
-                   <label class="active" for="first_name2">Departamento.</label>
-                 </div>
+
+								 <div class="input-field col s5">
+									 <select id="pais_cod" name="pais_cod" value="<?php echo $ciudadmo["depar_cod"]; ?>">
+										 <option value="" disabled selected>Pais.</option>
+										 <?php foreach ($pais as $pais) {
+													 echo "<option value=".$pais["pais_cod"].">".$pais["pais_nom"]."</option>";
+											 }?>
+										</select>
+									</div>
 
              	</div>
          		</div>

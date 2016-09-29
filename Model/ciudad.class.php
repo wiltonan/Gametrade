@@ -32,7 +32,10 @@
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select * from tbl_ciudad";
+		$sql="select tbl_ciudad.ciu_cod, tbl_ciudad.ciu_nom, tbl_pais.pais_nom
+          from tbl_ciudad
+          inner join tbl_pais
+          on tbl_ciudad.pais_cod = tbl_pais.pais_cod";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();
@@ -60,31 +63,17 @@
     return $result;
   }
 
-
-		public static function modificar($ciu_nom,$depar_cod,$ciu_cod){
+		public static function modificar($ciu_nom,$pais_cod,$ciu_cod){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "UPDATE tbl_ciudad SET ciu_nom=?, depar_cod=? WHERE ciu_cod=?";
+		$sql= "UPDATE tbl_ciudad SET ciu_nom=?, pais_cod=? WHERE ciu_cod=?";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($ciu_nom,$depar_cod,$ciu_cod));
+		$query->execute(array($ciu_nom,$pais_cod,$ciu_cod));
 
 		ConexionBD::DesconectarBD();
 	}
-
-	public static function eliminar_ciudad($codigo){
-    try {
-      $pdo = ConexionBD::AbrirBD();
-
-      $sql = "DELETE FROM tbl_ciudad WHERE ciu_cod = ?";
-      $query = $pdo->prepare($sql);
-      $query->execute(array($codigo));
-
-    } catch (Exception $e) {
-      echo "Error" . $e->getMessage();
-    }
-  }
 
 }
 

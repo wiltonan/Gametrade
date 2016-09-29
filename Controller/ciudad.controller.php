@@ -11,33 +11,23 @@ $accion=$_REQUEST["action"];
  		 $pais_cod=$_POST["pais_cod"];
  		 try {
  		 	Gestion_Ciudad::guardar($ciu_nom,$pais_cod);
- 		 	echo "Guardar con exito";
+ 		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
  		break;
 
     case 'modificar':
-   		 $ciu_nom=$_POST["ciu_nom"];
-   		 $depar_cod=$_POST["depar_cod"];
-       $ciu_cod=$_POST["ciu_cod"];
+   		 $ciu_nom=$_POST['ciu_nom'];
+   		 $pais_cod=$_POST['pais_cod'];
+       $ciu_cod=$_POST['ciu_cod'];
 
    		 try {
-   		 	Gestion_Ciudad::modificar($ciu_nom,$depar_cod,$ciu_cod);
-   		 	echo "Guardar con exito";
+   		 	Gestion_Ciudad::modificar($ciu_nom,$pais_cod,$ciu_cod);
+   		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
    		 } catch (Exception $e) {
    		 	echo $e;
    		 }
    		break;
-
-      case 'eliminar':
-        try {
-          $codigo = base64_decode($_GET["codigo_ciudad"]);
-          Gestion_Ciudad::eliminar_ciudad($codigo);
-          echo "Eliminado";
-        } catch (Exception $e) {
-          die($e->getMessage() . " linea: " . $e->getLine());
-        }
-        break;
  }
 ?>

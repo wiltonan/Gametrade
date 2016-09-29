@@ -1,13 +1,13 @@
 <?php
 class Categoria_jue{
-  public static function Guardar($cat_nom, $cat_fech, $cat_desc, $cat_estado){
+  public static function Guardar($cat_nom){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_categoria_jue(cat_nom, cat_desc, cat_fech, cat_estado) values(?,?,?,?)";
+    $sql="INSERT INTO tbl_categoria_jue(cat_nom) values(?)";
 
     $query= $pdo->prepare($sql);
-    $query->execute(array($cat_nom, $cat_fech, $cat_desc, $cat_estado));
+    $query->execute(array($cat_nom));
 
     ConexionBD::DesconectarBD();
 }
@@ -44,14 +44,14 @@ class Categoria_jue{
     return $result;
   }
 
- 	public static function modificar($cat_nom, $cat_desc, $cat_fech, $cat_estado,$cat_cod){
+ 	public static function modificar($cat_nom,$cat_cod){
  		$pdo = ConexionBD::AbrirBD();
     	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    	$sql= "UPDATE tbl_categoria_jue SET cat_nom = ?, cat_desc = ?, cat_fech = ?, cat_estado = ?  WHERE cat_cod = ?";
+    	$sql= "UPDATE tbl_categoria_jue SET cat_nom = ? WHERE cat_cod = ?";
 
 	    $query= $pdo->prepare($sql);
-    	$query->execute(array($cat_nom, $cat_desc, $cat_fech, $cat_estado, $cat_cod));
+    	$query->execute(array($cat_nom,$cat_cod));
 
     	ConexionBD::DesconectarBD();
 	}

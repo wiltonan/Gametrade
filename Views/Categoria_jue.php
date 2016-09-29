@@ -1,17 +1,8 @@
-<?php
-  date_default_timezone_set('America/Bogota');
- ?>
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
-    <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
-    <script src="js/sweetalert.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
     <body>
       <div class="Categoria">
@@ -26,15 +17,6 @@
                   <label class="active" for="first_name2">Nombre de la categoria de juego.</label>
   							</div>
 
-                <div class="row">
-                  <div class="input-field col s5">
-                    <textarea name="cat_desc" rows="5" cols="25" required></textarea>
-                    <label class="active" for="first_name2">Descripcion.</label>
-                  </div>
-                </div>
-
-            <input type="hidden" name="cat_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
-
             <button name="action" value="guardar" class="waves-effect waves-light btn">Guardar</button>
           </form>
       </section>
@@ -42,14 +24,9 @@
 
       <div class="consultar_categoria_juego">
         <section>
-          <?php include("consultar_categoria_juego.php") ?>
+          <?php include('consultar_categoria_juego.php') ?>
         </section>
       </div>
 
-      <script>
-  			$(document).ready(function() {
-  				Materialize.updateTextFields();
-  			});
-  		</script>
     </body>
 </html>

@@ -9,8 +9,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	</head>
 	<body>
 		<div class="formularioconsol">

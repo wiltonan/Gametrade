@@ -72,11 +72,17 @@ function ConsultUsu(){
 							alert("Datos no validos");
 							return;
 						}
-						if (jo_user['st']=="ok"){
 
-							self.location.href="userperfil.php";
+						if (jo_user['st']=="ok"){
+								use= jo_user['nombre'];
+							if (use=="admi"){
+									self.location.href="index_admi.php";
+							}
+							if (use=="user"){
+								self.location.href="userperfil.php";
+							}
 						}else{
-							alert(00000);
+							alert("usuario no registrado");
 						}
 						}
 					}

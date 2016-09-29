@@ -4,15 +4,7 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
-		<link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
 		<script src="js/sweetalert.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				Materialize.updateTextFields();
-			});
-		</script>
 	</head>
 	<body>
 		<div class="formulariopunto">
@@ -34,13 +26,6 @@
 								</div>
 							</div>
 
-							<div class="row">
-								<div class="input-field col s7">
-									<textarea name="pto_desc" rows="5" cols="25"></textarea>
-									<label class="active" for="first_name2">Descripcion.</label>
-								</div>
-							</div>
-
 					<button name="action" value="guardarpunto" class="waves-effect waves-light btn">Guardar</button>
 				</form>
 			</section>
@@ -48,7 +33,7 @@
 
 		<div class="consultar_punto">
 			<section>
-				<a href="consultar_puntos.php" class="waves-effect waves-light btn">Consultar puntos.</a>
+				<?php include('consultar_puntos.php') ?>
 			</section>
 		</div>
 

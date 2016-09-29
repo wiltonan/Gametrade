@@ -19,7 +19,10 @@ class bono{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="select * from tb_bono";
+    $sql="select tb_bono.bono_cod, tb_bono.bono_desc, tbl_pack_punto.pto_cant
+          from tb_bono
+          inner join tbl_pack_punto
+          on tb_bono.pto_cod = tbl_pack_punto.pto_cod";
 
     $query= $pdo->prepare($sql);
     $query->execute();
@@ -48,13 +51,13 @@ class bono{
     return $result;
   }
 
-  public static function modificar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod){
+  public static function modificar($pto_cod,$bono_desc,$bono_cod){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="UPDATE tb_bono SET cat_bono_cod= ? ,pto_cod= ?, bono_desc= ?, bono_cant= ? WHERE bono_cod= ?";
+    $sql="UPDATE tb_bono SET pto_cod= ?, bono_desc= ?  WHERE bono_cod= ?";
     $query= $pdo->prepare($sql);
-    $query->execute(array($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod));
+    $query->execute(array($pto_cod,$bono_desc,$bono_cod));
 
     ConexionBD::DesconectarBD();
   }

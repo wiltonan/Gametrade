@@ -1,7 +1,7 @@
 <!--este es una conexion por haci desirlo-->
 <?php
-require_once("../Model/conexion.php");
-require_once("../Model/bono.class.php");
+require_once('../Model/conexion.php');
+require_once('./Model/bono.class.php');
 
 //este es para mostrar bono
 $pto_cod=bono::mostrarpunto();
@@ -12,21 +12,6 @@ $pto_cod=bono::mostrarpunto();
   <head>
     <meta charset="utf-8">
     <title></title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <!-- <script>
-    $('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: false, // Displays dropdown below the button
-      alignment: 'left' // Displays dropdown with edge aligned to the left of button
-      }
-    );
-    </script> -->
   </head>
   <body>
     <!--contenedor del formulario-->
@@ -39,16 +24,16 @@ $pto_cod=bono::mostrarpunto();
           <div class="row">
 						<div class="class=" col s12>
 
-              <div class="row">
-                <div class="input-field col s5">
-                  <select id="pto_cod" name="pto_cod" required>
-                    <option value="" disabled selected>Puntos</option>
+              <div class="input-field col s5">
+                <select class="select" name="pto_cod" >
+                  <option value="" disabled selected>Escoja la cantidad de puntos</option>
                     <?php foreach ($pto_cod as $puntos) {
-                          echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_moneda"]."</option>";
+                          echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
                       }?>
-                   </select>
-                 </div>
-               </div>
+                </select>
+              </div>
+
+
 
                <div class="input-field col s5">
                  <input type="text" name="bono_desc" required/>
@@ -69,10 +54,5 @@ $pto_cod=bono::mostrarpunto();
       </section>
     </div>
 
-    <script>
-      $(document).ready(function() {
-        Materialize.updateTextFields();
-      });
-    </script>
   </body>
 </html>

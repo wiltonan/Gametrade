@@ -17,13 +17,12 @@ switch($v_params[0]){
 	case "index":
 		header("Location: http://localhost:8000/Aplicacion_gametrade/Views/");
 		break;
+
 	/*case "institucional":
 		header("Location: http://appvirtualschool.com/views/institutional.php?u=".$v_params[0]."&c=".$v_params[1]);
 		break;*/
 	case "acudiente":
 		//header("Location: http://appvirtualschool.com/views/admin.php?u=".$v_params[0]."&c=".$v_params[1]);
 		break;
-
-
 }
 ?>

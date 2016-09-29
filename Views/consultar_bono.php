@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
     <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
     <script src="js/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="tablabono">
@@ -23,10 +21,8 @@
             <th colspan="6"><center><h5>Informacion de bonos.</h5></center></th>
             <tr>
               <td>Codigo</td>
-              <td>Codigo caterogia bono</td>
-              <td>Codigo punto</td>
+              <td>puntos</td>
               <td>Descripcion</td>
-              <td>Cantidad</td>
               <td>Operaciones</td>
             </tr>
           </thead>
@@ -34,10 +30,8 @@
                <?php foreach ($bono as $bn): ?>
                  <tr>
                    <td><?php echo $bn["bono_cod"];    ?></td>
-                   <td><?php echo $bn["cat_bono_cod"];?></td>
-                   <td><?php echo $bn["pto_cod"];     ?></td>
+                   <td><?php echo $bn["pto_cant"];     ?></td>
                    <td><?php echo $bn["bono_desc"];   ?></td>
-                   <td><?php echo $bn["bono_cant"];   ?></td>
                    <td>
                      <a href="modificarbono.php?codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Modificar</a>
 

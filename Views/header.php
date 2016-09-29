@@ -1,16 +1,21 @@
 <header>
+	<!-- este es para cuando le de clic en el logo lo lleve al inicio -->
 	<div id="dvLogo" onclick="sb_menu('home')"></div>
+
 	<div id="dvContel">
 		<div id="invitLogin">Ingresa ya a nuestra pagina</div>
-		<div id="dvLogin">
-			<div>
 
-			<ul id="Login">
-				<li id="dvCode"><input type="text" placeholder="Usuario" name="txtCode" id="txtUsua" required/></li>
-				<li><input type="password" placeholder="**********" name="txtName" id="txtPass" required /></li>
-			</ul>
-			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
-			</div>
+		<div id="dvLogin">
+				<ul id="Login">
+					<li id="dvCode">
+						<input type="text" placeholder="Usuario" name="txtCode" id="txtUsua" required/>
+					</li>
+
+					<li>
+						<input type="password" placeholder="**********" name="txtName" id="txtPass" required />
+					</li>
+				</ul>
+				<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
 			</div>
 
 		<ul id="ulRecord">

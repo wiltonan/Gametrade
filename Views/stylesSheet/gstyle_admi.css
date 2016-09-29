@@ -34,133 +34,15 @@ header{
 	background: url(../imagen/img_menu.png) no-repeat;
 	width: 100%;
 	height: 40px;
+	font-size: 25px;
 }
 
-
 #ulMain li{
-	font-family: arial;
 	display: inline-block;
 	color: #fff;
 	font-size: 20px;
-	padding-left: 50px;
-	padding-top: 4px;
+	margin-left: 4%;
 	cursor: pointer;
-
-}
-
-#dvAdm{
-	width: 300px;
-	font-size: 40px;
-	text-align: center;
-	margin-left: 350px;
-	background: #000;
-	color: #fff;
-	margin-top: 20px;
-}
-
-[id^="stA_"] {
-	width: 1333px;
-	height: 500px;
-	display: none;
-}
-
-#stA_Game{
-	height: 600px;
-}
-
-h2{
-	font-size: 40px;
-	text-align: center;
-}
-
-#artLeftjuego{
-	display: inline-block;
-	width: 17%;
-	height: 590px;
-
-}
-
-#artCenterjuego{
-	display: inline-block;
-	overflow: hidden;
-	vertical-align: top;
-	width: 80%;
-	height: 590px;
-}
-#dvSeach{
-	margin-top: 120px;
-}
-
-#dvCont{
-	width: 70%;
-	height: 470px;
-	border: groove 2px;
-	border-radius: 10px;
-	margin: auto;
-}
-
-#ulMenujuego{
-	width: 60%;
-	height: 30px;
-	float: right;
-}
-
-#ulMenujuego li{
-	display: inline-block;
-	padding-left: 10px;
-	text-align: center;
-	border: groove 1px;
-	border-radius: 5px;
-	width: 80px;
-	height: 25px;
-	color: #fff;
-	cursor: pointer;
-	padding-top: 5px;
-	background: #000;
-}
-
-#cbCargajue{
-	width: 100%;
-	margin-top: 10px;
-}
-
-#txtSeach{
-	display: inline-block;
-	vertical-align: top;
-}
-
-#logSeach{
-	display: inline-block;
-	background: url(../imagen/buscar_admin.png);
-	width: 20px;
-	margin-top: 2px;
-	height: 21px;
-}
-
-#dvCont fieldset{
-	margin-top: 40px;
-	margin-left: 40px;
-	width: 60%;
-}
-
-#dvCont fieldset legend{
-		font-weight: bolder;
-		font-size: 20px;
-}
-
-#ulAjuego{
-	list-style: none;
-	margin-left: -30px;
-}
-
-#ulAjuego li label{
-	display: inline-block;
-	width: 150px;
-	height: 25px;
-}
-
-#ulAjuego li input{
-	display: inline-block;
 }
 
 

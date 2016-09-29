@@ -12,10 +12,8 @@ require_once("../Model/conexion.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador</title>
+	<title></title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle_admi.css"/>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css"/>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/gmindex_admi.js"></script>
 </head>

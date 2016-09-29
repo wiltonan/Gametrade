@@ -6,6 +6,7 @@ $accion= $_POST["v_action"];
 //$accion= $_POST["btnusu"];
 
 switch ($accion) {
+
 	case 'Consultar':
 
 		$usua=$_POST["usua"];
@@ -13,16 +14,23 @@ switch ($accion) {
 
 		try {
 			$result=Gestionar_Usu::validarUsu($usua,$pass);
-			
-			if ($result!="") {
-			
-			$_SESSION['usu_nom'] =$result['usu_nom']; 
-			echo "({st:'ok'})";
 
-			}else{	
-				echo "no paso";
+			if ($result!="" ) {
+				if(password_verify($pass,$result['usu_pass']))
+
+				$_SESSION['usu_nom'] =$result['usu_nom'];
+
+				if ($result['cod_rol']==1) {
+						echo "({nombre:'admi',st:'ok'})";
+				}
+
+				else {
+					echo "({nombre:'user',st:'ok'})";
+				}
 			}
-		
+			else {
+				echo "({st:'fall'})";
+			}
 
 		} catch (Exception $e) {
 			echo $e;
@@ -30,18 +38,18 @@ switch ($accion) {
 		break;
 
 		case 'ConsultarContra':
-		
+
 		$contra=$_POST["contra"];
 
 		try {
 			$resultContr=Gestionar_Usu::validarContra($contra);
-			
+
 			if ($resultContr!="") {
 				echo "({st:'ok'})";
-			}else{	
+			}else{
 				echo "no paso";
 			}
-		
+
 
 		} catch (Exception $e) {
 			echo $e;
@@ -50,19 +58,19 @@ switch ($accion) {
 
 
 			case 'GuardarContra':
-		
-			$NumC=$_POST["NumC"];			
+
+			$NumC=$_POST["NumC"];
 			$ConfirContra=$_POST["ConfirContra"];
 
 			try {
 				$resultContrG=Gestionar_Usu::validarGuarContra($NumC,$ConfirContra);
-				
+
 				if ($resultContrG!="") {
 					echo "no paso";
-				}else{	
+				}else{
 					echo "({st:'ok'})";
 				}
-		
+
 			} catch (Exception $e) {
 				echo $e;
 			}

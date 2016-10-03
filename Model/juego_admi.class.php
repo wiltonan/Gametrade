@@ -57,39 +57,21 @@ class Gestion_Videojuego{
 		ConexionBD::DesconectarBD();
 	}
 
-	// 	public static function mostrarConsol(){
-	//
-	// 	$pdo = ConexionBD::AbrirBD();
-	// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	//
-	// 	$sql= "select * from tbl_consola";
-	//
-	// 	$query= $pdo->prepare($sql);
-	// 	$query->execute();
-	//
-	// 	$result=$query->fetchALL(PDO::FETCH_BOTH);
-	//
-	// 	ConexionBD::DesconectarBD();
-	//
-	// 	return $result;
-	// }
-	//
-	//  public static function mostrarCategoria(){
-	//
-	// 	$pdo = ConexionBD::AbrirBD();
-	// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	//
-	// 	$sql= "select * from tbl_categoria_jue";
-	//
-	// 	$query= $pdo->prepare($sql);
-	// 	$query->execute();
-	//
-	// 	$result=$query->fetchALL(PDO::FETCH_BOTH);
-	//
-	// 	ConexionBD::DesconectarBD();
-	//
-	// 	return $result;
-	// }
+	public static function consultarcedula(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select usu_cod,usu_nom from tbl_usuario WHERE usu_num_docum=?"
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array());
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
 }
 
 ?>

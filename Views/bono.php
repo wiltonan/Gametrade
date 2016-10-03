@@ -1,7 +1,7 @@
 <!--este es una conexion por haci desirlo-->
 <?php
 require_once('../Model/conexion.php');
-require_once('./Model/bono.class.php');
+require_once('../Model/bono.class.php');
 
 //este es para mostrar bono
 $pto_cod=bono::mostrarpunto();

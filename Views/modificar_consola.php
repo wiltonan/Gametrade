@@ -18,10 +18,7 @@
 					<div class="row">
               <div class="class=" col s12>
 
-                 <div class="input-field col s6">
-                   <input type="text" name="cons_cod" readonly value="<?php echo $consolamo["cons_cod"]; ?>" />
-                   <label class="active" for="first_name2">Codigo.</label>
-                 </div>
+								<input type="hidden" name="cons_cod" readonly value="<?php echo $consolamo["cons_cod"]; ?>" />
 
                  <input type="hidden" name="cat_bono_fech" readonly value="<?php echo date('d/m/Y')?>"/>
 
@@ -31,18 +28,8 @@
                  </div>
 
 								 <div class="input-field col s6">
-                   <input type="number" name="cons_refer" required value="<?php echo $consolamo["cons_refer"]; ?>" />
+                   <input type="text" name="cons_refer" required value="<?php echo $consolamo["cons_refer"]; ?>" />
                    <label class="active" for="first_name2">Referencia.</label>
-                 </div>
-
-                 <div class="input-field col s6">
-                   <input type="text" name="cons_imagen" required value="<?php echo $consolamo["cons_imagen"]; ?>" />
-                   <label class="active" for="first_name2">Imagen.</label>
-                 </div>
-
-								 <div class="input-field col s6">
-                   <input type="number" name="cons_estado" required value="<?php echo $consolamo["cons_estado"]; ?>" />
-                   <label class="active" for="first_name2">Estado.</label>
                  </div>
 
              	</div>

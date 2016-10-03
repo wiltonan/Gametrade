@@ -20,8 +20,6 @@
               <td>Codigo</td>
               <td>Nombre</td>
               <td>Referencia</td>
-              <td>Imagen</td>
-              <td>Estado</td>
               <td>Operacio</td>
             </tr>
           </thead>
@@ -31,8 +29,6 @@
                 <td><?php echo $bn["cons_cod"];  ?></td>
                 <td><?php echo $bn["cons_nom"];  ?></td>
                 <td><?php echo $bn["cons_refer"];?></td>
-                <td><?php echo $bn["cons_imagen"];  ?></td>
-                <td><?php echo $bn["cons_estado"];  ?></td>
                 <td>
                   <a href="modificar_consola.php?codigo_consola=<?php echo base64_encode($bn["cons_cod"]); ?>">Modificar</a>
                 </td>

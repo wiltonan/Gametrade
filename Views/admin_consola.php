@@ -13,11 +13,6 @@
 					<div class="row">
 						<div class="class=" col s12>
 
-							<div class="input-field col s5">
-								<input type="text" name="cons_cod" required/> <br><br>
-								<label class="active" for="first_name2">Codigo.</label>
-							</div>
-
 							<div class="row">
 								<div class="input-field col s5">
 									<input type="text" name="cons_nom" required/>
@@ -26,33 +21,19 @@
 							</div>
 
 							<div class="input-field col s5">
-								<input type="number" name="cons_refer" required/>
+								<input type="text" name="cons_refer" required/>
 								<label class="active" for="first_name2">Referencia.</label>
 							</div>
 
-							<div class="row">
-								<div class="input-field col s5">
-									<input type="text" name="cons_imagen"/>
-									<label class="active" for="first_name2">Imagen.</label>
-									<button type="button" name="button">Subir</button>
-								</div>
-							</div>
-
 				<button name="action" value="guardarconsola" class="waves-effect waves-light btn">Aceptar</button>
-
 			</section>
 		</div>
 
 		<div class="consultarconsola">
 			<section>
-				<a href="consultar_consola.php" class="waves-effect waves-light btn">Consultar consola.</a>
+				<?php include('consultar_consola.php') ?>
 			</section>
 		</div>
 
-		<script>
-			$(document).ready(function() {
-				Materialize.updateTextFields();
-			});
-		</script>
 	</body>
 </html>

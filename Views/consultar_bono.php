@@ -9,9 +9,6 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
-    <link rel="stylesheet" type="text/css" href="stylesSheet/sweetalert.css">
-    <script src="js/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="tablabono">

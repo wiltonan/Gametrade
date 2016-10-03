@@ -16,10 +16,16 @@ $pto_cod=bono::mostrarpunto();
 
 
             <div class="input-field col s5">
-              <select class="select" name="pto_cod" value="<?php echo $bonomo["pto_cod"]; ?>" >
+              <select class="select" name="pto_cod" >
                 <option value="" disabled selected>Escoja la cantidad de puntos</option>
                   <?php foreach ($pto_cod as $puntos) {
-                        echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
+                        if($puntos["pto_cod"] == $bonomo["pto_cod"]){
+                          $selected = "selected";
+                        }else{
+                          $selected = "";
+                        }
+
+                        echo "<option value=".$puntos["pto_cod"]." $selected>".$puntos["pto_cant"]."</option>";
                     }?>
               </select>
             </div>

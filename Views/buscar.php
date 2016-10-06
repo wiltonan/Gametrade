@@ -97,7 +97,7 @@ form{
 <ul class="cargarImagen"> 
 	<?php
 		foreach ($peliculas as $row ): ?>
-		<li><img src="images/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
+		<li><img src="imagen/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
 	<?php endforeach; ?>
 </ul>
 </ul>

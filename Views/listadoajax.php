@@ -10,6 +10,6 @@ $pelic=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 ?>
 
 <?php foreach ($pelic as $row ): ?>
-	<li><img src="images/<?php echo $row["imagen"]?>" title="<?php echo $row["titulo"]?>"></li>
+	<li><img src="<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
 <?php endforeach; ?>
 

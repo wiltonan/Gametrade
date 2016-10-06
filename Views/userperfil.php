@@ -1,8 +1,36 @@
+<?php
+
+function conexion(){
+
+$con = mysql_connect("localhost","root","");
+
+if (!$con){
+
+die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("database", $con);
+
+return($con);
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>usuario</title>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
+
+
+
  
         <link rel="stylesheet" href="style.css">
 
@@ -101,30 +129,33 @@ nav {
 				#main-content {
 	background: #FAFAFA;
 	width: 80%;
-	max-width: 1000px;
+	max-width: 1300px;
 	margin: 20px auto;
 	box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
  
 	#main-content header,
 	#main-content .content {
-		padding: 40px;
+		padding: 45px;
 	}
 
 
 	#main-footer {
+		text-align: center;
 	background: #333;
 	color: white;
-	text-align: center;
+	
 	padding: 20px;
-	margin-top: 40px;
+	margin-top: 85px;
 }
 	#main-footer p {
 		margin: 0;
+		text-align: center;
 	}
 	
 	#main-footer a {
 		color: white;
+
 	}
 
 	#e64LogoU{
@@ -138,9 +169,9 @@ nav {
 
 #e63JueDestac{
 	width: 99%;
-	height: 63px;
-	background:#04B431;
-	font-size: 30px;
+	height: 33px;
+	background:#00c853;
+	font-size: 27px;
 	padding-left: 25px;
 	padding-top: 20px;
 	color: #fff;
@@ -198,6 +229,18 @@ nav {
 
 
 
+#dvSlider{
+	width: 101%;
+	height: 450px;
+	background: url(../Imagen/slider.png);
+	overflow: hidden;
+	vertical-align: top;
+	margin-top: -16px;
+
+}
+
+
+</style>
 
 
         </style>
@@ -211,7 +254,7 @@ nav {
 			<span class="site-name">Anderson correa</span>
 			<span class="site-desc">1800 puntos</span>
 		</a> <!-- / #logo-header -->
- 
+
 		<nav>
 
 			<ul>
@@ -220,46 +263,58 @@ nav {
 
 
 				</li>
-				<li><a href="#">Buscar</a></li>
+
 				<li><a href="#">Mis juegos</a></li>
+
+					<li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li>
+			</ul>	
 				
-
-
-
-				<li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li>
-			</ul>
+			
 		</nav><!-- / nav -->
  
 	</header><!-- / #main-header -->
- 
 	
 	<section id="main-content">
 	
 		<article>
 			<header>
 
-			<div id="e63JueDestac">VideosJuegos Mas Vendidos</div>
-<ul id="ulNoticJue">
-	<li id="juego"></li>
-	<li id="juegos"></li>
-	<li id="jueg"></li>
-	<li id="jue"></li>
-	<li id="ju"></li>
+			<div id="dvSlider">
+		<div id="captioned-gallery">
+			<figure class="slider">
+				<figure>
+					<img src="Imagen/09.jpg" alt>
+					<figcaption>Adquierelo tan solo por 1700 puntos</figcaption>
+				</figure>
+				<figure>
+					<img src="Imagen/08.jpg" alt>
+					<figcaption>Adquierelo tan solo por 1650 puntos</figcaption>
+				</figure>
 
+                <figure>
+					<img src="Imagen/mara.jpg" alt>
+					<figcaption>Adquierelo tan solo por 1850 puntos</figcaption>
+				</figure>
 
-	<li id="videos"></li>
-	<li id="video"></li>
-	<li id="vide"></li>
-	<li id="vid"></li>
-	<li id="vi"></li>
-</ul>
+				<figure>
+					<img src="Imagen/10.jpg" alt>
+					<figcaption>Adquierelo tan solo por 1500 puntos</figcaption>
+				</figure>
+
 				
+				
+				<figure>
+					<img src="Imagen/11.jpg" alt>
+					<figcaption>Adquierelo tan solo por 1350 puntos</figcaption>
+				</figure>
+			</figure>
+		</div>
+	</div>
  
 			</div>
 
 			</header>
-			
-			
+
 			
 			<div class="content">
 

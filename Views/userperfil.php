@@ -18,6 +18,9 @@ return($con);
 ?>
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,9 +28,17 @@ return($con);
 	<title>usuario</title>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-
+	<meta charset="utf8"/>
+	
 	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/connection.js"></script>
+	<script type="text/javascript" src="js/gweb.js"></script>
+	<script type="text/javascript" src="js/mindexC.js"></script>
+
+
+	
+
 
 
 
@@ -166,37 +177,6 @@ nav {
 
 }
 
-
-#e63JueDestac{
-	width: 99%;
-	height: 33px;
-	background:#00c853;
-	font-size: 27px;
-	padding-left: 25px;
-	padding-top: 20px;
-	color: #fff;
-}
-
-#ulNoticJue{
-	list-style: none;
-	width: 97%;
-	height: 312px;
-	background: #000;
-}
-
-#ulNoticJue li{
-	display: inline-block;
-	width: 18%;
-	height: 312px;
-	overflow: hidden;
-	float: left;
-	margin-left: 10px;
-	
-}
-
-}
-
-
 #e64Noticia{
 	width: 99%;
 	height: 63px;
@@ -235,9 +215,53 @@ nav {
 	background: url(../Imagen/slider.png);
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: -16px;
+	margin-top: -88px;
+
 
 }
+
+#e63JueDestac{
+	width: 91.8%;
+	height: 35px;
+	background: #01DF3A;
+	font-size: 28px;
+	padding-left: 10px;
+	padding-top: 25px;
+	color: #FFFF00;
+	margin-left: 44px;
+	margin-top: -51px;
+	text-align: center;
+
+}
+
+#ulNoticJue{
+	list-style: none;
+	width: 89%;
+	height: 312px;
+	background: #000;
+	margin-left: 45px;
+	margin-top: 6px;
+}
+
+#e63JueDesta{
+	width: 91.8%;
+	height: 25px;
+	background: #01DF3A;
+	font-size: 28px;
+	padding-left: 10px;
+	padding-top: 25px;
+	color: #FFFF00;
+	margin-left: 44px;
+	margin-top: -18px;
+	
+
+
+}
+
+
+
+
+
 
 
 </style>
@@ -261,6 +285,8 @@ nav {
 			
 				<li><a href="#">Inicio</a>
 
+				<li><a href="#">Buscar</a>
+
 
 				</li>
 
@@ -275,37 +301,40 @@ nav {
 	</header><!-- / #main-header -->
 	
 	<section id="main-content">
+
 	
 		<article>
+		<div id="e63JueDesta">VideosJuegos Mas vendidos</div>
 			<header>
+
 
 			<div id="dvSlider">
 		<div id="captioned-gallery">
 			<figure class="slider">
 				<figure>
 					<img src="Imagen/09.jpg" alt>
-					<figcaption>Adquierelo tan solo por 1700 puntos</figcaption>
+					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
 				</figure>
 				<figure>
 					<img src="Imagen/08.jpg" alt>
-					<figcaption>Adquierelo tan solo por 1650 puntos</figcaption>
+					<figcaption style="color: #E6E6E6"> ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
 				</figure>
 
                 <figure>
 					<img src="Imagen/mara.jpg" alt>
-					<figcaption>Adquierelo tan solo por 1850 puntos</figcaption>
+					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
 				</figure>
 
 				<figure>
 					<img src="Imagen/10.jpg" alt>
-					<figcaption>Adquierelo tan solo por 1500 puntos</figcaption>
+					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
 				</figure>
 
 				
 				
 				<figure>
 					<img src="Imagen/11.jpg" alt>
-					<figcaption>Adquierelo tan solo por 1350 puntos</figcaption>
+					<figcaption style="color: #E6E6E6">Adquierelo tan solo por 1350 puntos</figcaption>
 				</figure>
 			</figure>
 		</div>
@@ -313,10 +342,19 @@ nav {
  
 			</div>
 
+
 			</header>
+
+			<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
+<ul id="ulNoticJue">
+
+</ul>
 
 			
 			<div class="content">
+
+
+
 
 			
 			

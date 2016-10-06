@@ -1,5 +1,11 @@
 <?php
 
+include_once("../Model/conexion.php");
+include_once("../Model/paginacion_class.php");
+$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
+
+
+
 function conexion(){
 
 $con = mysql_connect("localhost","root","");
@@ -15,7 +21,11 @@ return($con);
 
 }
 
+
+
 ?>
+
+
 
 
 
@@ -37,7 +47,16 @@ return($con);
 	<script type="text/javascript" src="js/mindexC.js"></script>
 
 
-	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#txtbuscar").keyup(function(){
+			var paramet= $(this).val();
+			$.post("listadoajax.php",{vlparam: paramet}, function(data){
+				$(".cargarImagen").html(data)
+			});
+		});
+	})
+</script>
 
 
 
@@ -215,18 +234,18 @@ nav {
 	background: url(../Imagen/slider.png);
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: -88px;
+	margin-top: -38px;
 
 
 }
 
 #e63JueDestac{
 	width: 91.8%;
-	height: 35px;
+	height: 25px;
 	background: #01DF3A;
 	font-size: 28px;
 	padding-left: 10px;
-	padding-top: 25px;
+	padding-top: 18px;
 	color: #FFFF00;
 	margin-left: 44px;
 	margin-top: -51px;
@@ -245,17 +264,37 @@ nav {
 
 #e63JueDesta{
 	width: 91.8%;
-	height: 25px;
+	height: 28px;
 	background: #01DF3A;
 	font-size: 28px;
 	padding-left: 10px;
-	padding-top: 25px;
+	padding-top: 28px;
 	color: #FFFF00;
 	margin-left: 44px;
 	margin-top: -18px;
+	text-align: center;
 	
 
 
+}
+
+
+input[type=text]{
+	border: none;
+	background: #fff;
+	color: #fff;
+	width: 40%;
+	padding: 5px;
+	margin-left: 45px;
+}
+
+form{
+	width: 98%;
+	
+	
+	padding: 2px 0;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 
@@ -285,7 +324,7 @@ nav {
 			
 				<li><a href="#">Inicio</a>
 
-				<li><a href="#">Buscar</a>
+				<li><a href="buscar.php">Buscar</a>
 
 
 				</li>
@@ -304,7 +343,7 @@ nav {
 
 	
 		<article>
-		<div id="e63JueDesta">VideosJuegos Mas vendidos</div>
+		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
 			<header>
 
 
@@ -347,6 +386,7 @@ nav {
 
 			<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
 <ul id="ulNoticJue">
+
 
 </ul>
 

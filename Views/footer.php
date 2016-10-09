@@ -1,8 +1,7 @@
 <footer>
-    
+
 	<h1 >Siguenos Tambien Aqui</h1>
 
-	
 	<style>
 /* Botones de Redes Sociales - Ciudad Blogger */
 .social_bookmarks_container {
@@ -27,7 +26,7 @@ padding:0;
 -webkit-transition: all 0.4s ease-in-out;
 -moz-transition: all 0.4s ease-in-out;
 -o-transition: all 0.4s ease-in-out;
--ms-transition: all 0.4s ease-in-out; 
+-ms-transition: all 0.4s ease-in-out;
 transition: all 0.4s ease-in-out;
 background-position:center
 

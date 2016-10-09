@@ -12,23 +12,12 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf8"/>
-	<title>Registro</title>		
+	<title>Registro</title>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/gweb.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-
-  <script type="text/javascript" >
-       $(document).ready(function () {
-           $('.select').material_select();
-           Materialize.updateTextFields();
-       });
-
-
-
-
   </script>
 
   <script>
@@ -52,7 +41,7 @@
 
  body{
   background:url(Imagen/weress.jpg) ;
-  
+
   }
 
   h2{

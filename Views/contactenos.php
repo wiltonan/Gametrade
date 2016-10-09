@@ -25,9 +25,9 @@
 	background-position: center;
 	}
 	form{
-		
+
 		width: 375px;
-		
+
 		border-radius: 3px;
 		-moz-border-radius:3px;
 		-webkit-border-radius:3px;
@@ -65,7 +65,7 @@
 
 	}
 	img{
-       margin-right:35px; 
+       margin-right:35px;
 	}
 
 	form a{
@@ -91,27 +91,20 @@
 		margin-left: 32%;
 		margin-top: 2%;
 	}
-	
+
 	</style>
-	
+
 </head>
 <body>
-<div id="dv_main">
-	<?php require_once("header.php"); ?>
-
-<form>
-
-	<h1>
-		CONTACTENOS
-	</h1>
-	<input type="text" maxlength="20" placeholder="Nombre"></input>
-	<input type="text" maxlength="20" placeholder="Correo Electronico"></input>
-	<input type="text" maxlength="20" placeholder="Numero de telefono"></input>
-	<textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
-	<a class="waves-effect waves-light btn">Enviar</a>
-
-</form>
-</div>
-</div>
+  <section>
+    <form>
+    	<h1>CONTACTENOS</h1>
+    	<input type="text" maxlength="20" placeholder="Nombre"></input>
+    	<input type="text" maxlength="20" placeholder="Correo Electronico"></input>
+    	<input type="text" maxlength="20" placeholder="Numero de telefono"></input>
+    	<textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+    	<a class="waves-effect waves-light btn">Enviar</a>
+    </form>
+  </section>
 </body>
 </html>

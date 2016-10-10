@@ -1,7 +1,7 @@
 <!--este es el menu que esta antes de loguiarce-->
-
 function sb_menu(vVar){
 	switch(vVar){
+
 		case "home":
 			self.location.href="index.php";
 		break;
@@ -42,53 +42,7 @@ function sbclose(v_Var){
 }
 
 
-function ConsultUsu(){
-
-	var ajax=fn_httpservice();
-			ajax.open("POST", "../Controller/ValidarUsu.controller.php", true);
-			ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-		 usua=$("#txtUsua").val();
- 		 pass=$("#txtPass").val();
-
- 		 vsaveD="Consultar";
-
-
-			var v_temp="v_action="+vsaveD+"&usua="+usua+"&pass="+pass;
-
-				ajax.send(v_temp);
-
-				ajax.onreadystatechange=function(){
-				if (ajax.readyState==4){
-
-					if (ajax.status == 200) {
-
-						v_temp= ajax.responseText;
-
-						try{
-							jo_user=eval(v_temp);
-						}
-						catch(e){
-							alert("Datos no validos");
-							return;
-						}
-
-						if (jo_user['st']=="ok"){
-								use= jo_user['nombre'];
-							if (use=="admi"){
-									self.location.href="index_admi.php";
-							}
-							if (use=="user"){
-								self.location.href="userperfil.php";
-							}
-						}else{
-							alert("usuario no registrado");
-						}
-						}
-					}
-				}
-}
-
+// Este es para verificar las contraseñas
 function sbConsultar(v_Contr){
 	switch(v_Contr){
 

@@ -1,59 +1,33 @@
 <?php
-/**
-* 
-*/
-class Gestionar_Usu
-{
-	
-	function validarUsu($usuario,$clave)
-	{
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sql= "SELECT * from tbl_usuario where usu_nick=? and usu_pass=? ";
+	class Gestionar_Usu{
+		function validarContra($contra){
+			$pdo = ConexionBD::AbrirBD();
+			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$query= $pdo->prepare($sql);
-		$query->execute(array($usuario,$clave));
+			$sqlC= "SELECT usu_num_docum from tbl_usuario where usu_num_docum=?";
 
-		$result=$query->fetch(PDO::FETCH_BOTH);
-		
+			$query= $pdo->prepare($sqlC);
+			$query->execute(array($contra));
 
-		ConexionBD::DesconectarBD();
+			$result=$query->fetch(PDO::FETCH_BOTH);
 
-			return $result;
+			ConexionBD::DesconectarBD();
+
+				return $result;
+		}
+
+		function validarGuarContra($NumC,$ConfirContra){
+			$pdo = ConexionBD::AbrirBD();
+			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+			$sqlC= "UPDATE tbl_usuario set usu_pass=? where usu_num_docum=? ";
+
+			$query= $pdo->prepare($sqlC);
+			$query->execute(array($ConfirContra,$NumC));
+
+
+			ConexionBD::DesconectarBD();
+		}
 	}
-
-	function validarContra($contra){
-
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sqlC= "SELECT usu_num_docum from tbl_usuario where usu_num_docum=?";
-
-		$query= $pdo->prepare($sqlC);
-		$query->execute(array($contra));
-
-		$result=$query->fetch(PDO::FETCH_BOTH);
-		
-
-		ConexionBD::DesconectarBD();
-
-			return $result;
-	}
-
-	function validarGuarContra($NumC,$ConfirContra){
-
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sqlC= "UPDATE tbl_usuario set usu_pass=? where usu_num_docum=? ";
-
-		$query= $pdo->prepare($sqlC);
-		$query->execute(array($ConfirContra,$NumC));
-
-		
-		ConexionBD::DesconectarBD();
-	}
-}
 
 ?>

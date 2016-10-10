@@ -8,24 +8,14 @@
   $rol = usuario::consultar_rol();
  ?>
 
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-    <script type="text/javascript" >
-       $(document).ready(function () {
-           $('.select').material_select();
-           Materialize.updateTextFields();
-       });
-    </script>
-
+    <!-- <link rel="stylesheet" href="materialize/css/materialize.css"> -->
   <!--este es para comparar contraseña-->
     <script>
-
       function myFunction(){
         var x = document.getElementById("usu_pass").value;
         var y = document.getElementById("usu_pass_c").value;
@@ -53,7 +43,7 @@
                   <select class="select" name="rol_cod" required >
                     <option value="" disabled selected>Rol</option>
                      <?php foreach ($rol as $rol): ?>
-                     <option value="<?php echo $rol['rol_cod'] ?>"><?php echo $rol['nombre']; ?></option>
+                     <option value="<?php echo $rol['cod_rol'] ?>"><?php echo $rol['nombre']; ?></option>
                    <?php endforeach ?>
                   </select>
               </div>
@@ -124,16 +114,6 @@
                     <input type="date" name="usu_naci"  required/>
                     <label class="active" for="first_name2">Fecha de nacimiento.</label>
                   </div>
-
-
-                <div class="row">
-                  <div class="input-field col s5">
-                    <input type="text" name="photo"/>
-                    <label class="active" for="first_name2">Agrega una foto.</label>
-                    <button type="submit" name="agregarphoto">Aceptar</button>
-                  </div>
-                </div>
-
 
                   <div class="input-field col s5">
                     <input type="number" name="usu_tel" />

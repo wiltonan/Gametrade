@@ -1,146 +1,72 @@
-
-/*estilo del administrador*/
-*{
+/*este es el estilo del menu del administrador*/
+header{
+	width: 100%;
+	margin: auto;
 	margin: 0;
 	padding: 0;
 }
-/*este es la parte negra de menu*/
-header{
-	background: #000;
-	height: 110px;
-	width: 100%;
-	overflow: hidden;
+
+#inicio_principal{
+	height: 500px;
+	width:100%;
+	background: #0cad09;
 }
 
-/*este es el logo y nombre de gametrade*/
-#dvLogo{
-	background: url(../imagen/logo.png)no-repeat;
-	width: 20%;
-	height: 100%;
-	margin-top: 20px;
+.menu_admin{
+height: 1000px;
+width: 80%;
+display: none;
 }
 
-#logn{
-	display: inline-block;
-	float: right;
-	margin-top: -95px;
-	margin-right: 20px;
-	cursor: pointer;
-
+nav{
+	position: relative;
 }
 
-#ulMain{
-	overflow: hidden;
-	background: url(../imagen/img_menu.png) no-repeat;
-	width: 100%;
-	height: 40px;
-	font-size: 25px;
-}
-
-#ulMain li{
-	display: inline-block;
-	color: #fff;
-	font-size: 20px;
-	margin-left: 4%;
-	cursor: pointer;
-}
-
-
-#dvAdmin{
-	width: 30%;
-	height: 200px;
-	border: groove 1px;
-	border-radius: 10px;
-	margin: auto;
-	padding: auto;
-}
-
-#dvNome{
-	text-align: center;
-	font-size: 25px;
-}
-
-#ulAdmin{
+nav ul{
 	list-style: none;
+	overflow: hidden;
+	background: #ff4f4f;
 }
 
-#ulAdmin li label{
-	display: inline-block;
-	width: 80px;
-	height: 30px;
+nav > ul > li{
+	float: left;
 }
 
-#ulAdmin li input{
-	display: inline-block;
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-left: 25px;
+	font-size: 20px;
+	height:65px;
 }
 
-#ulAdmin li button{
-	float: right;
-	margin-right: 100px;
+nav ul li a:hover{
+	background: #ff9696;
 }
 
-/*revisar todo lo de arriba para ver cual es la funcion de eso*/
-
-/*aqui comienza el estilo de los formularios del menu de administrador*/
-
-/*aqui comienza categoria juego*/
-.Categoria form {
-	margin-left: 10%;
+nav > ul > li:hover div{
+	display: table;
+	height: 100px;
 }
 
-.Categoria form button{
-	margin-left: 35%;
+nav ul li div {
+	width: 177px;
+	position: absolute;
+	left: 247px;
+	background:#ff4f4f;
+	display: none;
 }
 
-.tabla_categoria_juego{
-	margin-left: 2%;
-	margin-top: 5%;
-}
-/*aqui termina categoria juego*/
-
-/*aqui comienza juego*/
-.formulariojuego form {
-	margin-left: 10%;
+.parte_negra_menu{
+	background: black;
+	width: 100%;
+	height: 100px;
 }
 
-.formulariojuego form .boton{
-	margin-left: 40%
+.parte_negra_menu > .session > a{
+	text-decoration: none;
+	color: white;
+	margin-left: 90%;
 }
-
-.tablajuego{
-	margin-top: 5%;
-}
-/*aqui termina juego*/
-
-/*aqui comienza bono*/
-.formulariobono form{
-	margin-left: 15%;
-}
-
-.formulariobono form button{
-	margin-left: 35%;
-}
-
-.tablabono{
-	margin-left: 2%;
-	margin-top: 5%;
-}
-
-/*aqui termina bono*/
-
-
-/*aqui comienza categoria bono*/
-.tablacategoriabono{
-	margin-left: 7%;
-	margin-top: 5%;
-}
-
-.formilario_cat_bono form{
-	margin-left: 28%;
-}
-
-.formilario_cat_bono form button{
-	margin-left: 24%;
-}
-
-/*aqui termina categoria bono*/
+/*aqui termina la parte del menu*/

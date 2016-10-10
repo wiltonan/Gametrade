@@ -15,6 +15,7 @@
       <img src="imagen/logo.png"/>
       <div class="session" onclick="destroy()"><a href="#">Cerrar session</a></div>
     </div>
+    
     <header>
       <nav>
         <ul>

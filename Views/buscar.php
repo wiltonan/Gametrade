@@ -12,12 +12,9 @@
 	<title></title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="stylesSheet/todoestilo.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/connection.js"></script>
-	<script type="text/javascript" src="js/gweb.js"></script>
-	<script type="text/javascript" src="js/mindexC.js"></script>
+	
+
 
 
 	<script type="text/javascript">

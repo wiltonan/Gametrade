@@ -3,26 +3,6 @@
 include_once("../Model/conexion.php");
 include_once("../Model/paginacion_class.php");
 $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
-
-
-
-function conexion(){
-
-$con = mysql_connect("localhost","root","");
-
-if (!$con){
-
-die('Could not connect: ' . mysql_error());
-}
-
-mysql_select_db("database", $con);
-
-return($con);
-
-}
-
-
-
 ?>
 
 
@@ -329,7 +309,7 @@ form{
 
 				</li>
 
-				<li><a href="#">Mis juegos</a></li>
+				<li><a href="misjuegos.php">Mis juegos</a></li>
 
 					<li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li>
 			</ul>	

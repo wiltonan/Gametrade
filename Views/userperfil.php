@@ -31,6 +31,16 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 </script>
 </head>
 <body>
+ <header>
+    <nav>
+      <ul>
+        <li id="inicio"><a href="#/inicio">Inicio</a></li>
+        <li id="buscar"><a href="#/buscar">Buscar</a></li>
+        <li id="misjuegos"><a href="#/mis juegos">Mis juegos</a></li>
+      </ul>
+    </nav>
+  </header>
+
 	<section id="main-content">	
 		<article>
 		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
@@ -40,25 +50,25 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 			<figure class="slider">
 				<figure>
 					<img src="Imagen/09.jpg" alt>
-					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
+					<figcaption style="color: #E6E6E6"></figcaption>
 				</figure>
 				<figure>
 					<img src="Imagen/08.jpg" alt>
-					<figcaption style="color: #E6E6E6"> ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
+					<figcaption style="color: #E6E6E6"> </figcaption>
 				</figure>
 
                 <figure>
 					<img src="Imagen/mara.jpg" alt>
-					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
+					<figcaption style="color: #E6E6E6"></figcaption>
 				</figure>
 
 				<figure>
 					<img src="Imagen/10.jpg" alt>
-					<figcaption style="color: #E6E6E6">ADQUIERELO POR TAN SOLO 1850 PUNTOS</figcaption>
+					<figcaption style="color: #E6E6E6"></figcaption>
 				</figure>				
 				<figure>
 					<img src="Imagen/11.jpg" alt>
-					<figcaption style="color: #E6E6E6">Adquierelo tan solo por 1350 puntos</figcaption>
+					<figcaption style="color: #E6E6E6"></figcaption>
 				</figure>
 			</figure>
 		</div>

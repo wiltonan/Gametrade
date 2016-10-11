@@ -4,7 +4,6 @@
 	$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +12,6 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="stylesSheet/todoestilo.css">
 	<script type="text/javascript" src="js/connection.js"></script>
-	
-
-
-
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$("#txtbuscar").keyup(function(){
@@ -27,27 +22,22 @@
 		});
 	})
 </script>
-
 </style>
 </head>
 <body>
-		<?php
-		include_once("menu.php");
-
-		?>
 
 	<ul id="ulNoticJue">
+		<form>
+			<input type="text" placeholder="Buscar" id="txtbuscar" />
+		</form>
+	</ul>
 
-	<form>
-	<input type="text" placeholder="Buscar" id="txtbuscar" />
-	</form>
-
-	<ul class="cargarImagen"> 
+	<ul class="cargarImagen">
 		<?php
 			foreach ($peliculas as $row ): ?>
 			<li><img src="imagen/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
 		<?php endforeach; ?>
 	</ul>
-	</ul>
+
 </body>
 </html>

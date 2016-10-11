@@ -58,15 +58,4 @@ nav ul li div {
 	display: none;
 }
 
-.parte_negra_menu{
-	background: black;
-	width: 100%;
-	height: 100px;
-}
-
-.parte_negra_menu > .session > a{
-	text-decoration: none;
-	color: white;
-	margin-left: 90%;
-}
 /*aqui termina la parte del menu*/

@@ -4,14 +4,24 @@
   <head>
     <meta charset="utf-8">
     <title>index</title>
-    <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
+    <link rel="stylesheet" href="stylesSheet/conte_index.css">
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </head>
   <body>
     <div class="parte_negra_menu">
-      <img src="imagen/logo.png"/>
+
+      <div class="logo">
+        <img src="imagen/logo.png"/>
+      </div>
+
+      <div class="login">
+        <?php include('login.php') ?>
+      </div>
+      <div class="R_Contraseña">
+        <a href="">Recuperar contraseña</a>
+      </div>
     </div>
     <header>
       <nav>

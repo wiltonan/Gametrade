@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 	<title>GAMETRADE</title>
 	<meta charset="utf8"/>
@@ -10,7 +10,7 @@ s<!DOCTYPE html>
 <body>
 	<section>
 		<div id="e64Monstrar">
-			<div id="e64ClosPrinci" onclick="sbclose('1');">X</div>
+			<div id="e64ClosPrinci"></div>
 			<div id="e64ContePrinci"></div>
 		</div>
 

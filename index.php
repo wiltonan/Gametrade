@@ -8,15 +8,10 @@ if(isset($_GET['url'])){
 }else{
 	$v_params=explode("/","index/0/0");
 }
-
 switch($v_params[0]){
 
 	case "index":
-		header("Location: http://localhost:8000/Aplicacion_gametrade/Views/");
-		break;
-
-	case "acudiente":
-		//header("Location: http://appvirtualschool.com/views/admin.php?u=".$v_params[0]."&c=".$v_params[1]);
+		header("Location: http://localhost:8000/Gametrade/Views/menu_index.php");
 		break;
 }
 ?>

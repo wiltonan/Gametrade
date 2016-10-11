@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/connection.js"></script>
-    <script type="text/javascript" src="js/gweb.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
+    <link rel="stylesheet" type="text/css" href="stylesSheet/conte_index.css"/>
     <title>quienes somos</title>
     <style type="text/css">
      *{
-  margin:0;
-  padding:0;
-  }
+        margin:0;
+        padding:0;
+        }
 
-  body{
-  background:url(Imagen/wer.jpg) ;
+        .AboutUs{
 
-  }
+          margin-left: 10%;
+          margin-right: 10%;
+          margin-top: 4%;
+        }
 
-  .AboutUs{
-
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-  }
-
-  h1{
-    color: #FFFF00;
-    text-align: center;
+        h1{
+          color: #FFFF00;
+          text-align: center;
 
 
-  }
+        }
 
-p{
-  color: white;
-  text-align: center;
+        p{
+          color: white;
+          text-align: center;
+        }
 
-
-
-}
-
-
-h2{
-  color: #04B45F;
-}
-
-
+        h2{
+          color: #04B45F;
+        }
     </style>
-
-
-
-
   </head>
   <body>
     <section>
+      <img src="Imagen/wer.jpg" alt="" />
       <div class="AboutUs">
         <h1 >QUIENES SOMOS.</h1>
         <p>

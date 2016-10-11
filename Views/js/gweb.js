@@ -1,34 +1,4 @@
 <!--este es el menu que esta antes de loguiarce-->
-function sb_menu(vVar){
-	switch(vVar){
-
-		case "home":
-			self.location.href="index.php";
-		break;
-
-		case "wor":
-			self.location.href="AboutUs.php";
-		break;
-
-		case "contact":
-			self.location.href="contactenos.php";
-		break;
-
-		case "usa":
-			self.location.href="usa.php";
-		break;
-
-		case "contrasena":
-				$("#e64ConteContra").fadeIn();
-		break;
-
-		case "regist":
-			self.location.href="registro.php";
-		break;
-	}
-}
-
-
 function sbclose(v_Var){
 	switch(v_Var){
 		case "1":

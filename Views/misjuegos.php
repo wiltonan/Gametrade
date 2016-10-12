@@ -41,15 +41,7 @@
     </div>
 
       <section>
-      <header>
-    <nav>
-      <ul>
-        <li id="inicio"><a href="userperfil.php">Inicio</a></li>
-        <li id="buscar"><a href="buscar.php">Buscar</a></li>
-        <li id="misjuego"><a href="misjuegos.php">Mis juegos</a></li>
-      </ul>
-    </nav>
-  </header>
+   
 
    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 75px; right: 44px; margin-bottom:420px;">
     <a class="btn-floating btn-large red">

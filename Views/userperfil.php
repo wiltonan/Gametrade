@@ -31,17 +31,10 @@
 
 </head>
 <body>
-  
+  <?php
+include_once ("menu.php");
 
-  <header>
-    <nav>
-      <ul>
-        <li id="inicio"><a href="userperfil.php">Inicio</a></li>
-        <li id="buscar"><a href="buscar.php">Buscar</a></li>
-        <li id="misjuegos"><a href="misjuegos.php">Mis juegos</a></li>
-      </ul>
-    </nav>
-  </header>
+  ?>
 
 	<section id="main-content">	
 		<article>

@@ -61,6 +61,14 @@ img {
 	}
 	
  
+
+#dv_index{
+	width: 100%;
+	height:auto;
+
+}
+
+
 /*
  * Navegación
  */
@@ -168,7 +176,7 @@ nav {
 	background: url(../Imagen/slider.png);
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: -38px;
+	margin-top: 30px;
 
 
 }
@@ -182,7 +190,6 @@ nav {
 	padding-top: 18px;
 	color: #FFFF00;
 	margin-left: 44px;
-	margin-top: -51px;
 	text-align: center;
 
 }
@@ -216,8 +223,8 @@ nav {
 	padding-top: 28px;
 	color: #FFFF00;
 	margin-left: 44px;
-	margin-top: -18px;
 	text-align: center;
+	margin-top: 40px;
 	
 
 
@@ -245,4 +252,18 @@ form{
 
 #fom4 input{
 color: #000;
+}
+
+#dv_index{
+
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.cl_incioo{
+	margin-top: 30px !important;
+	width: 100%;
+	height: 450px;
+
+
 }

@@ -2,7 +2,9 @@
 require_once("../Model/conexion.php");
 require_once("../Model/juego_admi.class.php");
 
-$documento=$_SESSION["documento"];
+//$documento=$_SESSION["documento"];
+
+$documento="10";
 
 $accion=$_REQUEST["action"];
  switch ($accion) {

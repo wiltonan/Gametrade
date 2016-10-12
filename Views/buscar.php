@@ -30,15 +30,8 @@
 </style>
 </head>
 <body>
-<header>
-    <nav>
-      <ul>
-        <li id="inicio"><a href="userperfil.php">Inicio</a></li>
-        <li id="buscar"><a href="buscar.php">Buscar</a></li>
-        <li id="misjuegos"><a href="misjuegos.php">Mis juegos</a></li>
-      </ul>
-    </nav>
-  </header>
+
+
 <section class="menu_usuario"></section>
 	<ul id="ulNoticJue">
 		<form>

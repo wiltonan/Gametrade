@@ -26,3 +26,7 @@ function inicio(){
   $(".menu_index").fadeOut();
   $("#inicio_index").fadeIn();
 }
+
+function__(id){
+  return document.getElementById(id);
+}

@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="stylesSheet/conte_index.css"/>
+    <link rel="stylesheet" href="stylesSheet/conte_index.css">  
     <title>quienes somos</title>
-    <style type="text/css">
-     *{
-        margin:0;
-        padding:0;
-        }
-
-        .AboutUs{
-
-          margin-left: 10%;
-          margin-right: 10%;
-          margin-top: 4%;
-        }
-
-        h1{
-          color: #FFFF00;
-          text-align: center;
-
-
-        }
-
-        p{
-          color: white;
-          text-align: center;
-        }
-
-        h2{
-          color: #04B45F;
-        }
-    </style>
   </head>
   <body>
     <section>
-      <img src="Imagen/wer.jpg" alt="" />
       <div class="AboutUs">
         <h1 >QUIENES SOMOS.</h1>
         <p>

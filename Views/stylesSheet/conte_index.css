@@ -3,25 +3,29 @@
 	margin:0;
 	padding:0;
  }
-
+	.contenido{
+		background-color: #000000;
+	}
 
 .AboutUs{
+	background-image: url('Imagen/wer.jpg');
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 4%;
+
 }
 
-h1{
+.AboutUs h1{
 	color: #FFFF00;
 	text-align: center;
 }
 
-p{
+.AboutUs p{
 	color: white;
 	text-align: center;
 }
 
-h2{
+.AboutUs h2{
 	color: #04B45F;
 }
 

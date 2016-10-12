@@ -1,17 +1,13 @@
 <?php
-//include("controllers/config.php");
-if(isset($_GET['url'])){
+require('Views/nucleo.php');
 
-	$v_params=explode("/", $_GET['url']);
-	if(count($v_params)==1){$v_params[1]="0";}
-	if(count($v_params)==2){$v_params[2]="0";}
-}else{
-	$v_params=explode("/","index/0/0");
-}
-switch($v_params[0]){
-
-	case "index":
-		header("Location: http://localhost:8000/Gametrade/Views/menu_index.php");
-		break;
+if (isset($_GET['nose'])) {
+	if (file_exists('Controller/' . strtolower($_GET['nose']) . '.controller.php')) {
+		include('Controller/' . strtolower($_GET['nose']) . '.controller.php');
+	}else {
+		include('Controller/error.controller.php');
+	}
+}else {
+	include('Controller/index.controller.php');
 }
 ?>

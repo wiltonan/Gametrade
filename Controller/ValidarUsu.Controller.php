@@ -24,8 +24,6 @@ switch ($accion) {
 				echo $e;
 			}
 			break;
-
-
 }
 
 ?>

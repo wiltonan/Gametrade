@@ -3,43 +3,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>index</title>
-    <link rel="stylesheet" href="stylesSheet/conte_index.css">
-    <link rel="stylesheet" href="materialize/css/materialize.css">
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <title><?php echo APP_TITLE; ?></title>
+    <base href="<?php APP_URL ?>">
+    <link rel="stylesheet" href="Views/stylesSheet/conte_index.css">
+    <link rel="stylesheet" href="Views/materialize/css/materialize.css">
+    <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
   <body>
-    <div class="parte_negra_menu">
+    <div class="contenido">
+      <div class="parte_negra_menu">
 
-      <div class="logo">
-        <img src="imagen/logo.png"/>
-      </div>
+        <div class="logo">
+          <img src="Views/imagen/logo.png"/>
+        </div>
 
-      <div class="login">
-        <?php include('login.php') ?>
+        <div class="login">
+          <?php include(HTML_DIR .'login.php') ?>
+        </div>
+
+        <div class="R_Contraseña">
+          <a href="">Recuperar contraseña</a>
+        </div>
       </div>
-      <div class="R_Contraseña">
-        <a href="">Recuperar contraseña</a>
-      </div>
+      <header>
+        <nav>
+          <ul>
+            <li id="inicio"><a href="#/inicio">Inicio</a></li>
+            <li id="quienes_somos"><a href="#/Quienes somos">Quienes somos</a></li>
+            <li id="contactenos"><a href="#/contactenos">Contactenos</a></li>
+            <li id="como_se_usa"><a href="#/como se usa">Como se usa</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="inicio_index">
+        <!-- Organizar esto -->
+        <?php include('inicio.index.php') ?>
+      </section>
+
+      <section class="menu_index"></section>
     </div>
-    <header>
-      <nav>
-        <ul>
-          <li id="inicio"><a href="#/inicio">Inicio</a></li>
-          <li id="quienes_somos"><a href="#/Quienes somos">Quienes somos</a></li>
-          <li id="contactenos"><a href="#/contactenos">Contactenos</a></li>
-          <li id="como_se_usa"><a href="#/como se usa">Como se usa</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="inicio_index">
-      <!-- Organizar esto -->
-      <?php include('index.php') ?>
-    </section>
-
-    <section class="menu_index"></section>
-
   </body>
 </html>

@@ -10,26 +10,40 @@
 95% { left: -300%; }
 100% { left: -400%; }
 }
-body, figure { 
-  margin: 0; background: #101010;
+
+body, figure {
+  margin: 0;
   font-family: Istok Web, sans-serif;
   font-weight: 100;
 }
-div#captioned-gallery { 
-  width: 100%; overflow: hidden; 
+
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+  height: 535px;
+  margin-top: 2px;
 }
-figure.slider { 
+
+figure.slider {
   position: relative; width: 500%;
-  font-size: 0; animation: 30s slidy infinite; 
+  font-size: 0; animation: 30s slidy infinite;
 }
-figure.slider figure { 
+
+figure.slider figure {
   width: 20%; height: auto;
-  display: inline-block;  position: inherit; 
+  display: inline-block;  position: inherit;
 }
-figure.slider img { width: 100%; height: auto; overflow: hidden; vertical-align: top; }
-figure.slider figure figcaption { 
+
+figure.slider img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+figure.slider figure figcaption {
   position: absolute; bottom: 0;
   background: rgba(0,0,0,0.4);
   color: #fff; width: 100%;
-  font-size: 2rem; padding: .6rem; 
+  font-size: 2rem; padding: .6rem;
 }

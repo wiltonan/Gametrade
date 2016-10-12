@@ -190,9 +190,20 @@ nav {
 #ulNoticJue{
 	list-style: none;
 	width: 89%;
-	height: 312px;
-	background: #000;
-	margin-left: 45px;
+	height: 600px;
+	background: #ff6;
+	margin-left: 75px;
+	margin-top: 6px;
+}
+
+
+
+#ulNoticJuer{
+	list-style: none;
+	width: 89%;
+	height: 600px;
+	background: #ff6;
+	margin-left: 49px;
 	margin-top: 6px;
 }
 

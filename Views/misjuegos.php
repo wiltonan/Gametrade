@@ -51,7 +51,7 @@
     </nav>
   </header>
 
-   <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 75px; right: 44px; margin-bottom:480px;">
+   <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 75px; right: 44px; margin-bottom:420px;">
     <a class="btn-floating btn-large red">
       <i class="material-icons">Gravar</i>
     </a>

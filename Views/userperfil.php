@@ -1,14 +1,13 @@
 <?php
-include_once("../Model/conexion.php");
-include_once("../Model/paginacion_class.php");
-$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
+	include_once("../Model/conexion.php");
+	include_once("../Model/paginacion_class.php");
+	$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>usuario</title>
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<meta charset="utf8"/>
 	<link rel="stylesheet" href="style.css">
@@ -18,8 +17,8 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 	<script type="text/javascript" src="js/connection.js"></script>
 	<script type="text/javascript" src="js/gweb.js"></script>
 	<script type="text/javascript" src="js/mindexC.js"></script>
+	
 	<script type="text/javascript">
-
 	$(document).ready(function(){
 		$("#txtbuscar").keyup(function(){
 			var paramet= $(this).val();
@@ -29,14 +28,17 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 		});
 	})
 </script>
+
 </head>
 <body>
- <header>
+  
+
+  <header>
     <nav>
       <ul>
-        <li id="inicio"><a href="#/inicio">Inicio</a></li>
-        <li id="buscar"><a href="#/buscar">Buscar</a></li>
-        <li id="misjuegos"><a href="#/mis juegos">Mis juegos</a></li>
+        <li id="inicio"><a href="userperfil.php">Inicio</a></li>
+        <li id="buscar"><a href="buscar.php">Buscar</a></li>
+        <li id="misjuegos"><a href="misjuegos.php">Mis juegos</a></li>
       </ul>
     </nav>
   </header>
@@ -54,6 +56,7 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 				</figure>
 				<figure>
 					<img src="Imagen/08.jpg" alt>
+
 					<figcaption style="color: #E6E6E6"> </figcaption>
 				</figure>
 
@@ -78,7 +81,7 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 			</header>
 
 			<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
-<ul id="ulNoticJue">
+<ul id="ulNoticJuer">
 
 </ul>
 			<div class="content">
@@ -86,7 +89,7 @@ $peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
 	
 	</section> <!-- / #main-content -->
 	<footer id="main-footer">
-		<p>&copy; 2016 <a href="http://FranciscoAMK.com">Anderson correa.com</a></p>
+		<p>&copy; 2016 <a href="http://FranciscoAMK.com">GameTrade@.com</a></p>
 
 	</footer> <!-- / #main-footer -->
 </body>

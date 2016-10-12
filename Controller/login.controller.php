@@ -16,7 +16,9 @@
         }
 
         else {
-          echo "<script>location.href='../Views/userperfil.php' </script>";
+          $_SESSION["documento"]= $resul["usu_num_docum"];
+          echo $_SESSION["documento"];
+          //echo "<script>location.href='../Views/userperfil.php' </script>";
         }
       }else {
         echo "Contraseña incorrecta.";

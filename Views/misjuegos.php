@@ -9,7 +9,7 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylesSheet/todoestilo.css">
-  <link rel="stylesheet" href="materialize/css/materialize.css">
+ <link rel="stylesheet" href="materialize/css/materialize.css">
   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="js/usuario.js"></script>
 
@@ -25,11 +25,20 @@
         });
       });
     </script>
+
+  
   </head>
   <body>
+
   
   
     <div class="formulariojuego">
+
+    <div class="catalogo">
+    <form></form>
+      
+
+    </div>
 
       <section>
       <header>
@@ -53,8 +62,8 @@
       <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
     </ul>
   </div>
-        <center><h1>Registrar juego.</h1></center>
-        <form action="../Controller/juego_admin.controller.php" method="post">
+        <center><h3>Registrar juego.</h3></center>
+        <form action="../Controller/juego_admin.controller.php" method="post" id="fom4">
           <div class="row">
             <div class="class=" col s12>
 
@@ -91,7 +100,7 @@
               <div class="input-field col s6">
                   <input type="text" name="jue_trailer">
                   <label class="active" for="first_name2">Trailer del juego: </label>
-                  <button type="submit" name="button" class="waves-effect waves-light btn">Agregar</button>
+                  
               </div>
 
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
@@ -99,7 +108,7 @@
               <div class="input-field col s6">
                 <input type="text" name="jue_imagen">
                 <label class="active" for="first_name2">Imagen del juego: </label>
-                <button type="submit" name="button" class="waves-effect waves-light btn">Agregar</button>
+                <input type="file"></input>
               </div>
 
               <div class="input-field col s6">
@@ -109,7 +118,7 @@
 
             </div>
           </div>
-          <button name="action" value="guardarjuego" class="waves-effect waves-light btn">Aceptar</button>
+          <button name="action" value="guardarjuego" class="waves-effect waves-light btn">Guardar</button>
         </form>
       </section>
     </div>

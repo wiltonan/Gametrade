@@ -1,13 +1,13 @@
 <?php
 class Gestion_Videojuego{
-	public static function Guardar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado){
+	public static function Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen, jue_pal_clave,jue_estado) values (?,?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado));
+		$query->execute(array($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado));
 
 		ConexionBD::DesconectarBD();
 
@@ -57,21 +57,21 @@ class Gestion_Videojuego{
 		ConexionBD::DesconectarBD();
 	}
 
-	public static function consultarcedula(){
-    $pdo = ConexionBD::AbrirBD();
-    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+// 	public static function consultarcedula(){
+//     $pdo = ConexionBD::AbrirBD();
+//     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="select usu_cod,usu_nom from tbl_usuario WHERE usu_num_docum=?"
+//     $sql="select usu_cod,usu_nom from tbl_usuario WHERE usu_num_docum=?"
 
-    $query= $pdo->prepare($sql);
-    $query->execute(array());
+//     $query= $pdo->prepare($sql);
+//     $query->execute();
 
-    $result= $query->fetch(PDO::FETCH_BOTH);
+//     $result= $query->fetch(PDO::FETCH_BOTH);
 
-    ConexionBD::DesconectarBD();
+//     ConexionBD::DesconectarBD();
 
-    return $result;
-  }
-}
+//     return $result;
+//   }
+ }
 
 ?>

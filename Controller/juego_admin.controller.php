@@ -2,11 +2,13 @@
 require_once("../Model/conexion.php");
 require_once("../Model/juego_admi.class.php");
 
+$documento= $_SESSION["documento"];
+
 $accion=$_REQUEST["action"];
  switch ($accion) {
 
  	case 'guardarjuego':
- 		 $usu_cod=$_POST['usu_cod'];
+ 		
  		 $jue_nom=$_POST['jue_nom'];
  		 $cons_cod=$_POST['cons_cod'];
  		 $cat_cod=$_POST["cat_cod"];
@@ -19,7 +21,7 @@ $accion=$_REQUEST["action"];
      $jue_estado="activo";
 
  		 try {
- 		 	Gestion_Videojuego::Guardar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado);
+ 		 	Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado);
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;

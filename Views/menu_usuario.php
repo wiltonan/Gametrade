@@ -22,6 +22,8 @@
     <a id="logo-header" href="#">
       <span class="site-name">Anderson correa</span>
       <span class="site-desc">1800 puntos</span>
+
+
     </a> <!-- / #logo-header -->
 
     <nav>
@@ -31,6 +33,7 @@
         <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li>
         <li id="buscar"><a href="#/buscar">Buscar</a></li>
         <li id="misjuegos"><a href="#/mis juegos">Mis juegos</a></li>
+        
       </ul>
     </nav>
   </header>

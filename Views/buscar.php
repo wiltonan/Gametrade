@@ -33,7 +33,7 @@
 
 
 <section class="menu_usuario"></section>
-	<ul id="ulNoticJue">
+	<ul id="ulNoticJ">
 		<form>
 			<input type="text" placeholder="Buscar" id="txtbuscar" />
 		</form>

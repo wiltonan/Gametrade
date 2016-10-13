@@ -1,3 +1,6 @@
+
+
+
 <section id="main-content" class="cl_incioo">	
 		<article>
 		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
@@ -37,6 +40,9 @@
 
 	<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
 <ul id="ulNoticJuer">
+
+
+
 
 </ul>
 	

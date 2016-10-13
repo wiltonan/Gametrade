@@ -24,7 +24,9 @@ $accion=$_REQUEST["action"];
 
  		 try {
  		 	Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado);
- 		 	echo "Guardar con exito";
+ 		 	echo "<script>alert('Guardar con exito');
+      self.location.href='../Views/menu_usuario.php?#/mis juegos';
+      </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }

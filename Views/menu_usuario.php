@@ -26,13 +26,15 @@
 
     </a> <!-- / #logo-header -->
 
-    <nav>
     
-    <nav>
-      <ul>
-        <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li>
-        <li id="buscar"><a href="#/buscar">Buscar</a></li>
-        <li id="misjuegos"><a href="#/mis juegos">Mis juegos</a></li>
+    
+    <nav class="green accent-3 black-text">
+      <ul id="menus">
+      <li id="misjuegos" ><a href="#/mis juegos" class="black-text">Mis juegos</a></li>
+      <li id="buscar"><a href="#/buscar" class="black-text">Buscar</a></li>
+        <li id="inicio" onclick="inicio()"><a href="#/inicio" class="black-text">Inicio</a></li>
+        
+        
         
       </ul>
     </nav>

@@ -118,7 +118,7 @@ nav {
 	color: white;
 	
 	padding: 20px;
-	margin-top:-13px;
+	margin-top:-10px;
 }
 	#main-footer p {
 		margin: 0;
@@ -129,7 +129,23 @@ nav {
 		color: white;
 
 	}
+#aa{
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
 
+#aa li{
+	display: inline-block;
+	width: 30%;
+	float: left;
+	overflow: hidden;
+}
+
+#aa li img{
+	display: inline-block;
+}
 
 /*logo de gametrade*/
 	#e64LogoU{
@@ -207,13 +223,17 @@ nav {
 }
 
 /*contenedor de buscar*/
-#ulNoticJ{
+.container{
 	list-style: none;
 	width: 90%;
 	height: 533px;
 	background: #585858;
 	margin-left: 85px;
-	margin-top: -18px;
+	margin-top: -36px;
+	overflow-y: scroll; 
+}
+#txtbuscar{
+	border-radius: 90px;
 }
 
 
@@ -281,5 +301,12 @@ color: #000;
 	width: 100%;
 	height: 450px;
 
+
+}
+
+#menus li{
+
+	text-align: right;
+	float: right;
 
 }

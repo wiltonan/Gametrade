@@ -1,7 +1,7 @@
 <?php
 	include_once("../Model/conexion.php");
 	include_once("../Model/paginacion_class.php");
-	$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
+	$peliculas=Paginacion_Buscar::consultarjue();
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
 		$("#txtbuscar").keyup(function(){
 			var paramet= $(this).val();
 			$.post("listadoajax.php",{vlparam: paramet}, function(data){
-				$(".cargarImagen").html(data)
+				$("#aa").html(data)
 			});
 		});
 	})
@@ -33,18 +33,23 @@
 
 
 <section class="menu_usuario"></section>
-	<ul id="ulNoticJ">
-		<form>
-			<input type="text" placeholder="Buscar" id="txtbuscar" />
-		</form>
-	</ul>
+	<div class="container">
+		<div class="header green accent-2">
+		<ul id="ulNoticJ">
+			<form>
+				<input type="text" placeholder="Buscar" id="txtbuscar" />
+				<button type="submit" class="btn">BUSCAR</button>
+			</form>
+		</ul>
+		</div>
 
-	<ul class="cargarImagen">
-		<?php
-			foreach ($peliculas as $row ): ?>
-			<li><img src="imagen/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
-		<?php endforeach; ?>
-	</ul>
+		<ul id="aa">
+			<?php
+				foreach ($peliculas as $row ): ?>
+				<li><img src="img/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
 
 </body>
 </html>

@@ -113,7 +113,7 @@ nav {
 /*esta es la parte q contiene el footer */
 
 	#main-footer {
-		text-align: center;
+	text-align: center;
 	background: #333;
 	color: white;
 	
@@ -245,7 +245,7 @@ nav {
 #ulNoticJuer{
 	list-style: none;
 	width: 100%;
-	height: 50px;
+	height: 500px;
 	background: #848484;
 	
 	margin-top: 2px;

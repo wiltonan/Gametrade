@@ -61,10 +61,6 @@ function destroy(){
   location.href="../Controller/login.controller.php?action=session"
 }
 
-function guardar(){
-  swal("!Bien","Guardado con exito!","success");
-}
-
 function modificar(){
   swal("!Bien","Se modifico con exito!","success");
 }

@@ -11,7 +11,7 @@ $accion=$_REQUEST['action'];
 
  		 try {
  		 	Gestion_Consola::guardar($cons_nom,$cons_refer);
- 		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+ 		 	echo "<script>self.location.href='../Views/admin_consola.php'</script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }

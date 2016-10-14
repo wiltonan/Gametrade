@@ -6,7 +6,7 @@
     <title><?php echo APP_TITLE; ?></title>
     <base href="<?php APP_URL ?>">
     <link rel="stylesheet" href="Views/stylesSheet/conte_index.css">
-    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="Views/materialize/css/materialize.css">
     <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
@@ -44,8 +44,7 @@
       </header>
 
       <section id="inicio_index">
-        <!-- Organizar esto -->
-        <?php include(HTML_DIR .'inicio.index.php') ?>
+        <?php include('Views/inicio.index.php') ?>
       </section>
 
       <section class="menu_index"></section>

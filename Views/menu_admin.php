@@ -39,6 +39,7 @@
     <section id="inicio_principal">
       <!-- Aqui hacer un include para llavar a la hoja en la cual vamos a programar -->
     </section>
+
     <section class="menu_admin"></section>
 
   </body>

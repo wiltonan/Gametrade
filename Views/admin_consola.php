@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,6 +5,16 @@
 		<title></title>
 	</head>
 	<body>
+
+		<?php
+			$recibir_alerta=isset($_GET["alert"]);
+			if ($recibir_alerta=="guardar"){
+				echo "<script type='text/javascript'>";
+				echo "alert('Guardado con exito')";
+				echo "</script>";
+			}
+		 ?>
+				
 		<div class="formularioconsola">
 			<section>
 				<h4>Registrar consola</h4>

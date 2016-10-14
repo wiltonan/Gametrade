@@ -34,7 +34,7 @@
 
 <section class="menu_usuario"></section>
 	<div class="container">
-		<div class="header green accent-2">
+		<div class="header  grey lighten-1">
 		<ul id="ulNoticJ">
 			<form>
 				<input type="text" placeholder="Buscar" id="txtbuscar" />

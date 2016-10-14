@@ -131,14 +131,14 @@ nav {
 	}
 #aa{
 	width: 100%;
-	height: 300px;
+	height: 400px;
 	margin: 0;
 	padding: 0;
 }
 
 #aa li{
 	display: inline-block;
-	width: 30%;
+	width: 20%;
 	float: left;
 	overflow: hidden;
 }
@@ -189,27 +189,28 @@ nav {
 
 
 #dvSlider{
-	width: 101%;
-	height: 450px;
+	width:130%;
+	height: 500px;
 	background: url(../Imagen/slider.png);
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: 0px;
+	margin-left: -140px;
+	
 
 
 }
 /*cuadro que contiene juegos maS vendidos*/
 #e63JueDestac{
-	width: 81%;
+	width: 100%;
 	height: 55px;
 	background: #585858;
 	font-size: 28px;
-	padding-left: 100px;
+	
 	padding-top: 18px;
 	color: #FFF;
-	margin-left: 135px;
+	
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 120px;
 
 }
 
@@ -218,22 +219,27 @@ nav {
 	width: 109%;
 	height: 700px;
 	background: #ff6;
-	margin-left: 85px;
+	
 	margin-top: 90px;
 }
 
 /*contenedor de buscar*/
 .container{
 	list-style: none;
-	width: 90%;
+	width: 190%;
 	height: 533px;
 	background: #585858;
-	margin-left: 85px;
-	margin-top: -36px;
-	overflow-y: scroll; 
+	margin-left: -39px;
+	margin-top: 0px;
+	overflow-y: scroll;
+	margin-right: 56px; 
+
 }
 #txtbuscar{
-	border-radius: 90px;
+	border-radius: 60px;
+	width: 50%;
+	height: 20px;
+	margin-top: 16px;
 }
 
 
@@ -241,24 +247,24 @@ nav {
 /*cuadro que comntiene juegois mas vendidos */
 #ulNoticJuer{
 	list-style: none;
-	width: 81%;
+	width: 100%;
 	height: 450px;
 	background: #848484;
-	margin-left: 135px;
+	
 	margin-top: 2px;
 }
 
 /*cuadro donde contiene juegos mas destacados*/
 
 #e63JueDesta{
-	width: 101%;
+	width: 180%;
 	height: 68px;
 	background: #585858;
 	font-size: 28px;
-	padding-left: 80px;
-	padding-top: 28px;
+	
+	margin-left: -440px;
 	color: #fff;
-	margin-left: 1px;
+
 	text-align: center;
 	margin-top: -28px;
 	

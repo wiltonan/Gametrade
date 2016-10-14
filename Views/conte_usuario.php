@@ -2,8 +2,8 @@
 
 
 <section id="main-content" class="cl_incioo">	
-		<!-- <article> -->
-		<!-- <div id="e63JueDesta">VideoJuegos Mas Nuevos</div> -->
+		<article>
+		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
 
 		<div id="dvSlider">
 <div id="captioned-gallery">
@@ -35,11 +35,11 @@
 		</div>			
 		</div>
  
-		<!-- </article>  -->
+		</article> 
 	</section> <!-- / #main-content -->
 
-<!-- /<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
-<ul id="ulNoticJuer"> -->
+<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
+<ul id="ulNoticJuer">
 
 
 

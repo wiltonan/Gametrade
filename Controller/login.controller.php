@@ -17,8 +17,10 @@
 
         else {
           // no se para que es 
-          // $_SESSION['documento'] = $resul['usu_num_docum'];
-          // echo $_SESSION['documento'];
+           $_SESSION['documento'] = $resul['usu_num_docum'];
+           $_SESSION['nombre'] = $resul['usu_nom'];
+
+          
           echo "<script>location.href='../Views/menu_usuario.php' </script>";
 
         }

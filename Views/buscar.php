@@ -4,6 +4,8 @@
 	$peliculas=Paginacion_Buscar::consultarjue();
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,8 +1,17 @@
+<?php
+@session_start();
+session_destroy();
+header("Location: inicioindex.php");
+?>
+
+
 <header id="main-header">
 		<div id="res"></div>
 		<a id="logo-header" href="#">
 			<span class="site-name">Anderson correa</span>
 			<span class="site-desc">1800 puntos</span>
+
+			<button><a href="logout.php">Cerrar Sesión</a></button>
 		</a> <!-- / #logo-header -->
 
 		<nav>

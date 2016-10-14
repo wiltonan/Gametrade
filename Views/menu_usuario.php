@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +24,13 @@
     <a id="logo-header" href="#">
       <span class="site-name">Anderson correa</span>
       <span class="site-desc">1800 puntos</span>
+
+
+
+      <a class="misa" href="http://localhost:8000/Gametrade/?content=sesionclose.php$idsesion=<? echo $_SESSION['session_id'];?>">cerrar sesion</a>
+
+      
+
 
 
     </a> <!-- / #logo-header -->

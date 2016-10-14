@@ -2,48 +2,6 @@
 <html>
 <head>
 	<title>COMO SE USA</title>
-
-	<style type="text/css">
-     *{
-  margin:0;
-  padding:0;
-  }
-
-  body{
-  background:url(Imagen/were.jpg) ;
-
-  }
-
-  h1{
-    color: #FFFF00;
-    text-align: center;
-
-  }
-
-ol{
-  color: white;
-  text-align: center;
-}
-
-.usa{
-	margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-}
-
-
-
-
-    </style>
-
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/gweb.js"></script>
-	<script type="text/javascript" src="js/connection.js"></script>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
-
 </head>
 <body>
 	<section>

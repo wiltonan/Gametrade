@@ -26,71 +26,25 @@
 	height: 200px;
 }
 
-
-#e63JueDestac{
-	width: 100%;
+.jue_destacado{
+	background-color: #ff1313;
 	height: 60px;
-	background: #FF0000;
-	font-size: 40px;
+	margin-top: -25px;
+	color: white;
 	text-align: center;
-	color: #fff;
 }
-
-#ulNoticJue{
-	list-style: none;
-	width: 98%;
-	height: 312px;
-	background: #000;
+.lista_de_juego{
+		margin-left: 60px;
 }
 
 #ulNoticJue li{
+	margin-top: 10px;
+	margin-left: 1000px;
 	display: inline-block;
 	width: 18%;
 	height: 312px;
 	overflow: hidden;
-	float: left;
 	margin-left: 10px;
-
-}
-#juego{
-	background: url(../Imagen/diseno/8.png);
-}
-
-#juegos{
-     background: url(../Imagen/diseno/9.png);
-}
-
-#jueg{
-     background: url(../Imagen/diseno/4.png);
-}
-
-#jue{
-     background: url(../Imagen/diseno/10.png);
-}
-
-#ju{
-     background: url(../Imagen/diseno/11.png);
-}
-
-#videos{
-     background: url(../Imagen/diseno/12.png);
-}
-
-#video{
-     background: url(../Imagen/diseno/13.png);
-}
-
-#vide{
-     background: url(../Imagen/diseno/14.png);
-}
-
-#vid{
-     background: url(../Imagen/diseno/15.png);
-}
-
-
-#vi{
-     background: url(../Imagen/diseno/16.png);
 }
 
 #e64Noticia{

@@ -6,7 +6,7 @@
     <title><?php echo APP_TITLE; ?></title>
     <base href="<?php APP_URL ?>">
     <link rel="stylesheet" href="Views/stylesSheet/conte_index.css">
-    <link rel="stylesheet" href="Views/materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
     <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
@@ -22,9 +22,15 @@
           <?php include(HTML_DIR .'login.php') ?>
         </div>
 
+        <!-- hacer este que falta -->
         <div class="R_Contraseña">
-          <a href="">Recuperar contraseña</a>
+          <a href="#">Recuperar contraseña</a>
         </div>
+
+        <div id="registrarme" class="registrarme">
+          <a href="#registrar_usuario">Registrarme</a>
+        </div>
+
       </div>
       <header>
         <nav>
@@ -39,7 +45,7 @@
 
       <section id="inicio_index">
         <!-- Organizar esto -->
-        <?php include('inicio.index.php') ?>
+        <?php include(HTML_DIR .'inicio.index.php') ?>
       </section>
 
       <section class="menu_index"></section>

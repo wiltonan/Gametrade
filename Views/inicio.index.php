@@ -45,7 +45,7 @@
 
 		<div class="contenido_lugar_video">
 			<div id="e64Video" style=>
-				<iframe  style="width:100%; height:400px;" src="Views/Imagen/04S.jpg" frameborder="0" allowfullscreen></iframe>
+				<iframe  style="width:100%; height:400px; " src="Views/Imagen/04S.jpg" frameborder="0" allowfullscreen></iframe>
 			</div>
 
 			<div id="e64ContePublic">
@@ -53,41 +53,51 @@
 					<img src="Views/Imagen/diseno/1.png" style="height: 199px; width: 100%;"/>
 				</div>
 				<div id="e64Public2">
-					<img src="Views/Imagen/diseno/2.png" style="height: 199px;; width: 100%;" />
+					<img src="Views/Imagen/diseno/2.png" style="height: 199px;; width: 100%; margin-top:2px;" />
 				</div>
 			</div>
 		</div>
-
 	</section>
 
 	<section>
 
-		<div id="e63JueDestac">Juegos más destacados</div>
+		<div class="jue_destacado">
+			<h3>Juegos más destacados</h3>
+		</div>
 		<div class="lista_de_juego">
 			<ul id="ulNoticJue">
-				<li id="juego"></li>
-				<li id="juegos"></li>
-				<li id="jueg"></li>
-				<li id="jue"></li>
-				<li id="ju"></li>
-				<li id="videos"></li>
-				<li id="video"></li>
-				<li id="vide"></li>
-				<li id="vid"></li>
-				<li id="vi"></li>
+				<li id="juego">
+					<img src="Views/Imagen/diseno/8.png"/>
+				</li>
+				<li id="juegos">
+					<img src="Views/Imagen/diseno/9.png"/>
+				</li>
+				<li id="jueg">
+					<img src="Views/Imagen/diseno/4.png"/>
+				</li>
+				<li id="jue">
+					<img src="Views/Imagen/diseno/10.png"/>
+				</li>
+				<li id="ju">
+					<img src="Views/Imagen/diseno/11.png"/>
+				</li>
+				<li id="videos">
+					<img src="Views/Imagen/diseno/12.png"/>
+				</li>
+				<li id="video">
+					<img src="Views/Imagen/diseno/13.png"/>
+				</li>
+				<li id="vide">
+					<img src="Views/Imagen/diseno/14.png"/>
+				</li>
+				<li id="vid">
+					<img src="Views/Imagen/diseno/15.png"/>
+				</li>
+				<li id="vi">
+					<img src="Views/Imagen/diseno/16.png"/>
+				</li>
 			</ul>
 		</div>
-
-	</section>
-
-	<section>
-
-		<div id="e64ConteNoti">
-			<div id="e64Noticia1"></div>
-			<h4>Estrenos</h4>
-			<div id="e64SlideNoticia"></div>
-		</div>
-		<div id="e64Public3"></div>
 
 	</section>
 

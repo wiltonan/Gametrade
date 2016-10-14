@@ -5,12 +5,12 @@
 require_once("../Model/conexion.php");
 require_once("../Model/noticiaIndex.class.php");
 
-$accion=$_REQUEST["imgV"];
+$accion=$_REQUEST["action"];
 switch ($accion) {
 
 case 'AgregarSlider':
 
-$directorio= "Imagen/Sliderprincipal/";
+$directorio= "../Views/Imagen/estil/";
 
 $archivo =basename($_FILES["sliderPrincipal"]["name"]);
 
@@ -30,19 +30,19 @@ if ($Comprobar !==false) {
 			if ($extension_archivo != "jpg" && $extension_archivo != "jpeg" && $extension_archivo != "png") {
 
 				echo "solo puede subir imagenes  jpg o png";
-			
+
 			}else{
-				
+
 				if (move_uploaded_file($_FILES["sliderPrincipal"]["tmp_name"], $archivo)) {
-				
+
 				 try {
 					  	noticiaIndex::guardar($archivo);
 					    echo "Guardado con &eacute;xito";
-					  } 
+					  }
 					  	catch (Exception $e)
 
 					  {
-					  	echo "No se guard&oacute;" +$e;	
+					  	echo "No se guard&oacute;" +$e;
 					}
 				}else{
 					echo "error, ocurrio  el siguiente error<strong>".$_FILES["sliderPrincipal"]["error"]."</stron>";
@@ -54,11 +54,11 @@ if ($Comprobar !==false) {
 }else{
 	echo "el archivo no es una imagen";
 }
-	
+
 	break;
 
 	case 'Agregarnoticia':
-		
+
 		$directorio= "Imagen/noticia/";
 
 		$archivo =basename($_FILES["Noticia"]["name"]);
@@ -79,19 +79,19 @@ if ($Comprobar !==false) {
 					if ($extension_archivo != "jpg" && $extension_archivo != "jpeg" && $extension_archivo != "png") {
 
 						echo "solo puede subir imagenes  jpg o png";
-					
+
 					}else{
-						
+
 						if (move_uploaded_file($_FILES["Noticia"]["tmp_name"], $archivo)) {
-						
+
 						 try {
 							  	noticiaIndex::guardarNoticia($noticia);
 							    echo "Guardado con &eacute;xito";
-							  } 
+							  }
 							  	catch (Exception $e)
 
 							  {
-							  	echo "No se guard&oacute;" +$e;	
+							  	echo "No se guard&oacute;" +$e;
 							}
 						}else{
 							echo "error, ocurrio  el siguiente error<strong>".$_FILES["Noticia"]["error"]."</stron>";

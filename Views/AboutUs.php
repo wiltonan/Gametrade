@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="stylesSheet/conte_index.css">  
+  <head> 
     <title>quienes somos</title>
   </head>
   <body>

@@ -1,105 +1,138 @@
 <?php
+  date_default_timezone_set('America/Bogota');
+ ?>
 
-include_once("../Model/conexion.php");
-include_once("../Model/paginacion_class.php");
-$peliculas=Paginacion_Buscar::consultarlike($_POST["vlparam"]);
-
-
-
-
-function conexion(){
-
-$con = mysql_connect("localhost","root","");
-
-if (!$con){
-
-die('Could not connect: ' . mysql_error());
-}
-
-mysql_select_db("database", $con);
-
-return($con);
-
-}
-
-
-
-?>
-
-
-<!DOCTYPE html>
+<meta charset="utf-8">
 <html>
-<head>
-	<title></title>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesSheet/todoestilo.css">
+ <link rel="stylesheet" href="materialize/css/materialize.css">
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/usuario.js"></script>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<meta charset="utf8"/>
-	
-	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/connection.js"></script>
-	<script type="text/javascript" src="js/gweb.js"></script>
-	<script type="text/javascript" src="js/mindexC.js"></script>
-
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#txtbuscar").keyup(function(){
-			var paramet= $(this).val();
-			$.post("listadoajax.php",{vlparam: paramet}, function(data){
-				$(".cargarImagen").html(data)
-			});
-		});
-	})
-</script>
-<style type="text/css">
-	
-
-</style>
-</head>
-<body>
-
-<header id="main-header">
-		<div id="res"></div>
-		<a id="logo-header" href="#">
-			<span class="site-name">Anderson correa</span>
-			<span class="site-desc">1800 puntos</span>
-		</a> <!-- / #logo-header -->
-
-		<nav>
-
-			<ul>
-			
-				<li><a href="userperfil.php">Inicio</a>
-
-				<li><a href="buscar.php">Buscar</a>
-
-
-				</li>
-
-				<li><a href="misjuegos.php">Mis juegos</a></li>
-
-					<li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li>
-			</ul>	
-				
-			
-		</nav><!-- / nav -->
  
-	</header>
 
-<ul id="ulNoticJue">
+    <script>
+      $(document).ready(function(){
 
-<form>
+        $("#buscar_cedula").keyup(function(){
+          var param = $(this).val();
+          $.post("js/buscador.php", {vlparam: param}, function(data){
+            $(".nombre").html(data);
 
-<input type="text" placeholder="Buscar" id="txtbuscar" />
-</form>
 
-<ul class="cargarImagen"> 
-	<?php
-		foreach ($peliculas as $row ): ?>
-		<li><img src="imagen/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>"></li>
-	<?php endforeach; ?>
-</ul>
-</ul>
-</body>
+          });
+        });
+      });
+    </script>
+
+  
+  </head>
+  <body>
+
+  
+  
+    <div class="formulariojuego">
+
+    <div class="catalogo">
+    <form></form>
+      
+
+    </div>
+
+      <section>
+   
+
+   
+
+  <!-- Modal Structure -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+        <center><h3>Registrar juego.</h3></center>
+        <form action="../Controller/juego_admin.controller.php" method="post" id="fom4">
+          <div class="row">
+            <div class="class=" col s12>
+
+              <div class="input-field col s6">
+                  <input type="text" name="jue_nom" required>
+                  <label class="active" for="first_name2">Nombre del juego: </label>
+              </div>
+
+              <!-- estos hay que hacerlos drop down list -->
+              <div class="input-field col s6">
+                  <input type="text" name="cons_cod" required>
+                  <label class="active" for="first_name2">Consola: </label>
+              </div>
+
+              <!-- estos hay que hacerlos drop down list -->
+              <div class="input-field col s6">
+                  <input type="text" name="cat_cod" required>
+                  <label class="active" for="first_name2">Categoria juego: </label>
+              </div>
+
+
+              <div class="input-field col s6">
+                  <textarea name="jue_desc" rows="5" cols="25" required></textarea>
+                  <label class="active" for="first_name2">Descripcion del juego: </label>
+              </div>
+
+
+
+              <div class="input-field col s6">
+                  <input type="number" name="jue_cant" required>
+                  <label class="active" for="first_name2">Cantidad de juegos: </label>
+              </div>
+
+              <div class="input-field col s6">
+                  <input type="text" name="jue_trailer">
+                  <label class="active" for="first_name2">Trailer del juego: </label>
+                  
+              </div>
+
+              <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
+
+              <div class="input-field col s6">
+                <input type="text" name="jue_imagen">
+                <label class="active" for="first_name2">Imagen del juego: </label>
+                <input type="file"></input>
+              </div>
+
+              <div class="input-field col s6">
+                <input type="text" name="jue_pal_clave">
+                <label class="active" for="first_name2">Palabras claves: </label>
+              </div>
+
+            </div>
+          </div>
+          <button name="action" value="guardarjuego" class="waves-effect waves-light btn">Guardar</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="consulatr_juegoa">
+      <section>
+        <?php include("consultar_juego.php") ?>
+      </section>
+
+    </div>
+    <script type="text/javascript">
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();  </script>
+  </body>
+
 </html>

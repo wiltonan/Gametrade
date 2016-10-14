@@ -4,7 +4,7 @@
 	padding: 0%;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
-	background-image: url(Imagen/ver.jpg); 
+	background-image: url(../Imagen/ver.jpg); 
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -61,6 +61,14 @@ img {
 	}
 	
  
+
+#dv_index{
+	width: 100%;
+	height:auto;
+
+}
+
+
 /*
  * Navegación
  */
@@ -102,7 +110,7 @@ nav {
 	#main-content .content {
 		padding: 45px;
 	}
-
+/*esta es la parte q contiene el footer */
 
 	#main-footer {
 		text-align: center;
@@ -110,7 +118,7 @@ nav {
 	color: white;
 	
 	padding: 20px;
-	margin-top: 85px;
+	margin-top:-10px;
 }
 	#main-footer p {
 		margin: 0;
@@ -121,7 +129,25 @@ nav {
 		color: white;
 
 	}
+#aa{
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
 
+#aa li{
+	display: inline-block;
+	width: 30%;
+	float: left;
+	overflow: hidden;
+}
+
+#aa li img{
+	display: inline-block;
+}
+
+/*logo de gametrade*/
 	#e64LogoU{
 	width: 52px;
 	height: 48px;
@@ -168,45 +194,73 @@ nav {
 	background: url(../Imagen/slider.png);
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: -38px;
+	margin-top: 0px;
 
 
 }
-
+/*cuadro que contiene juegos maS vendidos*/
 #e63JueDestac{
-	width: 91.8%;
-	height: 25px;
-	background: #01DF3A;
+	width: 81%;
+	height: 55px;
+	background: #585858;
 	font-size: 28px;
-	padding-left: 10px;
+	padding-left: 100px;
 	padding-top: 18px;
-	color: #FFFF00;
-	margin-left: 44px;
-	margin-top: -51px;
+	color: #FFF;
+	margin-left: 135px;
 	text-align: center;
+	margin-top: 70px;
 
 }
 
 #ulNoticJue{
 	list-style: none;
-	width: 89%;
-	height: 312px;
-	background: #000;
-	margin-left: 45px;
-	margin-top: 6px;
+	width: 109%;
+	height: 700px;
+	background: #ff6;
+	margin-left: 85px;
+	margin-top: 90px;
 }
 
+/*contenedor de buscar*/
+.container{
+	list-style: none;
+	width: 90%;
+	height: 533px;
+	background: #585858;
+	margin-left: 85px;
+	margin-top: -36px;
+	overflow-y: scroll; 
+}
+#txtbuscar{
+	border-radius: 90px;
+}
+
+
+
+/*cuadro que comntiene juegois mas vendidos */
+#ulNoticJuer{
+	list-style: none;
+	width: 81%;
+	height: 450px;
+	background: #848484;
+	margin-left: 135px;
+	margin-top: 2px;
+}
+
+/*cuadro donde contiene juegos mas destacados*/
+
 #e63JueDesta{
-	width: 91.8%;
-	height: 28px;
-	background: #01DF3A;
+	width: 101%;
+	height: 68px;
+	background: #585858;
 	font-size: 28px;
-	padding-left: 10px;
+	padding-left: 80px;
 	padding-top: 28px;
-	color: #FFFF00;
-	margin-left: 44px;
-	margin-top: -18px;
+	color: #fff;
+	margin-left: 1px;
 	text-align: center;
+	margin-top: -28px;
 	
 
 
@@ -229,4 +283,30 @@ form{
 	padding: 2px 0;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+
+#fom4 input{
+color: #000;
+}
+
+#dv_index{
+
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.cl_incioo{
+	margin-top: 30px !important;
+	width: 100%;
+	height: 450px;
+
+
+}
+
+#menus li{
+
+	text-align: right;
+	float: right;
+
 }

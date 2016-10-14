@@ -49,6 +49,22 @@ class Paginacion_Buscar
 		ConexionBD::DesconectarBD();
 			return $result;
 	}
+	function consultarjue(){
+		$pdo = ConexionBD::AbrirBD();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		
+		$sqlP= "SELECT * FROM tbl_videojuego  ";
+
+		$query= $pdo->prepare($sqlP);
+		$query->execute();
+
+		$result=$query->fetchALL(PDO::FETCH_BOTH);
+
+	
+		ConexionBD::DesconectarBD();
+			return $result;
+	}
+
 
 
 }

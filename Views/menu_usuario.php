@@ -27,8 +27,6 @@
 
 
 
-      <a class="misa" href="http://localhost:8000/Gametrade/?content=sesionclose.php$idsesion=<? echo $_SESSION['session_id'];?>">cerrar sesion</a>
-
       
 
 

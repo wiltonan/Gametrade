@@ -25,12 +25,6 @@
       <span class="site-name">Anderson correa</span>
       <span class="site-desc">1800 puntos</span>
 
-
-
-      
-
-
-
     </a> <!-- / #logo-header -->
 
     

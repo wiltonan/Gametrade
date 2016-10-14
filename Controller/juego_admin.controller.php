@@ -10,10 +10,10 @@ $accion=$_REQUEST["action"];
  switch ($accion) {
 
  	case 'guardarjuego':
- 		
+
  		 $jue_nom=$_POST['jue_nom'];
  		 $cons_cod=$_POST['cons_cod'];
- 		 $cat_cod=$_POST["cat_cod"];
+ 		 $cat_cod=$_POST['cat_cod'];
  		 $jue_desc=$_POST["jue_desc"];
  		 $jue_cant=$_POST["jue_cant"];
  		 $jue_trailer=$_POST["jue_trailer"];

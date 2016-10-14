@@ -10,7 +10,7 @@
     <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
-  <body>
+  <body style="background-color: #000000;">
     <div class="contenido">
       <div class="parte_negra_menu">
 
@@ -23,15 +23,16 @@
         </div>
 
         <!-- hacer este que falta -->
-        <div class="R_Contraseña">
+        <!-- <div class="R_Contraseña">
           <a href="#">Recuperar contraseña</a>
-        </div>
+        </div> -->
 
         <div id="registrarme" class="registrarme">
           <a href="#registrar_usuario">Registrarme</a>
         </div>
 
       </div>
+    </div>
       <header>
         <nav>
           <ul>
@@ -44,10 +45,11 @@
       </header>
 
       <section id="inicio_index">
-        <?php include('Views/inicio.index.php') ?>
+        <?php include('inicio.index.php') ?>
       </section>
 
-      <section class="menu_index"></section>
-    </div>
+      <section class="menu_index">
+      </section>
+
   </body>
 </html>

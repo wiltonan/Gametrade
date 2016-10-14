@@ -12,7 +12,7 @@
         <div class="class=" col s12>
 
           <div class="input-field col s1.5">
-            <input type="text" class="white-text" name="usu" placeholder="Usuario">
+            <input type="text" class="white-text" name="usu" placeholder="nick">
           </div>
 
           <div class="input-field col s1.5">

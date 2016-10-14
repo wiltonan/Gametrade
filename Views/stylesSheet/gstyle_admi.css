@@ -6,8 +6,13 @@ header{
 	padding: 0;
 }
 
+.parte_negra_menu{
+	background-color: #000000;
+	height: 130px;
+}
+
 #inicio_principal{
-	height: 500px;
+	height: 580px;
 	width:100%;
 	background: #0cad09;
 }

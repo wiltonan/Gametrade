@@ -1,13 +1,17 @@
+
 <?php
+  require_once("../Model/conexion.php");
+  require_once("../Model/juego_admi.class.php");
   date_default_timezone_set('America/Bogota');
+  $consola = Gestion_Videojuego::mostrarconsola();
+  $categoria = Gestion_Videojuego::mostrarcategoria();
  ?>
 
-<meta charset="utf-8">
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script>
+    <!-- <script>
       $(document).ready(function(){
         $("#buscar_cedula").keyup(function(){
           var param = $(this).val();
@@ -16,7 +20,7 @@
           });
         });
       });
-    </script>
+    </script> -->
   </head>
   <body>
     <div class="formulariojuego">
@@ -43,14 +47,22 @@
 
               <!-- estos hay que hacerlos drop down list -->
               <div class="input-field col s5">
-                  <input type="text" name="cons_cod" required>
-                  <label class="active" for="first_name2">Consola: </label>
+                  <select class="select" name="cons_cod" required >
+                    <option value="" disabled selected>Consola</option>
+                     <?php foreach ($consola as $cons): ?>
+                     <option value="<?php echo $cons['cons_cod'] ?>"><?php echo $cons['cons_nom']; ?></option>
+                   <?php endforeach ?>
+                  </select>
               </div>
 
               <!-- estos hay que hacerlos drop down list -->
               <div class="input-field col s5">
-                  <input type="text" name="cat_cod" required>
-                  <label class="active" for="first_name2">Categoria juego: </label>
+                  <select class="select" name="cat_cod" required >
+                    <option value="" disabled selected>Categoria juego</option>
+                     <?php foreach ($categoria as $cate): ?>
+                     <option value="<?php echo $cate['cat_cod'] ?>"><?php echo $cate['cat_nom']; ?></option>
+                   <?php endforeach ?>
+                  </select>
               </div>
 
 

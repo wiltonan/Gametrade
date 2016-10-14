@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>menu administrador.</title>
     <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
-    <link rel="stylesheet" href="materialize/css/materialize.css">
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/admin.js"></script>
   </head>
@@ -37,7 +36,6 @@
     </header>
 
     <section id="inicio_principal">
-      <!-- Aqui hacer un include para llavar a la hoja en la cual vamos a programar -->
     </section>
 
     <section class="menu_admin"></section>

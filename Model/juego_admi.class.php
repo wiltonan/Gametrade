@@ -57,21 +57,39 @@ class Gestion_Videojuego{
 		ConexionBD::DesconectarBD();
 	}
 
-// 	public static function consultarcedula(){
-//     $pdo = ConexionBD::AbrirBD();
-//     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+	public static function mostrarconsola(){
 
-//     $sql="select usu_cod,usu_nom from tbl_usuario WHERE usu_num_docum=?"
+		$pdo = ConexionBD::AbrirBD();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//     $query= $pdo->prepare($sql);
-//     $query->execute();
+		$sql= "select * from tbl_consola";
 
-//     $result= $query->fetch(PDO::FETCH_BOTH);
+		$query= $pdo->prepare($sql);
+		$query->execute();
 
-//     ConexionBD::DesconectarBD();
+		$result=$query->fetchALL(PDO::FETCH_BOTH);
 
-//     return $result;
-//   }
+		ConexionBD::DesconectarBD();
+
+		return $result;
+	}
+
+	public static function mostrarcategoria(){
+
+		$pdo = ConexionBD::AbrirBD();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+		$sql= "select * from tbl_categoria_jue";
+
+		$query= $pdo->prepare($sql);
+		$query->execute();
+
+		$result=$query->fetchALL(PDO::FETCH_BOTH);
+
+		ConexionBD::DesconectarBD();
+
+		return $result;
+	}
  }
 
 ?>

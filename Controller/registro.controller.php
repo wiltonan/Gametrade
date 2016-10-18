@@ -26,7 +26,7 @@ $accion=$_REQUEST['action'];
      $usu_estado='activo';
  		 try {
  		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
-      echo "<script>alert('Gracioas por registrarte');
+      echo "<script>alert('Gracias por registrarse.');
       self.location.href='../#/registrar_usuario';
       </script>";
  		 } catch (Exception $e) {

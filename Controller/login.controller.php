@@ -14,10 +14,8 @@
         if ($resul['cod_rol']==1) {
           echo "<script>location.href='../Views/menu_admin.php' </script>";
         }
-
         else {
           echo "<script>location.href='../Views/menu_usuario.php' </script>";
-
         }
       }else {
           echo "<script>alert('Por favor llene los dos campos.');

@@ -15,6 +15,14 @@
           echo "<script>location.href='../Views/menu_admin.php' </script>";
         }
         else {
+<<<<<<< HEAD
+=======
+          // no se para que es 
+           $_SESSION['documento'] = $resul['usu_num_docum'];
+           $_SESSION['nombre'] = $resul['usu_nom'];
+
+          
+>>>>>>> origin/master
           echo "<script>location.href='../Views/menu_usuario.php' </script>";
         }
       }else {

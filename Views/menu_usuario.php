@@ -1,4 +1,7 @@
+<?php
 
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +25,7 @@
   <header id="main-header">
     <div id="res"></div>
     <a id="logo-header" href="#">
-      <span class="site-name">Anderson correa</span>
+      <span class="site-name"><?php echo $_SESSION['nombre']; ?></span>
       <span class="site-desc">1800 puntos</span>
 
     </a> <!-- / #logo-header -->

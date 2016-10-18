@@ -10,7 +10,9 @@ $accion=$_REQUEST['action'];
 
       try {
       	puntos::guardar($pto_cant,$pto_moneda);
-        echo 'Guardado con exito';
+        echo "<script>alert('Se ha guardar el punto');
+        self.location.href='../Views/menu_admin.php?#/puntos';
+        </script>";
       }
       	catch (Exception $e){
           	echo $e;
@@ -24,7 +26,9 @@ $accion=$_REQUEST['action'];
 
       try {
         puntos::modificar($pto_cant,$pto_moneda,$pto_cod);
-        echo 'Guardado con exito';
+        echo "<script>alert('Se ha modificado el punto');
+        self.location.href='../Views/menu_admin.php?#/puntos';
+        </script>";
       }
         catch (Exception $e){
             echo $e;
@@ -35,7 +39,9 @@ $accion=$_REQUEST['action'];
         try {
           $codigo = base64_decode($_GET['codigo_punto']);
           puntos::eliminar_punto($codigo);
-          echo 'Eliminado';
+          echo "<script>alert('Se ha eliminado el punto');
+          self.location.href='../Views/menu_admin.php?#/puntos';
+          </script>";
         } catch (Exception $e) {
           die($e->getMessage() . ' linea: ' . $e->getLine());
         }

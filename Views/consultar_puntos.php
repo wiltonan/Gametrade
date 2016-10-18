@@ -15,7 +15,7 @@
       <section>
         <table border="1px">
           <thead>
-            <th colspan="5">puntos.</th>
+            <th colspan="5"><center><h5>Puntos.</h5></center></th>
             <tr>
               <td>Codigo</td>
               <td>Cantidad</td>

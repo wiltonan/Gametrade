@@ -31,3 +31,19 @@ echo "
 }
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+echo "<script>swal({ title: 'guardar', showConfirButton: true},
+
+     function(){
+       location.href='../Views/menu_admin.php'
+     });
+     </script>";

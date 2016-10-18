@@ -11,7 +11,9 @@ $accion=$_REQUEST['action'];
 
  		 try {
  		 	Gestion_Consola::guardar($cons_nom,$cons_refer);
- 		 	echo "<script>self.location.href='../Views/admin_consola.php'</script>";
+        echo "<script>alert('Se ha guardar la consola');
+        self.location.href='../Views/menu_admin.php?#/consolas';
+        </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
@@ -23,7 +25,9 @@ $accion=$_REQUEST['action'];
       $cons_cod=$_POST['cons_cod'];
        try {
         Gestion_Consola::modificar($cons_nom,$cons_refer,$cons_cod);
-        echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+        echo "<script>alert('Se ha modificado la consola');
+        self.location.href='../Views/menu_admin.php?#/consolas';
+        </script>";
        } catch (Exception $e) {
         echo $e;
        }

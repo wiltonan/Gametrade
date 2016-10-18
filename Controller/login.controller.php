@@ -16,14 +16,13 @@
         }
 
         else {
-          // no se para que es 
-          // $_SESSION['documento'] = $resul['usu_num_docum'];
-          // echo $_SESSION['documento'];
           echo "<script>location.href='../Views/menu_usuario.php' </script>";
 
         }
       }else {
-        echo "Contraseña incorrecta.";
+          echo "<script>alert('Por favor llene los dos campos.');
+          self.location.href='../';
+          </script>";
       }
     } catch (Exception $e) {
       echo "error" . $e->getMessage();

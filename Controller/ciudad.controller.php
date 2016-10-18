@@ -11,7 +11,9 @@ $accion=$_REQUEST["action"];
  		 $pais_cod=$_POST["pais_cod"];
  		 try {
  		 	Gestion_Ciudad::guardar($ciu_nom,$pais_cod);
- 		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+        echo "<script>alert('Se ha guardar la ciudad');
+        self.location.href='../Views/menu_admin.php?#/ciudad';
+        </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
@@ -24,7 +26,9 @@ $accion=$_REQUEST["action"];
 
    		 try {
    		 	Gestion_Ciudad::modificar($ciu_nom,$pais_cod,$ciu_cod);
-   		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+        echo "<script>alert('Se ha modificado la ciudad');
+        self.location.href='../Views/menu_admin.php?#/ciudad';
+        </script>";
    		 } catch (Exception $e) {
    		 	echo $e;
    		 }

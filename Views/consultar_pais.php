@@ -15,7 +15,7 @@
       <section>
         <table border="1px">
           <thead>
-            <th colspan="4">Paises.</th>
+            <th colspan="4"><center><h5>Paises.</h5></center></th>
             <tr>
               <td>Codigo</td>
               <td>Pais</td>

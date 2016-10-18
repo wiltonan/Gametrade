@@ -11,10 +11,20 @@ header{
 	height: 130px;
 }
 
+.consultar_bono{
+	margin-left: 250px;
+	margin-top: 50px;
+
+}
+
 #inicio_principal{
 	height: 580px;
 	width:100%;
 	background: #0cad09;
+}
+
+.session{
+	margin-left: 90%;
 }
 
 .menu_admin{

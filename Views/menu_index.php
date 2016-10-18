@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <title><?php echo APP_TITLE; ?></title>
     <base href="<?php APP_URL ?>">
+    <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
+    <link href="Views/dist/sweetalert.css">
+    <script src="Views/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="Views/stylesSheet/conte_index.css">
     <link rel="stylesheet" href="Views/materialize/css/materialize.css">
-    <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
+    <script rel="stylesheet" src="Views/materialize/js/materialize.js"></script>
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
   <body style="background-color: #000000;">
@@ -28,7 +31,7 @@
         </div> -->
 
         <div id="registrarme" class="registrarme">
-          <a href="#registrar_usuario">Registrarme</a>
+          <a href="#/registrar_usuario">Registrarme</a>
         </div>
 
       </div>
@@ -36,10 +39,10 @@
       <header>
         <nav>
           <ul>
-            <li id="inicio"><a href="#/inicio">Inicio</a></li>
-            <li id="quienes_somos"><a href="#/Quienes somos">Quienes somos</a></li>
+            <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li>
+            <li id="quienes_somos"><a href="#/quienes_somos">Quienes somos</a></li>
             <li id="contactenos"><a href="#/contactenos">Contactenos</a></li>
-            <li id="como_se_usa"><a href="#/como se usa">Como se usa</a></li>
+            <li id="como_se_usa"><a href="#/como_se_usa">Como se usa</a></li>
           </ul>
         </nav>
       </header>
@@ -49,6 +52,7 @@
       </section>
 
       <section class="menu_index">
+
       </section>
 
   </body>

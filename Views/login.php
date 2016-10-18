@@ -19,7 +19,7 @@
             <input type="password" class="white-text" name="pas" placeholder="Contraseña">
           </div>
 
-          <button type="submit" class="btn purple thin" name="i">In</button>
+          <button type="submit" class="btn purple thin" name="i" style="margin-left:16px; padding:0;"><img src="Views/Imagen/entrar.png"  style="left:36px; height: 36px;" /></button>
         </div>
       </div>
     </form>

@@ -33,7 +33,7 @@
 
 
 
-<section id="main-content" class="cl_incioo">	
+<section id="main-content" class="cl_incioo">
 		<article>
 		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
 
@@ -58,16 +58,16 @@
 				<figure>
 					<img src="Imagen/10.jpg" alt>
 					<figcaption style="color: #E6E6E6"></figcaption>
-				</figure>				
+				</figure>
 				<figure>
 					<img src="Imagen/11.jpg" alt>
 					<figcaption style="color: #E6E6E6"></figcaption>
 				</figure>
 			</figure>
-		</div>			
 		</div>
- 
-		</article> 
+		</div>
+
+		</article>
 	</section> <!-- / #main-content -->
 
 <div id="e63JueDestac">VideosJuegos Mas vendidos</div>
@@ -82,4 +82,4 @@
 
 </ul>
 </head>
-<body>	
+<body>

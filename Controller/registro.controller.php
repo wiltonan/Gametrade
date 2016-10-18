@@ -17,7 +17,6 @@ $accion=$_REQUEST['action'];
      $usu_pass=$_POST['usu_pass'];
      $encript = password_hash($usu_pass, PASSWORD_DEFAULT);
      $usu_naci=$_POST['usu_naci'];
-     $photo=$_POST['photo'];
  		 $usu_tel=$_POST['usu_tel'];
  		 $usu_cel=$_POST['usu_cel'];
  		 $ciu_cod=$_POST['ciu_cod'];
@@ -26,8 +25,10 @@ $accion=$_REQUEST['action'];
      $usu_fech=$_POST['usu_fech'];
      $usu_estado='activo';
  		 try {
- 		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
- 		 	echo 'Guardar con exito';
+ 		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
+      echo "<script>alert('Gracioas por registrarte');
+      self.location.href='../#/registrar_usuario';
+      </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }

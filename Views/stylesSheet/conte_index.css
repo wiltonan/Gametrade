@@ -8,12 +8,17 @@
 	background-color: #000000;
 }
 
+.formusu{
+	margin-left: 15%;
+}
+
 header ul li a{
 	font-size: 20px;
 }
 
 .formulariousuario{
 	background-color: #ffffff;
+	height: 840px;
 }
 
 .formulariousuario h4{

@@ -28,7 +28,9 @@ $accion=$_REQUEST['action'];
      $usu_estado='activo';
  		 try {
  		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
- 		 	echo 'Guardar con exito';
+      echo "<script>alert('Se ha guardado el usuario');
+      self.location.href='../Views/menu_admin.php#/usuario';
+      </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
@@ -55,7 +57,9 @@ $accion=$_REQUEST['action'];
        $usu_cod=$_POST["usu_cod"];
        try {
          usuario::modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_estado,$usu_cod);
-         echo "se a modificado";
+         echo "<script>alert('Se ha modificado el usuario');
+         self.location.href='../Views/menu_admin.php#/usuario';
+         </script>";
        }
        catch (Exception $e){
            echo "Ocurrio un error".$e ;

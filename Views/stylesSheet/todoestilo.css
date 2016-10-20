@@ -232,6 +232,20 @@ nav {
 	 
 
 }
+
+.juuego{
+	list-style: none;
+	width: 30%;
+	height: 133px;
+	background: #585858;
+	
+	margin-top:0;
+
+
+	
+	 
+
+}
 #txtbuscar{
 	border-radius: 60px;
 	width: 50%;

@@ -72,10 +72,24 @@
 
 <div id="e63JueDestac">VideosJuegos Mas vendidos</div>
 
+<div class="header  grey lighten-2">
+		<ul id="ulNoticJ">
+			<form>
+				<input type="text" placeholder="Buscar" id="txtbuscar" />
+				<button type="submit" class="btn">BUSCAR</button>
+			</form>
+		</ul>
+		</div>
+
+		<ul id="aa">
+			<?php
+				foreach ($peliculas as $row ): ?>
+				<li><img src="img/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
 
 
-
-<ul id="ulNoticJuer">
 
 
 

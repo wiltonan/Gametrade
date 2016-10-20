@@ -28,6 +28,8 @@ session_start();
       <span class="site-name"><?php echo $_SESSION['nombre']; ?></span>
       <span class="site-desc">1800 puntos</span>
 
+      <button><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/">Cerrar sesion</a></div></button>
+
     </a> <!-- / #logo-header -->
 
     

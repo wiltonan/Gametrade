@@ -33,12 +33,12 @@
 
 
 
-<section id="main-content" class="cl_incioo">	
+<section id="" class="cl_incioo">	
 		<article>
 		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
 
 		<div id="dvSlider">
-<div id="captioned-gallery">
+			<div id="captioned-gallery" class="clss">
 			<figure class="slider">
 				<figure>
 					<img src="Imagen/09.jpg" alt>
@@ -90,10 +90,5 @@
 	</div>
 
 
-
-
-
-
-</ul>
 </head>
 <body>	

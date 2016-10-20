@@ -2,15 +2,12 @@
 require_once("../Model/conexion.php");
 require_once("../Model/juego_admi.class.php");
 
-//$documento=$_SESSION["documento"];
-
-$documento="10";
-
 $accion=$_REQUEST["action"];
  switch ($accion) {
 
  	case 'guardarjuego':
 
+     $documento=$_POST['usu_cod']
  		 $jue_nom=$_POST['jue_nom'];
  		 $cons_cod=$_POST['cons_cod'];
  		 $cat_cod=$_POST['cat_cod'];
@@ -19,13 +16,12 @@ $accion=$_REQUEST["action"];
  		 $jue_trailer=$_POST["jue_trailer"];
  		 $jue_fech_public=$_POST["jue_fech_public"];
  		 $jue_imagen=$_POST["jue_imagen"];
- 		 $jue_pal_clave=$_POST["jue_pal_clave"];
      $jue_estado="activo";
 
  		 try {
- 		 	Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado);
- 		 	echo "<script>alert('Guardar con exito');
-      self.location.href='../Views/menu_usuario.php?#/mis juegos';
+ 		 	Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado);
+ 		 	echo "<script>alert('Se ha guardado el juego');
+      self.location.href='../Views/menu_admin.php?#/juego';
       </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
@@ -49,7 +45,9 @@ $accion=$_REQUEST["action"];
 
    		 try {
    		 	Gestion_Videojuego::modificar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado,$jue_cod);
-   		 	echo "Se a modificado con exito con exito";
+        echo "<script>alert('Se ha modificado el juego');
+        self.location.href='../Views/menu_admin.php?#/juego';
+        </script>";
    		 } catch (Exception $e) {
    		 	echo "errror" .$e;
    		 }

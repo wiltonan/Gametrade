@@ -15,7 +15,7 @@
       <section>
         <table border="1px">
           <thead>
-            <th colspan="6">consolas.</th>
+            <th colspan="6"><center><h5>Consolas.</h5></center></th>
             <tr>
               <td>Codigo</td>
               <td>Nombre</td>

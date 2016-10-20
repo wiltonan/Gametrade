@@ -1,13 +1,13 @@
 <?php
 class Gestion_Videojuego{
-	public static function Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado){
+	public static function Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen, jue_pal_clave,jue_estado) values (?,?,?,?,?,?,?,?,?,?,?)";
+		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado));
+		$query->execute(array($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
 
 		ConexionBD::DesconectarBD();
 
@@ -18,7 +18,17 @@ class Gestion_Videojuego{
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select * from tbl_videojuego";
+		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_desc, tbl_videojuego.jue_cant, tbl_videojuego.jue_trailer, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
+						from tbl_videojuego
+
+						inner join tbl_usuario
+						on tbl_videojuego.usu_cod = tbl_usuario.usu_cod
+
+						inner join tbl_consola
+						on tbl_videojuego.cons_cod = tbl_consola.cons_cod
+
+						inner join tbl_categoria_jue
+						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();

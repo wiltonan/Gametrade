@@ -9,7 +9,9 @@ $accion=$_REQUEST['action'];
 
  		 try {
  		 	Gestion_Pais::guardar($pais_nom);
- 		 	echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+      echo "<script>alert('Se ha guardar el pais');
+      self.location.href='../Views/menu_admin.php?#/pais';
+      </script>";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
@@ -22,7 +24,9 @@ $accion=$_REQUEST['action'];
 
       try {
         Gestion_Pais::modificar($pais_cod,$pais_nom);
-        echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+        echo "<script>alert('Se ha modificado el pais');
+        self.location.href='../Views/menu_admin.php?#/pais';
+        </script>";
         }
         catch (Exception $e){
           echo 'Ocurrio un error' .$e ;

@@ -10,7 +10,9 @@ switch ($accion) {
 
   try {
     Categoria_jue::guardar($cat_nom);
-      echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+    echo "<script>alert('Se ha guardar la categoria de juego');
+    self.location.href='../Views/menu_admin.php?#/categoria_juegos';
+    </script>";
   } catch (Exception $e) {
     echo $e;
   }
@@ -22,7 +24,9 @@ switch ($accion) {
 
   try {
     Categoria_jue::modificar($cat_nom,$cat_cod);
-      echo 'Trabajando en las alertas, pero se ha guardado con exito.';
+    echo "<script>alert('Se ha modificado la categoria de juego');
+    self.location.href='../Views/menu_admin.php?#/categoria_juegos';
+    </script>";
   } catch (Exception $e) {
     echo $e;
   }

@@ -14,18 +14,21 @@
         if ($resul['cod_rol']==1) {
           echo "<script>location.href='../Views/menu_admin.php' </script>";
         }
-
         else {
+<<<<<<< HEAD
+=======
           // no se para que es 
            $_SESSION['documento'] = $resul['usu_num_docum'];
            $_SESSION['nombre'] = $resul['usu_nom'];
 
           
+>>>>>>> origin/master
           echo "<script>location.href='../Views/menu_usuario.php' </script>";
-
         }
       }else {
-        echo "Contraseña incorrecta.";
+          echo "<script>alert('Por favor llene los dos campos.');
+          self.location.href='../';
+          </script>";
       }
     } catch (Exception $e) {
       echo "error" . $e->getMessage();

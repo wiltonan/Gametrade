@@ -10,23 +10,34 @@ $pto_cod=bono::mostrarpunto();
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      $('select').material_select();
+    </script>
   </head>
   <body>
+
+    <!-- esto quitarlo si no funciona -->
+    <!-- <?php $alerta = isset($_GET['alerta']);
+      if ($alerta=="guardar#/bono") {
+        echo "<script>";
+        echo "alert('Guadar')";
+        echo "</script>";
+      }
+      ?> -->
     <!--contenedor del formulario-->
     <div class="formulariobono">
       <section>
 
-        <center><h4>Registrar bono</h4></center>
+          <h4 style="margin-left:45%;">Registrar bono</h4>
       <!--aqui esta el formato y de esta de esta forma se hace -->
-        <form action="../Controller/bono.controller.php" method="post">
+        <form style="margin-left:15%;" action="../Controller/bono.controller.php" method="post">
           <div class="row">
 						<div class="class=" col s12>
 
-              <div class="input-field col s5">
-                <select class="select" name="pto_cod" >
-                  <option value="" disabled selected>Escoja la cantidad de puntos</option>
+              <div class="input-field col s6">
+                <select name="pto_cod" >
+                  <option value="" disabled selected>Cantidad de puntos</option>
                     <?php foreach ($pto_cod as $puntos) {
                           echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
                       }?>
@@ -35,7 +46,7 @@ $pto_cod=bono::mostrarpunto();
 
 
 
-               <div class="input-field col s5">
+               <div class="input-field col s6">
                  <input type="text" name="bono_desc" required/>
                  <label class="active" for="first_name2">Descripcion.</label>
                </div>
@@ -43,7 +54,7 @@ $pto_cod=bono::mostrarpunto();
              </div>
            </div>
           <!--este es el boton-->
-          <button name="action" value="guardarbono" class="waves-effect waves-light btn">Guardar</button>
+          <button style="margin-left:40%;" name="action" value="guardarbono" class="waves-effect waves-light btn">Registrar bono</button>
         </form>
       </section>
     </div>

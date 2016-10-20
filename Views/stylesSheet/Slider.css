@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Istok+Web);
 @keyframes slidy {
 0% { left: 0%; }
-20% { left: 0%; }
+18% { left: 0%; }
 25% { left: -100%; }
 45% { left: -100%; }
 50% { left: -200%; }
@@ -18,10 +18,11 @@ body, figure {
 }
 
 div#captioned-gallery {
-  width: 100%;
+  width: 115%;
   overflow: hidden;
   height: 535px;
   margin-top: 2px;
+  margin-left: -70px;
 }
 
 figure.slider {
@@ -31,7 +32,9 @@ figure.slider {
 
 figure.slider figure {
   width: 20%; height: auto;
-  display: inline-block;  position: inherit;
+  display: inline-block;  
+  position: inherit;
+  float: left;
 }
 
 figure.slider img {
@@ -39,6 +42,7 @@ figure.slider img {
   height: auto;
   overflow: hidden;
   vertical-align: top;
+  float: left;
 }
 
 figure.slider figure figcaption {

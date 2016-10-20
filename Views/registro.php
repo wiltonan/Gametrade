@@ -5,23 +5,31 @@
   $ciu = usuario::consultarciudad();
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
+  $fecha=date("2004-m-d");
  ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#input_text').characterCounter();
+    });
+
+      $('select').material_select();
+    </script>
 	</head>
 	<body>
-		<div class="formulariousuario">
+	   <div class="formulariousuario">
       <section>
-        <h4>Registrar usuario</h4>
-  			<form  action="Controller/registro.controller.php" method="post">
+  			<form  style="margin-left:15%;"  action="Controller/registro.controller.php" method="post">
           <div class="row">
             <div class="class=" col s12>
 
+              <h4 style="margin-left:30%">Registrar usuario</h4>
+
               <div class="input-field col s5">
-                  <select class="select" name="tipo_cod" required >
+                  <select name="tipo_cod" required >
                     <option value="" disabled selected>Tipo de documento</option>
                      <?php foreach ($documento as $docu): ?>
                      <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>
@@ -42,8 +50,6 @@
                     <label class="active" for="first_name2">Nombre.</label>
                   </div>
 
-
-
                 <div class="row">
                   <div class="input-field col s5">
                     <input type="text" name="usu_apell" required/>
@@ -51,12 +57,10 @@
                   </div>
                 </div>
 
-
-
-                  <div class="input-field col s5">
-                    <input type="text" name="usu_nick"/>
-                    <label class="active" for="first_name2">Nick de usuario.</label>
-                  </div>
+                <div class="input-field col s5">
+                  <input type="text" name="usu_nick"/>
+                  <label class="active" for="first_name2">Nick de usuario.</label>
+                </div>
 
 
                   <div class="row">
@@ -80,58 +84,56 @@
                     </div>
                   </div>
 
-
                   <div class="input-field col s5">
-                    <input type="date" name="usu_naci"  required/>
+                    <input type="date" name="usu_naci" max="<?php echo $fecha; ?>" required/>
                     <label class="active" for="first_name2">Fecha de nacimiento.</label>
                   </div>
 
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <input type="number" name="usu_tel" />
+                      <label class="active" for="first_name2">Telefono.</label>
+                    </div>
+                  </div>
+
                   <div class="input-field col s5">
-                    <input type="number" name="usu_tel" />
-                    <label class="active" for="first_name2">Telefono.</label>
+                    <input type="number" name="usu_cel" required/>
+                    <label class="active" for="first_name2">Celular.</label>
                   </div>
 
 
                   <div class="row">
                     <div class="input-field col s5">
-                      <input type="number" name="usu_cel" required/>
-                      <label class="active" for="first_name2">Celular.</label>
+                			<select id="ciu_cod" name="ciu_cod" required>
+                        <option value="" disabled selected>ciudad</option>
+                		    <?php foreach ($ciu as $ciudad) {
+                		        echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
+                		    }?>
+                      </select>
                     </div>
                   </div>
 
-                <div class="input-field col s5">
-            			<select id="ciu_cod" name="ciu_cod" required>
-                    <option value="" disabled selected>ciudad</option>
-            		    <?php foreach ($ciu as $ciudad) {
-            		        echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
-            		    }?>
-                  </select>
-                </div>
 
-                <div class="row">
                   <div class="input-field col s5">
                     <input type="text" name="usu_dir" required/>
                     <label class="active" for="first_name2">Dirreccion.</label>
                   </div>
-                </div>
 
-                <div class="row">
-                  <div class="input-field col s5">
-                    <input type="text" name="usu_esp_vive"/>
-                    <label class="active" for="first_name2">Especifique su direccion si es necesarrio.</label>
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <input id="input_text" type="text" name="usu_esp_vive" length="255"/>
+                      <label class="active" for="first_name2">Especifique su direccion si es necesarrio.</label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
             <!-- fecha de creacion-->
     				<input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
-            <button class="waves-effect waves-light btn" class="btn" name="action" value="guardarusuario">Aceptar</button>
+            <button style="margin-left:34%" class="waves-effect waves-light btn" class="btn" name="action" value="guardarusuario">Registrarme</button>
   			  </form>
         </section>
 		  </div>
-
-
 	</body>
 </html>

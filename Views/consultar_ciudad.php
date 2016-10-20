@@ -15,7 +15,7 @@
       <section>
         <table border="1px">
           <thead>
-            <th colspan="5">Informacion.</th>
+            <th colspan="5"><center><h5>Ciudades.</h5></center></th>
             <tr>
               <td>Codigo</td>
               <td>Ciudad</td>

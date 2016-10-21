@@ -31,44 +31,40 @@
 </script>
 </style>
 
-
-
-<section id="" class="cl_incioo">	
-		<article>
-		<div id="e63JueDesta">VideoJuegos Mas Nuevos</div>
-
-		<div id="dvSlider">
-			<div id="captioned-gallery" class="clss">
+<section>
+		<div id="captioned-gallery">
 			<figure class="slider">
-				<figure>
-					<img src="Imagen/09.jpg" alt>
-					<figcaption style="color: #E6E6E6"></figcaption>
-				</figure>
-				<figure>
-					<img src="Imagen/08.jpg" alt>
 
-					<figcaption style="color: #E6E6E6"> </figcaption>
-				</figure>
-
-                <figure>
-					<img src="Imagen/mara.jpg" alt>
-					<figcaption style="color: #E6E6E6"></figcaption>
+				<figure>
+					<img src="Imagen/09.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
 				</figure>
 
 				<figure>
-					<img src="Imagen/10.jpg" alt>
-					<figcaption style="color: #E6E6E6"></figcaption>
-				</figure>				
-				<figure>
-					<img src="Imagen/11.jpg" alt>
-					<figcaption style="color: #E6E6E6"></figcaption>
+					<img src="Imagen/08.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
 				</figure>
+
+		    <figure>
+					<img src="Imagen/mara.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/10.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/11.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
 			</figure>
-		</div>			
 		</div>
- 
-		</article> 
-	</section> <!-- / #main-content -->
+	</section>
+
+
 
 <div id="e63JueDestac">VideosJuegos Mas vendidos</div>
 

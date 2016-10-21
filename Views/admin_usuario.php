@@ -6,6 +6,7 @@
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
   $rol = usuario::consultar_rol();
+  $fecha=date("2004-m-d");
  ?>
 
 <!DOCTYPE html>
@@ -93,7 +94,7 @@
 
               <div class="row">
                 <div class="input-field col s6">
-                  <input type="date" name="usu_naci"  required/>
+                  <input type="date" name="usu_naci"  max="<?php echo $fecha; ?>" required/>
                   <label class="active" for="first_name2">Fecha de nacimiento.</label>
                 </div>
               </div>

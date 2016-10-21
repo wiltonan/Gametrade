@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_puntos.php?codigo_punto="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablapuntos">
@@ -30,9 +34,7 @@
                 <td><?php echo $bn['pto_cant'];  ?></td>
                 <td><?php echo $bn['pto_moneda'];  ?></td>
                 <td>
-                  <a href="modificar_puntos.php?codigo_punto=<?php echo base64_encode($bn['pto_cod']); ?>">Modificar</a>
-
-                  <a href="../Controller/puntos.controller.php?action=eliminar&codigo_punto=<?php echo base64_encode($bn['pto_cod']); ?>">Eliminar</a>
+                   <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["pto_cod"]; ?>)">Modificar</span>
                 </td>
               </tr>
            <?php endforeach ?>

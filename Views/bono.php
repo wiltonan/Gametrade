@@ -16,44 +16,25 @@ $pto_cod=bono::mostrarpunto();
     </script>
   </head>
   <body>
-
-    <!-- esto quitarlo si no funciona -->
-    <!-- <?php $alerta = isset($_GET['alerta']);
-      if ($alerta=="guardar#/bono") {
-        echo "<script>";
-        echo "alert('Guadar')";
-        echo "</script>";
-      }
-      ?> -->
-    <!--contenedor del formulario-->
     <div class="formulariobono">
       <section>
-
-          <h4 style="margin-left:45%;">Registrar bono</h4>
-      <!--aqui esta el formato y de esta de esta forma se hace -->
+        <h4 style="margin-left:45%;">Registrar bono</h4>
         <form style="margin-left:15%;" action="../Controller/bono.controller.php" method="post">
           <div class="row">
-						<div class="class=" col s12>
-
-              <div class="input-field col s6">
-                <select name="pto_cod" >
-                  <option value="" disabled selected>Cantidad de puntos</option>
-                    <?php foreach ($pto_cod as $puntos) {
-                          echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
-                      }?>
+            <div class="input-field col s6">
+              <select name="pto_cod" >
+                <option value="" disabled selected>Cantidad de puntos</option>
+                  <?php foreach ($pto_cod as $puntos) {
+                    echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
+                  }?>
                 </select>
               </div>
 
-
-
-               <div class="input-field col s6">
-                 <input type="text" name="bono_desc" required/>
-                 <label class="active" for="first_name2">Descripcion.</label>
-               </div>
-
-             </div>
-           </div>
-          <!--este es el boton-->
+              <div class="input-field col s6">
+                <input type="text" name="bono_desc" required/>
+                <label class="active" for="first_name2">Descripcion.</label>
+              </div>
+            </div>
           <button style="margin-left:40%;" name="action" value="guardarbono" class="waves-effect waves-light btn">Registrar bono</button>
         </form>
       </section>

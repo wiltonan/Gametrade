@@ -55,16 +55,17 @@
     ConexionBD::DesconectarBD();
   }
 
-  public static function eliminar_punto($codigo){
-    try {
-      $pdo = ConexionBD::AbrirBD();
-      $sql = "DELETE FROM tbl_pack_punto WHERE pto_cod = ?";
-      $query = $pdo->prepare($sql);
-      $query->execute(array($codigo));
-
-    } catch (Exception $e) {
-      echo "Error" . $e->getMessage();
-    }
-  }
+  // este tambien hacer parte para eliminar
+  // public static function eliminar_punto($codigo){
+  //   try {
+  //     $pdo = ConexionBD::AbrirBD();
+  //     $sql = "DELETE FROM tbl_pack_punto WHERE pto_cod = ?";
+  //     $query = $pdo->prepare($sql);
+  //     $query->execute(array($codigo));
+  //
+  //   } catch (Exception $e) {
+  //     echo "Error" . $e->getMessage();
+  //   }
+  // }
  }
  ?>

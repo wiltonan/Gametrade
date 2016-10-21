@@ -2,7 +2,7 @@
 	require_once("../Model/conexion.php");
 	require_once("../Model/ciudad.class.php");
 
-  $ciudadmo= Gestion_Ciudad::consultarporCodigo(base64_decode($_GET['codigo_ciudad']));
+  $ciudadmo= Gestion_Ciudad::consultarporCodigo($_GET['codigo_ciudad']);
 	$pais=Gestion_Ciudad::mostrarpais();
 	?>
 <!DOCTYPE html>
@@ -10,6 +10,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<script>
+			$(document).ready(function() {
+				Materialize.updateTextFields();
+			});
+		</script>
 	</head>
 	<body>
 		<div class="formulariociudad">
@@ -44,12 +49,5 @@
 				 </form>
 			</section>
 		</div>
-
-		<script>
-				$(document).ready(function() {
-					Materialize.updateTextFields();
-				});
-		</script>
-
 	</body>
 </html>

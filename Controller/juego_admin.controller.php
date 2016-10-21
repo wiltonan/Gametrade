@@ -39,7 +39,6 @@ $accion=$_REQUEST["action"];
    		 $jue_trailer=$_POST["jue_trailer"];
    		 $jue_fech_public=$_POST["jue_fech_public"];
    		 $jue_imagen=$_POST["jue_imagen"];
-   		 $jue_pal_clave=$_POST["jue_pal_clave"];
        $jue_estado=$_POST["jue_estado"];
        $jue_cod=$_POST["jue_cod"];
 

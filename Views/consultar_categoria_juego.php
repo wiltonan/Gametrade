@@ -9,6 +9,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_categoria_juego.php?codigo_categoria="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tabla_categoria_juego">
@@ -28,7 +33,7 @@
                 <td><?php echo $bn['cat_cod'];  ?></td>
                 <td><?php echo $bn['cat_nom'];  ?></td>
                 <td>
-                  <a href="modificar_categoria_juego.php?codigo_categoria=<?php echo base64_encode($bn['cat_cod']); ?>">Modificar</a>
+                  <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["cat_cod"]; ?>)">Modificar</span>
                 </td>
               </tr>
            <?php endforeach ?>

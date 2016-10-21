@@ -14,6 +14,7 @@
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
   <body style="background-color: #000000;">
+
     <div class="contenido">
       <div class="parte_negra_menu">
 
@@ -22,6 +23,7 @@
         </div>
 
         <div class="login">
+          <!-- <h5 style="color: white; background-color:green; padding-left:100px;">Ingresa aqui</h5> -->
           <?php include(HTML_DIR .'login.php') ?>
         </div>
 

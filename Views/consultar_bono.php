@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificarbono.php?codigo_bono="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablabono">
@@ -30,9 +34,9 @@
                    <td><?php echo $bn["pto_cant"];     ?></td>
                    <td><?php echo $bn["bono_desc"];   ?></td>
                    <td>
-                     <a href="modificarbono.php?codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Modificar</a>
-
-                     <a href="../Controller/bono.controller.php?action=eliminar&codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Eliminar</a>
+                     <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["bono_cod"]; ?>)">Modificar</span>
+                     <!-- haci se hace ek eliminar -->
+                     <!-- <a href="../Controller/bono.controller.php?action=eliminar&codigo_bono=<?php echo $bn["bono_cod"]; ?>">Eliminar</a> -->
                    </td>
                  </tr>
               <?php endforeach ?>

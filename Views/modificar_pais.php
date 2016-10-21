@@ -2,7 +2,7 @@
   require_once("../Model/conexion.php");
   require_once("../Model/pais.class.php");
 
-  $pais_mo=Gestion_Pais::consultarcodigo(base64_decode($_GET["codigo_pais"]));
+  $pais_mo=Gestion_Pais::consultarcodigo($_GET["codigo_pais"]);
  ?>
 
  <meta charset="utf-8">

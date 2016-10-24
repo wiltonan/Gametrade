@@ -2,110 +2,135 @@
   require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
 
-  $ciu = usuario::consultarciudad();
-  $documento = usuario::consultardocumento();
   $usuariomo=usuario::consultarcodigo($_GET["codigo_usuario"]);
+  $documento = usuario::consultardocumento();
+  $ciu = usuario::consultarciudad();
  ?>
 
  <!DOCTYPE html>
  <html>
    <head>
-     <meta charset="utf-8">
      <title>modificar usuario</title>
+     <script type="text/javascript">
+       $('select').material_select();
+       Materialize.updateTextFields();
+     </script>
    </head>
    <body>
      <div class="usuariomodificado">
-       <h1 style="text-align: center;">Modificar usuario</h1>
-       <form  action="../Controller/usuario.controller.php" method="post">
+       <section>
+         <h4 style="margin-left:45%;">Modificar usuario</h4>
+         <form style="margin-left:15%;" action="../Controller/usuario.controller.php" method="post">
 
-         <input type="hidden" name="usu_cod" readonly value="<?php echo $usuariomo["usu_cod"]; ?>" />
+           <div class="row">
+             <input type="hidden" name="usu_cod" readonly value="<?php echo $usuariomo["usu_cod"]; ?>" />
+             <div class="input-field col s6">
+               <select class="select" name="tipo_cod">
+                 <option value="" disabled selected>Tipo de documento: </option>
+                 <?php foreach ($documento as $docu) {
+                   if($docu["tipo_cod"] == $usuariomo["tipo_cod"]){
+                     $selected = "selected";
+                   }else{
+                     $selected = "";
+                   }
+                   echo "<option value=".$docu["tipo_cod"]." $selected>".$docu["tipo_documento"]."</option>";
+                 }?>
+               </select>
+             </div>
 
-         <label for="">Tipo de documento: </label>
-         <select id="tipo_cod" name="tipo_cod" required>
-           <?php
-             echo "<option>Seleccione</option>";
-               foreach ($documento as $docu) {
-                 echo "<option value=".$docu["tipo_cod"].">".$docu["tipo_documento"]."</option>";
-             }
-            ?>
-         </select>
-         <br><br>
+             <div class="input-field col s6">
+                <label>Numero del documento: </label>
+               <input type="number" name="usu_num_docum" value="<?php echo $usuariomo["usu_num_docum"]; ?>"/>
+             </div>
+           </div>
 
- 				<label>Numero del documento: </label>
- 				<input type="number" name="usu_num_docum" value="<?php echo $usuariomo["usu_num_docum"]; ?>"/>
- 				<br><br>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Nombre: </label>
+              <input type="text" name="usu_nom" value="<?php echo $usuariomo["usu_nom"]; ?>"/>
+            </div>
 
- 				<label>Nombre: </label>
- 				<input type="text" name="usu_nom" value="<?php echo $usuariomo["usu_nom"]; ?>"/>
- 				<br><br>
+            <div class="input-field col s6">
+              <label>Apellido: </label>
+               <input type="text" name="usu_apell" value="<?php echo $usuariomo["usu_apell"]; ?>"/>
+            </div>
+          </div>
 
- 				<label>Apellido: </label>
- 				<input type="text" name="usu_apell" value="<?php echo $usuariomo["usu_apell"]; ?>"/>
- 				<br><br>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Nick de usuario: </label>
+               <input type="text" name="usu_nick" value="<?php echo $usuariomo["usu_nick"]; ?>"/>
+            </div>
 
- 				<label>Nick de usuario: </label>
- 				<input type="text" name="usu_nick" value="<?php echo $usuariomo["usu_nick"]; ?>"/>
- 				<br><br>
+            <div class="input-field col s6">
+              <label>Correo electronico: </label>
+               <input type="text" name="usu_mail" value="<?php echo $usuariomo["usu_mail"]; ?>"/>
+            </div>
+          </div>
 
- 				<label>Correo electronico: </label>
- 				<input type="text" name="usu_mail" value="<?php echo $usuariomo["usu_mail"]; ?>"/>
- 				<br><br>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Contraseña: </label>
+               <input type="password" name="usu_pass" value="<?php echo $usuariomo["usu_pass"]; ?>"/>
+            </div>
 
- 				<label>Contraseña: </label>
- 				<input type="password" name="usu_pass" value="<?php echo $usuariomo["usu_pass"]; ?>"/>
- 				<br><br>
+            <div class="input-field col s6">
+              <label>Confirmar la contraseña: </label>
+               <input type="password" name="usu_pass" value="<?php echo $usuariomo["usu_pass"]; ?>"/>
+            </div>
+          </div>
 
- 				<label>Confirmar la contraseña: </label>
- 				<input type="password" name="usu_pass" value="<?php echo $usuariomo["usu_pass"]; ?>"/>
- 				<br><br>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Fecha de nacimiento: </label>
+               <input type="date" name="usu_naci" value="<?php echo $usuariomo["usu_naci"]; ?>"/>
+            </div>
 
- 				<label>Fecha de nacimiento: </label>
- 				<input type="date" name="usu_naci" value="<?php echo $usuariomo["usu_naci"]; ?>"/>
- 				<br><br>
+            <div class="input-field col s6">
+              <label>Telefono: </label>
+               <input type="number" name="usu_tel" value="<?php echo $usuariomo["usu_tel"]; ?>"/>
+            </div>
+          </div>
 
- 				<label>Agrega una foto: </label>
- 				<input type="text" name="photo" value="<?php echo $usuariomo["photo"]; ?>"/>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Celular: </label>
+               <input type="number" name="usu_cel" value="<?php echo $usuariomo["usu_cel"]; ?>"/>
+            </div>
 
-        <button type="submit"  name="agregarphoto"><a class="waves-effect waves-light btn">Aceptar</button></a>
+            <div class="input-field col s6">
+              <select class="select" name="ciu_cod">
+                <option value="" disabled selected>Ciudad: </option>
+                <?php foreach ($ciu as $ciudad) {
+                  if($ciudad["ciu_cod"] == $usuariomo["ciu_cod"]){
+                    $selected = "selected";
+                  }else{
+                    $selected = "";
+                  }
+                  echo "<option value=".$ciudad["ciu_cod"]." $selected>".$ciudad["ciu_nom"]."</option>";
+                }?>
+              </select>
+            </div>
+          </div>
 
- 				<br><br>
+          <div class="row">
+            <div class="input-field col s6">
+              <label>Dirreccion: </label>
+               <input type="text" name="usu_dir" value="<?php echo $usuariomo["usu_dir"]; ?>"/>
+            </div>
 
- 				<label>Telefono: </label>
- 				<input type="number" name="usu_tel" value="<?php echo $usuariomo["usu_tel"]; ?>"/>
- 				<br><br>
-
- 				<label>Celular: </label>
- 				<input type="number" name="usu_cel" value="<?php echo $usuariomo["usu_cel"]; ?>"/>
- 				<br><br>
-
-         <label>Ciudad: </label>
- 				<select id="ciu_cod" name="ciu_cod" value="<?php echo $usuariomo["ciu_cod"]; ?>">
- 		      <?php
- 		        echo "<option>Seleccione</option>";
- 		          foreach ($ciu as $ciudad) {
- 		            echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
- 		        }
- 		       ?>
-         </select>
-         <br><br>
-
- 				<label>Dirreccion: </label>
- 				<input type="text" name="usu_dir" value="<?php echo $usuariomo["usu_dir"]; ?>"/>
- 				<br><br>
-
-        <label for="">estado: </label>
-         <select name="usu_estado" id="estado" required value="<?php echo $usuariomo["usu_estado"]; ?>">
-           <option value="0">Seleccionar</option>
-           <option value="1">activo</option>
-           <option value="2">inactivo</option>
-         </select>
-         <br><br>
-
-
-         <button type="submit" name="action"><a class="waves-effect waves-light btn">Modificar</button></a>
-
-       </form>
+            <div class="input-field col s6">
+              <label for="">estado: </label>
+               <select name="usu_estado" id="estado" required value="<?php echo $usuariomo["usu_estado"]; ?>">
+                 <option value="0">Seleccionar</option>
+                 <option value="1">activo</option>
+                 <option value="2">inactivo</option>
+               </select>
+            </div>
+          </div>
+          <button type="submit" name="action" class="waves-effect waves-light btn">Modificar</button>
+         </form>
+       </section>
      </div>
-
    </body>
  </html>

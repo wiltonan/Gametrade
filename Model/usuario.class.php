@@ -89,13 +89,13 @@
     return $result;
   }
 
-  public static function modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado){
+  public static function modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="UPDATE tbl_usuario SET rol_cod=?, tipo_cod=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,photo=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_esp_vive=? ,usu_estado=? WHERE usu_cod= ?";
+    $sql="UPDATE tbl_usuario SET rol_cod=?, tipo_cod=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_esp_vive=? ,usu_estado=? WHERE usu_cod= ?";
     $query= $pdo->prepare($sql);
-    $query->execute(array($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado));
+    $query->execute(array($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado));
 
     ConexionBD::DesconectarBD();
   }

@@ -7,10 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_usuario.php?codigo_usuario="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablausuario">
@@ -18,7 +20,7 @@
         <table border="1px">
           <thead>
             <th colspan="16"><center><h5>Usuario.</h5></center></th>
-            
+
             <tr>
               <td>Rol</td>
               <td>Tipo de documento</td>
@@ -47,7 +49,7 @@
                    <td><?php echo $bn['usu_fech'];       ?></td>
                    <td><?php echo $bn['usu_estado'];     ?></td>
                    <td>
-                     <a href="modificar_usuario.php?codigo_usuario=<?php echo base64_encode($bn['usu_cod']); ?>">Modificar</a>
+                      <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["usu_cod"]; ?>)">Modificar</span>
                    </td>
                  </tr>
               <?php endforeach ?>

@@ -12,7 +12,6 @@ class bono{
     $query->execute(array($pto_cod,$bono_desc));
 
     ConexionBD::DesconectarBD();
-
   }
 
   public static function mostrar_bono(){

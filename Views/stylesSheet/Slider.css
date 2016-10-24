@@ -32,7 +32,7 @@ figure.slider {
 
 figure.slider figure {
   width: 20%; height: auto;
-  display: inline-block;  
+  display: inline-block;
   position: inherit;
   float: left;
 }

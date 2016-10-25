@@ -18,7 +18,7 @@
                                                             <input type="radio" name="compra_creditos" id="compra_creditos" value="7000" required="required">
                                                         </td>
                                                         <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="/img/star.png" data-src="/img/star.png"></div>
+                                                            <div class="img_coins"><img src="img/star.png" data-src="/img/star.png"></div>
                                                             <p>7.000</p>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
@@ -148,7 +148,7 @@
                                             </div>
 
                                             <div class="modal-footer">
-                                                <button class="btn btn-success"><i class="icon-shopping-cart icon-white"></i> Confirmar pedido</button>
+                                                <button class="btn btn-success" id="bot"><i class="icon-shopping-cart icon-white"></i> Confirmar pedido</button>
                                             </div>
        </body>
 </html>

@@ -17,19 +17,24 @@
  
 
 <div class="span8">
-                    	<div class="img3"><img class="img_height100" src="/files/juegos/2774_0_Medieval_Moves_Deadmunds_Quest.jpg" data-src="/files/juegos/2774_0_Medieval_Moves_Deadmunds_Quest.jpg"></div>
-                        <div class="game3">
+                    	<div class="img3" id="imagen"><img src="img/02.jpg"></div>
+
+                        <div id="conter">
                             <h4>Medieval Moves</h4>
-                            <p class="plataforma"><strong>Plataforma:</strong> Playstation 3</p>
+
+                            <class="plataforma"><strong>Plataforma:</strong> Playstation 3</p>
                             <p class="plataforma"><strong>Género:</strong> Aventuras</p>
-                            <p class="plataforma"><strong>Año de publicación:</strong> 2011</p>
+                            <p class="plataforma"><strong>Año de publicación:</strong> 2016</p>
+                            <p class="plataforma"><strong>Valor:</strong> 1600 puntos</p>
+
+                            </div>
                         </div>
                     </div>
 
 <div class="condicion_juego">
                                         <div class="titulos">
-                    <h4 class="hidden-phone">Selecciona la condición de tu juego y el precio de venta</h4>
-                    <h4 class="visible-phone">CONDICIÓN DEL JUEGO</h4>
+                    <h4 class="hidden-phone" id="ver">Selecciona la condición de tu juego y el precio de venta</h4>
+                    <h4 class="visible-phone" id="ve">CONDICIÓN DEL JUEGO</h4>
                 </div><form id="validatedForm" action="/user-profile-my" method="post" novalidate="">
                         <table class="table-hover">
                             <tbody>

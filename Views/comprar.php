@@ -7,12 +7,15 @@
 
 
       <link rel="stylesheet" href="stylesSheet/todoestilo.css">
+
+
+      
 </head>
 <body>
 
 
 
-<div id="myModalComprarCreditos" class="modal hide fade in" tabindex="-1" aria-hidden="false" style="display: block;">
+<div id="myModalComprarCreditos" class="modal hide fade in" tabindex="-1" aria-hidden="false" style="margin-top: -50px;">
             <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">×</button>
                <h3 id="myModalLabel">Te faltan créditos</h3>
@@ -20,7 +23,7 @@
             <div class="alert alert-danger">
                 <p>No tienes suficientes créditos. Puedes conseguirlos intercambiando tus juegos,<!--pagando directamente los créditos que te faltan--> comprando ahora el juego y los créditos que te faltan, o comprando uno de los packs de créditos que tenemos.</p>
                  
-                <br><a href="/comprar-creditos" class="float_right btn btn-success margin_top_menos_30">Comprar pack de créditos</a>
+                <button id="boto"><br><a href="comprarpuntos.php" class="float_right btn btn-success margin_top_menos_30">Comprar pack de créditos</a></button>
                     
                 
             </div>
@@ -89,8 +92,8 @@
                         <input type="checkbox" name="condiciones_compra" id="condiciones_compra" value="option1" required="required">
                         Acepto las <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">condiciones de compra.</a>
                         <div id="collapseThree" class="accordion-body collapse">
-                                                                            <div class="collapse_scroll">
-                                                        <br><p>Tradejuegos pone a su disposición un servicio de compra que le permitirá comprar CRÉDITOS. Los créditos son la moneda que se utiliza en Tradejuegos para adquirir los videojuegos. En el caso de la adquisición de un videojuego se deberán abonar los gastos de envío del mismo.</p>
+                                                        <!--                     <div class="collapse_scroll">
+                                                        <br><p>gametrade pone a su disposición un servicio de compra que le permitirá comprar CRÉDITOS. Los créditos son la moneda que se utiliza en Tradejuegos para adquirir los videojuegos. En el caso de la adquisición de un videojuego se deberán abonar los gastos de envío del mismo.</p>
                                                         <p>Las presentes Condiciones Generales de Compra se aplican a la venta y adquisición de todos los servicios ofrecidos por Tradejuegos a través de su página Web, www.tradejuegos.com a compradores particulares, empresas o cualquier otro destinatario final, 
                                                          solamente dentro del territorio español, excluyendo las islas Canarias, Ceuta y Melilla por la imposibilidad de operar en este territorio de nuestra agencia de transportes. La utilización por parte del COMPRADOR de los servicios de Tradejuegos presupone la aceptación de estas Condiciones Generales de Compra, que estarán disponibles en el momento de realizar el pedido a través de la página Web. Por eso, es conveniente que EL COMPRADOR lea atentamente dichas Condiciones Generales antes de continuar con la operación de compra.
                                                         <br>Si el comprador selecciona la opción "Acepto las condiciones de compra”, se considerará que las entiende y acepta plenamente y podrá continuar con el proceso de compra.</p>
@@ -112,11 +115,11 @@
                                                         <p>En el caso que el comprador no reciba el juego que solicitó o no funciona, es posible que le pidamos que lo envíe a la sede de Tradejuegos para la prueba y confirmación. Una vez confirmado uno de estos casos se le devolverán los créditos a su cuenta de tradejuegos.com para que los vuelva a utilizar. Los gastos de envío correrán a cuenta del usuario.
                                                         <br>En el caso que el vendedor envíe un juego que no funciona u otro al solicitado y Tradejuegos lo haya confirmado, NO se le ingresaran los créditos equivalentes al intercambio del mismo y el vendedor correrá a cargo de los gastos de envío si requiere de vuelta su juego.</p>
                                                         <p>El usuario se compromete a la veracidad del juego que pone en el catálogo de tradejuegos, su correcto funcionamiento y que no hace ningún uso de la piratería.</p>
-                                                    </div>                        </div>
+                                                    </div>   -->                      </div>
                     </label>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success"><i class="icon-shopping-cart icon-white"></i> Confirmar pedido</button>
+                    <button class="btn btn-success " id="boton"><i class="icon-shopping-cart icon-white"></i> Confirmar pedido</button>
                 </div>
                 <input name="cju_id_completar" id="cju_id_completar" type="hidden" value="341">
                 <input name="pago_portes_completar" id="pago_portes_completar" value="1" type="hidden">

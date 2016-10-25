@@ -26,12 +26,14 @@
 
 
 </div>
+                            <div class="span4">
+                            <div class="img1"><img class="img_height120" src="/files/juegos/5520_0_50_Cent_Bulletproof_G_Unit_Edition.jpg" data-src="/files/juegos/5520_0_50_Cent_Bulletproof_G_Unit_Edition.jpg" alt="50 Cent: Bulletproof" title="50 Cent: Bulletproof"></div>
                             <div class="game1">
-                                <h4><a href="/juego/assassin-s-creed-xbox-360" title="Assassin's Creed">Assassin's Creed</a></h4>
-                            <p class="plataforma">Xbox 360</p>
-                                <p class="plataforma"><i class="icon-star"></i> Créditos: <a href="/comprar-creditos">600</a> (5.4€)<i class="icon-info-sign" data-toggle="tooltip" title="La equivalencia entre créditos y euros es orientativa ya que puede costarte aún menos con nuestros descuentos en la compra de créditos."></i></p>
-                            <p class="plataforma hidden-phone"><i class="icon-shopping-cart"></i> Juegos disponibles en catálogo: <a href="/juego/assassin-s-creed-xbox-360">1</a></p>
-                                <p class="plataforma visible-phone"><i class="icon-shopping-cart"></i> Juegos en catálogo: <a href="/juego/assassin-s-creed-xbox-360">1</a></p>
+                                <h4><a href="/juego/50-cent-bulletproof-psp" title="50 Cent: Bulletproof">50 Cent: Bulletproof</a></h4>
+                            <p class="plataforma">Psp</p>
+                                <p class="plataforma"><i class="icon-star"></i> Créditos: <a href="/comprar-creditos">400</a> (4€)<i class="icon-info-sign" data-toggle="tooltip" title="La equivalencia entre créditos y euros es orientativa ya que puede costarte aún menos con nuestros descuentos en la compra de créditos."></i></p>
+                            <p class="plataforma hidden-phone"><i class="icon-shopping-cart"></i> Juegos disponibles en catálogo: <a href="/juego/50-cent-bulletproof-psp">1</a></p>
+                                <p class="plataforma visible-phone"><i class="icon-shopping-cart"></i> Juegos en catálogo: <a href="/juego/50-cent-bulletproof-psp">1</a></p>
                         </div>
                         </div>
                                                        

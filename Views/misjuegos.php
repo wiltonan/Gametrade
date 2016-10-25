@@ -63,7 +63,7 @@
   </div>
 
         <center><h3>Registrar juego.</h3></center>
-        <form action="../Controller/juego_admin.controller.php" method="post" id="fom4">
+        <form action="../Controller/juego_usuario.controller.php" method="post" id="fom4" enctype="multipart/form-data">
           <div class="row">
             <div class="class=" col s12>
 
@@ -108,13 +108,13 @@
               <div class="input-field col s6">
                 <input type="text" name="jue_imagen">
                 <label class="active" for="first_name2">Imagen del juego: </label>
-                <input type="file"></input>
+                <input type="file" name="imagenJueUsu"></input>
               </div>
 
-              <div class="input-field col s6">
+           <!--    <div class="input-field col s6">
                 <input type="text" name="jue_pal_clave">
                 <label class="active" for="first_name2">Palabras claves: </label>
-              </div>
+              </div> -->
 
             </div>
           </div>

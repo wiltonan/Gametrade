@@ -25,7 +25,7 @@ session_start();
   <header id="main-header">
     <div id="res"></div>
     <a id="logo-header" href="#">
-      <span class="site-name"><?php echo $_SESSION['nombre']; ?></span>
+      <span class="site-name">Bienvenido    <?php echo $_SESSION['nombre']; ?></span>
       <span class="site-desc">1800 puntos</span>
 
      

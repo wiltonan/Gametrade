@@ -1,5 +1,7 @@
 <?php
   date_default_timezone_set('America/Bogota');
+  include_once("../Model/conexion.php");
+  // $categorias=Gestion_Videojuego::consultarcategoria();
  ?>
 
 <meta charset="utf-8">
@@ -15,18 +17,20 @@
 
  
 
-    <script>
-      $(document).ready(function(){
+    <script type="text/javascript">
+       $(document).ready(function(){
+alert(3232);
+  $('select').material_select();
+      //   // $("#buscar_cedula").keyup(function(){
+      //   //   var param = $(this).val();
+      //   //   $.post("js/buscador.php", {vlparam: param}, function(data){
+      //   //     $(".nombre").html(data);
 
-        $("#buscar_cedula").keyup(function(){
-          var param = $(this).val();
-          $.post("js/buscador.php", {vlparam: param}, function(data){
-            $(".nombre").html(data);
 
+      //   //   });
+      //   // });
 
-          });
-        });
-      });
+       });
     </script>
 
   
@@ -80,7 +84,12 @@
 
               <!-- estos hay que hacerlos drop down list -->
               <div class="input-field col s6">
-                  <input type="text" name="cat_cod" required>
+                  <!-- <input type="text" name="cat_cod" required> -->
+                  <select name="cat_cod" class="input-field col s12" > 
+                 <option>dasdasdas</option>
+                 <option>dasdasdas</option>
+
+                   </select>
                   <label class="active" for="first_name2">Categoria juego: </label>
               </div>
 

@@ -5,6 +5,7 @@
   $usuariomo=usuario::consultarcodigo($_GET["codigo_usuario"]);
   $documento = usuario::consultardocumento();
   $ciu = usuario::consultarciudad();
+  $fecha=date("2004-m-d");
  ?>
 
  <!DOCTYPE html>
@@ -82,8 +83,7 @@
 
           <div class="row">
             <div class="input-field col s6">
-              <label>Fecha de nacimiento: </label>
-               <input type="date" name="usu_naci" value="<?php echo $usuariomo["usu_naci"]; ?>"/>
+               <input type="date" name="usu_naci" max="<?php echo $fecha; ?>" value="<?php echo $usuariomo["usu_naci"]; ?>"/>
             </div>
 
             <div class="input-field col s6">
@@ -98,7 +98,7 @@
                <input type="number" name="usu_cel" value="<?php echo $usuariomo["usu_cel"]; ?>"/>
             </div>
 
-            <div class="input-field col s6">
+            <!-- <div class="input-field col s6">
               <select class="select" name="ciu_cod">
                 <option value="" disabled selected>Ciudad: </option>
                 <?php foreach ($ciu as $ciudad) {
@@ -111,7 +111,7 @@
                 }?>
               </select>
             </div>
-          </div>
+          </div> -->
 
           <div class="row">
             <div class="input-field col s6">
@@ -120,14 +120,14 @@
             </div>
 
             <div class="input-field col s6">
-              <label for="">estado: </label>
                <select name="usu_estado" id="estado" required value="<?php echo $usuariomo["usu_estado"]; ?>">
-                 <option value="0">Seleccionar</option>
+                 <option value="0">Estado:</option>
                  <option value="1">activo</option>
                  <option value="2">inactivo</option>
                </select>
             </div>
           </div>
+          
           <button type="submit" name="action" class="waves-effect waves-light btn">Modificar</button>
          </form>
        </section>

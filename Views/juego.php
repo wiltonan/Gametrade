@@ -23,7 +23,7 @@
            });
          });
        });
-       
+
       $('select').material_select();
       Materialize.updateTextFields();
     </script>
@@ -65,14 +65,14 @@
               </div>
 
               <div class="row">
-              <div class="input-field col s6">
-                  <select class="select" name="cons_cod" required >
-                    <option value="" disabled selected>Consola</option>
-                     <?php foreach ($consola as $cons): ?>
-                     <option value="<?php echo $cons['cons_cod'] ?>"><?php echo $cons['cons_nom']; ?></option>
-                   <?php endforeach ?>
-                  </select>
-              </div>
+                <div class="input-field col s6">
+                    <select class="select" name="cons_cod" required >
+                      <option value="" disabled selected>Consola</option>
+                       <?php foreach ($consola as $cons): ?>
+                       <option value="<?php echo $cons['cons_cod'] ?>"><?php echo $cons['cons_nom']; ?></option>
+                     <?php endforeach ?>
+                    </select>
+                </div>
 
 
                 <div class="input-field col s6">

@@ -7,13 +7,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_ciudad.php?codigo_ciudad="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablaciudad">
       <section>
-        <table border="1px">
+        <table class="buscador">
           <thead>
             <th colspan="5"><center><h5>Ciudades.</h5></center></th>
             <tr>
@@ -30,7 +34,7 @@
                 <td><?php echo $bn["ciu_nom"];  ?></td>
                 <td><?php echo $bn["pais_nom"]; ?></td>
                 <td>
-                  <a href="modificar_ciudad.php?codigo_ciudad=<?php echo base64_encode($bn['ciu_cod']); ?>">Modificar</a>
+                  <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["ciu_cod"]; ?>)">Modificar</span>
                 </td>
               </tr>
            <?php endforeach ?>

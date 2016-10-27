@@ -4,10 +4,17 @@ class Gestion_Videojuego{
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+		$sql1="SELECT usu_cod from tbl_usuario WHERE usu_num_docum = ?";
+		$query=$pdo-prepare($sql1);
+		$query->execute(array($documento));
+
+		$result1=$query->rowCount();
+		$codigo=$result1;
+
 		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
+		$query->execute(array($codigo,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
 
 		ConexionBD::DesconectarBD();
 

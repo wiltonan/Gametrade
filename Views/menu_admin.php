@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>menu administrador.</title>
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
     <link href="dist/sweetalert.css">
     <script src="dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">

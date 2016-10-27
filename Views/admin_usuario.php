@@ -92,7 +92,7 @@
               </div>
 
               <div class="input-field col s6">
-                <input type="date" name="usu_naci"  max="<?php echo $fecha; ?>" required/>
+                <input type="date" name="usu_naci" max="<?php echo $fecha; ?>" required/>
                 <label class="active" for="first_name2">Fecha de nacimiento.</label>
               </div>
             </div>

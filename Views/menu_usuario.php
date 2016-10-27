@@ -1,6 +1,5 @@
 <?php
-
-session_start();
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -28,27 +27,31 @@ session_start();
       <span class="site-name"><?php echo $_SESSION['nombre']; ?></span>
       <span class="site-desc">1800 puntos</span>
 
-     
+
 
     </a> <!-- / #logo-header -->
 
-     <button id="boton" class="waves-effect waves-light btn grey darken-3" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
-    
+     <button id="boton" class="waves-effect waves-light btn grey darken-3" >
+       <div class="session" onclick="destroy()">
+         <a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a>
+       </div>
+     </button>
+
     <nav class="grey darken-3 ">
       <ul id="menus">
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
       <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
         <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
-        
-        
-        
+
+
+
       </ul>
     </nav>
   </header>
 <div id="dv_index">
-  <?php 
+  <?php
 include_once("conte_usuario.php");
-  ?>  
+  ?>
 </div>
 	<section class="menu_usuario"></section>
 

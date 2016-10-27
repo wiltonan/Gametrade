@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_pais.php?codigo_pais="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablapais">
@@ -28,7 +32,7 @@
                 <td><?php echo $bn["pais_cod"];  ?></td>
                 <td><?php echo $bn["pais_nom"];  ?></td>
                 <td>
-                  <a href="modificar_pais.php?codigo_pais=<?php echo base64_encode($bn["pais_cod"]); ?>">Modificar</a>
+                  <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["pais_cod"]; ?>)">Modificar</span>
                 </td>
               </tr>
            <?php endforeach ?>

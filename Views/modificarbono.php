@@ -24,11 +24,12 @@
 
           <div class="row">
             <input type="hidden" name="bono_cod" readonly value="<?php echo $bonomo["bono_cod"]; ?>" />
+            
             <div class="input-field col s6">
               <select class="select" name="pto_cod" >
                 <option value="" disabled selected>Escoja la cantidad de puntos</option>
                 <?php foreach ($pto_cod as $puntos) {
-                  if($pun tos["pto_cod"] == $bonomo["pto_cod"]){
+                  if($puntos["pto_cod"] == $bonomo["pto_cod"]){
                     $selected = "selected";
                   }else{
                     $selected = "";

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // $('select').material_select();
+ 
   
 	$("#inicio").click(function(){
     $("#dv_index").load("conte_usuario.php");

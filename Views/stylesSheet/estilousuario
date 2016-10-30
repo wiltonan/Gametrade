@@ -1,0 +1,1509 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif !important;
+  padding-top: 180px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+
+input {
+  box-sizing: initial;  
+}
+
+.navbar-search .search-query {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.hero-unit {
+  padding: 60px;
+  max-height: 280px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.hero-unit li {
+  line-height: 30px;
+}
+
+.content {
+  float:left;
+  max-width: 800px;
+  width:70%;
+}
+
+.banner {
+  margin-left:34px;
+  width: 336px;
+  height:280px;
+  background-color:#fff;
+}
+
+.banner_promo {
+  margin-top: 20px;
+  margin-left:34px;
+  width: 336px;
+  height:280px;
+  background-color:#fff;
+}
+
+.banner_promo_adsense_sota {
+  margin-bottom: 20px;
+  margin-left:34px;
+  width: 336px;
+  height:280px;
+  background-color:#fff;
+}
+
+.banner_promo_adsense_sota_descuento {
+  margin-bottom: 20px;
+  margin-left:34px;
+  width: 336px;
+  height: 150px;
+  background-color:#fff;
+}
+
+.twitter {
+  margin-top: 10px;
+  margin-left:34px;
+  width: 336px;
+  height:400px;
+  background-color:#999999;
+}
+
+footer {
+    background-image:url('../img/menu-bg.png');
+    background-repeat:repeat-x;
+    text-align:center;
+    height:20px;
+    color: #dddddd;
+    padding: 30px 0px;
+}
+
+footer p {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer h6 {
+    float: left;
+    margin: 0px;
+    padding-left: 10px;
+    border-left: 1px solid #a1a1a1;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+
+hr {
+    margin-bottom: 2px;
+}
+
+
+.input-medium {
+    width: 370px;
+    margin-top:0px;
+   
+}
+
+.input-medium_menu {
+    margin-top:5px;
+    width: 300px;
+    margin-top:0px; 
+}
+
+
+.div_aside {
+  float:left;
+  margin-left:34px;
+  width: 336px;
+}
+
+.navbar-form {
+  margin: 10px 0 10px 10px;
+}
+
+
+.row {
+  margin-left: -30px;
+  *zoom: 1;
+}
+
+.span4 {
+    width: 360px;
+        height: 122px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border:1px solid #a1a1a1;
+    padding:11px 11px; 
+    background:#dddddd;
+    border-radius:5px;
+}
+
+
+.img_height120 {
+ max-height: 120px;
+}
+
+.img_height100 {
+ max-height: 100px;
+}
+
+.img_height300 {
+ max-height: 300px;
+}
+
+.img_height250 {
+ max-height: 250px;
+}
+
+.img_height60 {
+ max-height: 60px;
+}
+
+.img1 {
+ float:left;
+ width:87px;
+ max-height: 100px;
+ /*height:100px;*/
+}
+
+.img2 {
+ float:left;
+ width:261px;
+ height:350px;
+}
+
+.img3 {
+ float:left;
+ max-width:87px;
+ height:100px;
+}
+
+.img4 {
+    float:left;
+    max-width:50px;
+    height:60px;
+    margin-right: 10px;
+    margin-left: 150px;
+}
+
+.img5 {
+    max-width:87px;
+    height:107px;
+    margin: 0 auto;
+    display: block;
+}
+
+.img6 {
+    float: left;
+    max-width:30px;
+    height:30px;
+    margin-top: -8px;
+    margin-right: 8px;
+}
+
+.no_img {
+    max-width:87px;
+    height:100px;
+    margin-left: 150px;
+}
+
+
+.game1 {
+ margin: 0px 10px 0 15px;
+ width:245px;
+ float:left;
+}
+
+.game2 {
+ margin: -15px 10px 0 15px;
+ width: 62%;
+ float:left;
+ max-height:300px;
+}
+
+.game3 {
+ margin: 0px 10px 20px 15px;
+ max-width:450px;
+ float:left;
+ max-height:250px;
+}
+
+.plataforma{
+    margin-bottom: 3px;
+}
+
+.margin_bottom10{
+    margin-bottom: 10px;
+}
+
+.margin_top10{
+    margin-top: 10px;
+}
+
+.margin_top0{
+    margin-top: 0px !important;
+}
+
+.margin_top5{
+    margin-top: 5px;
+}
+
+.margin_top4{
+    margin-top: 4px;
+}
+
+h4{
+    margin-top: 0px;
+}
+
+.content_register{
+    max-width: 772px;
+        float:left;
+    width: 100%;
+    border:1px solid #a1a1a1;
+    padding:10px 10px; 
+    background:#dddddd;
+    border-radius:5px;
+}
+
+.usuario_conectado{
+    float:right;
+    padding:10px 10px;
+        margin-top: 0px;
+}
+
+input[type="text"].registro {
+    display:block;
+    width: 96%;
+    margin-top:5px;
+        float: left;
+}
+
+input[type="email"].registro {
+    display:block;
+    width: 96%;
+    margin-top:5px;
+        float: left;
+}
+
+input[type="password"].registro {
+    display:block;
+    width: 96%;
+    margin-top:5px;
+        float: left;
+}
+
+input[type="number"].registro {
+    display:block;
+    width: 96%;
+    margin-top:5px;
+}
+
+input[type="checkbox"].registro {
+    margin-top:0px;
+}
+
+input[type="file"].registro {
+    margin-top: 25px;
+        line-height: 20px;
+        font-size: 12px;
+}
+
+.select_provincia {
+    display:block;
+    width: 100%;
+    margin-top:5px;
+        float: left;
+}
+
+.conseguir_juego {
+    margin: 10px 10px 15px 15px;
+    max-width:480px;
+    float:left;
+    font-size: 10px;
+    color: #999999;       
+}
+
+.disponibles{
+ margin-bottom: 5px;
+ margin-right: 15px;
+ display: inline;
+}
+
+.des_img {
+     margin: 0px 10px 10px 0px;
+}
+
+.btn_registrar {
+     float:right;
+     margin: 5px 10px 0px 0px;
+}
+
+.btn_registrar2 {
+     float:right;
+     margin: 5px 10px 0px 0px;
+}
+
+.boton_registrarse_submit{
+    margin: 0% 35%;
+    text-align: center;
+    float: left;
+}
+
+.lista_precios{
+    margin-bottom: 20px;
+    position: relative;
+    border-color: #C0C0C0; 
+    border-style: solid;
+    border-width: 5px 1px;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+.lista_precios table td{
+    border-right: 1px solid #C0C0C0;
+}
+
+.cela_1{
+    width: 12%;
+    padding: 25px 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.img_coins {
+    margin-top: -4px;
+    margin-right: 5px;
+    float: left;
+    max-width:20px;
+    max-height:20px;
+}
+
+.cela_1 .img_coins{
+    margin-top: -4px;
+}
+
+.img_coins_add {
+    float: left;
+    max-width:20px;
+    max-height:20px;
+}
+
+.cela_2{
+    width: 15%;
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.cela_2 b{
+    font-size: 17px;
+    color: #000;
+    text-transform: none;
+    display: block;
+}
+
+.cela_ p{
+    text-transform: none;
+}
+
+.cela_3{
+    width: 23%;
+    font-size: 12px;
+    padding: 5px 18px;
+    color: #000;
+}
+
+.cela_4{
+    width: 35%;
+    padding: 13px 5px 13px 13px;
+    vertical-align: middle;
+    position: relative;
+}
+.cela_4 h5{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.cela_5{
+    width: 15%;
+    padding: 5px 10px;
+    vertical-align: middle;
+        text-align: center;
+}
+
+.cela_5_2botones{
+    width: 20%;
+    padding: 0px 5px;
+        text-align: center;
+}
+
+.boton_comprar {
+    float: right;
+    margin: 0px 0px 20px 50px;
+}
+
+.user_icon {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.user_stats {
+    margin-top: 0px;
+    font-size: 10px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.user_stats b{
+    font-size: 14px;
+    color: #000;
+    text-transform: none;
+}
+
+.search_catalogo {
+    width: 95%;
+    float:left;
+    padding: 25px 19px 5px 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+select{
+    width:263px;
+}
+
+.pagination {
+    float:right;
+}
+
+.recomendar_juego {
+    float:right;
+    font-size: 10px;
+    color: #999999;
+}
+
+table.add_game_table{
+    width: 600px;
+    height: 450px;
+}
+
+.condicion_juego{
+    margin-bottom: 20px;
+    position: relative;
+    border-color: #C0C0C0; 
+    border-style: solid;
+    border-width: 5px 1px;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+.condicion_juego table tr{
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.condicion_juego table td{
+    border-right: 1px solid #C0C0C0;
+}
+
+.span12 {
+    max-width: 772px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #a1a1a1;
+    padding: 11px 11px;
+    background: #dddddd;
+    border-radius: 5px;
+}
+
+.span12 h4{
+    margin-bottom: 10px;
+    color: #0088cc;
+}
+
+.span12 h5{
+    margin-bottom: 0px;
+}
+
+.user_pos_neg {
+    margin: 0px 10px 8px 100px;
+    max-height:250px;
+    font-size: 10px;
+    color: #999999;
+    text-transform: none;
+    vertical-align: bottom;
+}
+
+.user_pos_neg b{
+    vertical-align: middle;
+    font-size: 18px;
+    color: #000;
+}
+
+.cela_8{
+    width: 60%;
+}
+
+.cont_cela_8{
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: #999999;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.cont_cela_8 b{
+    font-size: 17px;
+    color: #000;
+    text-transform: none;
+    display: block;
+}
+
+.cela_9{
+    width: 40%;
+    vertical-align: baseline;
+}
+
+.cont_cela_9{
+    padding: 15px 10px;
+    max-height: 100px;
+    font-size: 10px;
+    color: #999999;
+    border-bottom: 1px solid #C0C0C0;
+    text-align: center;
+}
+
+.cont_cela_9 b{
+    font-size: 17px;
+    color: #000;
+    text-transform: none;
+    display: block;
+    text-align: left;
+}
+
+.cont_cela_9 .img_coins{
+    margin: -3px 3px 0px 120px;
+}
+
+.cont_cela_10 a.btn{
+    margin: 0px 15px;
+}
+
+.cont_cela_10{
+    padding: 15px 10px;
+    max-height: 120px;
+    font-size: 10px;
+    color: #999999;
+    border-bottom: 1px solid #C0C0C0;
+    text-align: center;
+}
+
+.cont_cela_11{
+    padding: 15px 10px;
+    max-height: 259px;
+    font-size: 10px;
+    color: #999999;
+    border-bottom: 1px solid #C0C0C0;
+    text-align: center;
+        background: peachpuff;
+}
+
+.cont_cela_11 b{
+    font-size: 11px;
+    color: #000;
+    text-transform: none;
+    text-align: left;
+}
+
+.cont_cela_10 b{
+    font-size: 20px;
+    color: #000;
+    text-transform: none;
+    text-align: left;
+}
+
+.cela_6{
+    width: 15%;
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: #999999;
+}
+
+.cela_6 .img_coins{
+    margin: -4px 3px 0px 20px;
+}
+
+.cela_6 b{  
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.cela_7{
+    width: 25%;
+    font-size: 12px;
+    padding: 5px 18px;
+    color: #000;
+}
+
+.user_pos_neg_cela{
+    margin: auto;
+    width: 24px;
+}
+
+.cela_11{
+    width: 30%;
+    padding: 13px 5px 13px 13px;
+    vertical-align: middle;
+    position: relative;
+}
+.cela_11 h5{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.cela_5 .btn-primary{
+    width: auto;
+}
+
+.fecha_catalogo{
+    margin-bottom: 0px;
+    text-transform: none;
+}
+
+.accordion-inner .span4{
+    width: 350px;
+    margin-left: 0px;
+        margin-right: 10px;
+}
+
+.accordion-inner .game1{
+    width: 235px;
+}
+
+.game_stats{
+    float: left;
+        width: 150px;
+        margin-left: 10px;
+        font-size: 10px;
+    color: #999999;
+}
+
+.titulos {
+    max-height: 40px;
+    max-width: 800px;
+    margin-bottom: 15px;
+    background-image: url(../img/fons_titulo.png);
+}
+
+.titulos h4{
+    margin-left: 50px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: normal;
+}    
+
+.titulos_aside {    
+    max-height: 40px;
+    width: 336px;
+    margin: 20px 0px 5px 34px;
+    background-image: url(../img/fons_titulo_aside.png);
+}
+
+.titulos_aside h4{
+    margin-left: 50px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: normal;
+}  
+
+.margin_bottom5 {
+  margin-bottom: 5px;
+}
+
+.margin_left50 {
+  margin-left: 50%;
+}  
+
+.editar_perfil {
+  float: left;
+  margin: 0;
+  font-weight: normal;
+}
+
+.salir_icono {
+  float: right;
+  margin: 0;
+  font-weight: normal;
+}
+
+.proceso_compra {
+    height: 150px;
+    max-width: 800px;
+    margin-bottom: 15px;
+    float: left;
+    margin-left: 35px;
+}
+
+.proceso1 {
+    max-height: 46px;
+    max-width: 160px;
+    float: left; 
+    text-align: center;     
+}
+
+.proceso2 {
+    max-height: 46px;
+    max-width: 160px;
+    float: left; 
+    text-align: center;     
+}
+
+.juego59 {
+    max-height: 40px;
+    max-width: 39px;
+    padding-top: 10px;
+        padding-left: 5px;
+    margin-bottom: 18px;
+}
+
+.icons_proceso {
+    max-height: 60px;
+    max-width: 59px;
+    float: right;
+    margin-bottom: 5px;     
+}     
+
+.proceso2 p {
+    margin-left: 105px; 
+}  
+
+.tabla_proceso_compra {
+    margin-bottom: 20px;
+    position: relative;
+    border-color: #C0C0C0; 
+    border-style: solid;
+    border-width: 1px 1px;
+    background-color: #F0F0F0;
+    width: 100%;
+    float: left;
+}
+
+.tabla_proceso_compra p {
+    margin-bottom: 0px;
+}      
+
+.capcelera_tabla_proceso_compra {
+    background-color: grey;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}   
+
+.tabla_proceso_compra table td{
+    border-right: 1px solid #C0C0C0;
+}
+
+.cela_20_cent {
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cela_30_cent {
+    width: 30%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cela_15_cent {
+    width: 15%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cela_10_cent {
+    width: 10%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cela_25_cent {
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.modal-body_comprar_creditos{
+    position: relative;
+    
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.modal-body_comprar_creditos_modal{
+    position: relative;
+    width: 500px;
+    padding: 15px;
+    overflow-y: auto;
+} 
+
+table.comprar_creditos{
+    width: 730px;
+    height: 300px;
+    margin-left: 10px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #C0C0C0;
+}
+
+table.tipo_pago{
+    width: 730px;
+    margin-left: 10px;
+        border-bottom: 1px solid #C0C0C0;
+}
+
+table.tipo_pago_modal{
+    max-width: 480px;
+    margin-left: 0px;
+        border-bottom: 1px solid #C0C0C0;
+}
+
+table td.cela_comprar_creditos1{
+    width: 35%;
+    padding: 15px 10px;
+    font-size: 26px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+    border-right: 1px solid #C0C0C0;
+}
+
+table td.cela_comprar_creditos2{
+    width: 35%;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+    border-right: 1px solid #C0C0C0;
+}
+
+table td.cela_descuentos{
+    width: 25%;
+    padding: 5px 5px;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+}
+
+.cela_comprar_creditos1 .img_coins {
+    margin-top: -4px;
+    margin-left: 20px;
+    max-width: 26px;
+    max-height: 26px;
+}
+
+.cela_comprar_creditos1 p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.cela_comprar_creditos2 p {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.cela_descuentos p {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.img_descuento_gratis {
+    margin-left: 30%;
+    max-width:60px;
+    max-height:60px;
+}
+
+.img_precios {
+    max-width:260px;
+    max-height:90px;
+}
+
+.img_precios2 {
+    max-width:100px;
+    max-height:20px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+table td.cela_radio_comprar_creditos{
+    width: 5%;
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
+.checkbox{
+    float: left;
+}
+
+.table-hover.comprar_creditos tbody tr:hover td, .table-hover.comprar_creditos tbody tr:hover th {
+  background-color: #5fbd5f;
+}
+
+.p_fontsize_12{
+    font-size: 12px;
+    margin-bottom:0px;
+}
+
+table td.va_middle{
+    vertical-align: middle;
+}
+
+.resulCombo {
+    width: 95%;
+    margin-left: 1px;
+    border:1px solid #a1a1a1;
+    line-height: 14px;
+    vertical-align: middle;
+    background-color: transparent;
+    height: 40px;
+}
+
+.resulCombo span{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #0088cc;
+    font-size: 14px;
+    margin-left: 5px;
+    white-space:nowrap; 
+    width: 378px; 
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: inherit;
+}
+
+.ui-menu .ui-menu-item {
+    padding: 1px !important; 
+}
+
+.ui-menu .ui-menu-item a:hover{
+    background: #C0C0C0 !important;
+}
+
+.ui-menu .ui-menu-item a:not(:focus){
+    background: #fff;
+}
+
+aside {
+    float:left;
+}
+
+.legend_usuario {
+    font-size: 14px;
+    margin-bottom:0px;
+    line-height:20px;
+    color: #F0F0F0;
+    border-bottom: none;
+}
+
+.float_none {
+    float: none;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.text_align_right{
+    text-align: right;
+}
+
+.alert_usuario {
+    margin: 8px 0 0 0;
+}
+
+.buscadores {
+    width: 180px;
+    margin: 10px 6px 0 0;
+}
+
+.mantenimiento_center {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mantenimiento_logo_center {
+    text-align: center;
+}
+
+.mantenimiento_center h4{
+    margin-top: 50px;
+}
+
+.icon_vot
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    line-height: 24px;
+    vertical-align: text-top;
+    cursor: pointer;
+}
+
+.icon_vot_neg
+{
+    background-image: url('../img/icon_negativo_gris.png');
+
+}
+
+.icon_vot_neg_select
+{
+    background-image: url('../img/icon_negativo.png');
+}
+
+.icon_vot_neg:hover
+{
+    background-image: url('../img/icon_negativo.png');
+}
+
+.icon_vot_pos
+{
+    background-image: url('../img/icon_positivo_gris.png');
+}
+
+.icon_vot_pos
+{
+    background-image: url('../img/icon_positivo_gris.png');
+}
+
+.icon_vot_pos_select
+{
+    background-image: url('../img/icon_positivo.png');
+}
+
+.icon_vot_pos:hover
+{
+    background-image: url('../img/icon_positivo.png');
+}
+
+cursor_pointer:hover
+{
+    cursor:pointer;
+}
+.hidden
+{
+    display: none;
+}
+
+.max_width87{
+    max-width: 67px;
+    margin-right: 8px;
+}
+
+.background_green{
+    background-color: #5fbd5f;
+}
+
+.recuperar_clave{
+    font-size: 10px;
+    color: #999999;    
+}
+
+.text-decoration_underline{
+    text-decoration: underline;
+}
+
+.border-radius_15{
+    border-radius: 15px;   
+}
+
+.font-size_10{
+    font-size: 10px;   
+}
+
+.width_360{
+    width: 360px;   
+}
+
+.img_tutorial{
+    margin: 10px 15% 20px 15%;
+}
+
+.error{
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.redes_sociales{
+    margin-top: 10px;
+}
+
+.height_250{
+    height: 265px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.boton_face_like{
+       display: block !important;
+       float: left;
+       margin-left: 350px;
+}
+
+.boton_twiter_follow{
+       float: left;
+       margin-left: 15px;
+}
+
+.padding_left_20{
+       padding-left: 20px;
+}
+
+#cookie
+{
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    background: black;
+    color: #efefef;
+    font-size: 80%;
+    text-align: center;
+    -moz-opacity: .9;
+    -khtml-opacity: .9;
+    -webkit-opacity: .9;
+    opacity: .9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+    filter: alpha(opacity=90);
+    z-index: 1000000;
+    overflow: hidden;
+}
+.cookieMessage {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.collapse_scroll {
+    height: 300px;
+    overflow: auto; 
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.register_column1 {
+    width: 380px;
+    float: left;
+}
+
+.register_column2 {
+    width: 380px;
+    float: left;
+    margin-left: 10px;
+}
+
+.form-search .input-prepend .search-query {
+  border-radius: 4px;
+}
+
+.register_img {
+    margin: 10px 80% 0 1%; 
+    width: 100%; 
+    float: left; 
+    height: 180px;
+    text-align: center;
+}
+
+.li-aside {
+    min-height: 60px;
+    font-size: 12px;
+}
+
+.li-aside img{
+        max-height: 60px;
+}
+
+.li-aside div{
+        min-width: 75px;
+}
+
+.contactar_form {
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+
+.contactar_button {
+    margin: 0 34% 0 34%;
+}
+
+.list-group {
+padding-left: 0;
+margin-bottom: 20px;
+}
+
+ul, ol {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+/*-webkit-margin-before: 1em;*/
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+}
+
+.list-group-item {
+position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+
+.div_aside ul{
+    margin-left: 0px;
+}
+
+.lista_precios table{
+    width: 100%;
+}
+
+.cela_11 .user_icon{
+    max-height: 83px;
+    height: auto;
+}
+
+.texto_banners{
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.star_profile{
+    width: 20px; 
+    margin-top: -5px;   
+}
+
+.star_profile2{
+    width: 20px;
+    margin-top: -8px;
+}
+
+.width_111{
+    width: 111px;
+}
+
+.margin-left_10{
+    margin-left: 10px;
+}
+
+.alias_propietario_trade
+{
+    float:left;
+    margin-right:40px;
+}   
+
+.font-family_cercador{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.width_96_pc{
+    width: 96%; 
+}
+
+.text_tachado{
+        text-decoration: line-through;
+    padding: 15px 0px 0px 25px;
+    text-align: left;
+    font-size: 14px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+.img_descuento_gratis_oferta2x1 {
+    margin-left: 23%;
+    max-width:90px;
+    max-height:90px;
+}
+
+table td.cela_comprar_creditos_descuento{
+    width: 35%;
+    padding: 15px 10px;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    vertical-align: middle;
+    border-right: 1px solid #C0C0C0;
+}
+
+.font-size_36 {
+    font-size: 36px;
+}
+
+.margin_top_menos_30 {
+    margin-top: -30px;
+}
+
+table td.cela_comprar_creditos_juntos{
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 26px;
+    color: #000;
+    vertical-align: middle;
+    border-right: 1px solid #C0C0C0;
+}
+
+table td.cela_comprar_creditos_juntos2{
+    width: 20%;
+    padding: 15px 10px;
+    font-size: 26px;
+    color: #000;
+        text-align: center;
+    vertical-align: middle;
+}
+
+.form_blog {
+        float: none;
+}
+
+.form_blog textarea{
+        width: 98%;
+}
+
+.width_100_pc {
+    width: 100%;
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: -20px;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+    height: 40px;
+}
+
+.social i {
+    width: 40px;
+    height: 28px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    background: #e64522;
+}
+
+

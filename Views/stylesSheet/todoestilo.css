@@ -27,7 +27,7 @@ img {
 }
 
 #main-header {
-	background: #333;
+	background:#00897b ;
 	color: white;
 	height: 80px;
 }	
@@ -199,7 +199,16 @@ nav {
 	display: inline-block;
 	width: 52px;
 	height: 48px;
-	background:url(../Imagen/logoU.png); 
+	background:url(../Imagen/logoU.png);
+	margin-top: 10px; 
+}
+
+#reso{
+	display: inline-block;
+	width: 21%;
+	height: 85px;
+	background:url(../Imagen/logoso.png);
+	margin-top: -29px; 
 }
 
 #logo-header{

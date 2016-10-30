@@ -6,7 +6,9 @@
     <title></title>
 
 
-      <link rel="stylesheet" href="stylesSheet/todoestilo.css">
+      <link rel="stylesheet" href="stylesSheet/estilousuario.css">
+
+ 
 
 
       
@@ -35,6 +37,12 @@
                     <table class="table table-hover tipo_pago_modal">
                         <tbody><tr>
                             
+
+                            <td class="cela_radio_comprar_creditos">
+                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="7000" required="required">
+                                                        </td>
+
+
                             <td class="cela_comprar_creditos_juntos">
                                 <p class="p_fontsize_12">Créditos que te faltan: <span id="creditos_juego_completar">600</span> - 0 = <span id="creditos_faltantes">600</span></p>
                             </td>
@@ -81,7 +89,7 @@
                                 <input type="radio" name="tipo_compra_completar" id="tipo_compra_completar" value="paypal" required="required" checked="checked">
                             </td>
                             <td class="cela_comprar_creditos1">
-                                <div class="img_precios2"><img src="/img/logo_paypal.png" data-src="/img/logo_paypal.png"></div>
+                                <div class="img_precios2"><img src="img/log.png" data-src="img/log.png"></div>
                             </td>
                             <td>
                                 <p class="p_fontsize_12">PayPal te permite realizar tus compras de forma totalmente segura con tu targeta de crédito.</p>

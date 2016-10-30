@@ -31,13 +31,15 @@ session_start();
 
     </a> <!-- / #logo-header -->
 
-     <button id="boton" class="waves-effect waves-light btn grey darken-3" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
+     <button id="boton" class="waves-effect waves-light btn teal darken-2" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
     
-    <nav class="grey darken-3 ">
+    <nav class="  teal lighten-1">
       <ul id="menus">
+      <div id="reso"></div>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
       <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
         <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
+
         
         
         
@@ -53,7 +55,7 @@ include_once("conte_usuario.php");
 
 
 <footer id="main-footer">
-    <p>&copy; 2016 <a href="http://FranciscoAMK.com">GameTrade@.com</a></p>
+    <p>&copy; 2016 <a href="http://GameTrade.com">GameTrade@.com</a></p>
 
   </footer> <!-- / #main-footer -->
 </body>

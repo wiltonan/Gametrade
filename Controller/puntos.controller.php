@@ -35,16 +35,17 @@ $accion=$_REQUEST['action'];
       }
       break;
 
-      case 'eliminar':
-        try {
-          $codigo = base64_decode($_GET['codigo_punto']);
-          puntos::eliminar_punto($codigo);
-          echo "<script>alert('Se ha eliminado el punto');
-          self.location.href='../Views/menu_admin.php?#/puntos';
-          </script>";
-        } catch (Exception $e) {
-          die($e->getMessage() . ' linea: ' . $e->getLine());
-        }
-        break;
+      // este tambien hacer parte para eliminar
+      // case 'eliminar':
+      //   try {
+      //     $codigo = base64_decode($_GET['codigo_punto']);
+      //     puntos::eliminar_punto($codigo);
+      //     echo "<script>alert('Se ha eliminado el punto');
+      //     self.location.href='../Views/menu_admin.php?#/puntos';
+      //     </script>";
+      //   } catch (Exception $e) {
+      //     die($e->getMessage() . ' linea: ' . $e->getLine());
+      //   }
+      //   break;
     }
     ?>

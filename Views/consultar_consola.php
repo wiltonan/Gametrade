@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <script type="text/javascript">
+      function valida3(code){
+        $(".menu_admin").load("modificar_consola.php?codigo_consola="+code+"");
+      }
+    </script>
   </head>
   <body>
     <div class="tablaconsola">
@@ -30,7 +34,7 @@
                 <td><?php echo $bn["cons_nom"];  ?></td>
                 <td><?php echo $bn["cons_refer"];?></td>
                 <td>
-                  <a href="modificar_consola.php?codigo_consola=<?php echo base64_encode($bn["cons_cod"]); ?>">Modificar</a>
+                   <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["cons_cod"]; ?>)">Modificar</span>
                 </td>
               </tr>
            <?php endforeach ?>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>menu administrador.</title>
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
     <link href="dist/sweetalert.css">
     <script src="dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
@@ -33,12 +34,11 @@
           <li id="consola"><a href="#/consolas">Consolas</a></li>
           <li id="punto"><a href="#/puntos">Puntos</a></li>
           <li id="cat_juego"><a href="#/categoria_juegos">Categoria juego</a></li>
-          <li id="juego"><a href="#/juego">Juego</a></li>
-          <li id="bono"><a href="#/bono">Bono</a></li>
+          <li id="juego"><a href="#/juego">Juegos</a></li>
+          <li id="bono"><a href="#/bono">Bonos</a></li>
         </ul>
       </nav>
     </header>
-
     <section id="inicio_principal">
     </section>
 

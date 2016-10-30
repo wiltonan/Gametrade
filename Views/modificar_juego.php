@@ -2,7 +2,7 @@
   require_once("../Model/conexion.php");
   require_once("../Model/juego_admi.class.php");
 
-  $juegomo =Gestion_Videojuego::consultarporCodigo(base64_decode($_GET["codigo_juego"]));
+  $juegomo =Gestion_Videojuego::consultarporCodigo($_GET["codigo_juego"]);
   date_default_timezone_set('America/Bogota');
 
  ?>
@@ -12,6 +12,11 @@
    <head>
      <meta charset="utf-8">
      <title>modificar usuario</title>
+     <script>
+         $(document).ready(function() {
+           Materialize.updateTextFields();
+         });
+     </script>
    </head>
    <body>
      <div class="usuariomodificado">
@@ -66,11 +71,6 @@
                 </div>
 
                 <div class="input-field col s6">
-                  <input type="text" name="jue_pal_clave" value="<?php echo $juegomo["jue_pal_clave"]; ?>"/>
-                  <label class="active" for="first_name2">Palabras claves.</label>
-                </div>
-
-                <div class="input-field col s6">
                   <input type="text" name="jue_estado" value="<?php echo $juegomo["jue_estado"]; ?>"/>
                   <label class="active" for="first_name2">Estado.</label>
                 </div>
@@ -80,12 +80,5 @@
          <button type="submit" name="action" value="modificar"class="waves-effect waves-light btn">Modificar</button>
        </form>
      </div>
-
-     <script>
-         $(document).ready(function() {
-           Materialize.updateTextFields();
-         });
-     </script>
-
    </body>
  </html>

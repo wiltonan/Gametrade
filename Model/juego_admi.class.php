@@ -5,7 +5,7 @@ class Gestion_Videojuego{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		$sql1="SELECT usu_cod from tbl_usuario WHERE usu_num_docum = ?";
-		$query=$pdo-prepare($sql1);
+		$query=$pdo->prepare($sql1);
 		$query->execute(array($documento));
 
 		$result1=$query->rowCount();
@@ -25,7 +25,7 @@ class Gestion_Videojuego{
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_desc, tbl_videojuego.jue_cant, tbl_videojuego.jue_trailer, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
+		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_categoria_jue.cat_nom
 						from tbl_videojuego
 
 						inner join tbl_usuario

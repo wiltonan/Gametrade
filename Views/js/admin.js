@@ -1,14 +1,6 @@
 // // este es el menu
 $(document).ready(function(){
   
-  $('.buscador').dataTable({
-    "scrollCollapse": false,
-    "paging":true,
-    "langueage":{
-      "url": "js/Spanish.json"
-    }
-  });
-
   $("#usuario").click(function(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();

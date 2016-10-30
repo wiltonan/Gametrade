@@ -98,7 +98,7 @@
                <input type="number" name="usu_cel" value="<?php echo $usuariomo["usu_cel"]; ?>"/>
             </div>
 
-            <!-- <div class="input-field col s6">
+            <div class="input-field col s6">
               <select class="select" name="ciu_cod">
                 <option value="" disabled selected>Ciudad: </option>
                 <?php foreach ($ciu as $ciudad) {
@@ -111,7 +111,7 @@
                 }?>
               </select>
             </div>
-          </div> -->
+          </div>
 
           <div class="row">
             <div class="input-field col s6">
@@ -122,12 +122,12 @@
             <div class="input-field col s6">
                <select name="usu_estado" id="estado" required value="<?php echo $usuariomo["usu_estado"]; ?>">
                  <option value="0">Estado:</option>
-                 <option value="1">activo</option>
-                 <option value="2">inactivo</option>
+                 <option value="activo">activo</option>
+                 <option value="inactivo">inactivo</option>
                </select>
             </div>
           </div>
-          
+
           <button type="submit" name="action" class="waves-effect waves-light btn">Modificar</button>
          </form>
        </section>

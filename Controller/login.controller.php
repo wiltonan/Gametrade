@@ -10,25 +10,23 @@
       $resul = Validar::Login($usu);
       if (password_verify($pas, $resul['usu_pass'])) {
         session_start();
-        if ($resul['usu_estado']==1) {
+        if ($resul['usu_estado']=="activo"){
           if ($resul['cod_rol']==1) {
-
             echo "<script>location.href='../Views/menu_admin.php' </script>";
           }
           else {
             // no se para que es wilton
              $_SESSION['documento'] = $resul['usu_num_docum'];
              $_SESSION['nombre'] = $resul['usu_nom'];
-
             echo "<script>location.href='../Views/menu_usuario.php' </script>";
           }
         }else {
-            echo "<script>alert('Por favor llene los dos campos.');
+            echo "<script>alert('El usuario se encuentra inactivo');
             self.location.href='../';
             </script>";
         }
       }else {
-        echo "<script>alert('El usuario se encuentra inactivo');
+        echo "<script>alert('Por favor llene los dos campos.');
         self.location.href='../';
         </script>";
       }

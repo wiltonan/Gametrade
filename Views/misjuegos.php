@@ -1,5 +1,7 @@
 <?php
   date_default_timezone_set('America/Bogota');
+  include_once("../Model/conexion.php");
+  // $categorias=Gestion_Videojuego::consultarcategoria();
  ?>
 
 <meta charset="utf-8">
@@ -15,18 +17,20 @@
 
  
 
-    <script>
-      $(document).ready(function(){
+    <script type="text/javascript">
+       $(document).ready(function(){
+alert(3232);
+  $('select').material_select();
+      //   // $("#buscar_cedula").keyup(function(){
+      //   //   var param = $(this).val();
+      //   //   $.post("js/buscador.php", {vlparam: param}, function(data){
+      //   //     $(".nombre").html(data);
 
-        $("#buscar_cedula").keyup(function(){
-          var param = $(this).val();
-          $.post("js/buscador.php", {vlparam: param}, function(data){
-            $(".nombre").html(data);
 
+      //   //   });
+      //   // });
 
-          });
-        });
-      });
+       });
     </script>
 
   
@@ -63,7 +67,7 @@
   </div>
 
         <center><h3>Registrar juego.</h3></center>
-        <form action="../Controller/juego_admin.controller.php" method="post" id="fom4">
+        <form action="../Controller/juego_usuario.controller.php" method="post" id="fom4" enctype="multipart/form-data">
           <div class="row">
             <div class="class=" col s12>
 
@@ -80,7 +84,12 @@
 
               <!-- estos hay que hacerlos drop down list -->
               <div class="input-field col s6">
-                  <input type="text" name="cat_cod" required>
+                  <!-- <input type="text" name="cat_cod" required> -->
+                  <select name="cat_cod" class="input-field col s12" > 
+                 <option>dasdasdas</option>
+                 <option>dasdasdas</option>
+
+                   </select>
                   <label class="active" for="first_name2">Categoria juego: </label>
               </div>
 
@@ -108,13 +117,13 @@
               <div class="input-field col s6">
                 <input type="text" name="jue_imagen">
                 <label class="active" for="first_name2">Imagen del juego: </label>
-                <input type="file"></input>
+                <input type="file" name="imagenJueUsu"></input>
               </div>
 
-              <div class="input-field col s6">
+           <!--    <div class="input-field col s6">
                 <input type="text" name="jue_pal_clave">
                 <label class="active" for="first_name2">Palabras claves: </label>
-              </div>
+              </div> -->
 
             </div>
           </div>

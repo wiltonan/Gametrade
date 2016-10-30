@@ -20,14 +20,16 @@
 	<script type="text/javascript" src="js/connection.js"></script>
 	<script type="text/javascript">
 
-	$(document).ready(function(){
-		$("#txtbuscar").keyup(function(){
+
+		$("#txtbuscar1").keyup(function(){
+		
 			var paramet= $(this).val();
-			$.post("listadoajax.php",{vlparam: paramet}, function(data){
-				$("#aa").html(data)
+			$.post("listadoajax1.php",{vlparam1: paramet}, function(data){
+				
+				$("#aa1").html(data)
 			});
 		});
-	})
+
 </script>
 </style>
 </head>
@@ -39,16 +41,16 @@
 		<div class="header  grey lighten-2">
 		<ul id="ulNoticJ">
 			<form>
-				<input type="text" placeholder="Buscar" id="txtbuscar" />
-				<button type="submit" class="btn">BUSCAR</button>
+				<input type="text" placeholder="Buscar" id="txtbuscar1" />
+				
 			</form>
 		</ul>
 		</div>
 
-		<ul id="aa">
+		<ul id="aa1">
 			<?php
 				foreach ($peliculas as $row ): ?>
-				<li><img src="img/<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
+				<li><img src="<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
 			<?php endforeach; ?>
 		</ul>
 	</div>

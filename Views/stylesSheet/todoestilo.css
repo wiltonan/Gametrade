@@ -27,7 +27,7 @@ img {
 }
 
 #main-header {
-	background: #333;
+	background:#00897b ;
 	color: white;
 	height: 80px;
 }	
@@ -148,6 +148,25 @@ nav {
 	display: inline-block;
 }
 
+
+#aa1{
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#aa1 li{
+	display: inline-block;
+	width: 20%;
+	float: left;
+	overflow: hidden;
+}
+
+#aa1 li img{
+	display: inline-block;
+}
+
 /*logo de gametrade*/
 	#e64LogoU{
 	width: 52px;
@@ -180,7 +199,16 @@ nav {
 	display: inline-block;
 	width: 52px;
 	height: 48px;
-	background:url(../Imagen/logoU.png); 
+	background:url(../Imagen/logoU.png);
+	margin-top: 10px; 
+}
+
+#reso{
+	display: inline-block;
+	width: 21%;
+	height: 85px;
+	background:url(../Imagen/logoso.png);
+	margin-top: -29px; 
 }
 
 #logo-header{
@@ -257,10 +285,45 @@ nav {
 	width: 50%;
 	height: 20px;
 	margin-top: 16px;
+	color: #000;
 }
 
 
+#txtbuscar1{
+	border-radius: 60px;
+	width: 50%;
+	height: 20px;
+	margin-top: 16px;
+	color: #000;
+}
+.clConteJue{
+	width: 25%;
+	height: 200px;
+background: #fff;
+	/*margin-left: 6%;*/
+	margin-top: 2%;
+	display: inline-block;
+}
+.clImageJue{
+	width: 55%;
+	height: 100%;
 
+	display: inline-block;
+}
+.ulInforJue{
+	width: 43%;
+	height: 200px;
+	background: #fff;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	margin: 0;
+	list-style: none;
+	margin-top: 0%;
+}
+.ulInforJue li{
+	width: 100%;
+}
 /*cuadro que comntiene juegois mas vendidos */
 #ulNoticJuer{
 	list-style: none;

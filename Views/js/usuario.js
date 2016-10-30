@@ -1,4 +1,6 @@
 $(document).ready(function(){
+ 
+  
 	$("#inicio").click(function(){
     $("#dv_index").load("conte_usuario.php");
   });

@@ -3,9 +3,6 @@
 	include_once("../Model/paginacion_class.php");
 	$peliculas=Paginacion_Buscar::consultarjue();
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +17,6 @@
 	<script type="text/javascript" src="js/connection.js"></script>
 	<script type="text/javascript">
 
-
 		$("#txtbuscar1").keyup(function(){
 		
 			var paramet= $(this).val();
@@ -34,8 +30,6 @@
 </style>
 </head>
 <body>
-
-
 <section class="menu_usuario"></section>
 	<div class="container">
 		<div class="header  grey lighten-2">

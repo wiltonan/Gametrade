@@ -27,7 +27,7 @@ img {
 }
 
 #main-header {
-	background:#00897b ;
+	background:#4db6ac  ;
 	color: white;
 	height: 80px;
 }	
@@ -94,7 +94,8 @@ nav {
 			}
 			
 				nav ul li a:hover {
-					background: #0b76a6;
+					background: ;
+					height: 63px;
 				}
 /*ancho de la mitad*/
 
@@ -197,18 +198,20 @@ nav {
 
 #res{
 	display: inline-block;
-	width: 52px;
-	height: 48px;
+	width: 5%;
+	height: 63.4px;
 	background:url(../Imagen/logoU.png);
-	margin-top: 10px; 
+	margin-top: -0px; 
+
 }
 
 #reso{
 	display: inline-block;
-	width: 21%;
-	height: 85px;
+	width: 14%;
+	height: 75px;
 	background:url(../Imagen/logoso.png);
-	margin-top: -29px; 
+	margin-top: -3px; 
+	/*float: right;*/
 }
 
 #logo-header{
@@ -264,7 +267,7 @@ nav {
 #boton{
 	float: right;
 	margin-right: 1%;
-	margin-top: 1%;
+	margin-top: 1.4%;
 }
 
 .juuego{
@@ -331,7 +334,18 @@ background: #fff;
 	height: 500px;
 	background: #848484;
 	
-	margin-top: 2px;
+	margin-top: 6px;
+
+
+}
+
+#ulNoticJ{
+	list-style: none;
+	width: 100%;
+	height: 60px;
+	background: #848484;
+	
+	margin-top: -8px;
 
 
 }

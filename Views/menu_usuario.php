@@ -24,39 +24,30 @@
   <header id="main-header">
     <div id="res"></div>
     <a id="logo-header" href="#">
-      <span class="site-desc">1800 puntos</span>
+      <span class="site-desc" style="color: #fff">1800 puntos</span>
 
 
 
     </a> <!-- / #logo-header -->
 
-<<<<<<< HEAD
-     <button id="boton" class="waves-effect waves-light btn teal darken-2" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
-    
-    <nav class="  teal lighten-1">
-=======
-     <button id="boton" class="waves-effect waves-light btn grey darken-3" >
-       <div class="session" onclick="destroy()">
-         <a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a>
-       </div>
-     </button>
 
-    <nav class="grey darken-3 ">
->>>>>>> origin/master
+     <button id="boton" class="waves-effect waves-light btn teal lighten-3" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
+    
+    <nav class="teal lighten-3">
+
+
+    <nav class="teal lighten-3">
+
       <ul id="menus">
       <div id="reso"></div>
+        <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Comprar juegos</a></li>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
       <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
-        <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
-
-<<<<<<< HEAD
+      
+      <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
+      
         
-        
-        
-=======
 
-
->>>>>>> origin/master
       </ul>
     </nav>
   </header>

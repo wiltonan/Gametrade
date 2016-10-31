@@ -40,25 +40,24 @@
 
       <ul id="menus">
       <div id="reso"></div>
-<<<<<<< HEAD
+
         <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Comprar juegos</a></li>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
       <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
       
       <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
       
-        
-=======
+        <!-- 
+
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Comprar juegos</a></li>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
         
       
       <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
       
-      <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
+      <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li> -->
       
-        
->>>>>>> origin/master
+
 
       </ul>
     </nav>

@@ -27,9 +27,10 @@ img {
 }
 
 #main-header {
-	background:#00897b ;
+	background:#4db6ac  ;
 	color: white;
 	height: 80px;
+	margin-top: 23px;
 }	
 	#main-header a {
 		color: white;
@@ -114,7 +115,7 @@ nav {
 
 	#main-footer {
 	text-align: center;
-	background: #333;
+	background: #4db6ac;
 	color: white;
 	
 	padding: 20px;
@@ -197,18 +198,20 @@ nav {
 
 #res{
 	display: inline-block;
-	width: 52px;
-	height: 48px;
+	width: 5%;
+	height: 63.4px;
 	background:url(../Imagen/logoU.png);
-	margin-top: 10px; 
+	margin-top: -0px; 
+
 }
 
 #reso{
 	display: inline-block;
-	width: 21%;
-	height: 85px;
+	width: 14%;
+	height: 75px;
 	background:url(../Imagen/logoso.png);
-	margin-top: -29px; 
+	margin-top: -3px; 
+	/*float: right;*/
 }
 
 #logo-header{
@@ -232,7 +235,7 @@ nav {
 #e63JueDestac{
 	width: 100%;
 	height: 55px;
-	background:#1C1C1C;
+	background:#4db6ac;
 	font-size: 28px;
 	
 	padding-top: -18px;
@@ -250,7 +253,7 @@ nav {
 	list-style: none;
 	width: 100%;
 	height: 533px;
-	background: #585858;
+	background: #FFF;
 	
 	margin-top:0;
 	overflow-y: scroll;
@@ -264,7 +267,7 @@ nav {
 #boton{
 	float: right;
 	margin-right: 1%;
-	margin-top: 1%;
+	margin-top: 1.4%;
 }
 
 .juuego{
@@ -356,6 +359,7 @@ form{
 	padding: 2px 0;
 	text-align: center;
 	margin-bottom: 20px;
+	margin-top: -20px;
 }
 
 

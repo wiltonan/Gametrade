@@ -1,7 +1,11 @@
 <?php
   require_once '../Model/conexion.php';
   require_once '../Model/login.class.php';
+  session_start();
 
+  $accion=$_REQUEST['action'];
+    switch ($accion) {
+      case 'variable':
   $usu = $_POST['usu'];
   $pas = $_POST['pas'];
 
@@ -34,13 +38,13 @@
   }
 // este hay que probarlo para ver como se usa;
 
-  $accion=$_REQUEST['action'];
-    switch ($accion) {
+      break;
+
       case 'session':
         session_destroy();
         "<script>
-          self.location.href='../';
+          self.location.href='/';
         </script>";
-        break;
+
     }
  ?>

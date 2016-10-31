@@ -13,11 +13,9 @@
     <script rel="stylesheet" src="Views/materialize/js/materialize.js"></script>
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
-  <body style="background-color: #000000;">
+  <body style="background:black">
 
     <div class="contenido">
-      <div class="parte_negra_menu">
-
         <div class="logo">
           <img src="Views/imagen/logo.png"/>
         </div>
@@ -35,8 +33,6 @@
         <div id="registrarme"  class="registrarme">
           <a href="#/registrar_usuario">Registrarme</a>
         </div>
-
-      </div>
     </div>
       <header>
         <nav>

@@ -42,7 +42,7 @@ $accion=$_REQUEST['action'];
   		 $usu_apell=$_POST["usu_apell"];
        $usu_nick=$_POST["usu_nick"];
        $usu_mail=$_POST["usu_mail"];
-       $usu_pass=$_POST["usu_pass"];
+       $encript = password_hash($usu_pass, PASSWORD_DEFAULT);
        $usu_naci=$_POST["usu_naci"];
   		 $usu_tel=$_POST["usu_tel"];
   		 $usu_cel=$_POST["usu_cel"];
@@ -52,7 +52,7 @@ $accion=$_REQUEST['action'];
        $usu_estado=$_POST["usu_estado"];
        $usu_cod=$_POST["usu_cod"];
        try {
-         usuario::modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_estado,$usu_cod);
+         usuario::modificarusuario($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_estado,$usu_cod);
          echo "<script>alert('Se ha modificado el usuario');
          self.location.href='../Views/menu_admin.php#/usuario';
          </script>";

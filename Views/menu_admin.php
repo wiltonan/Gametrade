@@ -13,8 +13,12 @@
   </head>
   <body>
     <div class="parte_negra_menu">
-      <img src="imagen/logo.png"/>
-      <div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/">Cerrar sesion</a></div>
+      <div class="logo">
+        <img src="imagen/logo.png"/>
+      </div>
+      <div class="session" onclick="destroy()">
+        <a href="#">Cerrar sesion</a>
+      </div>
     </div>
 
     <header>

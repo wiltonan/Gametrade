@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>menu administrador.</title>
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-
     <link href="dist/sweetalert.css">
     <script src="dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="stylesSheet/gstyle_admi.css">
@@ -15,7 +14,7 @@
   <body>
     <div class="parte_negra_menu">
       <img src="imagen/logo.png"/>
-      <div class="session" onclick="destroy()"><a href="#">Cerrar sesion</a></div>
+      <div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/">Cerrar sesion</a></div>
     </div>
 
     <header>
@@ -36,6 +35,7 @@
           <li id="cat_juego"><a href="#/categoria_juegos">Categoria juego</a></li>
           <li id="juego"><a href="#/juego">Juegos</a></li>
           <li id="bono"><a href="#/bono">Bonos</a></li>
+          <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x puntos</a></li>
         </ul>
       </nav>
     </header>

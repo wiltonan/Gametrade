@@ -6,13 +6,7 @@ $accion=$_REQUEST["action"];
  switch ($accion) {
 
  	case 'guardarjuego':
-
-<<<<<<< HEAD
-
-     $documento=$_POST['usu_cod']
-=======
      $documento=$_POST['usu_cod'];
->>>>>>> origin/master
  		 $jue_nom=$_POST['jue_nom'];
  		 $cons_cod=$_POST['cons_cod'];
  		 $cat_cod=$_POST['cat_cod'];

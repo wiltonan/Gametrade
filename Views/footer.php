@@ -5,7 +5,7 @@
 		<title></title>
 	</head>
 	<body>
-		<section style="background-color: white;">
+		<section style="color: white;">
 			<footer>
 				<h3>Siguenos Tambien en:</h3>
 				<div class='social_bookmarks_container'>
@@ -20,12 +20,15 @@
 					<input type="hidden" name="as_filetype" value=".doc" />
 				</div>
 
-				<div class="informacion" style="margin-left: 70%; margin-top: -60px;">
+				<div class="informacion" style="margin-left: 40%; margin-top: -60px;">
 					<h4>Contactenos</h4>
 					<p>Correo Electronico: gametrade@hotmail.com.</p>
-					<p>Copyright 2016 ciudadanootempor incididunt .</p>
+					<p>Copyright 2016 ciudadanootempor incididunt.</p>
 					<p>Tel:3456214546</p>
 				</div>
+				<div style="margin-left:75%; margin-top: -110px">
+					<img src="Views/imagen/logo.png"/>
+	      </div>
 			</footer>
 		</section>
 	</body>

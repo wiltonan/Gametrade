@@ -9,11 +9,9 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-<<<<<<< HEAD
-    
     </head>
       <body>
-    <?php 
+    <?php
   foreach ($juego as $bn)
       echo " <div class='clConteJue'>
       <img class='clImageJue' src=".$bn["jue_imagen"]." width= '30%' height= '120px'/>
@@ -24,12 +22,9 @@
         <li>asdasd</li>
         <li>asdsadsa</li>
       </ul>
-    </div> ";        
+    </div> ";
 ?>
-  
 
-
-=======
     <script type="text/javascript">
       function valida3(code){
         $(".menu_admin").load("modificar_juego.php?codigo_juego="+code+"");
@@ -72,6 +67,5 @@
         </table>
       </section>
     </div>
->>>>>>> origin/master
   </body>
 </html>

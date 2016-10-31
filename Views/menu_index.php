@@ -32,7 +32,7 @@
           <a href="#">Recuperar contraseña</a>
         </div> -->
 
-        <div id="registrarme" class="registrarme">
+        <div id="registrarme"  class="registrarme">
           <a href="#/registrar_usuario">Registrarme</a>
         </div>
 

@@ -3,11 +3,8 @@ require_once('../Model/conexion.php');
 require_once('../Model/usuario.class.php');
 
 $accion=$_REQUEST['action'];
-
  switch ($accion) {
-
  	case 'guardarusuario':
-
      $rol_cod=$_POST['rol_cod'];
  		 $tipo_cod=$_POST['tipo_cod'];
      $usu_num_docum=$_POST['usu_num_docum'];
@@ -38,7 +35,7 @@ $accion=$_REQUEST['action'];
 
     case 'modificarusuario':
 
-       $rol_cod=$_POST["rol_cod"];
+       $rol_cod=$_POST["cod_rol"];
        $tipo_cod=$_POST["tipo_cod"];
        $usu_num_docum=$_POST["usu_num_docum"];
   		 $usu_nom=$_POST["usu_nom"];

@@ -145,3 +145,17 @@
 <div style="margin-left:15%;" class="consultarusuario">
   <?php include('consultar_usuarios.php') ?>
 </div>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>

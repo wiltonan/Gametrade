@@ -11,7 +11,6 @@
 	<section>
 		<div id="captioned-gallery">
 			<figure class="slider">
-
 				<figure>
 					<img src="Views/Imagen/04.jpg" style="height: 535px; width: 100%;">
 					<figcaption>Nombre de la pelicula</figcaption>

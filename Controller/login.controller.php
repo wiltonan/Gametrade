@@ -10,41 +10,21 @@
       $resul = Validar::Login($usu);
       if (password_verify($pas, $resul['usu_pass'])) {
         session_start();
-<<<<<<< HEAD
         if ($resul['usu_estado']=="activo"){
-=======
-<<<<<<< HEAD
-        if ($resul['cod_rol']==1) {
-          echo "<script>location.href='../Views/menu_admin.php' </script>";
-        }
-        else {
-
-
-          // no se para que es 
-           $_SESSION['documento'] = $resul['usu_num_docum'];
-           $_SESSION['nombre'] = $resul['usu_nom'];
-
-          echo "<script>location.href='../Views/menu_usuario.php' </script>";
-=======
-        if ($resul['usu_estado']==1) {
->>>>>>> origin/master
           if ($resul['cod_rol']==1) {
             echo "<script>location.href='../Views/menu_admin.php' </script>";
-          }
-          else {
-            // no se para que es wilton
+          }else {
              $_SESSION['documento'] = $resul['usu_num_docum'];
              $_SESSION['nombre'] = $resul['usu_nom'];
             echo "<script>location.href='../Views/menu_usuario.php' </script>";
           }
         }else {
-            echo "<script>alert('El usuario se encuentra inactivo');
+            echo "<script>alert('El usuario se encuentra inactivo o no existe');
             self.location.href='../';
             </script>";
->>>>>>> origin/master
         }
       }else {
-        echo "<script>alert('Por favor llene los dos campos.');
+        echo "<script>alert('El usuario se encuentra inactivo o no existe');
         self.location.href='../';
         </script>";
       }
@@ -52,8 +32,6 @@
       echo "error" . $e->getMessage();
     }
   }
-
-
 // este hay que probarlo para ver como se usa;
 
   $accion=$_REQUEST['action'];

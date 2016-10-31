@@ -1,6 +1,6 @@
 // // este es el menu
 $(document).ready(function(){
-  
+
   $("#usuario").click(function(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();
@@ -49,6 +49,11 @@ $(document).ready(function(){
     $(".menu_admin").load("bono.php");
   });
 
+  $("#usupuntos").click(function(){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("usu_x_puntos.php");
+  });
   url();
 });
 
@@ -102,6 +107,12 @@ function url(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();
     $(".menu_admin").load("bono.php");
+  }
+
+  if(URLhas=="#/usuario_x_puntos"){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("usu_x_puntos.php");
   }
 }
 

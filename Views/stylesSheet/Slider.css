@@ -18,11 +18,10 @@ body, figure {
 }
 
 div#captioned-gallery {
-  width: 115%;
+  width: 100%;
   overflow: hidden;
   height: 535px;
   margin-top: 2px;
-  margin-left: -70px;
 }
 
 figure.slider {

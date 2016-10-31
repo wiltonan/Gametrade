@@ -12,9 +12,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-
     <script type="text/javascript">
-
        $(document).ready(function(){
          $("#busqueda").keyup(function(){
            var param = $(this).val();
@@ -27,8 +25,6 @@
       $('select').material_select();
       Materialize.updateTextFields();
     </script>
-
-
   </head>
   <body>
     <div class="formulariojuego">

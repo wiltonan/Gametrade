@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if (!isset($_SESSION["nombre"]))	 {
+  header("Location:../");
+  }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,6 +22,7 @@
       <div class="logo">
         <img src="imagen/logo.png"/>
       </div>
+
       <div class="session" onclick="destroy()">
         <a href="#">Cerrar sesion</a>
       </div>

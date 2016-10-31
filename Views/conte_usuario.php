@@ -37,27 +37,27 @@
 
 				<figure>
 					<img src="Imagen/09.jpg" style="height: 535px; width: 100%;">
-					<figcaption>Nombre de la pelicula</figcaption>
+					<figcaption></figcaption>
 				</figure>
 
 				<figure>
 					<img src="Imagen/08.jpg" style="height: 535px; width: 100%;">
-					<figcaption>Nombre de la pelicula</figcaption>
+					<figcaption></figcaption>
 				</figure>
 
 		    <figure>
 					<img src="Imagen/mara.jpg" style="height: 535px; width: 100%;">
-					<figcaption>Nombre de la pelicula</figcaption>
+					<figcaption></figcaption>
 				</figure>
 
 				<figure>
 					<img src="Imagen/10.jpg" style="height: 535px; width: 100%;">
-					<figcaption>Nombre de la pelicula</figcaption>
+					<figcaption></figcaption>
 				</figure>
 
 				<figure>
 					<img src="Imagen/11.jpg" style="height: 535px; width: 100%;">
-					<figcaption>Nombre de la pelicula</figcaption>
+					<figcaption></figcaption>
 				</figure>
 
 			</figure>

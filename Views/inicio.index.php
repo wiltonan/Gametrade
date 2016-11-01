@@ -41,26 +41,21 @@
 	</section>
 
 	<div class="contenido_lugar_video">
-		<section>
-			<div class="row">
-				<div class="col s8">
+		<section >
+
+
 					<div id="e64Video" >
 						<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Tu navegador no implementa el elemento <code>video</code>.
 						</video>
 					</div>
-				</div>
 
-				<div class="col s4" width="100%">
-					<div id="e64Public1">
-						<img src="Views/Imagen/diseno/1.png"  height="198px;"/>
-					</div>
-
-					<div id="e64Public2" style="margin-top: 2px">
-						<img src="Views/Imagen/diseno/2.png" height="198px;" />
-					</div>
-				</div>
-			</div>
 		</section>
+		<aside class="" style="display:inline-block">
+			<div id="e64Public1">
+				<img src="Views/Imagen/diseno/1.png"  height="198px;"/>
+				<img src="Views/Imagen/diseno/2.png"  height="198px;" />
+			</div>
+		</aside>
 	</div>
 
 	<section>

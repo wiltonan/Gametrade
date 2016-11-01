@@ -39,12 +39,12 @@
       return $result1;
     }
 
-    public static function ingresarpuntos($codigo,$puntos){
+    public static function ingresarpuntos($codigocons,$puntos){
       $pdo = ConexionBD::AbrirBD();
       $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
       $sql2="INSERT INTO tbl_usuario_x_pto (usu_cod, pto_cod) values (?,?)";
       $query=$pdo->prepare($sql2);
-      $query->execute(array($codigo,$puntos));
+      $query->execute(array($codigocons,$puntos));
       ConexionBD::DesconectarBD();
     }
 

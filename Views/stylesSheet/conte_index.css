@@ -49,18 +49,14 @@ header ul li a{
 	height:400px;
 	width: 100%;
 }
+.contenido_lugar_video #e64Video video{
+	height:390px;
+	width: 800px;
+	z-index: 99999999;
 
-.e64Video{
-	overflow: hidden;
 }
-
-.e64Public1{
-
-	height: 198px
-}
-
-.e64Public2{
-
+.contenido_lugar_video #e64Public1 img{
+	display: inline;
 
 }
 

@@ -1,10 +1,17 @@
+
+
 <?php
+
+session_start();
 require_once("../Model/conexion.php");
 require_once("../Model/juego_usuario.class.php");
 
-//$documento=$_SESSION["documento"];
+$documento=$_SESSION["codigo"];
 
-$documento="10";
+
+  
+
+// $documento="10";
 
 $accion=$_REQUEST["action"];
  switch ($accion) {

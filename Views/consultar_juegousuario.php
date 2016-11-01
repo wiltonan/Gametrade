@@ -32,7 +32,7 @@
     </script>
   </head>
   <body>
-    <div class="tablajuego">
+    <!-- <div class="tablajuego">
       <section>
         <table border="1px" class="highlight">
           <thead>
@@ -66,6 +66,6 @@
           </tbody>
         </table>
       </section>
-    </div>
+    </div> -->
   </body>
 </html>

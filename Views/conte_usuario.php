@@ -66,7 +66,7 @@
 
 
 
-<div id="e63JueDestac">VideosJuegos Mas vendidos</div>
+<div id="e63JueDestac">Adquiere Nuevos VideoJuegos</div>
 
 <div class="header  teal lighten-5">
 		<ul id="ulNoticJ">
@@ -79,9 +79,9 @@
 
 		<ul id="aa">
 			<?php
-				foreach ($peliculas as $row ): ?>
-				<li><img src="<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
-			<?php endforeach; ?>
+				foreach ($peliculas as $row )
+				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='80%' height='100px' ><div><a href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo juego</a></div></li>";
+			?>
 		</ul>
 	</div>
 

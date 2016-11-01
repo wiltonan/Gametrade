@@ -1,3 +1,8 @@
+<?php
+  include_once("../Model/conexion.php");
+  include_once("../Model/juego_usuario.class.php");
+   $consull=Gestion_Videojuego::consultcomprajuego($_GET["cmp"]);
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -15,7 +20,21 @@
 </head>
 <body>
 
+<div id="compJuess">
+    <?php
 
+        foreach ($consull as $consulkey) {
+            echo " <div class='clImgcompr'><img src=".$consulkey["jue_imagen"]." /></div>
+                <ul class='ulInfoCos'>
+                    <li>".$consulkey["jue_nom"]."</li>
+                    <li>".$consulkey["cons_cod"]."</li>
+                    <li>".$consulkey["cat_cod"]."</li>
+                </ul>";
+        }
+
+    ?>
+   
+</div>
 
 <div id="myModalComprarCreditos" class="modal hide fade in" tabindex="-1" aria-hidden="false" style="margin-top: -50px;">
             <div class="modal-header">

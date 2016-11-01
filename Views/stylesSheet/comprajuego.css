@@ -1,0 +1,33 @@
+
+.srCompr{
+	width: 80%;
+	height: 500px;
+	margin-left: 10%;
+	background: #ccc;
+}
+
+.ulCompr{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+}
+
+.ulCompr li{
+	display: inline-block;
+	width: 20%;
+	height: 300px;
+	margin-left: 2.5%;
+	margin-top: 1%;
+	background: #f00;
+	border: groove 1px;
+}
+.ulCompr li img{
+	width: 100%;
+	height: 250px;
+}
+
+.ulCompr li a{
+	text-align: center;
+}

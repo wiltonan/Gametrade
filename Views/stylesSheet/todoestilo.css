@@ -27,10 +27,10 @@ img {
 }
 
 #main-header {
-	background:#4db6ac  ;
+	background:#616161  ;
 	color: white;
 	height: 80px;
-	margin-top: 23px;
+	margin-top: -0px;
 }	
 	#main-header a {
 		color: white;
@@ -58,7 +58,7 @@ img {
 		display: block;
 		font-weight: 300;
 		font-size: 0.8em;
-		color: #999;
+		color: #000;
 	}
 	
  
@@ -116,7 +116,7 @@ nav {
 
 	#main-footer {
 	text-align: center;
-	background: #4db6ac;
+	background: #424242;
 	color: white;
 	
 	padding: 20px;
@@ -199,19 +199,19 @@ nav {
 
 #res{
 	display: inline-block;
-	width: 5%;
+	width: 5.3%;
 	height: 63.4px;
 	background:url(../Imagen/logoU.png);
-	margin-top: -0px; 
+	margin-top: 5px; 
 
 }
 
 #reso{
 	display: inline-block;
-	width: 14%;
+	width: 15.2%;
 	height: 75px;
 	background:url(../Imagen/logoso.png);
-	margin-top: -3px; 
+	margin-top: -2px; 
 	/*float: right;*/
 }
 
@@ -235,8 +235,8 @@ nav {
 /*cuadro que contiene juegos maS vendidos*/
 #e63JueDestac{
 	width: 100%;
-	height: 55px;
-	background:#4db6ac;
+	height: 75px;
+	background:#424242 ;
 	font-size: 25px;
 	
 	padding-top: 12px;
@@ -333,7 +333,7 @@ background: #fff;
 	list-style: none;
 	width: 100%;
 	height: 500px;
-	background: #848484;
+	background: #000;
 	
 	margin-top: 6px;
 
@@ -344,12 +344,26 @@ background: #fff;
 	list-style: none;
 	width: 100%;
 	height: 60px;
-	background: #848484;
+	background: #e0e0e0  ;
 	
 	margin-top: -8px;
 
 
 }
+
+#ulNoticJu{
+	list-style: none;
+	width: 100%;
+	height: 60px;
+	background: #e0e0e0  ;
+	
+	margin-top: 21px;
+
+
+}
+
+
+
 
 /*cuadro donde contiene juegos mas destacados*/
 

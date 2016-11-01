@@ -13,13 +13,17 @@
   <link rel="stylesheet" href="stylesSheet/todoestilo.css">
  <link rel="stylesheet" href="materialize/css/materialize.css">
   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
   <script type="text/javascript" src="js/usuario.js"></script>
 
  
 
     <script type="text/javascript">
        $(document).ready(function(){
-alert(3232);
+
   $('select').material_select();
       //   // $("#buscar_cedula").keyup(function(){
       //   //   var param = $(this).val();
@@ -71,42 +75,65 @@ alert(3232);
           <div class="row">
             <div class="class=" col s12>
 
-              <div class="input-field col s6">
+              <div class="input-field col s5">
                   <input type="text" name="jue_nom" required>
                   <label class="active" for="first_name2">Nombre del juego: </label>
               </div>
 
-              <!-- estos hay que hacerlos drop down list -->
-              <div class="input-field col s6">
-                  <input type="text" name="cons_cod" required>
-                  <label class="active" for="first_name2">Consola: </label>
-              </div>
 
-              <!-- estos hay que hacerlos drop down list -->
-              <div class="input-field col s6">
+
+
+            <div class="input-field col s5">
                   <!-- <input type="text" name="cat_cod" required> -->
-                  <select name="cat_cod" class="input-field col s12" > 
-                 <option>dasdasdas</option>
-                 <option>dasdasdas</option>
+                  <label class="active" for="first_name2">Consola: </label>
+                  <select name="cons_cod" class="input-field col s12" > 
+                 <option>1</option>
+                 <option>2</option>
+                 
 
                    </select>
-                  <label class="active" for="first_name2">Categoria juego: </label>
+                  
               </div>
 
 
-              <div class="input-field col s6">
+
+              <!-- estos hay que hacerlos drop down list -->
+              <!-- <div class="input-field col s6">
+                  <input type="text" name="cons_cod" required>
+                  <label class="active" for="first_name2">Consola: </label>
+              </div> -->
+
+              </br>
+              </br>
+              </br>
+
+              <!-- estos hay que hacerlos drop down list -->
+              <div class="input-field col s5">
+                  <!-- <input type="text" name="cat_cod" required> -->
+                  <label class="active" for="first_name2">Categoria juego: </label>
+                  <select name="cat_cod" class="input-field col s12" > 
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+
+                   </select>
+                  
+              </div>
+
+
+              <div class="input-field col s5">
                   <textarea name="jue_desc" rows="5" cols="25" required></textarea>
                   <label class="active" for="first_name2">Descripcion del juego: </label>
               </div>
 
 
 
-              <div class="input-field col s6">
+              <div class="input-field col s5">
                   <input type="number" name="jue_cant" required>
                   <label class="active" for="first_name2">Cantidad de juegos: </label>
               </div>
 
-              <div class="input-field col s6">
+              <div class="input-field col s5">
                   <input type="text" name="jue_trailer">
                   <label class="active" for="first_name2">Trailer del juego: </label>
                   
@@ -114,9 +141,10 @@ alert(3232);
 
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
 
-              <div class="input-field col s6">
-                <input type="text" name="jue_imagen">
+              <div class="input-field col s5">
+               
                 <label class="active" for="first_name2">Imagen del juego: </label>
+                </br>
                 <input type="file" name="imagenJueUsu"></input>
               </div>
 
@@ -134,7 +162,7 @@ alert(3232);
 
     <div class="consulatr_juegoa">
       <section>
-        <?php include("consultar_juego.php") ?>
+        <?php include("consultar_juegousuario.php") ?>
       </section>
 
     </div>

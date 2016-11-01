@@ -16,6 +16,7 @@
           }else {
              $_SESSION['documento'] = $resul['usu_num_docum'];
              $_SESSION['nombre'] = $resul['usu_nom'];
+             $_SESSION['codigo'] = $resul['usu_cod'];
             echo "<script>location.href='../Views/menu_usuario.php' </script>";
           }
         }else {

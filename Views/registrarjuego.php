@@ -1,33 +1,38 @@
+<?php
+  include_once("../Model/conexion.php");
+  include_once("../Model/juego_usuario.class.php");
+   $consull=Gestion_Videojuego::consultcomprajuego($_GET["adqui"]);
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf8"/>
 
 
-	<title></title>
-
-	
+<title>registrar juego</title>
 	<link rel="stylesheet" href="stylesSheet/estilousuario.css">
-	
-
-
 </head>
 <body>
+<form action="../Controller/juego_usuario.controller.php" method="post">
+<div id="compJuess">
+    <?php
 
- 
+        foreach ($consull as $consulkey) {
+            echo " <div class='clImgcompr'><img src=".$consulkey["jue_imagen"]." /></div>
+                <ul class='ulInfoCos'>
+                    <li>".$consulkey["jue_nom"]."</li>
+                    <li><input type='hidden' name='cod_jueg_usu' value='".$consulkey["jue_cod"]."' /></li>
+                    <li>".$consulkey["cons_cod"]."</li>
+                    <li>".$consulkey["cat_cod"]."</li>
+                </ul>";
+        }
 
+    ?>
+</div>
 <div class="content">
             <!-- Example row of columns -->
                 <div class="row">
-                    <div class="span8">
-                        <div class="img3"><img class="img_height100" src="/files/juegos/5520_0_50_Cent_Bulletproof_G_Unit_Edition.jpg" data-src="/files/juegos/5520_0_50_Cent_Bulletproof_G_Unit_Edition.jpg"></div>
-                        <div class="game3">
-                            <h4>50 Cent: Bulletproof</h4>
-                            <p class="plataforma"><strong>Plataforma:</strong> PSP</p>
-                            <p class="plataforma"><strong>Género:</strong> Acción</p>
-                            <p class="plataforma"><strong>Año de publicación:</strong> 2006</p>
-                        </div>
-                    </div>
+                    
         </div>
                 <div class="titulos">
                     <h4 class="hidden-phone">Selecciona la condición de tu juego y el precio de venta</h4>
@@ -70,16 +75,15 @@
                                                
                                                 <img class="star_profile2" src="img/estre.png" data-src="simg/estre.png">
                                                 <b>400</b>
-                                                <p>Precio recomendado por tradejuegos.com</p>
+                                                <p>Precio recomendado por gametrade.com</p>
                                             
                                             
                                                 <img class="star_profile2" src="img/estre.png" data-src="img/estre.png">
                                                 <!-- <b>400</b> -->
                                                 <input name="cju_creditos" id="cju_creditos" value="400" type="number" maxlength="5" size="5" max="99999" min="0" required="required">
                                                 <p>El precio siempre se puede cambiar posteriormente</p>
-                                                <input class="btn btn-primary" name="" value="¡Poner en catálogo!" type="submit">
-                                                <input name="action" value="catalogar" type="hidden">
-                                                                                            </div>  
+                                                <button class="btn btn-primary" name="action" value="catalogo" >Poner en catalogo</button>
+                                              </form>
 <!-- 
                                         </div>    
                                     </td>

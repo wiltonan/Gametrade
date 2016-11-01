@@ -3,6 +3,9 @@
 	include_once("../Model/paginacion_class.php");
 	$peliculas=Paginacion_Buscar::consultarjue();
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +20,7 @@
 	<script type="text/javascript" src="js/connection.js"></script>
 	<script type="text/javascript">
 
+
 		$("#txtbuscar1").keyup(function(){
 		
 			var paramet= $(this).val();
@@ -30,10 +34,12 @@
 </style>
 </head>
 <body>
+
+
 <section class="menu_usuario"></section>
 	<div class="container">
-		<div class="header   teal lighten-5">
-		<ul id="ulNoticJ">
+		<div class="header  grey lighten-2">
+		<ul id="ulNoticJu">
 			<form>
 				<input type="text" placeholder="Buscar" id="txtbuscar1" />
 				
@@ -43,9 +49,9 @@
 
 		<ul id="aa1">
 			<?php
-				foreach ($peliculas as $row ): ?>
-				<li><img src="<?php echo $row["jue_imagen"]?>" title="<?php echo $row["jue_nom"]?>" width="80%" height="100px" ></li>
-			<?php endforeach; ?>
+				foreach ($peliculas as $row )
+				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='80%' height='100px' ><div><a href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo juego</a></div></li>";
+			?>
 		</ul>
 	</div>
 

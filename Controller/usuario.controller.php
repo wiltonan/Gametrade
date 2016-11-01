@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('../Model/conexion.php');
 require_once('../Model/usuario.class.php');
 
@@ -61,5 +62,12 @@ $accion=$_REQUEST['action'];
            echo "Ocurrio un error".$e ;
        }
       break;
+
+      case 'session1':
+        session_destroy();
+        echo "<script>
+          self.location.href='../';
+        </script>";
+        break;
  }
 ?>

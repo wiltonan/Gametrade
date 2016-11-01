@@ -2,9 +2,9 @@
   session_start();
 
  
-  if (!isset($_SESSION["nombre"]))   {
-  header("Location:../");
-  }
+  // if (!isset($_SESSION["nombre"]))   {
+  // header("Location:../");
+  // }
  ?>
 
 <!DOCTYPE html>
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylesSheet/todoestilo.css">
   <link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
+
 </head>
 <body>
   <header>
@@ -36,7 +37,7 @@
 
 
     </a> <!-- / #logo-header -->
-     <button id="boton" class="waves-effect waves-light btn grey darken-1" ><div class="session" onclick="destroy()"><a href="http://localhost:8000/Gametrade/" >Cerrar sesion</a></div></button>
+     <button id="boton" class="waves-effect waves-light btn grey darken-1" ><div class="session" onclick="destroy1()">Cerrar sesion</div></button>
     <nav class="teal lighten-3">
     <nav class=" grey darken-3">
       <ul id="menus">

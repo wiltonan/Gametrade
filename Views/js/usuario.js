@@ -30,3 +30,8 @@ function inicio(){
 	$(".menu_usuario").fadeOut();
 	$("#dv_index").fadeIn();
 }
+
+
+function destroy1(){
+  location.href="../Controller/usuario.controller.php?action=session1"
+}

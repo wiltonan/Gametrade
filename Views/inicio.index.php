@@ -41,25 +41,24 @@
 	</section>
 
 	<section>
-
 		<div class="contenido_lugar_video">
-			<div id="e64Video" style=>
-				<iframe  style="width:100%; height:400px; " src="Views/Imagen/04S.jpg" frameborder="0" allowfullscreen></iframe>
+<!-- frameborder="0" allowfullscreen -->
+			<!-- <div id="e64Video" >
+				<iframe src="Views/Imagen/04S.jpg"></iframe>
+			</div>-->
+
+			<div id="e64Public1">
+				<im	g src="Views/Imagen/diseno/1.png" width="30%;" height="1199px;"/>
 			</div>
 
-			<div id="e64ContePublic">
-				<div id="e64Public1">
-					<img src="Views/Imagen/diseno/1.png" style="height: 199px; width: 100%;"/>
-				</div>
-				<div id="e64Public2">
-					<img src="Views/Imagen/diseno/2.png" style="height: 199px;; width: 100%; margin-top:2px;" />
-				</div>
-			</div>
+			<!-- <div id="e64Public2">
+				<img src="Views/Imagen/diseno/2.png" width="40%;" height="199px;" />
+			</div> -->
+
 		</div>
 	</section>
 
 	<section>
-
 		<div class="jue_destacado">
 			<h3>Juegos más destacados</h3>
 		</div>

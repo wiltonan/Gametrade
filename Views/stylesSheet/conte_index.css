@@ -16,7 +16,16 @@
 	position: absolute;
 	top: 40px;
 	margin-left: 40px;
+}
 
+.formu_login{
+	margin-top: 30px;
+	margin-left: 60%;
+	overflow: hidden;
+}
+
+.formu_login button{
+	margin-top: 24px;
 }
 
 .formusu{
@@ -35,6 +44,26 @@ header ul li a{
 .formulariousuario h4{
 	margin: 2px;
 }
+
+.contenido_lugar_video{
+	height:400px;
+	width: 100%;
+}
+
+/*.e64Video{
+	width: 60%;
+	overflow: hidden;
+}*/
+
+/*.e64Public1{
+	width: 10%;
+	height: 199px
+}
+
+.e64Public2{
+	margin-top: 30px;
+	overflow: hidden;
+}*/
 
 .AboutUs{
 	background-image: url('../Imagen/wer.jpg');
@@ -57,11 +86,6 @@ header ul li a{
 	color: #04B45F;
 }
 
-.login{
-	margin-top: 30px;
-	margin-left: 65%;
-}
-
 .R_Contraseña{
 	margin-left: 65%;
 	margin-top: -15px;
@@ -69,9 +93,10 @@ header ul li a{
 }
 
 .registrarme{
-	margin-left: 79%;
-	margin-top: -20px;
+
+
 	font-size: 20px;
+	overflow: hidden;
 }
 
 .usa h1{

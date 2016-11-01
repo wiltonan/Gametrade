@@ -24,8 +24,11 @@ $accion=$_REQUEST['action'];
      $usu_esp_vive=$_POST['usu_esp_vive'];
      $usu_fech=$_POST['usu_fech'];
      $usu_estado='activo';
+     $puntos='6';
  		 try {
- 		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado);
+ 		 	usuario::guardar($rol_cod,$tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$encript,$usu_naci,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_esp_vive,$usu_fech,$usu_estado,$puntos);
+      $codigocons = usuario::consultarcodigo2($usu_num_docum);
+      usuario::ingresarpuntos($codigocons,$puntos);
       echo "<script>alert('Gracias por registrarse.');
       self.location.href='../#/registrar_usuario';
       </script>";

@@ -50,20 +50,19 @@ header ul li a{
 	width: 100%;
 }
 
-/*.e64Video{
-	width: 60%;
+.e64Video{
 	overflow: hidden;
-}*/
+}
 
-/*.e64Public1{
-	width: 10%;
-	height: 199px
+.e64Public1{
+
+	height: 198px
 }
 
 .e64Public2{
-	margin-top: 30px;
-	overflow: hidden;
-}*/
+
+
+}
 
 .AboutUs{
 	background-image: url('../Imagen/wer.jpg');

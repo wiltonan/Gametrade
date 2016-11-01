@@ -11,6 +11,15 @@
     <meta charset="utf-8">
     <title></title>
     <script type="text/javascript">
+      $(document).ready(function(){
+        $("#busqueda").keyup(function(){
+          var param = $(this).val();
+          $.post("buscador_nombre.php", {vlparam: param}, function(data){
+            $("#editjv").val(data);
+          });
+        });
+      });
+
       $('select').material_select();
       Materialize.updateTextFields();
     </script>
@@ -26,6 +35,13 @@
                 <label class="active" for="first_name2">Ingrese cedula de usuario: </label>
             </div>
 
+            <div class="input-field col s6">
+                <input id="editjv" class="nombre" type="text">
+                <label class="active" for="first_name2"></label>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="input-field col s6">
                 <select class="select" name="pto_cod" required >
                   <option value="" disabled selected>puntos: </option>

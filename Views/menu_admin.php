@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (!isset($_SESSION["nombre"]))	 {
-  header("Location:../");
+  // header("Location:../");
   }
  ?>
 <!DOCTYPE html>
@@ -46,10 +46,16 @@
           <li id="cat_juego"><a href="#/categoria_juegos">Categoria juego</a></li>
           <li id="juego"><a href="#/juego">Juegos</a></li>
           <li id="bono"><a href="#/bono">Bonos</a></li>
-          <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x puntos</a></li>
-          <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x juegos</a></li>
-          <li id="usupuntos"><a href="#/usuario_x_puntos">juegos x puntos</a></li>
-        </ul>
+          <li><a href="#">Asignacion</a>
+            <div class="Asignacion" >
+              <ul>
+                <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x puntos</a></li>
+                <li id="usujuegos"><a href="#/usuario_x_juegos">usuarios x juegos</a></li>
+                <li id="juepuntos"><a href="#/juegos_x_puntos">juegos x puntos</a></li>
+              </ul>
+              </ul>
+            </div>
+          </li>
       </nav>
     </header>
     <section id="inicio_principal">

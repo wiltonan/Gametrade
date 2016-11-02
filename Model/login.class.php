@@ -8,7 +8,7 @@
       try {
         $sql = ConexionBD::AbrirBD();
 
-        self::$query = "SELECT usu_nick, usu_pass, cod_rol, usu_nom, usu_cod,usu_num_docum, usu_estado FROM tbl_usuario WHERE usu_nick = ? ";
+        self::$query = "SELECT usu_nick, usu_pass, cod_rol, usu_nom, usu_cod, usu_num_docum, usu_estado FROM tbl_usuario WHERE usu_nick = ? ";
 
         self::$prepare = $sql->prepare(self::$query);
         self::$prepare->execute(array($usu));

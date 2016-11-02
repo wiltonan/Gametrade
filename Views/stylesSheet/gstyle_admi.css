@@ -4,7 +4,6 @@ header{
 	margin: auto;
 	margin: 0;
 	padding: 0;
-	height: 100px;
 }
 
 .parte_negra_menu{
@@ -12,11 +11,6 @@ header{
 	height: 130px;
 }
 
-.consultar_bono{
-	margin-left: 250px;
-	margin-top: 50px;
-
-}
 
 #inicio_principal{
 	height: 580px;
@@ -74,4 +68,18 @@ nav ul li div {
 	display: none;
 }
 
+nav ul li .Asignacion {
+	width: 215px;
+	position: absolute;
+	left: 1080px;
+	background:#ff4f4f;
+	display: none;
+}
+
+
 /*aqui termina la parte del menu*/
+
+.consultar_bono{
+	margin-left: 250px;
+	margin-top: 50px;
+}

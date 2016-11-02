@@ -54,6 +54,18 @@ $(document).ready(function(){
     $(".menu_admin").fadeIn();
     $(".menu_admin").load("usu_x_puntos.php");
   });
+
+  $("#usujuegos").click(function(){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("usu_x_juegos.php");
+  });
+
+  $("#juepuntos").click(function(){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("juegos_x_puntos.php");
+  });
   url();
 });
 
@@ -113,6 +125,18 @@ function url(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();
     $(".menu_admin").load("usu_x_puntos.php");
+  }
+
+  if(URLhas=="#/usuario_x_juegos"){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("usu_x_puntos.php");
+  }
+
+  if(URLhas=="#/juegos_x_puntos"){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("juegos_x_puntos.php");
   }
 }
 

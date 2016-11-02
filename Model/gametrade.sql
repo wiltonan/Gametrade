@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2016 a las 20:43:05
+-- Tiempo de generación: 02-11-2016 a las 23:31:08
 -- Versión del servidor: 10.1.9-MariaDB
 -- Versión de PHP: 5.5.30
 
@@ -48,19 +48,9 @@ INSERT INTO `tbl_categoria_jue` (`cat_cod`, `cat_nom`) VALUES
 
 CREATE TABLE `tbl_ciudad` (
   `ciu_cod` int(11) NOT NULL,
-  `pais_cod` int(11) NOT NULL,
+  `depar_cod` int(11) NOT NULL,
   `ciu_nom` varchar(70) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Volcado de datos para la tabla `tbl_ciudad`
---
-
-INSERT INTO `tbl_ciudad` (`ciu_cod`, `pais_cod`, `ciu_nom`) VALUES
-(1, 2, 'itagui dd'),
-(2, 1, 'Medellin de manizale'),
-(3, 2, 'w'),
-(4, 1, 'w');
 
 -- --------------------------------------------------------
 
@@ -95,6 +85,18 @@ CREATE TABLE `tbl_consola` (
 INSERT INTO `tbl_consola` (`cons_cod`, `cons_nom`, `cons_refer`) VALUES
 (1, 'ps2', 'mini box'),
 (2, 'ps3 ', 'el grande y ');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_departamento`
+--
+
+CREATE TABLE `tbl_departamento` (
+  `depar_cod` int(11) NOT NULL,
+  `pais_cod` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -241,27 +243,6 @@ CREATE TABLE `tbl_usuario` (
   `usu_newpass` varchar(50) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Volcado de datos para la tabla `tbl_usuario`
---
-
-INSERT INTO `tbl_usuario` (`usu_cod`, `cod_rol`, `tipo_cod`, `usu_num_docum`, `usu_nom`, `usu_apell`, `usu_nick`, `usu_mail`, `usu_pass`, `usu_naci`, `photo`, `usu_tel`, `usu_cel`, `ciu_cod`, `usu_dir`, `usu_esp_vive`, `usu_fech`, `usu_estado`, `usu_keypass`, `usu_newpass`) VALUES
-(1, 1, 2, '1036660480', 'wilton', 'acuÃ±a requena', 'wilton', 'wilton.anre13@hotmail.com', '$2y$10$8M72rIZuBvIkHs.9B7k4b.vQMelOtMrTuL3O1Kejc90xVxVulXNPy', '2004-10-13', '', 0, 2147483647, 1, 'calle 00-#00-00', '', '29/10/2016', 'activo', '', ''),
-(2, 2, 2, '1037770480', 'andres', 'requena', 'wilton1', 'wilton@wilton.com', '$2y$10$rhADFpD5aE.B.DVo3UrYZeVAahDHiTGFqGH8X9dQnhOxaQMHFpXcu', '2001-10-17', NULL, 0, 2147483647, 2, 'calle falsa 123', '', '30/10/2016', 'activo', '', ''),
-(3, 2, 1, '10377704802', 'yeison', 'calle', 'yei', 'yei@yi', '$2y$10$9qnzHaQ8aOxzvi6qfAW/hOiTzCVOVM3JSMe/s48cbYGeY/tuzm74i', '2004-10-31', NULL, 0, 31111111, 2, 'calle 1', '', '31/10/2016', 'activo', '', ''),
-(4, 2, 2, '1035231400', 'cristian camilo', 'echavarria zapata', 'cristian', 'cristian095@hotmail.es', '$2y$10$ziO80rrNbq/XPgmdy2.yTeBwiqKsqmS5uNv0mkfd5AKqactOQEns2', '2004-10-07', NULL, 12345, 32154654, 2, 'calle 1', '', '31/10/2016', 'inactivo', '', '');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tbl_usuario_x_juego`
---
-
-CREATE TABLE `tbl_usuario_x_juego` (
-  `usu_cod` int(11) NOT NULL,
-  `jue_cod` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 -- --------------------------------------------------------
 
 --
@@ -273,16 +254,6 @@ CREATE TABLE `tbl_usuario_x_pto` (
   `pto_cod` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tbl_usuario_x_pto`
---
-
-INSERT INTO `tbl_usuario_x_pto` (`usu_cod`, `pto_cod`) VALUES
-(1, 4),
-(2, 1),
-(2, 5),
-(2, 6);
-
 -- --------------------------------------------------------
 
 --
@@ -292,37 +263,16 @@ INSERT INTO `tbl_usuario_x_pto` (`usu_cod`, `pto_cod`) VALUES
 CREATE TABLE `tbl_videojuego` (
   `jue_cod` int(11) NOT NULL,
   `usu_cod` int(11) NOT NULL,
+  `jue_punto` varchar(6) COLLATE utf8_bin NOT NULL,
   `jue_nom` varchar(100) COLLATE utf8_bin NOT NULL,
   `cons_cod` int(11) NOT NULL,
   `cat_cod` int(11) NOT NULL,
   `jue_desc` blob NOT NULL,
-  `jue_cant` int(11) NOT NULL,
   `jue_trailer` text COLLATE utf8_bin NOT NULL,
   `jue_fech_public` varchar(10) COLLATE utf8_bin NOT NULL,
   `jue_imagen` varchar(100) COLLATE utf8_bin NOT NULL,
   `jue_estado` varchar(8) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Volcado de datos para la tabla `tbl_videojuego`
---
-
-INSERT INTO `tbl_videojuego` (`jue_cod`, `usu_cod`, `jue_nom`, `cons_cod`, `cat_cod`, `jue_desc`, `jue_cant`, `jue_trailer`, `jue_fech_public`, `jue_imagen`, `jue_estado`) VALUES
-(4, 2, 'intento1', 1, 1, '', 1, 'no ', '', 'no', 'activo'),
-(5, 2, 'intenti2', 1, 1, '', 1, 'no', '', 'no', 'activo'),
-(6, 1, 'intento 3', 1, 1, 0x6e696e67756e61, 1, '', '31/10/2016', 'IMG-20151213-WA0002.jpg', 'activo'),
-(7, 1, 'intento 4', 1, 1, 0x6e696e67756e61, 1, '', '31/10/2016', 'IMG-20151213-WA0002.jpg', 'activo');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tbl_videojuego_x_pto`
---
-
-CREATE TABLE `tbl_videojuego_x_pto` (
-  `jue_cod` int(11) NOT NULL,
-  `pto_cod` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -359,7 +309,7 @@ ALTER TABLE `tbl_categoria_jue`
 --
 ALTER TABLE `tbl_ciudad`
   ADD PRIMARY KEY (`ciu_cod`),
-  ADD KEY `pais_cod` (`pais_cod`);
+  ADD KEY `depar_cod` (`depar_cod`);
 
 --
 -- Indices de la tabla `tbl_comentario`
@@ -377,6 +327,13 @@ ALTER TABLE `tbl_comentario`
 --
 ALTER TABLE `tbl_consola`
   ADD PRIMARY KEY (`cons_cod`);
+
+--
+-- Indices de la tabla `tbl_departamento`
+--
+ALTER TABLE `tbl_departamento`
+  ADD PRIMARY KEY (`depar_cod`),
+  ADD KEY `pais_cod` (`pais_cod`);
 
 --
 -- Indices de la tabla `tbl_noticia`
@@ -429,13 +386,6 @@ ALTER TABLE `tbl_usuario`
   ADD KEY `cod_rol` (`cod_rol`);
 
 --
--- Indices de la tabla `tbl_usuario_x_juego`
---
-ALTER TABLE `tbl_usuario_x_juego`
-  ADD PRIMARY KEY (`usu_cod`,`jue_cod`),
-  ADD KEY `jue_cod` (`jue_cod`);
-
---
 -- Indices de la tabla `tbl_usuario_x_pto`
 --
 ALTER TABLE `tbl_usuario_x_pto`
@@ -451,13 +401,6 @@ ALTER TABLE `tbl_videojuego`
   ADD KEY `usu_cod_2` (`usu_cod`),
   ADD KEY `cons_cod` (`cons_cod`),
   ADD KEY `cat_cod` (`cat_cod`);
-
---
--- Indices de la tabla `tbl_videojuego_x_pto`
---
-ALTER TABLE `tbl_videojuego_x_pto`
-  ADD PRIMARY KEY (`jue_cod`,`pto_cod`),
-  ADD KEY `pto_cod` (`pto_cod`);
 
 --
 -- Indices de la tabla `tb_bono`
@@ -490,6 +433,11 @@ ALTER TABLE `tbl_comentario`
 --
 ALTER TABLE `tbl_consola`
   MODIFY `cons_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `tbl_departamento`
+--
+ALTER TABLE `tbl_departamento`
+  MODIFY `depar_cod` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `tbl_noticia`
 --
@@ -524,7 +472,7 @@ ALTER TABLE `tbl_tipodocumento`
 -- AUTO_INCREMENT de la tabla `tbl_usuario`
 --
 ALTER TABLE `tbl_usuario`
-  MODIFY `usu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `usu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `tbl_videojuego`
 --
@@ -543,7 +491,7 @@ ALTER TABLE `tb_bono`
 -- Filtros para la tabla `tbl_ciudad`
 --
 ALTER TABLE `tbl_ciudad`
-  ADD CONSTRAINT `tbl_ciudad_ibfk_1` FOREIGN KEY (`pais_cod`) REFERENCES `tbl_pais` (`pais_cod`);
+  ADD CONSTRAINT `tbl_ciudad_ibfk_1` FOREIGN KEY (`depar_cod`) REFERENCES `tbl_departamento` (`depar_cod`);
 
 --
 -- Filtros para la tabla `tbl_comentario`
@@ -551,6 +499,12 @@ ALTER TABLE `tbl_ciudad`
 ALTER TABLE `tbl_comentario`
   ADD CONSTRAINT `tbl_comentario_ibfk_1` FOREIGN KEY (`usu_cod`) REFERENCES `tbl_usuario` (`usu_cod`),
   ADD CONSTRAINT `tbl_comentario_ibfk_2` FOREIGN KEY (`jue_cod`) REFERENCES `tbl_videojuego` (`jue_cod`);
+
+--
+-- Filtros para la tabla `tbl_departamento`
+--
+ALTER TABLE `tbl_departamento`
+  ADD CONSTRAINT `tbl_departamento_ibfk_1` FOREIGN KEY (`pais_cod`) REFERENCES `tbl_pais` (`pais_cod`);
 
 --
 -- Filtros para la tabla `tbl_ranking`
@@ -568,13 +522,6 @@ ALTER TABLE `tbl_usuario`
   ADD CONSTRAINT `tbl_usuario_ibfk_3` FOREIGN KEY (`cod_rol`) REFERENCES `tbl_rol` (`cod_rol`);
 
 --
--- Filtros para la tabla `tbl_usuario_x_juego`
---
-ALTER TABLE `tbl_usuario_x_juego`
-  ADD CONSTRAINT `tbl_usuario_x_juego_ibfk_1` FOREIGN KEY (`usu_cod`) REFERENCES `tbl_usuario` (`usu_cod`),
-  ADD CONSTRAINT `tbl_usuario_x_juego_ibfk_2` FOREIGN KEY (`jue_cod`) REFERENCES `tbl_videojuego` (`jue_cod`);
-
---
 -- Filtros para la tabla `tbl_usuario_x_pto`
 --
 ALTER TABLE `tbl_usuario_x_pto`
@@ -588,13 +535,6 @@ ALTER TABLE `tbl_videojuego`
   ADD CONSTRAINT `tbl_videojuego_ibfk_1` FOREIGN KEY (`usu_cod`) REFERENCES `tbl_usuario` (`usu_cod`),
   ADD CONSTRAINT `tbl_videojuego_ibfk_3` FOREIGN KEY (`cons_cod`) REFERENCES `tbl_consola` (`cons_cod`),
   ADD CONSTRAINT `tbl_videojuego_ibfk_4` FOREIGN KEY (`cat_cod`) REFERENCES `tbl_categoria_jue` (`cat_cod`);
-
---
--- Filtros para la tabla `tbl_videojuego_x_pto`
---
-ALTER TABLE `tbl_videojuego_x_pto`
-  ADD CONSTRAINT `tbl_videojuego_x_pto_ibfk_1` FOREIGN KEY (`jue_cod`) REFERENCES `tbl_videojuego` (`jue_cod`),
-  ADD CONSTRAINT `tbl_videojuego_x_pto_ibfk_2` FOREIGN KEY (`pto_cod`) REFERENCES `tbl_pack_punto` (`pto_cod`);
 
 --
 -- Filtros para la tabla `tb_bono`

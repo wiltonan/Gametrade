@@ -47,6 +47,8 @@
           <li id="juego"><a href="#/juego">Juegos</a></li>
           <li id="bono"><a href="#/bono">Bonos</a></li>
           <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x puntos</a></li>
+          <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x juegos</a></li>
+          <li id="usupuntos"><a href="#/usuario_x_puntos">juegos x puntos</a></li>
         </ul>
       </nav>
     </header>

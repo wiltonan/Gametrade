@@ -45,19 +45,17 @@ header ul li a{
 	margin: 2px;
 }
 
-.contenido_lugar_video{
-	height:400px;
+.imagen1{
+	margin-left: 70%;
+	margin-top: 2px;
 	width: 100%;
 }
-.contenido_lugar_video #e64Video video{
-	height:390px;
-	width: 800px;
-	z-index: 99999999;
 
-}
-.contenido_lugar_video #e64Public1 img{
-	display: inline;
-
+.imagen2{
+	margin-left: 70%;
+	margin-top: 2px;
+	height: 198px;
+	width: 100%;
 }
 
 .AboutUs{

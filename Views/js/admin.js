@@ -13,6 +13,12 @@ $(document).ready(function(){
     $(".menu_admin").load("pais.php");
   });
 
+  $("#departamento").click(function(){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("departamento.php");
+  });
+
   $("#ciudad").click(function(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();
@@ -71,6 +77,12 @@ function url(){
     $("#inicio_principal").fadeOut();
     $(".menu_admin").fadeIn();
     $(".menu_admin").load("pais.php");
+  }
+
+  if(URLhas=="#/departamento"){
+    $("#inicio_principal").fadeOut();
+    $(".menu_admin").fadeIn();
+    $(".menu_admin").load("departamento.php");
   }
 
   if(URLhas=="#/ciudad"){

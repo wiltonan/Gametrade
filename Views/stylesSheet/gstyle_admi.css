@@ -11,6 +11,12 @@ header{
 	height: 130px;
 }
 
+.logo{
+	width: 10%;
+	position: absolute;
+	top: 30px;
+	margin-left: 40px;
+}
 
 #inicio_principal{
 	height: 580px;
@@ -20,6 +26,7 @@ header{
 
 .session{
 	margin-left: 90%;
+	overflow: hidden;
 }
 
 .menu_admin{
@@ -30,6 +37,7 @@ display: none;
 
 nav{
 	position: relative;
+	z-index: 99999999;
 }
 
 nav ul{

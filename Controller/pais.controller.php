@@ -5,8 +5,8 @@ require_once('../Model/pais.class.php');
 $accion=$_REQUEST['action'];
  switch ($accion) {
  	case 'guardarpais':
- 		 $pais_nom=$_POST['pais_nom'];
-
+      $pais_nom=ucfirst($_POST["pais_nom"]);
+    
  		 try {
  		 	Gestion_Pais::guardar($pais_nom);
       echo "<script>alert('Se ha guardar el pais');

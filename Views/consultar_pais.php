@@ -1,6 +1,6 @@
 <?php
- require_once("../model/conexion.php");
- require_once("../model/pais.class.php");
+ require_once("../Model/conexion.php");
+ require_once("../Model/pais.class.php");
 
   $pais =Gestion_Pais::cargarpais();
  ?>
@@ -17,7 +17,7 @@
   <body>
     <div class="tablapais">
       <section>
-        <table border="1px">
+        <table border="1px" class="highlight">
           <thead>
             <th colspan="4"><center><h5>Paises.</h5></center></th>
             <tr>

@@ -9,6 +9,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="stylesSheet/todoestilo.css">
     </head>
       <body>
     <?php
@@ -19,8 +20,8 @@
         <li>".$bn["jue_nom"]."</li>
         <li>".$bn["jue_desc"]."</li>
         <li>".$bn["jue_cant"]."</li>
-        <li>asdasd</li>
-        <li>asdsadsa</li>
+        <li>GameTrade</li>
+        <li>autor</li>
       </ul>
     </div> ";
 ?>

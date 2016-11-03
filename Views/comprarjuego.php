@@ -11,11 +11,12 @@
     <title></title>
 
     <link rel="stylesheet" href="stylesSheet/todoestilo.css">
-    <link rel="stylesheet" href="stylesSheet/comprajuego.css">
+  
+   <!--  <link rel="stylesheet" href="stylesSheet/comprajuego.css"> -->
 </head>
 <body>
 
-<div class="content">
+<!-- <div class="content">
 	<div class="search_catalogo">
     <form action="catalogo.php" method="post" class="form-search">
       <div class="input-prepend ui-widget">
@@ -27,26 +28,22 @@
         <option value="4">play 2</option>
         <option value="10">play 3</option>
         <option value="11">xbox one</option>
-      </select>
+      </select> -->
 
 </div>
   
 
-<section class="srCompr">
-  <ul class="ulCompr">
+<section id="srComprs">
+ <ul class="ulCompr">
     <?php
       foreach ($compra as $compr ) {
-        echo "<li><img   src=".$compr["jue_imagen"]." /><a href='comprar.php?cmp=".$compr["jue_cod"]."'>Adquirir juego</a></li>";
+        echo "<li><img   src=".$compr["jue_imagen"]." /><a id='boto'href='comprar.php?cmp=".$compr["jue_cod"]."'>Adquirir juego</a></li>";
   
       }
     ?>
-  <!--   <li><a href=""></a></li>
-    <li>sad</li>
-    <li>sad</li>
-    <li>sad</li>
-    <li>sad</li> -->
 
-  </ul>
+
+  </ul> 
 </section>
 
 

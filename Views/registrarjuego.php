@@ -73,15 +73,17 @@
                                         <div class="visible-phone width_360">
                                             <div class="li_creditos_2">
                                                
-                                                <img class="star_profile2" src="img/estre.png" data-src="simg/estre.png">
+                                                <!-- <img class="star_profile2" src="img/estre.png" data-src="simg/estre.png">
                                                 <b>400</b>
-                                                <p>Precio recomendado por gametrade.com</p>
+                                                <p>Precio recomendado por gametrade.com</p> -->
                                             
                                             
                                                 <img class="star_profile2" src="img/estre.png" data-src="img/estre.png">
                                                 <!-- <b>400</b> -->
+                                                agrega el puntaje de tu videojuego
                                                 <input name="cju_creditos" id="cju_creditos" value="400" type="number" maxlength="5" size="5" max="99999" min="0" required="required">
-                                                <p>El precio siempre se puede cambiar posteriormente</p>
+                                                 </br>
+                                                   </br>
                                                 <button class="btn btn-primary" name="action" value="catalogo" >Poner en catalogo</button>
                                               </form>
 <!-- 
@@ -112,6 +114,10 @@
                                             <input class="btn btn-primary" name="" value="¡Poner en catálogo!" type="submit">
                                             <input name="action" value="catalogar" type="hidden"> -->
                                                                                    <!--  </div> --> 
+
+                                                                                   </br>
+                                                                                     </br>
+                                                                                       </br>
                                         <div class="cont_cela_11">
                                             <p>A partir de este momento el juego 50 Cent: Bulletproof pasará a formar parte del catálogo de Tradejuegos y estará en disposición de ser adquirido por parte de cualquier usuario registrado en nuestra comunidad.</p>
                                             <p>Recuerda que si aún no has rellenado correctamente todos tus datos ahora es el momento. Nuestra empresa de transporte se pondrá en contacto contigo para recoger tu juego en el momento en que se produzca la compra.</p>

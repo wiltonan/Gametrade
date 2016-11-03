@@ -1,8 +1,16 @@
 <?php
   session_start();
+<<<<<<< HEAD
+
+ 
+  if (!isset($_SESSION["nombre1"]))   {
+  header("Location:../");
+  }
+=======
   // if (!isset($_SESSION["nombre"]))   {
   // header("Location:../");
   // }
+>>>>>>> origin/master
  ?>
 
 <!DOCTYPE html>
@@ -25,9 +33,12 @@
     <div id="res"></div>
     <a id="logo-header" href="#">
     Bienvenido
+<<<<<<< HEAD
+     
+=======
+>>>>>>> origin/master
     <?php
-    echo  $_SESSION['nombre'];
-
+   echo $_SESSION['nombre1'];
     ?>
 
     <span class="site-desc" style="color: #fff">1800 puntos</span>

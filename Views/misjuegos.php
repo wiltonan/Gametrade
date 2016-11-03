@@ -57,10 +57,10 @@
    
 
   <!-- Modal Structure -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <!-- <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Modal Header</h4>
       <p>A bunch of text</p>
@@ -68,7 +68,7 @@
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
-  </div>
+  </div> -->
 
         <center><h3>Registrar juego.</h3></center>
         <form action="../Controller/juego_usuario.controller.php" method="post" id="fom4" enctype="multipart/form-data">
@@ -145,7 +145,7 @@
                
                 <label class="active" for="first_name2">Imagen del juego: </label>
                 </br>
-                <input type="file" name="imagenJueUsu"></input>
+                <input type="file" name="imagenJueUsu" class="inputt"></input>
               </div>
 
            <!--    <div class="input-field col s6">

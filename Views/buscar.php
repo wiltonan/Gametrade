@@ -50,7 +50,7 @@
 		<ul id="aa1">
 			<?php
 				foreach ($peliculas as $row )
-				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='80%' height='100px' ><div><a href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo juego</a></div></li>";
+				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='80%' height='100px' ><div><a id='bot' href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo juego</a></div></li>";
 			?>
 		</ul>
 	</div>

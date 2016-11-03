@@ -1,7 +1,5 @@
 <?php
   session_start();
-
- 
   // if (!isset($_SESSION["nombre"]))   {
   // header("Location:../");
   // }
@@ -20,14 +18,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylesSheet/todoestilo.css">
   <link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
-
 </head>
 <body>
   <header>
   <header id="main-header">
     <div id="res"></div>
     <a id="logo-header" href="#">
-    Bienvenido  
+    Bienvenido
     <?php
     echo  $_SESSION['nombre'];
 
@@ -44,7 +41,7 @@
       <div id="reso"></div>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>
       <li id="comprarjuego" ><a href="#/comprarjuego" class="white-text">Comprar juegos</a></li>
-      <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>      
+      <li id="buscar"><a href="#/buscar" class="white-text">Buscar</a></li>
       <li id="inicio" onclick="inicio()"><a href="#/inicio" class="white-text">Inicio</a></li>
       </ul>
     </nav>

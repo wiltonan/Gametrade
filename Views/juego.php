@@ -93,10 +93,10 @@
               </div>
 
               <div class="row">
-                <div class="input-field col s6">
-                    <input type="number" name="jue_cant" required>
-                    <label class="active" for="first_name2">Cantidad de juegos: </label>
-                </div>
+                  <div class="input-field col s6">
+                      <input type="text" name="jue_punto" required>
+                      <label class="active" for="first_name2">Valor en puntos del juego: </label>
+                  </div>
               </div>
 
 

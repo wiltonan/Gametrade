@@ -30,7 +30,7 @@
     ?>
 </div>
 <div class="content">
-            <!-- Example row of columns -->
+           
                 <div class="row">
                     
         </div>
@@ -73,11 +73,6 @@
                                         <div class="visible-phone width_360">
                                             <div class="li_creditos_2">
                                                
-                                                <!-- <img class="star_profile2" src="img/estre.png" data-src="simg/estre.png">
-                                                <b>400</b>
-                                                <p>Precio recomendado por gametrade.com</p> -->
-                                            
-                                            
                                                 <img class="star_profile2" src="img/estre.png" data-src="img/estre.png">
                                                 <!-- <b>400</b> -->
                                                 agrega el puntaje de tu videojuego
@@ -86,42 +81,6 @@
                                                    </br>
                                                 <button class="btn btn-primary" name="action" value="catalogo" >Poner en catalogo</button>
                                               </form>
-<!-- 
-                                        </div>    
-                                    </td>
-                                    <td class="cela_9 hidden-phone">
-                                        <div class="cont_cela_9">
-                                            <div class="img_coins"><img src="/img/star.png" data-src="/img/star.png"></div>
-                                            <b>400</b>
-                                            <p>Precio recomendado por tradejuegos.com</p>
-                                        </div>  
-                                        <div class="cont_cela_10"> -->
-                                            <!--
-                                            <a class="btn" href="#">
-                                                <i class="icon-chevron-left"></i>
-                                            </a>
-                                            -->
-                                            <!-- <div class="img_coins_add"><img src="/img/star.png" data-src="/img/star.png"></div>
-                                            <!-- <b>400</b> -->
-                                            <!-- <input name="cju_creditos" id="cju_creditos" value="400" type="number" maxlength="5" size="5" max="99999" min="0" required="required">
-                                            
-                                            
-                                            <a class="btn" href="#">
-                                                <i class="icon-chevron-right"></i>
-                                            </a>
-                                            
-                                            <p>El precio siempre se puede cambiar posteriormente</p>
-                                            <input class="btn btn-primary" name="" value="¡Poner en catálogo!" type="submit">
-                                            <input name="action" value="catalogar" type="hidden"> -->
-                                                                                   <!--  </div> --> 
-
-                                                                                   </br>
-                                                                                     </br>
-                                                                                       </br>
-                                        <div class="cont_cela_11">
-                                            <p>A partir de este momento el juego 50 Cent: Bulletproof pasará a formar parte del catálogo de Tradejuegos y estará en disposición de ser adquirido por parte de cualquier usuario registrado en nuestra comunidad.</p>
-                                            <p>Recuerda que si aún no has rellenado correctamente todos tus datos ahora es el momento. Nuestra empresa de transporte se pondrá en contacto contigo para recoger tu juego en el momento en que se produzca la compra.</p>
-                                            <input type="checkbox" name="aceptar" id="aceptar" required="required" style="margin-top: 0px;"><b> Confirmo que el juego se encuentra disponible y en las condiciones que he descrito</b>
 
   </body>
 </html>

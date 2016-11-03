@@ -1,16 +1,12 @@
 <?php
   session_start();
-<<<<<<< HEAD
+
 
  
   if (!isset($_SESSION["nombre1"]))   {
   header("Location:../");
   }
-=======
-  // if (!isset($_SESSION["nombre"]))   {
-  // header("Location:../");
-  // }
->>>>>>> origin/master
+
  ?>
 
 <!DOCTYPE html>
@@ -33,10 +29,7 @@
     <div id="res"></div>
     <a id="logo-header" href="#">
     Bienvenido
-<<<<<<< HEAD
-     
-=======
->>>>>>> origin/master
+
     <?php
    echo $_SESSION['nombre1'];
     ?>
@@ -45,9 +38,9 @@
 
 
     </a> <!-- / #logo-header -->
-     <button id="boton" class="waves-effect waves-light btn grey darken-1" ><div class="session" onclick="destroy1()">Cerrar sesion</div></button>
+     <button id="boton" class="waves-effect waves-light btn blue" ><div class="session" onclick="destroy1()">Cerrar sesion</div></button>
     <nav class="teal lighten-3">
-    <nav class=" grey darken-3">
+    <nav class=" grey darken-1">
       <ul id="menus">
       <div id="reso"></div>
       <li id="misjuegos" ><a href="#/mis juegos" class="white-text">Mis juegos</a></li>

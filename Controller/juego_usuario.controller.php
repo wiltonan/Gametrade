@@ -49,11 +49,11 @@ if ($Comprobar !==false) {
      $cons_cod=$_POST['cons_cod'];
      $cat_cod=$_POST["cat_cod"];
      $jue_desc=$_POST["jue_desc"];
-     $jue_cant=$_POST["jue_cant"];
+     
      $jue_trailer=$_POST["jue_trailer"];
      $jue_fech_public=$_POST["jue_fech_public"];
      $jue_estado="activo";
-       Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$archivo,$jue_estado);
+       Gestion_Videojuego::Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$archivo,$jue_estado);
        echo "<script>alert('Guardar con exito');
       self.location.href='../Views/menu_usuario.php?#/mis juegos';
       </script>";
@@ -100,7 +100,7 @@ if ($Comprobar !==false) {
    		 $cons_cod=$_POST["cons_cod"];
    		 $cat_cod=$_POST["cat_cod"];
    		 $jue_desc=$_POST["jue_desc"];
-   		 $jue_cant=$_POST["jue_cant"];
+   		
    		 $jue_trailer=$_POST["jue_trailer"];
    		 $jue_fech_public=$_POST["jue_fech_public"];
    		 $jue_imagen=$_POST["jue_imagen"];
@@ -109,7 +109,7 @@ if ($Comprobar !==false) {
        $jue_cod=$_POST["jue_cod"];
 
    		 try {
-   		 	Gestion_Videojuego::modificar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado,$jue_cod);
+   		 	Gestion_Videojuego::modificar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado,$jue_cod);
    		 	echo "Se a modificado con exito con exito";
    		 } catch (Exception $e) {
    		 	echo "errror" .$e;

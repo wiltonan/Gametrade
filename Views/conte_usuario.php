@@ -66,7 +66,7 @@
 
 
 
-<div id="e63JueDestac">Adquiere Nuevos VideoJuegos</div>
+<div id="e63JueDestac">ADQUIERE NUEVOS VIDEOJUEGOS</div>
 
 <div class="header  teal lighten-5">
 		<ul id="ulNoticJ">

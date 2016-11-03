@@ -7,20 +7,14 @@
 <meta charset="utf-8">
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="stylesSheet/todoestilo.css">
- <link rel="stylesheet" href="materialize/css/materialize.css">
-  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-
-
-  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-
-  <script type="text/javascript" src="js/usuario.js"></script>
-
- 
-
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylesSheet/todoestilo.css">
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/usuario.js"></script>
     <script type="text/javascript">
        $(document).ready(function(){
 
@@ -75,7 +69,7 @@
           <div class="row">
             <div class="class=" col s12>
 
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                   <input type="text" name="jue_nom" required>
                   <label class="active" for="first_name2">Nombre del juego: </label>
               </div>
@@ -83,7 +77,7 @@
 
 
 
-            <div class="input-field col s5">
+            <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Consola: </label>
                   <select name="cons_cod" class="input-field col s12" > 
@@ -108,7 +102,7 @@
               </br>
 
               <!-- estos hay que hacerlos drop down list -->
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Categoria juego: </label>
                   <select name="cat_cod" class="input-field col s12" > 
@@ -121,19 +115,19 @@
               </div>
 
 
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                   <textarea name="jue_desc" rows="5" cols="25" required></textarea>
                   <label class="active" for="first_name2">Descripcion del juego: </label>
               </div>
 
 
 
-              <div class="input-field col s5">
+              <!-- <div class="input-field col s6">
                   <input type="number" name="jue_cant" required>
                   <label class="active" for="first_name2">Cantidad de juegos: </label>
-              </div>
+              </div> -->
 
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                   <input type="text" name="jue_trailer">
                   <label class="active" for="first_name2">Trailer del juego: </label>
                   
@@ -141,7 +135,7 @@
 
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
 
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                
                 <label class="active" for="first_name2">Imagen del juego: </label>
                 </br>
@@ -155,7 +149,7 @@
 
             </div>
           </div>
-          <button name="action" value="guardarjuego" class="waves-effect waves-light btn">Guardar</button>
+          <button name="action" value="guardarjuego" class="waves-effect waves-light btn light-blue darken-3">Guardar</button>
         </form>
       </section>
     </div>

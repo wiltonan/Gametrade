@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="stylesSheet/todoestilo.css">
     </head>
       <body>
+
+      <div id="e63JueDesta">MIS JUEGOS</div>
+
+<div class="header  teal lighten-5">
+    </div>
+    </div>
+
     <?php
   foreach ($juego as $bn)
       echo " <div class='clConteJue'>
@@ -33,40 +40,6 @@
     </script>
   </head>
   <body>
-    <!-- <div class="tablajuego">
-      <section>
-        <table border="1px" class="highlight">
-          <thead>
-            <th colspan="16"><center><h5>Juegos.</h5></center></th>
-            <tr>
-              <td>Codigo del juego</td>
-              <td>Cedula</td>
-              <td>Nombre del juego</td>
-              <td>Consola</td>
-              <td>Categoria</td>
-              <td>Fecha de publicacion</td>
-              <td>Estado</td>
-              <td>Operaciones</td>
-            </tr>
-          </thead>
-          <tbody>
-               <?php foreach ($juego as $bn): ?>
-                 <tr>
-                   <td><?php echo $bn["jue_cod"];         ?></td>
-                   <td><?php echo $bn["usu_num_docum"];   ?></td>
-                   <td><?php echo $bn["jue_nom"];         ?></td>
-                   <td><?php echo $bn["cons_nom"];        ?></td>
-                   <td><?php echo $bn["cat_nom"];         ?></td>
-                   <td><?php echo $bn["jue_fech_public"]; ?></td>
-                   <td><?php echo $bn["jue_estado"];      ?></td>
-                   <td>
-                     <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["jue_cod"]; ?>)">Modificar</span>
-                   </td>
-                 </tr>
-              <?php endforeach ?>
-          </tbody>
-        </table>
-      </section>
-    </div> -->
+    
   </body>
 </html>

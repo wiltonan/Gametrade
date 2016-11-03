@@ -6,7 +6,7 @@ session_start();
 require_once("../Model/conexion.php");
 require_once("../Model/juego_usuario.class.php");
 
-$documento=$_SESSION["codigo"];
+$documento=$_SESSION["codigo1"];
 
 
   

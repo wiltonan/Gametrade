@@ -1,4 +1,5 @@
 <?php
+session_start();
   require_once '../Model/conexion.php';
   require_once '../Model/login.class.php';
 
@@ -18,9 +19,11 @@
                   $_SESSION['nombre'] = $resul['usu_nom'];
                   echo "<script>location.href='../Views/menu_admin.php' </script>";
                 }else {
-                   $_SESSION['documento'] = $resul['usu_num_docum'];
-                   $_SESSION['nombre'] = $resul['usu_nom'];
-                  echo "<script>location.href='../Views/menu_usuario.php' </script>";
+                   $_SESSION['documento1'] = $resul['usu_num_docum'];
+                   $_SESSION['codigo1'] = $resul['usu_cod'];
+                   $_SESSION['nombre1'] = $resul['usu_nom'];
+                   // echo $_SESSION['documento1'],$_SESSION['codigo1'],$_SESSION['nombre1'];
+                   echo "<script>location.href='../Views/menu_usuario.php' </script>";
                 }
 
               }else {
@@ -46,6 +49,7 @@
         echo "<script>
           self.location.href='../';
         </script>";
+
 
     }
  ?>

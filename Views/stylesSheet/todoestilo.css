@@ -141,12 +141,14 @@ nav {
 
 #aa li{
 	display: inline-block;
+	height: 190px;
 	width: 20%;
 	float: left;
 	overflow: hidden;
 }
 
 #aa li img{
+	height: 100px;
 	display: inline-block;
 }
 
@@ -156,16 +158,19 @@ nav {
 	height: 400px;
 	margin: 0;
 	padding: 0;
+
 }
 
 #aa1 li{
 	display: inline-block;
 	width: 20%;
+	height: 180px;
 	float: left;
 	overflow: hidden;
 }
 
 #aa1 li img{
+	height: 100px;
 	display: inline-block;
 }
 
@@ -416,4 +421,93 @@ color: #000;
 
 .misa a{
 	text-align: cen
+}
+
+
+.tengo{
+	color: #000;
+}
+
+
+#inputt{
+	float: right;
+	margin-right: 1%;
+	margin-top: 1.4%;
+}
+
+
+/*esta es la parte para cambiarle el estilo a comprar juegos*/
+
+#srComprs{
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+	
+	background: #000;
+}
+
+.ulCompr{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height:10%;
+	
+}
+
+.ulCompr li{
+	display: inline-block;
+	width: 20%;
+	height: 300px;
+	margin-left: 1%;
+	margin-top: 2%;
+
+	border: groove 1px;
+}
+.ulCompr li img{
+	width: 100%;
+	height: 250px;
+}
+
+.ulCompr li a{
+	text-align: center;
+}
+
+
+#boto{
+	width: 100%;
+	height: 47px;
+	float: right;
+	margin-right: 0%;
+	margin-top: -2%;
+	background:#585858;
+	padding-top:14px;
+}
+
+#bot{
+	width: 100%;
+	height: 127px;
+	text-align: center;
+	margin-right: 0%;
+	margin-top: -2%;
+	background:#000;
+	padding-top:14px;
+}
+
+#bo{
+	width: 80%;
+	height: 87px;
+	/*float: right;*/
+	margin-right: 0%;
+	margin-top: -2%;
+	background:#585858;
+	padding-top:14px;
+}
+
+
+/*en esta parte se le camvia el color a las imagenes de misjuegos*/
+.ulInforJue{
+	background: #fff;
+	font-size: 25px;
+
 }

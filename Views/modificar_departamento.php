@@ -20,6 +20,7 @@
  				<h4>Modificar departamento.</h4>
  				<form action="../Controller/departamento.controller.php" method="post">
  		      <input type="hidden" name="depar_cod" readonly value="<?php echo $departamento_mo["depar_cod"]; ?>" />
+          
  					<div class="row">
            	<div class="input-field col s6">
              	<input type="text" name="nombre" required value="<?php echo $departamento_mo["nombre"]; ?>" />
@@ -30,7 +31,7 @@
  		        	<select class="select" name="pais_cod" >
  		          	<option value="" disabled selected>Pais: </option>
  		            	<?php foreach ($pais as $paismo) {
- 		              	if($paismo["pais_cod"] == $departamento_mo["pais_nom"]){
+ 		              	if($paismo["pais_cod"] == $departamento_mo["pais_cod"]){
  		                $selected = "selected";
  		              	}else{
  		                 	$selected = "";

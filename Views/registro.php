@@ -5,7 +5,7 @@
   $ciu = usuario::consultarciudad();
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
-  $fecha=date("2004-m-d");
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -79,7 +79,7 @@
 
           <div class="row">
             <div class="input-field col s5">
-              <input type="date" name="usu_naci" max="<?php echo $fecha; ?>" required/>
+              <input type="date" name="usu_naci" class="datepicker" required/>
               <label class="active" for="first_name2">Fecha de nacimiento.</label>
             </div>
 
@@ -123,5 +123,17 @@
   			  </form>
         </section>
 		  </div>
+      <script type="text/javascript">
+      var anhoact= '<?php echo date('Y') ?>';
+      var mesact= '<?php echo date('m') ?>';
+      var diaact= '<?php echo date('d') ?>';
+      var less12 = anhoact-12;
+      $('.datepicker').pickadate({
+         selectMonths: true, // que se pueda seleccionar el mes
+         selectYears: 50, // que se pueda seleccionar el año y cuantos quiere
+         format:'yyyy/mm/dd',
+         max:less12+'-'+mesact+'-'+diaact,
+       });
+      </script>
 	</body>
 </html>

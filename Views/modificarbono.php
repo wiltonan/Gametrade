@@ -4,7 +4,6 @@
 
   $bonomo = bono::consultarporCodigo($_GET['codigo_bono']);
   $pto_cod=bono::mostrarpunto();
-
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +23,10 @@
 
           <div class="row">
             <input type="hidden" name="bono_cod" readonly value="<?php echo $bonomo["bono_cod"]; ?>" />
-            
+
             <div class="input-field col s6">
               <select class="select" name="pto_cod" >
-                <option value="" disabled selected>Escoja la cantidad de puntos</option>
+                <option value="" disabled selected>Cantidad de puntos</option>
                 <?php foreach ($pto_cod as $puntos) {
                   if($puntos["pto_cod"] == $bonomo["pto_cod"]){
                     $selected = "selected";

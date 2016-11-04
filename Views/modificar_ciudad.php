@@ -30,7 +30,7 @@
 		        	<select class="select" name="depar_cod" >
 		          	<option value="" disabled selected>Departamento: </option>
 		            	<?php foreach ($departamento as $depar) {
-		              	if($depar["depar_cod"] == $ciudadmo["nombre"]){
+		              	if($depar["depar_cod"] == $ciudadmo["depar_cod"]){
 		                $selected = "selected";
 		              	}else{
 		                 	$selected = "";

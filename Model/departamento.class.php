@@ -16,7 +16,7 @@
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select tbl_departamento.nombre, tbl_pais.pais_nom
+		$sql= "select tbl_departamento.depar_cod, tbl_departamento.nombre, tbl_pais.pais_nom
             from tbl_departamento
 
             inner join tbl_pais
@@ -47,6 +47,34 @@
 
     return $result;
   }
+
+  public static function mostrarpais(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql= "select * from tbl_pais";
+
+    $query= $pdo->prepare($sql);
+    $query->execute();
+
+    $result=$query->fetchALL(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+  public static function modificar($nombre,$pais_cod,$depar_cod){
+  $pdo = ConexionBD::AbrirBD();
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  $sql= "UPDATE tbl_departamento SET nombre=?, pais_cod=? WHERE depar_cod=?";
+
+  $query= $pdo->prepare($sql);
+  $query->execute(array($nombre,$pais_cod,$depar_cod));
+
+  ConexionBD::DesconectarBD();
+}
 }
 
  ?>

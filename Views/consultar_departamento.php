@@ -22,6 +22,7 @@
           <thead>
             <th colspan="5"><center><h5>Informacion de los Departamentos.</h5></center></th>
             <tr>
+              <td>Codigo</td>
               <td>Departamento</td>
               <td>Pais</td>
               <td>Operaciones</td>
@@ -30,6 +31,7 @@
           <tbody>
             <?php foreach ($departamento as $bn): ?>
               <tr>
+                <td><?php echo $bn["depar_cod"];  ?></td>
                 <td><?php echo $bn["nombre"];  ?></td>
                 <td><?php echo $bn["pais_nom"];  ?></td>
                 <td>

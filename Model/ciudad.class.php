@@ -1,22 +1,22 @@
 <?php
 	class Gestion_Ciudad{
-		public static function guardar($ciu_nom,$pais_cod){
+		public static function guardar($ciu_nom,$depar_cod){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "INSERT INTO tbl_ciudad (ciu_nom,pais_cod) values (?,?)";
+		$sql= "INSERT INTO tbl_ciudad (ciu_nom,depar_cod) values (?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($ciu_nom,$pais_cod));
+		$query->execute(array($ciu_nom,$depar_cod));
 
 		ConexionBD::DesconectarBD();
 	}
 
-	public static function mostrarpais(){
+	public static function mostrardepartamento(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select * from tbl_pais";
+		$sql= "select * from tbl_departamento";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();
@@ -32,10 +32,11 @@
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql="select tbl_ciudad.ciu_cod, tbl_ciudad.ciu_nom, tbl_pais.pais_nom
+		$sql="select tbl_ciudad.ciu_cod, tbl_ciudad.ciu_nom, tbl_departamento.nombre
           from tbl_ciudad
-          inner join tbl_pais
-          on tbl_ciudad.pais_cod = tbl_pais.pais_cod";
+
+					inner join tbl_departamento
+					on tbl_ciudad.depar_cod = tbl_departamento.depar_cod";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();
@@ -63,14 +64,14 @@
     return $result;
   }
 
-		public static function modificar($ciu_nom,$pais_cod,$ciu_cod){
+		public static function modificar($ciu_nom,$depar_cod,$ciu_cod){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql= "UPDATE tbl_ciudad SET ciu_nom=?, pais_cod=? WHERE ciu_cod=?";
+		$sql= "UPDATE tbl_ciudad SET ciu_nom=?, depar_cod=? WHERE ciu_cod=?";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($ciu_nom,$pais_cod,$ciu_cod));
+		$query->execute(array($ciu_nom,$depar_cod,$ciu_cod));
 
 		ConexionBD::DesconectarBD();
 	}

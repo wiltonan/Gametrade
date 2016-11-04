@@ -17,19 +17,19 @@ $accion=$_REQUEST["action"];
  		 }
  		break;
 
-    // case 'modificar':
-   // 		 $ciu_nom=$_POST['ciu_nom'];
-   // 		 $pais_cod=$_POST['pais_cod'];
-    //    $ciu_cod=$_POST['ciu_cod'];
-    //
-   // 		 try {
-   // 		 	Gestion_Ciudad::modificar($ciu_nom,$pais_cod,$ciu_cod);
-    //     echo "<script>alert('Se ha modificado la ciudad');
-    //     self.location.href='../Views/menu_admin.php?#/ciudad';
-    //     </script>";
-   // 		 } catch (Exception $e) {
-   // 		 	echo $e;
-   // 		 }
-   // 		break;
+    case 'modificar':
+   		 $nombre=ucfirst($_POST["nombre"]);
+   		 $pais_cod=$_POST['pais_cod'];
+       $depar_cod=$_POST['depar_cod'];
+
+   		 try {
+   		 	Gestion_departamento::modificar($nombre,$pais_cod,$depar_cod);
+        echo "<script>alert('Se ha modificado el departamento');
+        self.location.href='../Views/menu_admin.php?#/departamento';
+        </script>";
+   		 } catch (Exception $e) {
+   		 	echo $e;
+   		 }
+   		break;
  }
 ?>

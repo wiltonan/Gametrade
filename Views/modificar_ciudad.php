@@ -3,7 +3,7 @@
 	require_once("../Model/ciudad.class.php");
 
   $ciudadmo= Gestion_Ciudad::consultarporCodigo($_GET['codigo_ciudad']);
-	$pais=Gestion_Ciudad::mostrarpais();
+	$departamento=Gestion_Ciudad::mostrardepartamento();
 	?>
 <!DOCTYPE html>
 <html>
@@ -23,19 +23,19 @@
 					<div class="row">
           	<div class="input-field col s6">
             	<input type="text" name="ciu_nom" required value="<?php echo $ciudadmo["ciu_nom"]; ?>" />
-              <label class="active" for="first_name2">Ciudad.</label>
+              <label class="active" for="first_name2">Ciudad: </label>
             </div>
 
 						<div class="input-field col s6">
-		        	<select class="select" name="pais_cod" >
-		          	<option value="" disabled selected>Pais.</option>
-		            	<?php foreach ($pais as $paismo) {
-		              	if($paismo["pais_cod"] == $ciudadmo["pais_nom"]){
+		        	<select class="select" name="depar_cod" >
+		          	<option value="" disabled selected>Departamento: </option>
+		            	<?php foreach ($departamento as $depar) {
+		              	if($depar["depar_cod"] == $ciudadmo["nombre"]){
 		                $selected = "selected";
 		              	}else{
 		                 	$selected = "";
 		                }
-		                echo "<option value=".$paismo["pais_cod"]." $selected>".$paismo["pais_nom"]."</option>";
+		                echo "<option value=".$depar["depar_cod"]." $selected>".$depar["nombre"]."</option>";
 		              }?>
 		          </select>
 		        </div>

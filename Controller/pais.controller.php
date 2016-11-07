@@ -6,7 +6,7 @@ $accion=$_REQUEST['action'];
  switch ($accion) {
  	case 'guardarpais':
       $pais_nom=ucfirst($_POST["pais_nom"]);
-    
+
  		 try {
  		 	Gestion_Pais::guardar($pais_nom);
       echo "<script>alert('Se ha guardar el pais');
@@ -32,6 +32,16 @@ $accion=$_REQUEST['action'];
           echo 'Ocurrio un error' .$e ;
       }
       break;
+
+      case 'buscarpais':
+        try {
+          $codigo = $_POST['codigo'];
+          $depar = 
+        } catch (Exception $e) {
+
+        }
+
+        break;
 
  }
 ?>

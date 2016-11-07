@@ -24,7 +24,7 @@
         var codigo = $(this).val();
         var action = "buscarpais";
         $.post("../pais.controller.php", {action: action, codigo: codigo}, function(data){
-          $("#editjv").val(data);
+          $("#departamento").val(data);
         });
       });
 

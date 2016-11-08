@@ -13,12 +13,12 @@ class Gestion_Videojuego{
 
 	}
 
-	public static function mostrarjuego(){
+	public static function mostrarjuego($codigo){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_desc, tbl_videojuego.jue_cant, tbl_videojuego.jue_trailer, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
+		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_desc, tbl_videojuego.jue_punto, tbl_videojuego.jue_trailer, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
 						from tbl_videojuego
 
 						inner join tbl_usuario
@@ -28,10 +28,12 @@ class Gestion_Videojuego{
 						on tbl_videojuego.cons_cod = tbl_consola.cons_cod
 
 						inner join tbl_categoria_jue
-						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod";
+						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod
+						and tbl_videojuego.usu_cod=?
+						";
 
 		$query= $pdo->prepare($sql);
-		$query->execute();
+		$query->execute(array($codigo));
 
 		$result=$query->fetchALL(PDO::FETCH_BOTH);
 
@@ -39,7 +41,55 @@ class Gestion_Videojuego{
 
 		return $result;
 	}
+	public static function ConsultPunt($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
+    $sql="SELECT SUM(tbl_pack_punto.pto_cant)
+from tbl_pack_punto inner join tbl_usuario_x_pto on (tbl_pack_punto.pto_cod=tbl_usuario_x_pto.pto_cod)
+and tbl_usuario_x_pto.usu_cod=?";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+public static function consultarcategoria(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select * from tbl_categoria_jue";
+
+    $query= $pdo->prepare($sql);
+    $query->execute();
+
+    $result= $query->fetchALL(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+  public static function consultarconsola(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select * from tbl_consola";
+
+    $query= $pdo->prepare($sql);
+    $query->execute();
+
+    $result= $query->fetchALL(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
 	public static function consultarporCodigo($codigo){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

@@ -14,6 +14,17 @@ textarea {
   font-family: Helvetica, Arial, sans-serif;
   
 }
+.butoPuntos{
+    width: 600px;
+    height: 130px;
+    overflow: hidden;vertical-align: top;
+    margin-top: 5px;
+    background: none;
+}
+
+btnpun1{
+    background: url(../img/estrella.png);
+}
 
 input {
   box-sizing: initial;  
@@ -435,12 +446,14 @@ input[type="file"].registro {
 }
 
 .img_coins {
-    margin-top: -4px;
-    margin-right: 5px;
-    float: left;
-    max-width:20px;
-    max-height:20px;
+ margin-top: 30px;
+
 }
+
+.clPun{
+    cursor: pointer;
+}
+
 
 .cela_1 .img_coins{
     margin-top: -4px;
@@ -956,6 +969,7 @@ table td.cela_comprar_creditos1{
     text-align: center;
     color: #000;
     vertical-align: middle;
+    cursor: pointer;
     border-right: 1px solid #C0C0C0;
 }
 

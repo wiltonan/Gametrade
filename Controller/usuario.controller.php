@@ -75,7 +75,8 @@ $accion=$_REQUEST['action'];
           $codigo = $_POST['codigo'];
           $depts = usuario::buscardepartamento($codigo);
           foreach ($depts as $key) {
-            echo "<option value='".$key['0']."'>".$key['1']."</option>";
+             echo "<option value='".$key['0']."'>".$key['1']."</option>";
+
           }
         } catch (Exception $e) {
           echo $e->getMessage();

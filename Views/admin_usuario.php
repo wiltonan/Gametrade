@@ -4,7 +4,7 @@
   require_once("../Model/pais.class.php");
   require_once("../Model/ciudad.class.php");
 
-  // $ciu = usuario::consultarciudad();
+  $ciu = usuario::consultarciudad();
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
   $rol = usuario::consultar_rol();
@@ -24,19 +24,19 @@
         var codigo = $(this).val();
         var action = "buscardepar";
         $.post("../Controller/usuario.controller.php", {action: action, codigo: codigo}, function(data){
-          $("#departamento").val(data);
+          $("#dpta").html(data);
           alert(data);
         });
       });
 
-      $("#usu_nick").onfocusin(function(){
-        var nick= $(this).val();
-        var action = "buscar_nick";
-        $.post("../Controller/usuario.controller.php", {action: action, codigo: codigo}, function(data){
-          $("#usu_nick").val(data);
-          alert(data);
-        });
-      });
+      // $("#usu_nick").onfocusin(function(){
+      //   var nick= $(this).val();
+      //   var action = "buscar_nick";
+      //   $.post("../Controller/usuario.controller.php", {action: action, codigo: codigo}, function(data){
+      //     $("#usu_nick").val(data);
+      //     alert(data);
+      //   });
+      // });
 
     });
       $('select').material_select();
@@ -143,13 +143,18 @@
               </div>
 
 
-            <div class="row">
-              <div class="input-field col s6">
-            		<select id="departamento" name="departamento" required>
-                  <option value="">Departamento</option>
-                </select>
+                <div class="input-field col s6">
+              		<select id="dpta" name="departamento" >
+                    <option value="">Departamento</option>
+                  </select>
+                </div>
               </div>
 
+            <div class="input-field col s6">
+              <select id="departamento" name="departamento">
+                <option value="">
+              </select>
+            </div>
 
             <div class="row">
               <div class="input-field col s6">

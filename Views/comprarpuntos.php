@@ -11,50 +11,56 @@
       <link rel="stylesheet" href="stylesSheet/todoestilo.css">
  <link rel="stylesheet" href="materialize/css/materialize.css">
   <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/comprar.js"></script>
 </head>
 <body>
 
 <div class="modal-body_comprar_creditos">
-                                                <p><strong>PASO 1:</strong> Elige la cantidad de créditos que quieres:</p>	
-                                                <table class="table table-hover comprar_creditos">
-                                                    <tbody><tr>
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="7000" required="required">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="img/estrella.png" data-src="/img/estrella.png"></div>
-                                                            <p>1.000 Puntos</p>
-                                                        </td>
-                                                        <td class="cela_comprar_creditos2">
-                                                            <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_4995.png"></div>
-                                                        </td>
-                                                        <td class="cela_descuentos">
-                                                            <div class="img_descuento_gratis"><img src="img/10_gratis.png" data-src="img/10_gratis.png"></div>
-                                                        </td>
-                                                    </tr>
-                                                       
-                                                    <tr>
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="3900" required="required">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                            <p>2.000 Puntos</p>
-                                                        </td>
-                                                        <td class="cela_comprar_creditos2">
-                                                            <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_2995.png"></div>
-                                                        </td>
-                                                        <td class="cela_descuentos">
-                                                            <div class="img_descuento_gratis"><img src="img/20_gratis.png" data-src="img/20_gratis.png"></div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="2400" required="required">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
+ <p><strong>PASO 1:</strong> Elige la cantidad de créditos que quieres:</p>	
+ <table class="table table-hover comprar_creditos">
+     <tbody><tr>
+         <td class="cela_radio_comprar_creditos">
+             <input type="radio" name="compra_creditos" id="compra_creditos" value="7000" required="required">
+         </td>
+         <td class="cela_comprar_creditos1">
+             <div class="clPun" onclick="puntos1()"><div class="img_coins" ><img src="img/estrella.png" data-src="/img/estrella.png"></div>
+                <p>1.000 Puntos</p>
+             </div>
+         </td>
+         <td class="cela_comprar_creditos2">
+             <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_4995.png"></div>
+         </td>
+         <td class="cela_descuentos">
+             <div class="img_descuento_gratis"><img src="img/10_gratis.png" data-src="img/10_gratis.png"></div>
+         </td>
+     </tr>
+        
+     <tr>
+         <td class="cela_radio_comprar_creditos">
+             <input type="radio" name="compra_creditos" id="compra_creditos" value="3900" required="required">
+         </td>
+         <td class="cela_comprar_creditos1">
+             <div class="clPun" onclick="puntos2()">
+                 <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
+                 <p>2.000 Puntos</p>
+             </div>
+         </td>
+         <td class="cela_comprar_creditos2">
+             <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_2995.png"></div>
+         </td>
+         <td class="cela_descuentos">
+             <div class="img_descuento_gratis"><img src="img/20_gratis.png" data-src="img/20_gratis.png"></div>
+         </td>
+     </tr>
+     <tr>
+         <td class="cela_radio_comprar_creditos">
+             <input type="radio" name="compra_creditos" id="compra_creditos" value="2400" required="required">
+         </td>
+         <td class="cela_comprar_creditos1">
+            <div class="clPun"  onclick="puntos3()">
                                                             <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
                                                             <p>5.000 Puntos</p>
+                                                            </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
                                                             <div class="img_precios"><img src="img/paquete.png" data-src="/img/precio_1995.png"></div>
@@ -88,8 +94,10 @@
                                                             <input type="radio" name="compra_creditos" id="compra_creditos" value="1100" required="required">
                                                         </td>
                                                         <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                            <p>10.000 Puntos</p>
+                                                            <div class="clPun" onclick="puntos4()">
+                                                                <div class="img_coins" ><img src="img/estrella.png" data-src="img/estrella.png"></div>
+                                                                <p>10.000 Puntos</p>
+                                                            </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
                                                             <div class="img_precios"><img src="img/paq.png" data-src="img/paq.png"></div>

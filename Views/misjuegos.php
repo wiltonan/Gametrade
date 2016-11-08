@@ -1,7 +1,11 @@
 <?php
+session_start();
+$codigoUsu=$_SESSION['codigo1'];
   date_default_timezone_set('America/Bogota');
-  include_once("../Model/conexion.php");
-  // $categorias=Gestion_Videojuego::consultarcategoria();
+    include_once("../Model/conexion.php");
+  require_once("../Model/juego_admi.class.php");
+   $categorias=Gestion_Videojuego::consultarcategoria();
+   $consola=Gestion_Videojuego::consultarconsola();
  ?>
 
 <meta charset="utf-8">
@@ -9,26 +13,28 @@
   <head>
         <meta charset="utf-8">
         <title></title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="materialize/css/materialize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="stylesSheet/todoestilo.css">
         <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/usuario.js"></script>
-    <script type="text/javascript">
+    
+     <script type="text/javascript">
        $(document).ready(function(){
 
-  $('select').material_select();
-      //   // $("#buscar_cedula").keyup(function(){
-      //   //   var param = $(this).val();
-      //   //   $.post("js/buscador.php", {vlparam: param}, function(data){
-      //   //     $(".nombre").html(data);
+          $('select').material_select();
+                // $("#buscar_cedula").keyup(function(){
+                //   var param = $(this).val();
+                //   $.post("js/buscador.php", {vlparam: param}, function(data){
+                //     $(".nombre").html(data);
 
 
-      //   //   });
-      //   // });
+                //   });
+                // });
 
-       });
+               });
     </script>
 
   
@@ -39,76 +45,45 @@
   
     <div class="formulariojuego">
 
-    <div class="catalogo">
-    <form></form>
-      
-
-    </div>
 
       <section>
-   
-
-   
-
-  <!-- Modal Structure -->
-    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
-
-  <!-- Modal Structure -->
-  <!-- <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div> -->
-
         <center><h3>Registrar juego.</h3></center>
-        <form action="../Controller/juego_usuario.controller.php" method="post" id="fom4" enctype="multipart/form-data">
+        <form action="../Controller/juego_usuario.controller.php" class="col s12" method="post" id="fom4" enctype="multipart/form-data">
           <div class="row">
-            <div class="class=" col s12>
-
-              <div class="input-field col s6">
+            
+              <div class="input-field col s8">
                   <input type="text" name="jue_nom" required>
-                  <label class="active" for="first_name2">Nombre del juego: </label>
+                  <label class="active" for="first_name2" class="col s12">Nombre del juego: </label>
               </div>
-
-
-
 
             <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Consola: </label>
-                  <select name="cons_cod" class="input-field col s12" > 
-                 <option>1</option>
-                 <option>2</option>
+                  <select name="cons_cod"> 
+                  <option>Seleccionar</option>
+                     <?php 
+                      foreach ($consola as $keyconso ) {
+                        echo "<option value=".$keyconso["cons_cod"].">".$keyconso["cons_nom"]."</option>";
+                      }
+                     ?>
                  
 
                    </select>
                   
               </div>
-
-
-
-              <!-- estos hay que hacerlos drop down list -->
-              <!-- <div class="input-field col s6">
-                  <input type="text" name="cons_cod" required>
-                  <label class="active" for="first_name2">Consola: </label>
-              </div> -->
-
+</div>
               </br>
-              </br>
-              </br>
-
-              <!-- estos hay que hacerlos drop down list -->
+             <div class="row">
               <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Categoria juego: </label>
-                  <select name="cat_cod" class="input-field col s12" > 
-                 <option>1</option>
-                 <option>2</option>
-                 <option>3</option>
+                  <select name="cat_cod" > 
+                    <option>Seleccionar</option>
+                     <?php 
+                      foreach ($categorias as $keycateg ) {
+                        echo "<option value=".$keycateg["cat_cod"].">".$keycateg["cat_nom"]."</option>";
+                      }
+                     ?>
 
                    </select>
                   
@@ -119,35 +94,41 @@
                   <textarea name="jue_desc" rows="5" cols="25" required></textarea>
                   <label class="active" for="first_name2">Descripcion del juego: </label>
               </div>
-
-
-
-              <!-- <div class="input-field col s6">
-                  <input type="number" name="jue_cant" required>
-                  <label class="active" for="first_name2">Cantidad de juegos: </label>
-              </div> -->
-
+</div>
+<div class="row">
               <div class="input-field col s6">
-                  <input type="text" name="jue_trailer">
+                  <input type="text" class="col s12" name="jue_trailer">
                   <label class="active" for="first_name2">Trailer del juego: </label>
                   
               </div>
 
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
 
-              <div class="input-field col s6">
+             <!--  <div class="input-field col s6">
                
                 <label class="active" for="first_name2">Imagen del juego: </label>
-                </br>
-                <input type="file" name="imagenJueUsu" class="inputt"></input>
+                
+                <input type="file" class="purple" name="imagenJueUsu" ></input>
+
               </div>
+ -->
 
-           <!--    <div class="input-field col s6">
-                <input type="text" name="jue_pal_clave">
-                <label class="active" for="first_name2">Palabras claves: </label>
-              </div> -->
 
-            </div>
+
+
+               <div class="file-field input-field col s6">
+                 
+                 <div class="btn blue-grey">
+                   <span><i class="material-icons">add_a_photo</i></span>
+                   <input type="file" name="imagenJueUsu" multiple></input>
+                 </div>
+                 <div class="file-path-wrapper">
+                   <input class="file-path validate" name="imagenJueUsu" type="text" placeholder="seleccionar una imagen">
+                 </div>
+               </div>
+</div>
+
+             </div>
           </div>
           <button name="action" value="guardarjuego" class="waves-effect waves-light btn light-blue darken-3">Guardar</button>
         </form>
@@ -159,6 +140,7 @@
         <?php include("consultar_juegousuario.php") ?>
       </section>
 
+    </div>
     </div>
     <script type="text/javascript">
 $(document).ready(function(){

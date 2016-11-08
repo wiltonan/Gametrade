@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div id="compJuess">
+<!-- <div id="compJuess">
     <?php
 
         foreach ($consull as $consulkey) {
@@ -27,7 +27,7 @@
 
     ?>
    
-</div>
+</div> -->
 
 <div id="myModalComprarCreditos" class="modal hide fade in" tabindex="-1" aria-hidden="false" style="margin-top: -50px;">
             <div class="modal-header">

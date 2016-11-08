@@ -11,6 +11,9 @@
 <head>
 	<meta charset="utf8"/>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesSheet/mindex.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
      <link rel="stylesheet" href="materialize/css/materialize.css">
      <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
      <script type="text/javascript" src="js/usuario.js"></script>
@@ -31,40 +34,7 @@
 </script>
 </style>
 
-<section>
-		<div id="captioned-gallery">
-			<figure class="slider">
-
-				<figure>
-					<img src="Imagen/09.jpg" style="height: 535px; width: 100%;">
-					<figcaption></figcaption>
-				</figure>
-
-				<figure>
-					<img src="Imagen/08.jpg" style="height: 535px; width: 100%;">
-					<figcaption></figcaption>
-				</figure>
-
-		    <figure>
-					<img src="Imagen/mara.jpg" style="height: 535px; width: 100%;">
-					<figcaption></figcaption>
-				</figure>
-
-				<figure>
-					<img src="Imagen/10.jpg" style="height: 535px; width: 100%;">
-					<figcaption></figcaption>
-				</figure>
-
-				<figure>
-					<img src="Imagen/11.jpg" style="height: 535px; width: 100%;">
-					<figcaption></figcaption>
-				</figure>
-
-			</figure>
-		</div>
-	</section>
-
-
+<div id="e64SlideNoticia"></div>
 
 <div id="e63JueDestac">ADQUIERE NUEVOS VIDEOJUEGOS</div>
 

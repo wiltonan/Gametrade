@@ -1,8 +1,8 @@
 <?php
   require_once("../Model/conexion.php");
-  require_once("../Model/juego_admi.class.php");
 
-  $juego = Gestion_Videojuego::mostrarjuego();
+
+  $juego = Gestion_Videojuego::mostrarjuego($codigoUsu);
  ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@
       <ul class='ulInforJue'>
         <li>".$bn["jue_nom"]."</li>
         <li>".$bn["jue_desc"]."</li>
-        <li>".$bn["jue_cant"]."</li>
+        <li>".$bn["jue_punto"]."</li>
         <li>GameTrade</li>
         <li>autor</li>
       </ul>

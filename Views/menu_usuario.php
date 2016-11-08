@@ -1,11 +1,15 @@
 <?php
   session_start();
-
+  include_once("../Model/conexion.php");
+  require_once("../Model/juego_admi.class.php");
 
  
   if (!isset($_SESSION["nombre1"]))   {
   header("Location:../");
   }
+  
+  $punts=Gestion_Videojuego::ConsultPunt($_SESSION['codigo1']);
+
 
  ?>
 
@@ -34,7 +38,7 @@
    echo $_SESSION['nombre1'];
     ?>
 
-    <span class="site-desc" style="color: #fff">1800 puntos</span>
+    <span class="site-desc" style="color: #fff"><?php echo $punts[0]; ?> puntos</span>
 
 
     </a> <!-- / #logo-header -->

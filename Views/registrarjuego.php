@@ -20,11 +20,13 @@
         foreach ($consull as $consulkey) {
             echo " <div class='clImgcompr'><img src=".$consulkey["jue_imagen"]." /></div>
                 <ul class='ulInfoCos'>
-                    <li>".$consulkey["jue_nom"]."</li>
+                    <li>".$consulkey["jue_nom"]."<input type='hidden' name='nomjue' value='".$consulkey["jue_nom"]."' /></li>
                     <li><input type='hidden' name='cod_jueg_usu' value='".$consulkey["jue_cod"]."' /></li>
-                    <li>".$consulkey["cons_cod"]."</li>
-                    <li>".$consulkey["cat_cod"]."</li>
-                </ul>";
+                    <li>".$consulkey["cons_cod"]."<input name='consol' type='hidden' value='".$consulkey["cons_cod"]."' /></li>
+                    <li>".$consulkey["cat_cod"]."<input name='catege' type='hidden' value='".$consulkey["cat_cod"]."' /></li>
+                </ul>
+                <input name='imgInput' type='hidden' value='".$consulkey["jue_imagen"]."' />
+                ";
         }
 
     ?>
@@ -39,7 +41,7 @@
                     <h4 class="visible-phone">CONDICIÓN DEL JUEGO</h4>
                 </div>
         <div class="condicion_juego">
-                                        <form id="validatedForm" action="/user-profile-my" method="post" novalidate="">
+                                      
                         <table class="table-hover">
                             <tbody>
                                 <tr>

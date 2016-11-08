@@ -7,6 +7,7 @@ require_once("../Model/conexion.php");
 require_once("../Model/juego_usuario.class.php");
 
 $documento=$_SESSION["codigo1"];
+$documento2=$_SESSION['documento1'];
 
 
   
@@ -115,5 +116,25 @@ if ($Comprobar !==false) {
    		 	echo "errror" .$e;
    		 }
    		break;
+
+       case 'catalogo':
+       $imagen=$_POST["imgInput"];
+       $puntos=$_POST["cju_creditos"];
+       $cons_cod=$_POST["consol"];
+       $cat_cod=$_POST["catege"];
+       $nombr=$_POST["nomjue"];
+       $jue_descc=$_POST["cju_comentario"];
+       
+
+
+       try {
+        Gestion_Videojuego::guardarjuegoUsua($documento,$puntos,$nombr,$cons_cod,$cat_cod,$jue_descc,$imagen);
+        echo "<script>alert('Se ha puesto en el catalogo');
+        self.location.href='../Views/menu_usuario.php?#/mis juegos'
+        </script>";
+       } catch (Exception $e) {
+        echo "errror" .$e;
+       }
+      break;
  }
 ?>

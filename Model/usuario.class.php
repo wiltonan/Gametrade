@@ -115,5 +115,18 @@
 
     return $result;
   }
+
+  public static function buscardepartamento($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select tbl_departamento.depar_cod, tbl_departamento.nombre from tbl_departamento WHERE tbl_departamento.pais_cod=?";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+    $result= $query->fetchALL(PDO::FETCH_BOTH);
+    ConexionBD::DesconectarBD();
+    return $result;
+  }
 }
  ?>

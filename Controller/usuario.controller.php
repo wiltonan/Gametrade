@@ -69,5 +69,17 @@ $accion=$_REQUEST['action'];
           self.location.href='../';
         </script>";
         break;
+
+      case 'buscardepar':
+        try {
+          $codigo = $_POST['codigo'];
+          $depts = usuario::buscardepartamento($codigo);
+          foreach ($depts as $key) {
+            echo "<option value='".$key['0']."'>".$key['1']."</option>";
+          }
+        } catch (Exception $e) {
+          echo $e->getMessage();
+        }
+        break;
  }
 ?>

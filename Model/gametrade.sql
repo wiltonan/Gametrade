@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-11-2016 a las 23:31:08
--- Versión del servidor: 10.1.9-MariaDB
--- Versión de PHP: 5.5.30
+-- Tiempo de generación: 08-11-2016 a las 01:22:13
+-- Versión del servidor: 10.1.16-MariaDB
+-- Versión de PHP: 7.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -52,6 +52,13 @@ CREATE TABLE `tbl_ciudad` (
   `ciu_nom` varchar(70) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Volcado de datos para la tabla `tbl_ciudad`
+--
+
+INSERT INTO `tbl_ciudad` (`ciu_cod`, `depar_cod`, `ciu_nom`) VALUES
+(1, 1, 'Medellin');
+
 -- --------------------------------------------------------
 
 --
@@ -97,6 +104,14 @@ CREATE TABLE `tbl_departamento` (
   `pais_cod` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tbl_departamento`
+--
+
+INSERT INTO `tbl_departamento` (`depar_cod`, `pais_cod`, `nombre`) VALUES
+(1, 1, 'Antioquia'),
+(2, 2, 'SantafÃ© de bogotÃ¡');
 
 -- --------------------------------------------------------
 
@@ -242,6 +257,13 @@ CREATE TABLE `tbl_usuario` (
   `usu_keypass` varchar(50) COLLATE utf8_bin NOT NULL,
   `usu_newpass` varchar(50) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `tbl_usuario`
+--
+
+INSERT INTO `tbl_usuario` (`usu_cod`, `cod_rol`, `tipo_cod`, `usu_num_docum`, `usu_nom`, `usu_apell`, `usu_nick`, `usu_mail`, `usu_pass`, `usu_naci`, `photo`, `usu_tel`, `usu_cel`, `ciu_cod`, `usu_dir`, `usu_esp_vive`, `usu_fech`, `usu_estado`, `usu_keypass`, `usu_newpass`) VALUES
+(1, 1, 2, '1036660480', 'wilton', 'acuÃ±a', 'wilton', 'wilton.anre13@hotmail.com', '$2y$10$vWtu/97LtojPY5QBlo9IyOBZ7noGZnvK7uKVLVUQrqDu7a4NmH0m2', '1995/06/19', '', 0, 2147483647, 1, 'calle 00-#00-00', '', '04/11/2016', 'activo', '', '');
 
 -- --------------------------------------------------------
 
@@ -422,7 +444,7 @@ ALTER TABLE `tbl_categoria_jue`
 -- AUTO_INCREMENT de la tabla `tbl_ciudad`
 --
 ALTER TABLE `tbl_ciudad`
-  MODIFY `ciu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ciu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `tbl_comentario`
 --
@@ -437,7 +459,7 @@ ALTER TABLE `tbl_consola`
 -- AUTO_INCREMENT de la tabla `tbl_departamento`
 --
 ALTER TABLE `tbl_departamento`
-  MODIFY `depar_cod` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `depar_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tbl_noticia`
 --
@@ -472,12 +494,12 @@ ALTER TABLE `tbl_tipodocumento`
 -- AUTO_INCREMENT de la tabla `tbl_usuario`
 --
 ALTER TABLE `tbl_usuario`
-  MODIFY `usu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `usu_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `tbl_videojuego`
 --
 ALTER TABLE `tbl_videojuego`
-  MODIFY `jue_cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `jue_cod` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `tb_bono`
 --

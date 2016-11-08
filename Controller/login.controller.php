@@ -33,7 +33,7 @@ session_start();
               }
 
             }else {
-              echo "<script>alert('El usuario no existe');
+              echo "<script>alert('Usuario o contraseña incorrecto');
               self.location.href='../';
               </script>";
             }

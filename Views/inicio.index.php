@@ -39,20 +39,19 @@
 		</div>
 	</section>
 
+	<section style="height:400px;">
+		<div class="imagen1">
+			<img src="Views/Imagen/diseno/2.png" width="100%" height="198px;" />
+		</div>
 
-		<section style="height:400px; width: 100%;">
-			<div class="imagen1">
-				<img src="Views/Imagen/diseno/2.png" width="30%" height="198px;" />
-			</div>
+		<div class="imagen2">
+			<img src="Views/Imagen/diseno/1.png" width="100%" height="200px;"/>
+		</div>
+	</section>
 
-			<div class="imagen2">
-				<img src="Views/Imagen/diseno/1.png" width="30%" height="198px;"/>
-			</div>
-		</section>
-
-		<section>
-			<?php require_once("Views/footer.php"); ?>
-		</section>
+	<section>
+		<?php require_once("Views/footer.php"); ?>
+	</section>
 
 </body>
 </html>

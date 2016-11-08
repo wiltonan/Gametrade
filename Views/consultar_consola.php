@@ -17,7 +17,7 @@
   <body>
     <div class="tablaconsola">
       <section>
-        <table border="1px">
+        <table border="1px" class="highlight">
           <thead>
             <th colspan="6"><center><h5>Consolas.</h5></center></th>
             <tr>

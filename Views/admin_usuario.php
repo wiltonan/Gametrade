@@ -1,12 +1,15 @@
 <?php
   require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
+  require_once("../Model/pais.class.php");
+  require_once("../Model/ciudad.class.php");
 
   $ciu = usuario::consultarciudad();
   $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
   $rol = usuario::consultar_rol();
-  $fecha=date("2004-m-d");
+  $pais = Gestion_Pais::cargarpais();
+  // $departamento = Gestion_Ciudad::mostrardepartamento();
  ?>
 
 <!DOCTYPE html>
@@ -16,8 +19,26 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $('#input_text').characterCounter();
-    });
 
+      $("#pais_cod").change(function(){
+        var codigo = $(this).val();
+        var action = "buscardepar";
+        $.post("../Controller/usuario.controller.php", {action: action, codigo: codigo}, function(data){
+          $("#dpta").html(data);
+          alert(data);
+        });
+      });
+
+      // $("#usu_nick").onfocusin(function(){
+      //   var nick= $(this).val();
+      //   var action = "buscar_nick";
+      //   $.post("../Controller/usuario.controller.php", {action: action, codigo: codigo}, function(data){
+      //     $("#usu_nick").val(data);
+      //     alert(data);
+      //   });
+      // });
+
+    });
       $('select').material_select();
 
     </script>
@@ -66,9 +87,11 @@
                 <label class="active" for="first_name2">Apellido.</label>
               </div>
 
-              <div class="input-field col s6">
-                <input type="text" name="usu_nick"/>
-                <label class="active" for="first_name2">Nick de usuario.</label>
+              <div class="usu_nick">
+                <div class="input-field col s6">
+                  <input type="text" name="usu_nick" id="usu_nick" onfocusin="usu_nick()"/>
+                  <label class="active" for="first_name2">Nick de usuario.</label>
+                </div>
               </div>
             </div>
 
@@ -92,7 +115,7 @@
               </div>
 
               <div class="input-field col s6">
-                <input type="date" name="usu_naci" max="<?php echo $fecha; ?>" required/>
+                <input type="date" name="usu_naci" class="datepicker"  required/>
                 <label class="active" for="first_name2">Fecha de nacimiento.</label>
               </div>
             </div>
@@ -111,8 +134,32 @@
 
             <div class="row">
               <div class="input-field col s6">
+                <select id="pais_cod" name="pais_cod" required>
+                  <option value="" disabled selected>Pais: </option>
+                  <?php foreach ($pais as $paises) {
+                      echo "<option value=".$paises["pais_cod"].">".$paises["pais_nom"]."</option>";
+                  }?>
+                </select>
+              </div>
+
+
+                <div class="input-field col s6">
+              		<select id="dpta" name="departamento" >
+                    <option value="">Departamento</option>
+                  </select>
+                </div>
+              </div>
+
+            <div class="input-field col s6">
+              <select id="departamento" name="departamento">
+                <option value="">
+              </select>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
             		<select id="ciu_cod" name="ciu_cod" required>
-                  <option value="" disabled selected>ciudad</option>
+                  <option value="" disabled selected>Ciudad</option>
             		  <?php foreach ($ciu as $ciudad) {
             		      echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
             		  }?>
@@ -139,23 +186,21 @@
   			</form>
       </section>
 	  </div>
+    <script type="text/javascript">
+    var anhoact= '<?php echo date('Y') ?>';
+    var mesact= '<?php echo date('m') ?>';
+    var diaact= '<?php echo date('d') ?>';
+    var less12 = anhoact-12;
+    $('.datepicker').pickadate({
+       selectMonths: true, // que se pueda seleccionar el mes
+       selectYears: 50, // que se pueda seleccionar el año y cuantos quiere
+       format:'yyyy/mm/dd',
+       max:less12+'-'+mesact+'-'+diaact,
+     });
+    </script>
 	</body>
 </html>
 
 <div style="margin-left:15%;" class="consultarusuario">
   <?php include('consultar_usuarios.php') ?>
 </div>
-
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>

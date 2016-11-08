@@ -23,7 +23,7 @@
             <tr>
               <td>Codigo</td>
               <td>Ciudad</td>
-              <td>pais</td>
+              <td>Departamento</td>
               <td>Operaciones</td>
             </tr>
           </thead>
@@ -32,7 +32,7 @@
               <tr>
                 <td><?php echo $bn["ciu_cod"];  ?></td>
                 <td><?php echo $bn["ciu_nom"];  ?></td>
-                <td><?php echo $bn["pais_nom"]; ?></td>
+                <td><?php echo $bn["nombre"];  ?></td>
                 <td>
                   <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["ciu_cod"]; ?>)">Modificar</span>
                 </td>

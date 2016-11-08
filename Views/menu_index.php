@@ -14,7 +14,6 @@
     <script type="text/javascript" src="Views/js/index.js"></script>
   </head>
   <body style="background:black">
-
     <div class="contenido">
         <div class="logo">
           <img src="Views/imagen/logo.png"/>
@@ -25,14 +24,14 @@
           <?php include(HTML_DIR .'login.php') ?>
         </div>
 
+        <div id="registrarme"  class="registrarme">
+          <a href="#/registrar_usuario">Registrarme</a>
+        </div>
+
         <!-- hacer este que falta -->
         <!-- <div class="R_Contraseña">
           <a href="#">Recuperar contraseña</a>
         </div> -->
-
-        <div id="registrarme"  class="registrarme">
-          <a href="#/registrar_usuario">Registrarme</a>
-        </div>
     </div>
       <header>
         <nav>

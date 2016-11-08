@@ -19,6 +19,7 @@
   </head>
   <body>
     <div class="parte_negra_menu">
+
       <div class="logo">
         <img src="imagen/logo.png"/>
       </div>
@@ -36,8 +37,9 @@
           <li><a href="#">Nacionalidad</a>
             <div>
               <ul>
-                <li id="pais"><a href="#/pais">Paises</a></li>
                 <li id="ciudad"><a href="#/ciudad">Ciudades</a></li>
+                <li id="departamento"><a href="#/departamento">Departamento</a></li>
+                <li id="pais"><a href="#/pais">Paises</a></li>
               </ul>
             </div>
           </li>

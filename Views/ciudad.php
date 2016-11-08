@@ -1,8 +1,8 @@
 <?php
 	require_once('../Model/conexion.php');
 	require_once('../Model/ciudad.class.php');
-
-	$pais=Gestion_Ciudad::mostrarpais();
+	require_once('../Model/departamento.class.php');
+	$departamento=Gestion_Ciudad::mostrardepartamento();
 	?>
 
 <html>
@@ -27,10 +27,10 @@
 							</div>
 
 							<div class="input-field col s6">
-						    <select id="pais_cod" name="pais_cod">
-									<option value="" disabled selected>Pais.</option>
-						      <?php foreach ($pais as $pais) {
-						            echo "<option value=".$pais["pais_cod"].">".$pais["pais_nom"]."</option>";
+						    <select id="pais_cod" name="depar_cod">
+									<option value="" disabled selected>departamento: </option>
+						      <?php foreach ($departamento as $depar) {
+						            echo "<option value=".$depar["depar_cod"].">".$depar["nombre"]."</option>";
 						        }?>
 						     </select>
 							 </div>

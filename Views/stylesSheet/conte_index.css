@@ -48,14 +48,11 @@ header ul li a{
 .imagen1{
 	margin-left: 70%;
 	margin-top: 2px;
-	width: 100%;
 }
 
 .imagen2{
 	margin-left: 70%;
-	margin-top: 2px;
-	height: 198px;
-	width: 100%;
+	margin-top: -5px;
 }
 
 .AboutUs{
@@ -86,10 +83,10 @@ header ul li a{
 }
 
 .registrarme{
-
-
 	font-size: 20px;
 	overflow: hidden;
+	margin-top: -25px;
+	margin-left: 73.3%;
 }
 
 .usa h1{

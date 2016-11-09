@@ -33,14 +33,19 @@
 
             <div class="row">
               <div class="input-field col s6">
-                  <input id="busqueda" type="text" name="usu_cod" maxlength="20" autocomplete="off" required>
-                  <label class="active" for="first_name2">Ingrese cedula de usuario: </label>
+                  <input id="busqueda" type="text" name="usu_cod" autocomplete="off" required>
+                  <label class="active" for="first_name2">Ingrese codigo de usuario: </label>
               </div>
 
               <div class="input-field col s6">
+                  <input type="text" name="jue_punto" required>
+                  <label class="active" for="first_name2">Valor en puntos del juego: </label>
+              </div>
+
+              <!-- <div class="input-field col s6">
                   <input id="editjv" class="nombre" type="text">
                   <label class="active" for="first_name2"></label>
-              </div>
+              </div> -->
             </div>
 
             <div class="row">
@@ -89,13 +94,6 @@
                 <div class="input-field col s6">
                   <input type="file" name="jue_imagen">
                 </div>
-              </di  v>
-
-              <div class="row">
-                  <div class="input-field col s6">
-                      <input type="text" name="jue_punto" required>
-                      <label class="active" for="first_name2">Valor en puntos del juego: </label>
-                  </div>
               </div>
 
 

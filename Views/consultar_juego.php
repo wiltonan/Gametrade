@@ -3,17 +3,18 @@
   require_once("../Model/juego_admi.class.php");
 
   $juego = Gestion_Videojuego::mostrarjuego();
+
  ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function valida3(code){
         $(".menu_admin").load("modificar_juego.php?codigo_juego="+code+"");
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <div class="tablajuego">
@@ -24,30 +25,24 @@
             <tr>
               <td>Codigo del juego</td>
               <td>Cedula</td>
-              <td>Nombre del usuario</td>
               <td>Nombre del juego</td>
               <td>Valor</td>
               <td>Consola</td>
               <td>Categoria</td>
               <td>Fecha de publicacion</td>
-              <td>Estado</td>
-              <td>Operaciones</td>
+              <!-- <td>Estado</td>
+             <td>Operaciones</td> --> -->
             </tr>
           </thead>
           <tbody>
                <?php foreach ($juego as $bn): ?>
                    <td><?php echo $bn["jue_cod"];         ?></td>
                    <td><?php echo $bn["usu_num_docum"];   ?></td>
-                   <td><?php echo $bn["usu_nom"];         ?></td>
                    <td><?php echo $bn["jue_nom"];         ?></td>
                    <td><?php echo $bn["jue_punto"];       ?></td>
                    <td><?php echo $bn["cons_nom"];        ?></td>
                    <td><?php echo $bn["cat_nom"];         ?></td>
                    <td><?php echo $bn["jue_fech_public"]; ?></td>
-                   <td><?php echo $bn["jue_estado"];      ?></td>
-                   <td>
-                     <span style="cursor:pointer;" onclick="valida3(<?php echo $bn["jue_cod"]; ?>)">Modificar</span>
-                   </td>
                  </tr>
               <?php endforeach ?>
           </tbody>

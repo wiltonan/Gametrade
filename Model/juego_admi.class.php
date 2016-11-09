@@ -1,25 +1,21 @@
 <?php
 class Gestion_Videojuego{
-	public static function Guardar($documento,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado){
+	public static function Guardar($numero_documento, $jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql1="SELECT usu_cod from tbl_usuario WHERE usu_num_docum = ?";
+				$sql1="SELECT usu_cod from tbl_usuario WHERE usu_num_docum = ?";
 				$query=$pdo->prepare($sql1);
-				$query->execute(array($documento));
-
-				$result1=$query->rowCount();
-				$codigo=$result1;
+				$query->execute(array($numero_documento));
 
 		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_punto,jue_nom,cons_cod,cat_cod,jue_desc,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($codigo,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
+		$query->execute(array($numero_documento,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
 
 		ConexionBD::DesconectarBD();
 
 	}
-
 	public static function mostrarjuego(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -34,18 +30,17 @@ class Gestion_Videojuego{
 						on tbl_videojuego.cons_cod = tbl_consola.cons_cod
 
 						inner join tbl_categoria_jue
-						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod
-						and tbl_videojuego.usu_cod=?
-						";
-		$query= $pdo->prepare($sql);
-		$query->execute(array());
+						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod";
 
-		$result=$query->fetchALL(PDO::FETCH_BOTH);
 
-		ConexionBD::DesconectarBD();
+						$query= $pdo->prepare($sql);
+						$query->execute();
+						$result=$query->fetchALL(PDO::FETCH_BOTH);
+						ConexionBD::DesconectarBD();
 
-		return $result;
+						return $result;
 	}
+
 	public static function ConsultPunt($codigo){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

@@ -6,7 +6,7 @@ $accion=$_REQUEST["action"];
  switch ($accion) {
 
  	case 'guardarjuego':
-     $documento=$_POST['usu_cod'];
+     $numero_documento=$_POST['usu_cod'];
      $jue_punto=$_POST['jue_punto'];
  		 $jue_nom=$_POST['jue_nom'];
  		 $cons_cod=$_POST['cons_cod'];
@@ -18,10 +18,10 @@ $accion=$_REQUEST["action"];
      $jue_estado="activo";
 
  		 try {
- 		 	Gestion_Videojuego::Guardar($documento,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado);
+ 		 	Gestion_Videojuego::Guardar($numero_documento, $jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado);
 
  		 	echo "<script>alert('Se ha guardado el juego');
-      self.location.href='../Views/menu_admin.php?#/juego';
+          self.location.href='../Views/menu_admin.php?#/juego';
       </script>";
  		 } catch (Exception $e) {
  		 	echo $e;

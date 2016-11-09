@@ -101,6 +101,11 @@ $codigoUsu=$_SESSION['codigo1'];
                   
               </div>
 
+
+              
+            
+
+
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
 
               <div class="file-field input-field col s4">

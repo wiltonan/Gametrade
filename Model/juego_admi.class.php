@@ -4,6 +4,7 @@ class Gestion_Videojuego{
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+
 		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
@@ -46,8 +47,8 @@ class Gestion_Videojuego{
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
     $sql="SELECT SUM(tbl_pack_punto.pto_cant)
-from tbl_pack_punto inner join tbl_usuario_x_pto on (tbl_pack_punto.pto_cod=tbl_usuario_x_pto.pto_cod)
-and tbl_usuario_x_pto.usu_cod=?";
+			from tbl_pack_punto inner join tbl_usuario_x_pto on (tbl_pack_punto.pto_cod=tbl_usuario_x_pto.pto_cod)
+			and tbl_usuario_x_pto.usu_cod=?";
 
     $query= $pdo->prepare($sql);
     $query->execute(array($codigo));

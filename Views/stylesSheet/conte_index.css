@@ -11,6 +11,12 @@
 	overflow: hidden;
 }
 
+.logo_pie_pagina{
+	margin-left:69%;
+	margin-top:20px;
+	position: absolute;
+}
+
 .logo{
 	width: 10%;
 	position: absolute;

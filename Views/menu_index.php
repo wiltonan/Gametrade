@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title><?php echo APP_TITLE; ?></title>
     <base href="<?php APP_URL ?>">
+	  <link rel="stylesheet" type="text/css" href="Views/stylesSheet/Slider.css"/>
     <script type="text/javascript" src="Views/js/jquery-1.12.4.min.js"></script>
     <link href="Views/dist/sweetalert.css">
     <script src="Views/dist/sweetalert.min.js"></script>

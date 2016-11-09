@@ -39,14 +39,37 @@
 		</div>
 	</section>
 
-	<section style="height:400px;">
-		<div class="imagen1">
-			<img src="Views/Imagen/diseno/2.png" width="100%" height="198px;" />
+	<section style="height:400px; width:100%;">
+		<div class="video" style="width:69.8%; margin-top:2px;">
+			<iframe width="100%" height="400px" src="https://www.youtube.com/embed/LzUYvgtvSoY" frameborder="0" allowfullscreen></iframe>
 		</div>
 
-		<div class="imagen2">
-			<img src="Views/Imagen/diseno/1.png" width="100%" height="200px;"/>
+		<div style="width:100%; height:400px; position: absolute; margin-top:-409px;">
+			<div class="imagen1">
+				<img src="Views/Imagen/diseno/2.png" width="100%" height="198px;" />
+			</div>
+
+			<div class="imagen2">
+				<img src="Views/Imagen/diseno/1.png" width="100%" height="200px;"/>
+			</div>
 		</div>
+	</section>
+
+	<section style="height:400px; width:100%;" >
+		<div style="background-color:red; margin-top:-25px; margin:"><center><h2>VideosJuegos Mas Destacados</h2></center></div>
+		<ul id="ulNoticJue">
+			<li id="juego"></li>
+			<li id="juegos"></li>
+			<li id="jueg"></li>
+			<li id="jue"></li>
+			<li id="ju"></li>
+
+			<li id="videos"></li>
+			<li id="video"></li>
+			<li id="vide"></li>
+			<li id="vid"></li>
+			<li id="vi"></li>
+		</ul>
 	</section>
 
 	<section>

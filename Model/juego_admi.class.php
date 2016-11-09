@@ -58,7 +58,7 @@ class Gestion_Videojuego{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="SELECT SUM(tbl_pack_punto.pto_cant)
+    $sql="SELECT SUM(tbl_pack_punto.pto_cant) AS punto
 			from tbl_pack_punto inner join tbl_usuario_x_pto on (tbl_pack_punto.pto_cod=tbl_usuario_x_pto.pto_cod)
 			and tbl_usuario_x_pto.usu_cod=?";
 

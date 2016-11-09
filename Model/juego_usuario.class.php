@@ -119,6 +119,34 @@ class Gestion_Videojuego{
 		ConexionBD::DesconectarBD();
 	}
 
+	public static function guardarjuegoPunts($codigo,$documento){
+		$pdo = ConexionBD::AbrirBD();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+		$sql1="SELECT * FROM tbl_videojuego where jue_cod=?";
+		$query=$pdo->prepare($sql1);
+		$query->execute(array($codigo));
+
+		$result1=$query->fetch(PDO::FETCH_BOTH);
+	    $punts=$result1[2];
+	    $noma=$result1[3];
+	    $cons=$result1[4];
+	    $catd=$result1[5];
+	    $cdes=$result1[6];
+	    $imac=$result1[9];
+
+		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_punto,jue_nom,cons_cod,cat_cod,jue_desc,jue_imagen) values (?,?,?,?,?,?,?)";
+
+		$query= $pdo->prepare($sql);
+		$query->execute(array($documento,$punts,$noma,$cons,$catd,$cdes,$imac));
+
+		
+
+		ConexionBD::DesconectarBD();
+
+	}
+
+
 // 	public static function consultarcedula(){
 //     $pdo = ConexionBD::AbrirBD();
 //     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

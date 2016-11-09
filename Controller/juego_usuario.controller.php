@@ -136,5 +136,19 @@ if ($Comprobar !==false) {
         echo "errror" .$e;
        }
       break;
+
+      
+      case 'punt':
+       $codigo=$_GET["cmps"];
+       
+       try {
+        Gestion_Videojuego::guardarjuegoPunts($codigo,$documento);
+        echo "<script>alert('Se ha puesto en el catalogo');
+        self.location.href='../Views/menu_usuario.php?#/mis juegos'
+        </script>";
+       } catch (Exception $e) {
+        echo "errror" .$e;
+       }
+      break;
  }
 ?>

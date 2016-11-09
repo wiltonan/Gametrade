@@ -1,5 +1,5 @@
 function puntos1(){
-	alert("asas");
+	
 	location.href = "../Controller/controller.comprapunto.php?&action=btnPunn1"
 }
 function puntos2(){

@@ -39,7 +39,7 @@
     ?>
 
     <span class="site-desc" style="color: #fff"><?php echo $punts[0]; ?> Creditos</span>
-
+    <input type="hidden" id="txtpuntMenu" value="<?php echo $punts["punto"]; ?>"/>
 
     </a> <!-- / #logo-header -->
      <button id="boton" class="waves-effect waves-light btn blue" ><div class="session" onclick="destroy1()">Cerrar sesion</div></button>

@@ -26,7 +26,11 @@
       echo " <div class='clConteJue'>
       <img class='clImageJue' src=".$bn["jue_imagen"]." width= '30%' height= '120px'/>
       <ul class='ulInforJue'>
+       Nombre:
+       </br>
         <li>".$bn["jue_nom"]."</li>
+        </br>
+       Descripcion:
         <li>".$bn["jue_desc"]."</li>
         <li>".$bn["jue_punto"]."</li>
         <li>GameTrade</li>

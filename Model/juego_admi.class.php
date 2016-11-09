@@ -1,25 +1,30 @@
 <?php
 class Gestion_Videojuego{
-	public static function Guardar($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado){
+	public static function Guardar($documento,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+		$sql1="SELECT usu_cod from tbl_usuario WHERE usu_num_docum = ?";
+				$query=$pdo->prepare($sql1);
+				$query->execute(array($documento));
 
-		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_nom,cons_cod,cat_cod,jue_desc,jue_cant,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
+				$result1=$query->rowCount();
+				$codigo=$result1;
+
+		$sql= "INSERT INTO tbl_videojuego (usu_cod,jue_punto,jue_nom,cons_cod,cat_cod,jue_desc,jue_trailer,jue_fech_public,jue_imagen,jue_estado) values (?,?,?,?,?,?,?,?,?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($documento,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
+		$query->execute(array($codigo,$jue_punto,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_estado));
 
 		ConexionBD::DesconectarBD();
 
 	}
 
-	public static function mostrarjuego($codigo){
-
+	public static function mostrarjuego(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_desc, tbl_videojuego.jue_punto, tbl_videojuego.jue_trailer, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_estado, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
+		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_punto, tbl_videojuego.jue_fech_public, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
 						from tbl_videojuego
 
 						inner join tbl_usuario
@@ -32,9 +37,8 @@ class Gestion_Videojuego{
 						on tbl_videojuego.cat_cod = tbl_categoria_jue.cat_cod
 						and tbl_videojuego.usu_cod=?
 						";
-
 		$query= $pdo->prepare($sql);
-		$query->execute(array($codigo));
+		$query->execute(array());
 
 		$result=$query->fetchALL(PDO::FETCH_BOTH);
 
@@ -151,6 +155,21 @@ public static function consultarcategoria(){
 
 		return $result;
 	}
+
+	public static function Buscar_nombre($documento){
+      $pdo = ConexionBD::AbrirBD();
+      $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+      $sql="SELECT * FROM tbl_usuario WHERE usu_num_docum LIKE concat('%',?,'%')";
+
+      $query= $pdo->prepare($sql);
+      $query->execute(array($documento));
+
+      $result= $query->fetchALL(PDO::FETCH_BOTH);
+
+      ConexionBD::DesconectarBD();
+      return $result;
+    }
  }
 
 ?>

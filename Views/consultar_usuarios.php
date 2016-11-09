@@ -20,8 +20,7 @@
         <table border="1px">
           <thead>
             <th colspan="16"><center><h5>Usuario.</h5></center></th>
-            <tr>
-              
+            <tr>    
               <td>Rol</td>
               <td>Tipo de documento</td>
               <td>Documento</td>

@@ -21,12 +21,13 @@ header{
 #inicio_principal{
 	height: 580px;
 	width:100%;
-	background: #0cad09;
+	background: #ffffff;
 }
 
 .session{
-	margin-left: 90%;
-	overflow: hidden;
+	margin-top: 60px;
+	margin-left: 85%;
+	position: absolute;
 }
 
 .menu_admin{
@@ -43,7 +44,7 @@ nav{
 nav ul{
 	list-style: none;
 	overflow: hidden;
-	background: #ff4f4f;
+	background: #616161;
 }
 
 nav > ul > li{
@@ -60,7 +61,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	background: #ff9696;
+	background: #787878;
 }
 
 nav > ul > li:hover div{

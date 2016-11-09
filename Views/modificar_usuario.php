@@ -86,7 +86,7 @@
           <div class="row">
             <div class="input-field col s6">
               <label>Correo electronico: </label>
-               <input type="text" name="usu_mail" value="<?php echo $usuariomo["usu_mail"]; ?>"/>
+               <input type="text" name="usu_mail" required value="<?php echo $usuariomo["usu_mail"]; ?>"/>
             </div>
 
             <div class="input-field col s6">

@@ -128,5 +128,22 @@
     ConexionBD::DesconectarBD();
     return $result;
   }
+
+  public static function consultarusuario(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select * from tbl_usuario";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array());
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
 }
  ?>

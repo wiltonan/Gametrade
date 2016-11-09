@@ -35,7 +35,7 @@
         </div> -->
     </div>
       <header>
-        <nav>
+        <nav style="background:#616161;">
           <ul>
             <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li>
             <li id="quienes_somos"><a href="#/quienes_somos">Quienes somos</a></li>

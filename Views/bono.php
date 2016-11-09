@@ -12,6 +12,13 @@ $pto_cod=bono::mostrarpunto();
   <head>
     <title></title>
     <script type="text/javascript">
+      // $(document).ready(function(){
+      //
+      //   if($("#pto_cod option:selected").val() == 0) {
+      //     alert("Debe Seleccionar una categoria");
+      //   }
+      //
+      // });
       $('select').material_select();
     </script>
   </head>
@@ -22,8 +29,8 @@ $pto_cod=bono::mostrarpunto();
         <form style="margin-left:15%;" action="../Controller/bono.controller.php" method="post">
           <div class="row">
             <div class="input-field col s6">
-              <select name="pto_cod" >
-                <option value="" disabled selected>Cantidad de puntos</option>
+              <select name="pto_cod" id="pto_cod">
+                <option value="0" disabled selected>Cantidad de puntos</option>
                   <?php foreach ($pto_cod as $puntos) {
                     echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_cant"]."</option>";
                   }?>

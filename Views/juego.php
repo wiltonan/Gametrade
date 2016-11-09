@@ -1,4 +1,3 @@
-
 <?php
   require_once("../Model/conexion.php");
   require_once("../Model/juego_admi.class.php");
@@ -90,7 +89,7 @@
                 <div class="input-field col s6">
                   <input type="file" name="jue_imagen">
                 </div>
-              </div>
+              </di  v>
 
               <div class="row">
                   <div class="input-field col s6">

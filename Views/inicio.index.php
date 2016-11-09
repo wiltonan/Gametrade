@@ -50,26 +50,36 @@
 			</div>
 
 			<div class="imagen2">
-				<img src="Views/Imagen/diseno/1.png" width="100%" height="200px;"/>
+				<img src="Views/Imagen/diseno/1.png" width="100%" height="199px;"/>
 			</div>
 		</div>
 	</section>
 
-	<section style="height:400px; width:100%;" >
+	<section style="height:1015px; width:100%;" >
 		<div style="background-color:red; margin-top:-25px; margin:"><center><h2>VideosJuegos Mas Destacados</h2></center></div>
-		<ul id="ulNoticJue">
-			<li id="juego"></li>
-			<li id="juegos"></li>
-			<li id="jueg"></li>
-			<li id="jue"></li>
-			<li id="ju"></li>
+		<ul id="ulNoticJue" style="margin-left:30px; margin-top: -25px;">
+			<li id="juego">	<img src="Views/Imagen/witon 6.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 7.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 8.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 9.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 10.JFIF" width="100%" height="350px;" /></li>
 
-			<li id="videos"></li>
-			<li id="video"></li>
-			<li id="vide"></li>
-			<li id="vid"></li>
-			<li id="vi"></li>
+			<li id="juego">	<img src="Views/Imagen/witon 1.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 2.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 3.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 4.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/wiLton 5.JFIF" width="100%" height="350px;" /></li>
+
+			<li id="juego">	<img src="Views/Imagen/witon 11.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 12.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 13.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 14.JFIF" width="100%" height="350px;" /></li>
+			<li id="juego">	<img src="Views/Imagen/witon 15.JFIF" width="100%" height="350px;" /></li>
 		</ul>
+	</section>
+
+	<section>
+
 	</section>
 
 	<section>

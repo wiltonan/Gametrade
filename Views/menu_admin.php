@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (!isset($_SESSION["nombre"]))	 {
-  // header("Location:../");
+  header("Location:../");
   }
  ?>
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
     <header>
       <nav>
         <ul>
-          <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li>
+          <!-- <li id="inicio" onclick="inicio()"><a href="#/inicio">Inicio</a></li> -->
           <li id="usuario"><a href="#/usuario">Usuarios</a></li>
           <li><a href="#">Nacionalidad</a>
             <div>
@@ -51,8 +51,9 @@
           <li id="usupuntos"><a href="#/usuario_x_puntos">usuarios x puntos</a></li>
       </nav>
     </header>
-    <section id="inicio_principal">
-    </section>
+    <!-- <section id="inicio_principal">
+
+    </section> -->
 
     <section class="menu_admin"></section>
 

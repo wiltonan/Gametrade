@@ -43,6 +43,7 @@ $accion=$_REQUEST['action'];
   		 $usu_apell=$_POST["usu_apell"];
        $usu_nick=$_POST["usu_nick"];
        $usu_mail=$_POST["usu_mail"];
+       $usu_pass=$_POST['usu_pass'];
        $encript = password_hash($usu_pass, PASSWORD_DEFAULT);
        $usu_naci=$_POST["usu_naci"];
   		 $usu_tel=$_POST["usu_tel"];

@@ -20,11 +20,11 @@ class Gestion_Videojuego{
 
 	}
 
-	public static function mostrarjuego(){
+	public static function mostrarjuego($codigoUsu){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_punto, tbl_videojuego.jue_fech_public, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
+		$sql="select tbl_videojuego.jue_cod, tbl_videojuego.jue_nom, tbl_videojuego.jue_punto, tbl_videojuego.jue_fech_public, tbl_videojuego.jue_imagen, tbl_videojuego.jue_desc, tbl_usuario.usu_num_docum, tbl_consola.cons_nom, tbl_consola.cons_refer, tbl_categoria_jue.cat_nom
 						from tbl_videojuego
 
 						inner join tbl_usuario
@@ -38,7 +38,7 @@ class Gestion_Videojuego{
 						and tbl_videojuego.usu_cod=?
 						";
 		$query= $pdo->prepare($sql);
-		$query->execute(array());
+		$query->execute(array($codigoUsu));
 
 		$result=$query->fetchALL(PDO::FETCH_BOTH);
 

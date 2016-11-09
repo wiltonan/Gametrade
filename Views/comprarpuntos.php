@@ -24,7 +24,7 @@
          </td>
          <td class="cela_comprar_creditos1">
              <div class="clPun" onclick="puntos1()"><div class="img_coins" ><img src="img/estrella.png" data-src="/img/estrella.png"></div>
-                <p>1.000 Puntos</p>
+                <p>1.000 Creditos</p>
              </div>
          </td>
          <td class="cela_comprar_creditos2">
@@ -42,11 +42,11 @@
          <td class="cela_comprar_creditos1">
              <div class="clPun" onclick="puntos2()">
                  <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                 <p>2.000 Puntos</p>
+                 <p>2.000 Creditos</p>
              </div>
          </td>
          <td class="cela_comprar_creditos2">
-             <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_2995.png"></div>
+             <div class="img_precios"><img src="img/paquet.png" data-src="/img/precio_2995.png"></div>
          </td>
          <td class="cela_descuentos">
              <div class="img_descuento_gratis"><img src="img/20_gratis.png" data-src="img/20_gratis.png"></div>
@@ -59,7 +59,7 @@
          <td class="cela_comprar_creditos1">
             <div class="clPun"  onclick="puntos3()">
                                                             <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                            <p>5.000 Puntos</p>
+                                                            <p>5.000 Creditos</p>
                                                             </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
@@ -79,7 +79,7 @@
                                                         <td class="cela_comprar_creditos1">
                                                             <div class="clPun" onclick="puntos4()">
                                                                 <div class="img_coins" ><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                                <p>10.000 Puntos</p>
+                                                                <p>10.000 Creditos</p>
                                                             </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">

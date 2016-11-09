@@ -60,7 +60,7 @@
 				</figure>
 
 				<figure>
-					<img src="Imagen/11.jpg" style="height: 535px; width: 100%;">
+					<img src="Imagen/05.jpg" style="height: 535px; width: 100%;">
 					<figcaption>Nombre de la pelicula</figcaption>
 				</figure>
 

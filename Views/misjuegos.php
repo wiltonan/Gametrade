@@ -20,46 +20,48 @@ $codigoUsu=$_SESSION['codigo1'];
         <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/usuario.js"></script>
-    
-     <script type="text/javascript">
+    <script type="text/javascript">
        $(document).ready(function(){
 
-          $('select').material_select();
-                // $("#buscar_cedula").keyup(function(){
-                //   var param = $(this).val();
-                //   $.post("js/buscador.php", {vlparam: param}, function(data){
-                //     $(".nombre").html(data);
+  $('select').material_select();
+      //   // $("#buscar_cedula").keyup(function(){
+      //   //   var param = $(this).val();
+      //   //   $.post("js/buscador.php", {vlparam: param}, function(data){
+      //   //     $(".nombre").html(data);
 
 
-                //   });
-                // });
+      //   //   });
+      //   // });
 
-               });
+       });
     </script>
 
   
   </head>
   <body>
-
-  
-  
     <div class="formulariojuego">
-
-
+    <div class="catalogo">
+    <form></form>
+    </div>
       <section>
         <center><h3>Registrar juego.</h3></center>
-        <form action="../Controller/juego_usuario.controller.php" class="col s12" method="post" id="fom4" enctype="multipart/form-data">
-          <div class="row">
-            
-              <div class="input-field col s8">
-                  <input type="text" name="jue_nom" required>
+        <form action="../Controller/juego_usuario.controller.php" method="post" id="fom4" enctype="multipart/form-data">
+         
+            <div class="class=" col s12>
+<div class="row">
+              <div class="input-field col s6">
+                  <input type="text" name="jue_nom" class="col s12" required>
+
                   <label class="active" for="first_name2" class="col s12">Nombre del juego: </label>
               </div>
+
+
+
 
             <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Consola: </label>
-                  <select name="cons_cod"> 
+                  <select name="cons_cod" class="input-field col s12" > 
                   <option>Seleccionar</option>
                      <?php 
                       foreach ($consola as $keyconso ) {
@@ -71,13 +73,11 @@ $codigoUsu=$_SESSION['codigo1'];
                    </select>
                   
               </div>
-</div>
-              </br>
-             <div class="row">
+
               <div class="input-field col s6">
                   <!-- <input type="text" name="cat_cod" required> -->
                   <label class="active" for="first_name2">Categoria juego: </label>
-                  <select name="cat_cod" > 
+                  <select name="cat_cod" class="input-field col s12" > 
                     <option>Seleccionar</option>
                      <?php 
                       foreach ($categorias as $keycateg ) {
@@ -94,29 +94,16 @@ $codigoUsu=$_SESSION['codigo1'];
                   <textarea name="jue_desc" rows="5" cols="25" required></textarea>
                   <label class="active" for="first_name2">Descripcion del juego: </label>
               </div>
-</div>
-<div class="row">
+
               <div class="input-field col s6">
-                  <input type="text" class="col s12" name="jue_trailer">
+                  <input type="text" name="jue_trailer" class="col s12">
                   <label class="active" for="first_name2">Trailer del juego: </label>
                   
               </div>
 
               <input type="hidden" name="jue_fech_public" readonly value="<?php echo date('d/m/Y')?>"/>
 
-             <!--  <div class="input-field col s6">
-               
-                <label class="active" for="first_name2">Imagen del juego: </label>
-                
-                <input type="file" class="purple" name="imagenJueUsu" ></input>
-
-              </div>
- -->
-
-
-
-
-               <div class="file-field input-field col s6">
+              <div class="file-field input-field col s4">
                  
                  <div class="btn blue-grey">
                    <span><i class="material-icons">add_a_photo</i></span>
@@ -126,9 +113,8 @@ $codigoUsu=$_SESSION['codigo1'];
                    <input class="file-path validate" name="imagenJueUsu" type="text" placeholder="seleccionar una imagen">
                  </div>
                </div>
-</div>
 
-             </div>
+            </div>
           </div>
           <button name="action" value="guardarjuego" class="waves-effect waves-light btn light-blue darken-3">Guardar</button>
         </form>
@@ -140,7 +126,6 @@ $codigoUsu=$_SESSION['codigo1'];
         <?php include("consultar_juegousuario.php") ?>
       </section>
 
-    </div>
     </div>
     <script type="text/javascript">
 $(document).ready(function(){

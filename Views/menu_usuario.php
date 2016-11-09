@@ -38,7 +38,7 @@
    echo $_SESSION['nombre1'];
     ?>
 
-    <span class="site-desc" style="color: #fff"><?php echo $punts[0]; ?> puntos</span>
+    <span class="site-desc" style="color: #fff"><?php echo $punts[0]; ?> Creditos</span>
 
 
     </a> <!-- / #logo-header -->

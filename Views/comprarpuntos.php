@@ -24,7 +24,7 @@
          </td>
          <td class="cela_comprar_creditos1">
              <div class="clPun" onclick="puntos1()"><div class="img_coins" ><img src="img/estrella.png" data-src="/img/estrella.png"></div>
-                <p>1.000 Puntos</p>
+                <p>1.000 Creditos</p>
              </div>
          </td>
          <td class="cela_comprar_creditos2">
@@ -42,11 +42,11 @@
          <td class="cela_comprar_creditos1">
              <div class="clPun" onclick="puntos2()">
                  <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                 <p>2.000 Puntos</p>
+                 <p>2.000 Creditos</p>
              </div>
          </td>
          <td class="cela_comprar_creditos2">
-             <div class="img_precios"><img src="img/paque.png" data-src="/img/precio_2995.png"></div>
+             <div class="img_precios"><img src="img/paquet.png" data-src="/img/precio_2995.png"></div>
          </td>
          <td class="cela_descuentos">
              <div class="img_descuento_gratis"><img src="img/20_gratis.png" data-src="img/20_gratis.png"></div>
@@ -59,7 +59,7 @@
          <td class="cela_comprar_creditos1">
             <div class="clPun"  onclick="puntos3()">
                                                             <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                            <p>5.000 Puntos</p>
+                                                            <p>5.000 Creditos</p>
                                                             </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
@@ -71,24 +71,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                            <!--    <tr style="background-color: #95EB95;">
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="4800" required="required">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/star.png"></div>
-                                                            <p class="font-size_36">4.800</p>
-                                                            <p class="text_tachado">Antes 2.400 créditos</p>
-                                                        </td>
-                                                        <td class="cela_comprar_creditos2">
-                                                            <div class="img_precios"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/precio_1995.png"></div>
-                                                        </td>
-                                                        <td class="cela_descuentos">
-                                                            <div class="img_descuento_gratis_oferta2x1">	
-                                                                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/2x1_gratis.png">
-                                                            </div>
-                                                        </td>
-                                                    </tr>-->
+                                          
                                                     <tr>
                                                         <td class="cela_radio_comprar_creditos">
                                                             <input type="radio" name="compra_creditos" id="compra_creditos" value="1100" required="required">
@@ -96,7 +79,7 @@
                                                         <td class="cela_comprar_creditos1">
                                                             <div class="clPun" onclick="puntos4()">
                                                                 <div class="img_coins" ><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                                <p>10.000 Puntos</p>
+                                                                <p>10.000 Creditos</p>
                                                             </div>
                                                         </td>
                                                         <td class="cela_comprar_creditos2">
@@ -106,21 +89,7 @@
                                                             <div class="img_descuento_gratis"><img src="img/40_gratis.png" data-src="img/40_gratis.png"></div>
                                                         </td>
                                                     </tr>
-                                                    <!-- <tr>
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="compra_creditos" id="compra_creditos" value="500" required="required">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
-                                                            <div class="img_coins"><img src="img/estrella.png" data-src="img/estrella.png"></div>
-                                                            <p>15.000 Puntoss</p>
-                                                        </td>
-                                                        <td class="cela_comprar_creditos2">
-                                                            <div class="img_precios"><img src="/img/precio_495.png" data-src="/img/precio_495.png"></div>
-                                                        </td>
-                                                        <td class="cela_descuentos">
-                                                            <p>-</p>
-                                                        </td>
-                                                    </tr> -->
+                                                    
                                                 </tbody></table>
                                                 <p>
                                                     <strong>PASO 2:</strong> Elige una de las modalidad de pago:
@@ -137,21 +106,6 @@
                                                             <p class="p_fontsize_12">PayPal te permite realizar tus compras de forma totalmente segura con tu targeta de crédito.</p>
                                                         </td>
                                                     </tr>
-                                                    <!--
-                                                    <tr>
-                                                        <td class="cela_radio_comprar_creditos">
-                                                            <input type="radio" name="tipo_compra" id="tipo_compra" value="tarjeta">
-                                                        </td>
-                                                        <td class="cela_comprar_creditos1">
-                                                            <div class="img_precios2">	
-                                                                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/logo_targetas_credito.png">
-                                                            </div>
-                                                        </td>
-                                                        <td class="va_middle">
-                                                            <p class="p_fontsize_12">Targeta de crédito Visa o Mastercard.</p>
-                                                        </td>
-                                                    </tr>
-                                                    -->
                                                 </tbody></table>
                                                 <label class="checkbox">
                                                     <input type="checkbox" name="condiciones_compra" id="condiciones_compra" value="1" required="required">
@@ -159,8 +113,5 @@
                                                 </label>
                                             </div>
 
-                                            <div class="modal-footer">
-                                                <button class="btn btn-success" id="bot"><i class="icon-shopping-cart icon-white"></i><a href="comprarpuntos.php" class="float_right btn btn-success margin_top_menos_30"> Confirmar pedido</button>
-                                            </div>
        </body>
 </html>

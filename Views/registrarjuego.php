@@ -20,9 +20,13 @@
         foreach ($consull as $consulkey) {
             echo " <div class='clImgcompr'><img src=".$consulkey["jue_imagen"]." /></div>
                 <ul class='ulInfoCos'>
+                nombre:
                     <li>".$consulkey["jue_nom"]."<input type='hidden' name='nomjue' value='".$consulkey["jue_nom"]."' /></li>
+                    codigo:
                     <li><input type='hidden' name='cod_jueg_usu' value='".$consulkey["jue_cod"]."' /></li>
+
                     <li>".$consulkey["cons_cod"]."<input name='consol' type='hidden' value='".$consulkey["cons_cod"]."' /></li>
+                    consola
                     <li>".$consulkey["cat_cod"]."<input name='catege' type='hidden' value='".$consulkey["cat_cod"]."' /></li>
                 </ul>
                 <input name='imgInput' type='hidden' value='".$consulkey["jue_imagen"]."' />
@@ -81,7 +85,7 @@
                                                 <input name="cju_creditos" id="cju_creditos" value="400" type="number" maxlength="5" size="5" max="99999" min="0" required="required">
                                                  </br>
                                                    </br>
-                                                <button class="btn btn-primary" name="action" value="catalogo" >Poner en catalogo</button>
+                                                <button class="btn-primary " name="action" value="catalogo" >Poner en catalogo</button>
                                               </form>
 
   </body>

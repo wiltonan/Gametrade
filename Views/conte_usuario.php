@@ -34,7 +34,40 @@
 </script>
 </style>
 
-<div id="e64SlideNoticia"></div>
+
+<section>
+		<div id="captioned-gallery">
+			<figure class="slider">
+
+				<figure>
+					<img src="Imagen/09.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/08.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+		    <figure>
+					<img src="Imagen/mara.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/10.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/11.jpg" style="height: 535px; width: 100%;">
+					<figcaption>Nombre de la pelicula</figcaption>
+				</figure>
+
+			</figure>
+		</div>
+	</section>
+
 
 <div id="e63JueDestac">ADQUIERE NUEVOS VIDEOJUEGOS</div>
 
@@ -50,7 +83,7 @@
 		<ul id="aa">
 			<?php
 				foreach ($peliculas as $row )
-				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='80%' height='100px' ><div><a id='bo'  href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo juego</a></div></li>";
+				echo "<li><img src=".$row["jue_imagen"]." title=".$row["jue_nom"]." width='100%' height='600px' ><div><a id='bo'  href='registrarjuego.php?adqui=".$row["jue_cod"]."'>tengo este juego</a></div></li>";
 			?>
 		</ul>
 	</div>

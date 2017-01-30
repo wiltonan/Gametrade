@@ -4,6 +4,7 @@ session_start();
   require_once '../Model/login.class.php';
 
   $accion=$_REQUEST['action'];
+
     switch ($accion) {
       case 'login':
         $usu = $_POST['usu'];
